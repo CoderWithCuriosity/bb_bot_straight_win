@@ -51,10 +51,12 @@ async function win_strategy(amount = 100, matchCount = 5) {
             const away = match.awayTeamName;
             const homeRank = rankMap[home];
             const awayRank = rankMap[away];
+            const totalTeams = standings.length;
+            const bottomStart = totalTeams - 5 + 1; // bottom 5 teams: ranks 14–18 if 18 teams
 
             if (
                 homeRank >= 3 && homeRank <= 5 &&
-                awayRank >= 14 && awayRank <= 18
+                awayRank >= bottomStart && awayRank <= totalTeams
             ) {
                     // 🟢 Send Telegram message BEFORE checking odds
     const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n\n🧠 Checking odds next...`;
