@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { win_strategy } = require("./strategy/win_strategy");
 
-const X = 5; // Minutes between executions
+const X = 2; // Minutes between executions
 const betPerX = 5; // How many matches to bet on
 
 const FILE_PATH = path.join(__dirname, "bets.json");

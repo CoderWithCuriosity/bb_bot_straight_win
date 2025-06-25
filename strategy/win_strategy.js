@@ -56,6 +56,9 @@ async function win_strategy(amount = 100, matchCount = 5) {
                 homeRank >= 3 && homeRank <= 5 &&
                 awayRank >= 14 && awayRank <= 18
             ) {
+                    // 🟢 Send Telegram message BEFORE checking odds
+    const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n\n🧠 Checking odds next...`;
+    await sendTelegramMessage(msg);
                 const oddsData = await getMatchOdds(match.id);
                 if (!oddsData?.marketList?.length) continue;
 
