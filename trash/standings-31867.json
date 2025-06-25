@@ -1,0 +1,178 @@
+[
+  {
+    "team": "Liverpool",
+    "P": 6,
+    "W": 5,
+    "D": 0,
+    "L": 1,
+    "GF": 10,
+    "GA": 5,
+    "GD": 5,
+    "PTS": 15
+  },
+  {
+    "team": "Tottenham",
+    "P": 6,
+    "W": 4,
+    "D": 1,
+    "L": 1,
+    "GF": 11,
+    "GA": 6,
+    "GD": 5,
+    "PTS": 13
+  },
+  {
+    "team": "Manchester Blue",
+    "P": 6,
+    "W": 3,
+    "D": 3,
+    "L": 0,
+    "GF": 12,
+    "GA": 8,
+    "GD": 4,
+    "PTS": 12
+  },
+  {
+    "team": "Manchester Reds",
+    "P": 6,
+    "W": 4,
+    "D": 0,
+    "L": 2,
+    "GF": 10,
+    "GA": 6,
+    "GD": 4,
+    "PTS": 12
+  },
+  {
+    "team": "Bournemouth",
+    "P": 6,
+    "W": 3,
+    "D": 2,
+    "L": 1,
+    "GF": 9,
+    "GA": 5,
+    "GD": 4,
+    "PTS": 11
+  },
+  {
+    "team": "Chelsea",
+    "P": 6,
+    "W": 3,
+    "D": 1,
+    "L": 2,
+    "GF": 9,
+    "GA": 8,
+    "GD": 1,
+    "PTS": 10
+  },
+  {
+    "team": "Southampton",
+    "P": 6,
+    "W": 2,
+    "D": 3,
+    "L": 1,
+    "GF": 5,
+    "GA": 2,
+    "GD": 3,
+    "PTS": 9
+  },
+  {
+    "team": "London Guns",
+    "P": 6,
+    "W": 1,
+    "D": 5,
+    "L": 0,
+    "GF": 7,
+    "GA": 4,
+    "GD": 3,
+    "PTS": 8
+  },
+  {
+    "team": "Wolverhampton",
+    "P": 6,
+    "W": 2,
+    "D": 1,
+    "L": 3,
+    "GF": 6,
+    "GA": 6,
+    "GD": 0,
+    "PTS": 7
+  },
+  {
+    "team": "Burnley",
+    "P": 6,
+    "W": 2,
+    "D": 1,
+    "L": 3,
+    "GF": 6,
+    "GA": 8,
+    "GD": -2,
+    "PTS": 7
+  },
+  {
+    "team": "Watford",
+    "P": 6,
+    "W": 1,
+    "D": 3,
+    "L": 2,
+    "GF": 6,
+    "GA": 6,
+    "GD": 0,
+    "PTS": 6
+  },
+  {
+    "team": "Everton",
+    "P": 6,
+    "W": 1,
+    "D": 2,
+    "L": 3,
+    "GF": 6,
+    "GA": 10,
+    "GD": -4,
+    "PTS": 5
+  },
+  {
+    "team": "Crystal Palace",
+    "P": 6,
+    "W": 1,
+    "D": 2,
+    "L": 3,
+    "GF": 6,
+    "GA": 12,
+    "GD": -6,
+    "PTS": 5
+  },
+  {
+    "team": "Newcastle",
+    "P": 6,
+    "W": 1,
+    "D": 1,
+    "L": 4,
+    "GF": 4,
+    "GA": 10,
+    "GD": -6,
+    "PTS": 4
+  },
+  {
+    "team": "West Ham",
+    "P": 6,
+    "W": 0,
+    "D": 3,
+    "L": 3,
+    "GF": 5,
+    "GA": 10,
+    "GD": -5,
+    "PTS": 3
+  },
+  {
+    "team": "Leicester",
+    "P": 6,
+    "W": 0,
+    "D": 2,
+    "L": 4,
+    "GF": 5,
+    "GA": 11,
+    "GD": -6,
+    "PTS": 2
+  }
+]
