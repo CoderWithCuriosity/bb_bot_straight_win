@@ -1,6 +1,22 @@
 const { computeCurrentWeekStandings } = require("../api/computeCurrentWeekStandings");
 const { fetchFullTournamentData } = require("../api/fetchFullTournamentData");
 const { getMatchOdds } = require("../api/matches");
+const axios = require('axios');
+const BOT_TOKEN = '7299748052:AAHJKWCStrsnSg_e5YfWctTNnVQYUlNp8Hs';
+const USER_ID = '6524312327';
+
+async function sendTelegramMessage(message) {
+  try {
+    await axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+      chat_id: USER_ID,
+      text: message,
+      parse_mode: "Markdown"
+    });
+  } catch (err) {
+    console.error("❌ Failed to send Telegram message:", err.message);
+  }
+}
+
 
 async function win_strategy(amount = 100, matchCount = 5) {
     const selections = [];
