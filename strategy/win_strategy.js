@@ -1,20 +1,22 @@
 const { computeCurrentWeekStandings } = require("../api/computeCurrentWeekStandings");
 const { fetchFullTournamentData } = require("../api/fetchFullTournamentData");
-const { getMatchOdds } = require("../api/matches");
+const { fetchMatchDaysDifference } = require("../api/fetchMatchDays");
+const { getMatchOdds, fetchMatches } = require("../api/matches");
+
 const axios = require('axios');
 const BOT_TOKEN = '7299748052:AAHJKWCStrsnSg_e5YfWctTNnVQYUlNp8Hs';
 const USER_ID = '6524312327';
 
 async function sendTelegramMessage(message) {
-  try {
-    await axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-      chat_id: USER_ID,
-      text: message,
-      parse_mode: "Markdown"
-    });
-  } catch (err) {
-    console.error("❌ Failed to send Telegram message:", err.message);
-  }
+    try {
+        await axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            chat_id: USER_ID,
+            text: message,
+            parse_mode: "Markdown"
+        });
+    } catch (err) {
+        console.error("❌ Failed to send Telegram message:", err.message);
+    }
 }
 
 
@@ -26,27 +28,50 @@ async function win_strategy(amount = 100, matchCount = 5) {
         { id: 'vf:tournament:14149', name: 'League Mode' },
         { id: 'vf:tournament:34616', name: 'Bundesliga' }
     ];
+    const fetched_matches = await fetchMatches();
+    const valid_matches = [];
+    for (let match of fetched_matches) {
+        for (let tournament of STRATEGIC_TOURNAMENTS) {
+            if (match.tournamentId == tournament.id) {
+                valid_matches.push(match);
+                break;
+            }
+        }
+    }
+    if (valid_matches.length <= 0) return [selections];
 
     for (const tournament of STRATEGIC_TOURNAMENTS) {
         console.log(`🎯 Scanning ${tournament.name}...`);
         const matchesData = await fetchFullTournamentData(tournament.id);
         if (!matchesData.length) continue;
+        // console.log(matchesData);
 
-        const [matchDay, standings] = computeCurrentWeekStandings(matchesData);
-        if (matchDay < 6 || matchDay > 22) {
+        let [finishedMatchDay, standings] = computeCurrentWeekStandings(matchesData);
+        //This is because the fetchfulltourname data only fetches matches that is finished. so 6 is the week that is playing or not started. And for > 21 means that 22 and if 22 is finished the playing or not started is 23
+        if (finishedMatchDay < 5 || finishedMatchDay > 21) {
             // console.log(`⏭️ Skipping ${tournament.name} — Not in MD6–22 range. Current Week is ${matchDay}`);
             continue;
         }
 
-        const latestMatches = matchesData.find(day => day.number === matchDay);
-        if (!latestMatches) continue;
+        const [startDayStamp, daysDiff] = await fetchMatchDaysDifference(tournament.id);
 
-        const rankMap = {};
-        standings.forEach((team, i) => {
-            rankMap[team.team] = i + 1;
-        });
+        if (!startDayStamp || !daysDiff) {
+            console.log(`⛔ Skipping ${tournament.name} — startDayStamp or daysDiff missing.`);
+            continue;
+        }
 
-        for (const match of latestMatches.matches) {
+
+        for (const match of valid_matches) {
+            if (match.tournamentId != tournament.id) continue;
+            //this is because since the last match is finished the next matches has to be playing so the current day has to be 
+            // console.log(`This is Formular the time from the week (match scheduledTime) ${match.scheduledTime} minus the start day stamp ${startDayStamp} divided by daysDiff ${daysDiff} plus 1`);
+            let matchDay = Math.floor((match.scheduledTime - startDayStamp) / daysDiff) + 1;
+
+            const rankMap = {};
+            standings.forEach((team, i) => {
+                rankMap[team.team] = i + 1;
+            });
+
             const home = match.homeTeamName;
             const away = match.awayTeamName;
             const homeRank = rankMap[home];
@@ -58,11 +83,11 @@ async function win_strategy(amount = 100, matchCount = 5) {
                 homeRank >= 3 && homeRank <= 5 &&
                 awayRank >= bottomStart && awayRank <= totalTeams
             ) {
-                    // 🟢 Send Telegram message BEFORE checking odds
-    const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n\n🧠 Checking odds next...`;
-    await sendTelegramMessage(msg);
+                await sendTelegramMessage(msg);
                 const oddsData = await getMatchOdds(match.id);
                 if (!oddsData?.marketList?.length) continue;
+                // 🟢 Send Telegram message BEFORE checking odds
+                const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home}` + ` vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n🆔Match ID: ${match.id}\n\n\n🧠 Odds: ${outcome.odds}`;
 
                 for (const market of oddsData.marketList) {
                     if (market.name === "1x2") {
@@ -70,9 +95,10 @@ async function win_strategy(amount = 100, matchCount = 5) {
                             for (const outcome of detail.outcomes) {
                                 if (
                                     outcome.desc.toLowerCase() !== oddsData.homeTeamName.toLowerCase() ||
-                                    outcome.odds < 1.5 ||
+                                    outcome.odds < 1.3 ||
                                     outcome.odds > 1.75
                                 ) continue;
+                                await sendTelegramMessage(msg);
 
                                 selections.push({
                                     sportId: match.sportId,
@@ -99,13 +125,12 @@ async function win_strategy(amount = 100, matchCount = 5) {
                 console.log(`Current Week: ${matchDay}. Home Team: ${match.homeTeamName} (Rank: ${homeRank}) vs Away Team: ${match.awayTeamName} (Rank: ${awayRank})`);
             }
 
-            if (selections.length >= matchCount) break;
+            if (selections.length >= matchCount) {
+                console.log(`Current Week: ${matchDay}. But No match with home rank between 3 to 5 and away rank from 14 to 18`)
+                break
+            };
         }
 
-        if (selections.length >= matchCount) {
-            console.log(`Current Week: ${matchDay}. But No match with home rank between 3 to 5 and away rank from 14 to 18`)
-            break
-        };
     }
 
     return [selections];

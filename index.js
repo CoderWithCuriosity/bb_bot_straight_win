@@ -57,11 +57,21 @@ async function main() {
   }
 
   const [selections] = await win_strategy(100, betPerX);
+  const existingBets = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
 
   if (selections.length) {
     console.log(`🎯 Found ${selections.length} strategic matches:`);
 
     for (const sel of selections) {
+      const alreadyPlaced = existingBets.some(
+        b => b.eventId === sel.eventId && b.outcomeId === sel.outcomeId
+      );
+
+      if (alreadyPlaced) {
+        console.log(`⚠️ Already bet on ${sel.eventName} - Skipping...`);
+        continue;
+      }
+
       console.log(
         `🟢 Bet: ${sel.eventName} (${sel.outcomeName} @ ${sel.odds})`
       );
@@ -71,8 +81,7 @@ async function main() {
         [sel],
         storeLoginData
       );
-      // Save to bets.json
-      logBet(sel);
+      logBet(sel); // Save to bets.json
     }
   } else {
     console.log("⚠️ No valid 1X2 home selections found.");
