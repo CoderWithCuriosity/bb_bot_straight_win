@@ -2,10 +2,13 @@ const { computeCurrentWeekStandings } = require("../api/computeCurrentWeekStandi
 const { fetchFullTournamentData } = require("../api/fetchFullTournamentData");
 const { fetchMatchDaysDifference } = require("../api/fetchMatchDays");
 const { getMatchOdds, fetchMatches } = require("../api/matches");
+const fs = require("fs");
+const path = require("path");
 
 const axios = require('axios');
 const BOT_TOKEN = '7299748052:AAHJKWCStrsnSg_e5YfWctTNnVQYUlNp8Hs';
 const USER_ID = '6524312327';
+const FILE_PATH = path.join(__dirname, "../bets.json");
 
 async function sendTelegramMessage(message) {
     try {
@@ -83,11 +86,16 @@ async function win_strategy(amount = 100, matchCount = 5) {
                 homeRank >= 3 && homeRank <= 5 &&
                 awayRank >= bottomStart && awayRank <= totalTeams
             ) {
-                await sendTelegramMessage(msg);
+                const existingBets = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
+                const alreadyPlaced = existingBets.some(
+                    b => b.eventId === match.id
+                );
+                if(alreadyPlaced) continue;
+                // 🟢 Send Telegram message BEFORE checking odds
+                // const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n🆔Match ID: ${match.id}\n\n🧠 Checking odds next...`;
+                // await sendTelegramMessage(msg);
                 const oddsData = await getMatchOdds(match.id);
                 if (!oddsData?.marketList?.length) continue;
-                // 🟢 Send Telegram message BEFORE checking odds
-                const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home}` + ` vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n🆔Match ID: ${match.id}\n\n\n🧠 Odds: ${outcome.odds}`;
 
                 for (const market of oddsData.marketList) {
                     if (market.name === "1x2") {
@@ -95,9 +103,11 @@ async function win_strategy(amount = 100, matchCount = 5) {
                             for (const outcome of detail.outcomes) {
                                 if (
                                     outcome.desc.toLowerCase() !== oddsData.homeTeamName.toLowerCase() ||
-                                    outcome.odds < 1.3 ||
-                                    outcome.odds > 1.75
+                                    outcome.odds < 1.75 ||
+                                    outcome.odds > 2.75
                                 ) continue;
+                                // 🟢 Send Telegram message After checking odds
+                                const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home}` + ` vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n🆔Match ID: ${match.id}\n\n\n🧠 Odds: ${outcome.odds}`;
                                 await sendTelegramMessage(msg);
 
                                 selections.push({

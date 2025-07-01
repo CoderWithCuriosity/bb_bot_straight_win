@@ -36,14 +36,14 @@ async function placeBet(token, secretKey, selections, storeCred, amount = 100, r
             }
         });
 
-            console.log("✅ Bet Result:", res.data);
+            console.log("✅ Bet Result:", res.data.info);
 
         if (res.data.info == 'illegal token') {
             if (retryCount < MAX_RETRIES) {
                 console.log(`🔄 Token expired. Retrying attempt ${retryCount + 1}/${MAX_RETRIES}...`);
                 const credentials = await loginToBangBet();
                 storeCred(credentials);
-                console.log(`New Credentials Retrieved: ${credentials}`)
+                console.log(`New Credentials Retrieved`)
                 return placeBet(credentials.token, credentials.secretKey, selections, storeCred, amount, retryCount + 1);
             } else {
                 console.error("❗ Max retry attempts reached. Bet failed.");
