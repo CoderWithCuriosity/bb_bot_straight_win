@@ -22,6 +22,13 @@ async function sendTelegramMessage(message) {
     }
 }
 
+function shouldBetNow() {
+    const now = new Date();
+    const hour = now.getHours();
+    const restrictedHours = [1, 2, 5, 6, 9, 10];
+    return !restrictedHours.includes(hour);
+}
+
 
 async function win_strategy(amount = 100, matchCount = 5) {
     const selections = [];
@@ -31,6 +38,12 @@ async function win_strategy(amount = 100, matchCount = 5) {
         { id: 'vf:tournament:14149', name: 'League Mode' },
         { id: 'vf:tournament:34616', name: 'Bundesliga' }
     ];
+
+    if (!shouldBetNow()) {
+        console.log("⏳ Betting is restricted during this hour.");
+        return [selections];
+    }
+
     const fetched_matches = await fetchMatches();
     const valid_matches = [];
     for (let match of fetched_matches) {
@@ -91,9 +104,6 @@ async function win_strategy(amount = 100, matchCount = 5) {
                     b => b.eventId === match.id
                 );
                 if(alreadyPlaced) continue;
-                // 🟢 Send Telegram message BEFORE checking odds
-                // const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n🆔Match ID: ${match.id}\n\n🧠 Checking odds next...`;
-                // await sendTelegramMessage(msg);
                 const oddsData = await getMatchOdds(match.id);
                 if (!oddsData?.marketList?.length) continue;
 
