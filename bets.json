@@ -322,5 +322,23 @@
     "categoryId": "sr:category:1111",
     "tournamentId": "vf:tournament:34616",
     "placedAt": "2025-07-02T02:37:05.931Z"
+  },
+  {
+    "sportId": "sr:sport:1",
+    "eventId": "vf:match:1383942347",
+    "producer": 6,
+    "marketId": "1",
+    "specifiers": "",
+    "outcomeId": "1",
+    "amount": 100,
+    "odds": 1.75,
+    "specifierKeys": "",
+    "eventName": "1. FSV Mainz 05 vs. Hannover 96",
+    "scheduledTime": 1751425411000,
+    "marketName": "1x2",
+    "outcomeName": "1. FSV Mainz 05",
+    "categoryId": "sr:category:1111",
+    "tournamentId": "vf:tournament:34616",
+    "placedAt": "2025-07-02T03:02:17.816Z"
   }
 ]

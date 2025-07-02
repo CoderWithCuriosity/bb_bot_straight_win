@@ -25,9 +25,20 @@ async function sendTelegramMessage(message) {
 function shouldBetNow() {
     const now = new Date();
     const hour = now.getHours();
-    const restrictedHours = [1, 2, 5, 6, 9, 10];
+
+    // List all restricted hours explicitly
+    const restrictedHours = [
+        1, 2,    // 1–2 AM
+        5, 6,    // 5–6 AM
+        9, 10,   // 9–10 AM
+        13, 14,  // 1–2 PM
+        17, 18,  // 5–6 PM
+        21, 22   // 9–10 PM
+    ];
+
     return !restrictedHours.includes(hour);
 }
+
 
 
 async function win_strategy(amount = 100, matchCount = 5) {
