@@ -340,5 +340,23 @@
     "categoryId": "sr:category:1111",
     "tournamentId": "vf:tournament:34616",
     "placedAt": "2025-07-02T03:02:17.816Z"
+  },
+  {
+    "sportId": "sr:sport:1",
+    "eventId": "vf:match:1383944393",
+    "producer": 6,
+    "marketId": "1",
+    "specifiers": "",
+    "outcomeId": "1",
+    "amount": 100,
+    "odds": 1.8,
+    "specifierKeys": "",
+    "eventName": "Everton vs. Burnley",
+    "scheduledTime": 1751427032000,
+    "marketName": "1x2",
+    "outcomeName": "Everton",
+    "categoryId": "sr:category:1111",
+    "tournamentId": "vf:tournament:31867",
+    "placedAt": "2025-07-02T03:27:07.506Z"
   }
 ]

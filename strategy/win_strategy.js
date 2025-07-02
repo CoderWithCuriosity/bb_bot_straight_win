@@ -23,10 +23,9 @@ async function sendTelegramMessage(message) {
 }
 
 function shouldBetNow() {
-    const now = new Date();
-    const hour = now.getHours();
+    const now = new Date().toLocaleString("en-US", { timeZone: "Africa/Lagos" });
+    const hour = new Date(now).getHours();
 
-    // List all restricted hours explicitly
     const restrictedHours = [
         1, 2,    // 1–2 AM
         5, 6,    // 5–6 AM
@@ -38,6 +37,7 @@ function shouldBetNow() {
 
     return !restrictedHours.includes(hour);
 }
+
 
 
 
