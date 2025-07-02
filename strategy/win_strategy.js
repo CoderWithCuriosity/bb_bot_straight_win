@@ -4,6 +4,7 @@ const { fetchMatchDaysDifference } = require("../api/fetchMatchDays");
 const { getMatchOdds, fetchMatches } = require("../api/matches");
 const fs = require("fs");
 const path = require("path");
+const { DateTime } = require("luxon");
 
 const axios = require('axios');
 const BOT_TOKEN = '7299748052:AAHJKWCStrsnSg_e5YfWctTNnVQYUlNp8Hs';
@@ -23,8 +24,8 @@ async function sendTelegramMessage(message) {
 }
 
 function shouldBetNow() {
-    const now = new Date().toLocaleString("en-US", { timeZone: "Africa/Lagos" });
-    const hour = new Date(now).getHours();
+    // Get current time in Africa/Lagos (Nigerian time)
+    const hour = DateTime.now().setZone("Africa/Lagos").hour;
 
     const restrictedHours = [
         1, 2,    // 1–2 AM

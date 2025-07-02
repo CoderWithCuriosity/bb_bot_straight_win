@@ -48,8 +48,6 @@ function logBet(bet) {
 }
 
 async function main() {
-  console.log(`[${new Date().toISOString()}] ✅ Starting auto-bet...`);
-
   const credentials = getLoginData();
   if (!credentials || !credentials.token || !credentials.secretKey) {
     console.log("❌ Token not found! Please refresh credentials.");
@@ -57,9 +55,9 @@ async function main() {
   }
 
   const [selections] = await win_strategy(100, betPerX);
-  const existingBets = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
 
   if (selections.length) {
+    const existingBets = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
     console.log(`🎯 Found ${selections.length} strategic matches:`);
 
     for (const sel of selections) {
@@ -83,12 +81,11 @@ async function main() {
       );
       logBet(sel); // Save to bets.json
     }
-  } else {
-    console.log("⚠️ No valid 1X2 home selections found.");
   }
 }
 
 // Run on launch
+console.log(`[${new Date().toISOString()}] ✅ Starting auto-bet...`);
 main();
 
 // Repeat every X minutes
