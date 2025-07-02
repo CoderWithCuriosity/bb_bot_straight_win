@@ -1,6 +1,6 @@
 module.exports = {
     account: '2349070608423',
-    password: '9f886460dc01f9ebc15db9b22edd1090',
+    password: '47d686928de69df0dbf7d413781beae3',
     nickname: '2349070608423',
     country: 'ng',
     platform: 21,
