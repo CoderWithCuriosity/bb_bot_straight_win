@@ -1,105 +1,109 @@
-const { placeBet } = require("./api/bet");
 const fs = require("fs");
 const path = require("path");
+const { DateTime } = require("luxon");
+
+const { placeBet } = require("./api/bet");
 const { win_1_5 } = require("./strategy/win_1_5");
 const { analyzeLastNBets } = require("./utils/analyzeLastBets");
 
 const X = 2; // Minutes between executions
-const betPerX = 5; // How many matches to bet on
+const betPerX = 5;
 
 const FILE_PATH = path.join(__dirname, "bets.json");
 const TOKEN_PATH = path.join(__dirname, "token.json");
 const COOLDOWN_FILE = path.join(__dirname, "cooldown.json");
-const SNIPER_FILE = path.join(__dirname, "sniper.json");
 
-// Create sniper.json if it doesn't exist
-if (!fs.existsSync(SNIPER_FILE)) {
-  fs.writeFileSync(SNIPER_FILE, JSON.stringify({ fired: false }), "utf8");
+const NIGERIA_TZ = "Africa/Lagos";
+
+// Initialize files if not exist
+if (!fs.existsSync(FILE_PATH)) {
+  fs.writeFileSync(FILE_PATH, JSON.stringify([], null, 2), "utf8");
 }
-
-function sniperHasFired() {
-  const data = JSON.parse(fs.readFileSync(SNIPER_FILE, "utf8"));
-  return data.fired;
-}
-
-function setSniperFired(val) {
-  fs.writeFileSync(SNIPER_FILE, JSON.stringify({ fired: val }), "utf8");
-}
-
-// Initialize storage files if they don't exist
-if (!fs.existsSync(FILE_PATH))
-  fs.writeFileSync(FILE_PATH, JSON.stringify([]), "utf8");
-if (!fs.existsSync(TOKEN_PATH))
+if (!fs.existsSync(TOKEN_PATH)) {
   fs.writeFileSync(
     TOKEN_PATH,
-    JSON.stringify([{ token: "", secretKey: "" }]),
+    JSON.stringify([{ token: "", secretKey: "" }], null, 2),
     "utf8"
   );
+}
 
 function getLoginData() {
   const data = fs.readFileSync(TOKEN_PATH, "utf8");
-  const parseData = JSON.parse(data);
-  return parseData[0];
+  return JSON.parse(data)[0];
 }
 
 function storeLoginData(credentials) {
   if (credentials.token && credentials.secretKey) {
-    const credentialsData = [
-      { token: credentials.token, secretKey: credentials.secretKey }
-    ];
     fs.writeFileSync(
       TOKEN_PATH,
-      JSON.stringify(credentialsData, null, 2),
+      JSON.stringify([{ token: credentials.token, secretKey: credentials.secretKey }], null, 2),
       "utf8"
     );
   }
 }
 
 function logBet(bet) {
-  const existing = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
+  let existing = [];
+  try {
+    const raw = fs.readFileSync(FILE_PATH, "utf8");
+    existing = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(existing)) throw new Error("Invalid format");
+  } catch {
+    console.log("⚠️ bets.json missing or corrupted. Starting fresh.");
+    existing = [];
+  }
+
   existing.push({
     ...bet,
-    placedAt: new Date().toISOString()
+    placedAt: DateTime.now().setZone(NIGERIA_TZ).toISO(),
   });
+
   fs.writeFileSync(FILE_PATH, JSON.stringify(existing, null, 2), "utf8");
+}
+
+function setCooldownToNextHour() {
+  const now = DateTime.now().setZone(NIGERIA_TZ);
+  const nextHour = now.plus({ hours: 1 }).startOf("hour");
+
+  fs.writeFileSync(
+    COOLDOWN_FILE,
+    JSON.stringify({ resumeTime: nextHour.toISO() }, null, 2),
+    "utf8"
+  );
+
+  console.log(`🔒 Cooldown set until: ${nextHour.toFormat("yyyy-MM-dd HH:mm:ss")} (Africa/Lagos)`);
 }
 
 function isInCooldown() {
   if (!fs.existsSync(COOLDOWN_FILE)) return false;
 
-  const data = JSON.parse(fs.readFileSync(COOLDOWN_FILE, "utf8"));
-  const resumeTime = new Date(data.resumeTime);
-  return new Date() < resumeTime;
-}
+  try {
+    const data = JSON.parse(fs.readFileSync(COOLDOWN_FILE, "utf8"));
+    const resumeTime = DateTime.fromISO(data.resumeTime, { zone: NIGERIA_TZ });
+    const now = DateTime.now().setZone(NIGERIA_TZ);
 
-function setCooldownToNextHour() {
-  const now = new Date();
-  const nextHour = new Date(now);
-  nextHour.setMinutes(0, 0, 0); // Set to start of current hour
-  nextHour.setHours(now.getHours() + 1); // Add 1 hour
+    if (now >= resumeTime) {
+      fs.unlinkSync(COOLDOWN_FILE);
+      console.log("✅ Cooldown expired. Resuming betting...");
+      return false;
+    }
 
-  fs.writeFileSync(
-    COOLDOWN_FILE,
-    JSON.stringify({ resumeTime: nextHour.toISOString() }),
-    "utf8"
-  );
+    const minsLeft = Math.ceil(resumeTime.diff(now, "minutes").minutes);
+    console.log(`⏸️ Cooldown active. Resume in ${minsLeft} minute(s).`);
+    return true;
+  } catch (err) {
+    console.log("⚠️ Invalid cooldown.json. Ignoring cooldown.");
+    return false;
+  }
 }
 
 async function main() {
-  if (isInCooldown()) {
-    console.log("⏸️ In cooldown until next hour. Waiting...");
-    return;
-  }
+  if (isInCooldown()) return;
 
-  // Analyze last 3 bets
+  let placedAnyBet = false;
+
   const last3Results = await analyzeLastNBets(3);
-  const last3Losses = last3Results.filter(x => x === false);
-
-  if (last3Losses.length === 3) {
-    console.log("🚨 3 consecutive losses detected. Pausing until next hour.");
-    setCooldownToNextHour();
-    return;
-  }
+  const last3Losses = last3Results.filter((x) => x === false);
 
   const credentials = getLoginData();
   if (!credentials || !credentials.token || !credentials.secretKey) {
@@ -107,37 +111,29 @@ async function main() {
     return;
   }
 
-  let stake = 100;
-
-  // 🔍 Check for "L W W" pattern
-  const pattern = last3Results;
-
-  if (
-    pattern.length === 3 &&
-    pattern[0] === false &&
-    pattern[1] === true &&
-    pattern[2] === true &&
-    !sniperHasFired()
-  ) {
-    stake = 200;
-    console.log("🎯 Sniper move triggered: L W W detected → Betting ₦200");
-    setSniperFired(true);
-  }
-
-  // Reset sniper if there's a loss in the last result
-  if (pattern.length && pattern[pattern.length - 1] === false) {
-    setSniperFired(false);
-  }
+  const last2Results = await analyzeLastNBets(2, true);
+  const last2Wins = last2Results.filter((x) => x === true);
+  const stake = last2Wins.length === 2 ? 200 : 100;
 
   const [selections] = await win_1_5(stake, betPerX);
 
+  let existingBets = [];
+  try {
+    const raw = fs.readFileSync(FILE_PATH, "utf8");
+    existingBets = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(existingBets)) throw new Error("Invalid format");
+  } catch {
+    console.log("⚠️ bets.json missing or invalid. Resetting file.");
+    fs.writeFileSync(FILE_PATH, JSON.stringify([], null, 2), "utf8");
+    existingBets = [];
+  }
+
   if (selections.length) {
-    const existingBets = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
     console.log(`🎯 Found ${selections.length} strategic matches:`);
 
     for (const sel of selections) {
       const alreadyPlaced = existingBets.some(
-        b => b.eventId === sel.eventId && b.outcomeId === sel.outcomeId
+        (b) => b.eventId === sel.eventId && b.outcomeId === sel.outcomeId
       );
 
       if (alreadyPlaced) {
@@ -145,23 +141,31 @@ async function main() {
         continue;
       }
 
-      console.log(
-        `🟢 Bet: ${sel.eventName} (${sel.outcomeName} @ ${sel.odds})`
-      );
+      console.log(`🟢 Bet: ${sel.eventName} (${sel.outcomeName} @ ${sel.odds})`);
+
       await placeBet(
         credentials.token,
         credentials.secretKey,
         [sel],
         storeLoginData
       );
-      logBet(sel); // Save to bets.json
+
+      placedAnyBet = true;
+      logBet(sel);
     }
+  }
+
+  if (last3Losses.length === 3 && placedAnyBet) {
+    console.log("🚨 3 consecutive losses after bet. Pausing until next hour.");
+    setCooldownToNextHour();
+    return;
   }
 }
 
-// Run on launch
-console.log(`[${new Date().toISOString()}] ✅ Starting auto-bet...`);
+// Run immediately on start
+console.log(`[${DateTime.now().setZone(NIGERIA_TZ).toFormat("yyyy-MM-dd HH:mm:ss")}] ✅ Starting auto-bet...`);
 main();
 
 // Repeat every X minutes
 setInterval(main, X * 60 * 1000);
+
