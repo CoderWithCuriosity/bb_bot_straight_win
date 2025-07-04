@@ -10,6 +10,21 @@ const betPerX = 5; // How many matches to bet on
 const FILE_PATH = path.join(__dirname, "bets.json");
 const TOKEN_PATH = path.join(__dirname, "token.json");
 const COOLDOWN_FILE = path.join(__dirname, "cooldown.json");
+const SNIPER_FILE = path.join(__dirname, "sniper.json");
+
+// Create sniper.json if it doesn't exist
+if (!fs.existsSync(SNIPER_FILE)) {
+  fs.writeFileSync(SNIPER_FILE, JSON.stringify({ fired: false }), "utf8");
+}
+
+function sniperHasFired() {
+  const data = JSON.parse(fs.readFileSync(SNIPER_FILE, "utf8"));
+  return data.fired;
+}
+
+function setSniperFired(val) {
+  fs.writeFileSync(SNIPER_FILE, JSON.stringify({ fired: val }), "utf8");
+}
 
 // Initialize storage files if they don't exist
 if (!fs.existsSync(FILE_PATH))
@@ -91,13 +106,28 @@ async function main() {
     console.log("❌ Token not found! Please refresh credentials.");
     return;
   }
-  
 
-    // 📈 Check last 2 bets to reward winning streak
-  const last2Results = await analyzeLastNBets(2);
-  const last2Wins = last2Results.filter(x => x === true);
+  let stake = 100;
 
-  const stake = last2Wins.length === 2 ? 200 : 100;
+  // 🔍 Check for "L W W" pattern
+  const pattern = last3Results;
+
+  if (
+    pattern.length === 3 &&
+    pattern[0] === false &&
+    pattern[1] === true &&
+    pattern[2] === true &&
+    !sniperHasFired()
+  ) {
+    stake = 200;
+    console.log("🎯 Sniper move triggered: L W W detected → Betting ₦200");
+    setSniperFired(true);
+  }
+
+  // Reset sniper if there's a loss in the last result
+  if (pattern.length && pattern[pattern.length - 1] === false) {
+    setSniperFired(false);
+  }
 
   const [selections] = await win_1_5(stake, betPerX);
 
