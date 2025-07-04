@@ -1,10 +1,10 @@
 const fs = require("fs");
 const path = require("path");
-const { getMatchOdds } = require("../api/matches"); // Update this to your correct filename
+const { getMatchOdds } = require("../api/matches");
+const { DateTime } = require("luxon");
 
 /**
  * Read and parse bets.json file
- * @returns {Array} - Parsed bets array
  */
 function loadBets() {
   const filePath = path.join(__dirname, "../bets.json");
@@ -13,10 +13,7 @@ function loadBets() {
 }
 
 /**
- * Determine the actual result of a match
- * @param {number} homeScore
- * @param {number} awayScore
- * @returns {1 | 2 | 3} - 1 = Home Win, 2 = Draw, 3 = Away Win
+ * Determine match result
  */
 function determineResult(homeScore, awayScore) {
   if (homeScore > awayScore) return 1;
@@ -25,30 +22,36 @@ function determineResult(homeScore, awayScore) {
 }
 
 /**
- * Analyze the last N bets from bets.json
- * @param {number} count - Number of last bets to check
+ * Analyze last N bets placed within the current hour (local time)
+ * Uses Luxon for date handling
  */
-async function analyzeLastNBets(count = 3) {
+async function analyzeLastNBets(count = 3, useCurrentHour = false) {
   const allBets = loadBets();
-  const lastBets = allBets.slice(-count);
+
+  let filteredBets = allBets;
+
+  if (useCurrentHour) {
+    const currentHour = DateTime.local().hour;
+
+    filteredBets = allBets.filter(bet => {
+      const betHour = DateTime.fromISO(bet.placedAt).hour;
+      return betHour === currentHour;
+    });
+  }
+
+  const lastBets = filteredBets.slice(-count);
   const isWonArr = [];
 
   for (const bet of lastBets) {
-    const { eventId, outcomeId, odds, outcomeName, eventName } = bet;
+    const { eventId, outcomeId, eventName } = bet;
 
     const matchData = await getMatchOdds(eventId);
     if (!matchData) {
-      console.log(`❌ Could not fetch data for match: ${eventName}`);
+      console.log(`❌ Could not fetch data for: ${eventName}`);
       continue;
     }
 
-    const {
-      homeTeamName,
-      awayTeamName,
-      homeScore,
-      awayScore,
-      matchStatus
-    } = matchData;
+    const { homeScore, awayScore, matchStatus } = matchData;
 
     if (matchStatus !== "ended") {
       console.log(`⏳ Match not finished: ${eventName}`);
@@ -60,8 +63,7 @@ async function analyzeLastNBets(count = 3) {
     isWonArr.push(won);
   }
 
-  //It returns [true, true, true]
-  return isWonArr
+  return isWonArr;
 }
 
 module.exports = { analyzeLastNBets };
