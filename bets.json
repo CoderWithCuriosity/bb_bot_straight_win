@@ -646,5 +646,23 @@
     "categoryId": "sr:category:1111",
     "tournamentId": "vf:tournament:14149",
     "placedAt": "2025-07-06T00:25:36.531Z"
+  },
+  {
+    "sportId": "sr:sport:1",
+    "eventId": "vf:match:1384144561",
+    "producer": 6,
+    "marketId": "1",
+    "specifiers": "",
+    "outcomeId": "1",
+    "amount": 100,
+    "odds": 1.4,
+    "specifierKeys": "",
+    "eventName": "VL London vs. VL Kiev",
+    "scheduledTime": 1751762734000,
+    "marketName": "1x2",
+    "outcomeName": "VL London",
+    "categoryId": "sr:category:1111",
+    "tournamentId": "vf:tournament:14149",
+    "placedAt": "2025-07-06T00:43:58.514Z"
   }
 ]

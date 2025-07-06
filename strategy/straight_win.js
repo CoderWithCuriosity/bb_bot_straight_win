@@ -87,11 +87,11 @@ async function straight_win(amount = 100, matchCount = 5) {
 
       let predictedWinner = null;
 
-      const homeQualifiesA = homeStats.attack >= 6 && homeStats.chaos < 4;
-      const awayQualifiesB = awayStats.attack < 5 && awayStats.chaos < 5;
+      const homeQualifiesA = homeStats.attack >= 6 && homeStats.chaos < 4 && homeStats.chaos > 2 && homeStats.defense >= 3 && homeStats.strength >= 4;
+      const awayQualifiesB = awayStats.attack < 5 && awayStats.chaos < 3 && awayStats.chaos > 2 && awayStats.defense >= 1 && awayStats.strength >= 4;
 
-      const awayQualifiesA = awayStats.attack >= 6 && awayStats.chaos < 4;
-      const homeQualifiesB = homeStats.attack < 5 && homeStats.chaos < 5;
+      const awayQualifiesA = awayStats.attack >= 6 && awayStats.chaos < 4 && awayStats.chaos > 2 && awayStats.defense >= 3 && awayStats.strength >= 4 ;
+      const homeQualifiesB = homeStats.attack < 5 && homeStats.chaos < 5 && awayStats.chaos > 2 && homeStats.defense >= 1 && homeStats.strength >= 4 ;
 
       if (homeQualifiesA && awayQualifiesB) {
         predictedWinner = home;
