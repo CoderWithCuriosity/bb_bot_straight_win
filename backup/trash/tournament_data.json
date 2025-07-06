@@ -1,0 +1,1953 @@
+[
+  {
+    "tournamentId": "vf:tournament:14149",
+    "tournamentName": "vf:season:2973436",
+    "seasons": [
+      {
+        "seasonId": [
+          {
+            "name": "VL Moscow",
+            "attack": 6.1,
+            "defense": 6.6,
+            "strength": 6.7,
+            "luck": 4.6,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Kiev",
+            "attack": 5.3,
+            "defense": 3.8,
+            "strength": 5.1,
+            "luck": 5,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Lisbon",
+            "attack": 5.1,
+            "defense": 3.7,
+            "strength": 5.8,
+            "luck": 5.6,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Bern",
+            "attack": 3.2,
+            "defense": 3.1,
+            "strength": 3.6,
+            "luck": 5,
+            "form": [
+              "L",
+              "D",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL London",
+            "attack": 5.3,
+            "defense": 5.6,
+            "strength": 5.5,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Paris",
+            "attack": 6.2,
+            "defense": 4.7,
+            "strength": 5.1,
+            "luck": 4.6,
+            "form": [
+              "W",
+              "W",
+              "D",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Amsterdam",
+            "attack": 6,
+            "defense": 4.7,
+            "strength": 5.9,
+            "luck": 5.1,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Copenhagen",
+            "attack": 3.7,
+            "defense": 5.6,
+            "strength": 5.6,
+            "luck": 5.6,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Vienna",
+            "attack": 3.6,
+            "defense": 4.8,
+            "strength": 4.6,
+            "luck": 5.3,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Madrid",
+            "attack": 5,
+            "defense": 5.2,
+            "strength": 5.3,
+            "luck": 5.1,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Zagreb",
+            "attack": 4.5,
+            "defense": 4.9,
+            "strength": 5,
+            "luck": 5,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Berlin",
+            "attack": 4.6,
+            "defense": 5.9,
+            "strength": 5.6,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Rome",
+            "attack": 4.8,
+            "defense": 5.2,
+            "strength": 5.3,
+            "luck": 5.3,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Prague",
+            "attack": 3.5,
+            "defense": 2.9,
+            "strength": 3.8,
+            "luck": 5.3,
+            "form": [
+              "D",
+              "L",
+              "D",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Ankara",
+            "attack": 3.9,
+            "defense": 4.5,
+            "strength": 4.6,
+            "luck": 5.6,
+            "form": [
+              "L",
+              "W",
+              "W",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Athens",
+            "attack": 5.8,
+            "defense": 4.2,
+            "strength": 5.8,
+            "luck": 5.1,
+            "form": [
+              "L",
+              "W",
+              "W",
+              "W",
+              "W"
+            ]
+          }
+        ],
+        "teams": "League Mode"
+      },
+      {
+        "seasonId": [
+          {
+            "name": "VL Moscow",
+            "attack": 5.6,
+            "defense": 6.4,
+            "strength": 6,
+            "luck": 4.4,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "L",
+              "D"
+            ]
+          },
+          {
+            "name": "VL Kiev",
+            "attack": 6.1,
+            "defense": 4.1,
+            "strength": 6,
+            "luck": 5,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Lisbon",
+            "attack": 5.3,
+            "defense": 4,
+            "strength": 6.7,
+            "luck": 5.9,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Bern",
+            "attack": 2.7,
+            "defense": 2.7,
+            "strength": 3.5,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "VL London",
+            "attack": 6.1,
+            "defense": 5.9,
+            "strength": 6.1,
+            "luck": 5.3,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Paris",
+            "attack": 5.7,
+            "defense": 4.8,
+            "strength": 4.6,
+            "luck": 4.4,
+            "form": [
+              "D",
+              "D",
+              "L",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Amsterdam",
+            "attack": 6.8,
+            "defense": 5,
+            "strength": 6.5,
+            "luck": 5.1,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Copenhagen",
+            "attack": 3.9,
+            "defense": 5.7,
+            "strength": 5.7,
+            "luck": 5.9,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Vienna",
+            "attack": 2.4,
+            "defense": 3.9,
+            "strength": 3.7,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Madrid",
+            "attack": 4.9,
+            "defense": 5.3,
+            "strength": 5.3,
+            "luck": 5.1,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Zagreb",
+            "attack": 5.3,
+            "defense": 5.2,
+            "strength": 5.6,
+            "luck": 5,
+            "form": [
+              "L",
+              "D",
+              "L",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Berlin",
+            "attack": 4,
+            "defense": 5.4,
+            "strength": 4.6,
+            "luck": 5.1,
+            "form": [
+              "D",
+              "W",
+              "L",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Rome",
+            "attack": 4.9,
+            "defense": 5.2,
+            "strength": 5.3,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "W",
+              "W",
+              "L",
+              "D"
+            ]
+          },
+          {
+            "name": "VL Prague",
+            "attack": 3.6,
+            "defense": 2.2,
+            "strength": 3.8,
+            "luck": 5.6,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Ankara",
+            "attack": 3.1,
+            "defense": 4.6,
+            "strength": 4.5,
+            "luck": 5.6,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Athens",
+            "attack": 5.3,
+            "defense": 4.3,
+            "strength": 5.8,
+            "luck": 5.1,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "L",
+              "W"
+            ]
+          }
+        ],
+        "teams": "League Mode"
+      },
+      {
+        "seasonId": [
+          {
+            "name": "VL Moscow",
+            "attack": 5.5,
+            "defense": 6.3,
+            "strength": 5.8,
+            "luck": 4.2,
+            "form": [
+              "D",
+              "W",
+              "L",
+              "D",
+              "D"
+            ]
+          },
+          {
+            "name": "VL Kiev",
+            "attack": 5.7,
+            "defense": 3.8,
+            "strength": 5.7,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Lisbon",
+            "attack": 5.2,
+            "defense": 3.9,
+            "strength": 6.5,
+            "luck": 5.7,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "VL Bern",
+            "attack": 2.6,
+            "defense": 2.4,
+            "strength": 3.2,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "D",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL London",
+            "attack": 6.6,
+            "defense": 6.3,
+            "strength": 6.4,
+            "luck": 5.3,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Paris",
+            "attack": 5.3,
+            "defense": 4.7,
+            "strength": 4.3,
+            "luck": 4.4,
+            "form": [
+              "D",
+              "L",
+              "D",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Amsterdam",
+            "attack": 7.1,
+            "defense": 4.9,
+            "strength": 6.8,
+            "luck": 5.1,
+            "form": [
+              "D",
+              "W",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Copenhagen",
+            "attack": 3.5,
+            "defense": 5.4,
+            "strength": 5.2,
+            "luck": 5.9,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Vienna",
+            "attack": 2.3,
+            "defense": 3.8,
+            "strength": 3.9,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "D"
+            ]
+          },
+          {
+            "name": "VL Madrid",
+            "attack": 4.8,
+            "defense": 5.2,
+            "strength": 5.5,
+            "luck": 5.1,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "VL Zagreb",
+            "attack": 4.9,
+            "defense": 5.1,
+            "strength": 5.3,
+            "luck": 5,
+            "form": [
+              "D",
+              "L",
+              "W",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Berlin",
+            "attack": 4.5,
+            "defense": 5.8,
+            "strength": 5.2,
+            "luck": 5.1,
+            "form": [
+              "W",
+              "L",
+              "D",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Rome",
+            "attack": 4.8,
+            "defense": 5.6,
+            "strength": 5.6,
+            "luck": 5.3,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Prague",
+            "attack": 3.9,
+            "defense": 2.1,
+            "strength": 4.4,
+            "luck": 5.6,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "VL Ankara",
+            "attack": 3,
+            "defense": 4.3,
+            "strength": 4,
+            "luck": 5.6,
+            "form": [
+              "L",
+              "L",
+              "D",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "VL Athens",
+            "attack": 5.2,
+            "defense": 4.7,
+            "strength": 6.1,
+            "luck": 5.1,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "W",
+              "W"
+            ]
+          }
+        ],
+        "teams": "League Mode"
+      }
+    ]
+  },
+  {
+    "tournamentId": "vf:tournament:34616",
+    "tournamentName": "vf:season:2973435",
+    "seasons": [
+      {
+        "seasonId": [
+          {
+            "name": "FC Augsburg",
+            "attack": 3.2,
+            "defense": 3.7,
+            "strength": 4.2,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "Borussia M'gladbach",
+            "attack": 6.9,
+            "defense": 6.1,
+            "strength": 6.2,
+            "luck": 4.8,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "SV Werder Bremen",
+            "attack": 1,
+            "defense": 3.3,
+            "strength": 2.1,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "FC Bayern München",
+            "attack": 5.8,
+            "defense": 5.3,
+            "strength": 5.6,
+            "luck": 5,
+            "form": [
+              "W",
+              "D",
+              "L",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "name": "VfB Stuttgart",
+            "attack": 4.1,
+            "defense": 4.7,
+            "strength": 4.9,
+            "luck": 4.6,
+            "form": [
+              "W",
+              "D",
+              "L",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "TSG Hoffenheim",
+            "attack": 4.9,
+            "defense": 4.4,
+            "strength": 5.3,
+            "luck": 4.7,
+            "form": [
+              "W",
+              "D",
+              "D",
+              "D",
+              "D"
+            ]
+          },
+          {
+            "name": "VfL Wolfsburg",
+            "attack": 5.1,
+            "defense": 4.2,
+            "strength": 5.7,
+            "luck": 5.1,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "Hannover 96",
+            "attack": 2.6,
+            "defense": 4.5,
+            "strength": 4.2,
+            "luck": 5,
+            "form": [
+              "L",
+              "D",
+              "D",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Borussia Dortmund",
+            "attack": 7.3,
+            "defense": 7.3,
+            "strength": 7.1,
+            "luck": 4.9,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "FC Schalke 04",
+            "attack": 3.2,
+            "defense": 5.4,
+            "strength": 5.1,
+            "luck": 5.6,
+            "form": [
+              "D",
+              "W",
+              "D",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "Hertha Berlin",
+            "attack": 6.8,
+            "defense": 5.8,
+            "strength": 6.9,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "W",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "SC Freiburg",
+            "attack": 4.9,
+            "defense": 4.6,
+            "strength": 5.6,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "L",
+              "D",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "Bayer 04 Leverkusen",
+            "attack": 6.1,
+            "defense": 5.7,
+            "strength": 4.9,
+            "luck": 4.5,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "1. FSV Mainz 05",
+            "attack": 4.2,
+            "defense": 4.9,
+            "strength": 5.4,
+            "luck": 5.6,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Hamburger SV",
+            "attack": 2.5,
+            "defense": 4,
+            "strength": 3.8,
+            "luck": 5,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Eintracht Frankfurt",
+            "attack": 3.6,
+            "defense": 5.7,
+            "strength": 4.7,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "W",
+              "D",
+              "D",
+              "L"
+            ]
+          }
+        ],
+        "teams": "Bundesliga"
+      },
+      {
+        "seasonId": [
+          {
+            "name": "FC Augsburg",
+            "attack": 2.4,
+            "defense": 3.3,
+            "strength": 3.6,
+            "luck": 5,
+            "form": [
+              "W",
+              "D",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Borussia M'gladbach",
+            "attack": 7.1,
+            "defense": 6.2,
+            "strength": 6.3,
+            "luck": 4.6,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "SV Werder Bremen",
+            "attack": 1.2,
+            "defense": 2.7,
+            "strength": 2,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "D"
+            ]
+          },
+          {
+            "name": "FC Bayern München",
+            "attack": 6.4,
+            "defense": 5.6,
+            "strength": 6.2,
+            "luck": 5,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VfB Stuttgart",
+            "attack": 3.3,
+            "defense": 4.1,
+            "strength": 4.3,
+            "luck": 4.6,
+            "form": [
+              "L",
+              "D",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "TSG Hoffenheim",
+            "attack": 4.8,
+            "defense": 4.7,
+            "strength": 5.4,
+            "luck": 4.7,
+            "form": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "name": "VfL Wolfsburg",
+            "attack": 5.9,
+            "defense": 4.3,
+            "strength": 6.2,
+            "luck": 5.1,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Hannover 96",
+            "attack": 3.2,
+            "defense": 4.8,
+            "strength": 5.1,
+            "luck": 5.3,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "Borussia Dortmund",
+            "attack": 8.1,
+            "defense": 6.7,
+            "strength": 7.2,
+            "luck": 4.7,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "FC Schalke 04",
+            "attack": 3.9,
+            "defense": 4.7,
+            "strength": 5,
+            "luck": 5.6,
+            "form": [
+              "W",
+              "L",
+              "D",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Hertha Berlin",
+            "attack": 7,
+            "defense": 5.9,
+            "strength": 6.9,
+            "luck": 5.3,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "SC Freiburg",
+            "attack": 5.5,
+            "defense": 4.9,
+            "strength": 6.2,
+            "luck": 5.3,
+            "form": [
+              "D",
+              "W",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "Bayer 04 Leverkusen",
+            "attack": 5.6,
+            "defense": 5.5,
+            "strength": 4.8,
+            "luck": 4.5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "D"
+            ]
+          },
+          {
+            "name": "1. FSV Mainz 05",
+            "attack": 4,
+            "defense": 4.3,
+            "strength": 4.6,
+            "luck": 5.6,
+            "form": [
+              "L",
+              "W",
+              "D",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Hamburger SV",
+            "attack": 2.9,
+            "defense": 3.4,
+            "strength": 3.2,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Eintracht Frankfurt",
+            "attack": 3.1,
+            "defense": 5.5,
+            "strength": 4.8,
+            "luck": 5.3,
+            "form": [
+              "D",
+              "L",
+              "D",
+              "D",
+              "L"
+            ]
+          }
+        ],
+        "teams": "Bundesliga"
+      },
+      {
+        "seasonId": [
+          {
+            "name": "FC Augsburg",
+            "attack": 2.9,
+            "defense": 3.2,
+            "strength": 4.2,
+            "luck": 5.3,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "Borussia M'gladbach",
+            "attack": 7,
+            "defense": 6.6,
+            "strength": 6.6,
+            "luck": 4.6,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "name": "SV Werder Bremen",
+            "attack": 0.8,
+            "defense": 3.1,
+            "strength": 2.2,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "D",
+              "D"
+            ]
+          },
+          {
+            "name": "FC Bayern München",
+            "attack": 6.9,
+            "defense": 6,
+            "strength": 6.5,
+            "luck": 5,
+            "form": [
+              "D",
+              "W",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "VfB Stuttgart",
+            "attack": 2.9,
+            "defense": 4,
+            "strength": 4,
+            "luck": 4.6,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "TSG Hoffenheim",
+            "attack": 4.7,
+            "defense": 4.4,
+            "strength": 5.1,
+            "luck": 4.7,
+            "form": [
+              "D",
+              "D",
+              "D",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "VfL Wolfsburg",
+            "attack": 5.8,
+            "defense": 4,
+            "strength": 5.7,
+            "luck": 5.1,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "Hannover 96",
+            "attack": 2.8,
+            "defense": 5.2,
+            "strength": 5.3,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Borussia Dortmund",
+            "attack": 8.4,
+            "defense": 7.1,
+            "strength": 7.5,
+            "luck": 4.7,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "name": "FC Schalke 04",
+            "attack": 3.5,
+            "defense": 5.1,
+            "strength": 4.8,
+            "luck": 5.4,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "D",
+              "D"
+            ]
+          },
+          {
+            "name": "Hertha Berlin",
+            "attack": 6.6,
+            "defense": 6.3,
+            "strength": 6.7,
+            "luck": 5.1,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "SC Freiburg",
+            "attack": 5.1,
+            "defense": 4.6,
+            "strength": 5.9,
+            "luck": 5.3,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "Bayer 04 Leverkusen",
+            "attack": 5.9,
+            "defense": 5.4,
+            "strength": 5.4,
+            "luck": 4.5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "name": "1. FSV Mainz 05",
+            "attack": 3.6,
+            "defense": 4.2,
+            "strength": 4.3,
+            "luck": 5.6,
+            "form": [
+              "W",
+              "D",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Hamburger SV",
+            "attack": 2.5,
+            "defense": 3.1,
+            "strength": 2.9,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Eintracht Frankfurt",
+            "attack": 3,
+            "defense": 5.9,
+            "strength": 5.1,
+            "luck": 5.6,
+            "form": [
+              "L",
+              "D",
+              "D",
+              "L",
+              "W"
+            ]
+          }
+        ],
+        "teams": "Bundesliga"
+      }
+    ]
+  },
+  {
+    "tournamentId": "vf:tournament:31867",
+    "tournamentName": "vf:season:2973451",
+    "seasons": [
+      {
+        "seasonId": [
+          {
+            "name": "Leicester",
+            "attack": 4.6,
+            "defense": 4.7,
+            "strength": 4.7,
+            "luck": 5,
+            "form": [
+              "L"
+            ]
+          },
+          {
+            "name": "Bournemouth",
+            "attack": 4.9,
+            "defense": 5.4,
+            "strength": 5.3,
+            "luck": 5,
+            "form": [
+              "W"
+            ]
+          },
+          {
+            "name": "Southampton",
+            "attack": 5.3,
+            "defense": 4.9,
+            "strength": 5.3,
+            "luck": 5,
+            "form": [
+              "W"
+            ]
+          },
+          {
+            "name": "London Guns",
+            "attack": 4.9,
+            "defense": 5.4,
+            "strength": 5.3,
+            "luck": 5,
+            "form": [
+              "W"
+            ]
+          },
+          {
+            "name": "Watford",
+            "attack": 4.9,
+            "defense": 4.7,
+            "strength": 4.7,
+            "luck": 5,
+            "form": [
+              "L"
+            ]
+          },
+          {
+            "name": "Newcastle",
+            "attack": 5.3,
+            "defense": 5.4,
+            "strength": 5.3,
+            "luck": 5,
+            "form": [
+              "W"
+            ]
+          },
+          {
+            "name": "Chelsea",
+            "attack": 4.9,
+            "defense": 4.9,
+            "strength": 4.8,
+            "luck": 5,
+            "form": [
+              "D"
+            ]
+          },
+          {
+            "name": "Tottenham",
+            "attack": 4.6,
+            "defense": 4.9,
+            "strength": 4.7,
+            "luck": 5,
+            "form": [
+              "L"
+            ]
+          },
+          {
+            "name": "Liverpool",
+            "attack": 4.6,
+            "defense": 5.4,
+            "strength": 4.8,
+            "luck": 5,
+            "form": [
+              "D"
+            ]
+          },
+          {
+            "name": "Manchester Blue",
+            "attack": 4.9,
+            "defense": 4.7,
+            "strength": 4.7,
+            "luck": 5,
+            "form": [
+              "L"
+            ]
+          },
+          {
+            "name": "Crystal Palace",
+            "attack": 4.9,
+            "defense": 5.4,
+            "strength": 5.3,
+            "luck": 5,
+            "form": [
+              "W"
+            ]
+          },
+          {
+            "name": "West Ham",
+            "attack": 4.6,
+            "defense": 5.4,
+            "strength": 4.8,
+            "luck": 5,
+            "form": [
+              "D"
+            ]
+          },
+          {
+            "name": "Manchester Reds",
+            "attack": 4.6,
+            "defense": 4.9,
+            "strength": 4.7,
+            "luck": 5,
+            "form": [
+              "L"
+            ]
+          },
+          {
+            "name": "Wolverhampton",
+            "attack": 5.3,
+            "defense": 4.9,
+            "strength": 5.3,
+            "luck": 5,
+            "form": [
+              "W"
+            ]
+          },
+          {
+            "name": "Burnley",
+            "attack": 4.6,
+            "defense": 4.9,
+            "strength": 4.7,
+            "luck": 5,
+            "form": [
+              "L"
+            ]
+          },
+          {
+            "name": "Everton",
+            "attack": 4.9,
+            "defense": 4.9,
+            "strength": 4.8,
+            "luck": 5,
+            "form": [
+              "D"
+            ]
+          }
+        ],
+        "teams": "English League"
+      },
+      {
+        "seasonId": [
+          {
+            "name": "Leicester",
+            "attack": 4.2,
+            "defense": 4.4,
+            "strength": 4.4,
+            "luck": 5,
+            "form": [
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Bournemouth",
+            "attack": 4.5,
+            "defense": 5.8,
+            "strength": 5.1,
+            "luck": 5,
+            "form": [
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Southampton",
+            "attack": 5.6,
+            "defense": 4.8,
+            "strength": 5.6,
+            "luck": 5,
+            "form": [
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "London Guns",
+            "attack": 4.8,
+            "defense": 5.1,
+            "strength": 5,
+            "luck": 5,
+            "form": [
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "Watford",
+            "attack": 5.2,
+            "defense": 4.6,
+            "strength": 5.3,
+            "luck": 5,
+            "form": [
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "Newcastle",
+            "attack": 5.2,
+            "defense": 5.3,
+            "strength": 5.1,
+            "luck": 5,
+            "form": [
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Chelsea",
+            "attack": 4.5,
+            "defense": 5.3,
+            "strength": 5,
+            "luck": 5,
+            "form": [
+              "D",
+              "D"
+            ]
+          },
+          {
+            "name": "Tottenham",
+            "attack": 4.2,
+            "defense": 5.3,
+            "strength": 4.5,
+            "luck": 5,
+            "form": [
+              "L",
+              "D"
+            ]
+          },
+          {
+            "name": "Liverpool",
+            "attack": 4.2,
+            "defense": 5.8,
+            "strength": 4.6,
+            "luck": 5,
+            "form": [
+              "D",
+              "D"
+            ]
+          },
+          {
+            "name": "Manchester Blue",
+            "attack": 5.2,
+            "defense": 4.4,
+            "strength": 4.4,
+            "luck": 5,
+            "form": [
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Crystal Palace",
+            "attack": 4.8,
+            "defense": 5.1,
+            "strength": 4.8,
+            "luck": 5,
+            "form": [
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "West Ham",
+            "attack": 4.5,
+            "defense": 5.1,
+            "strength": 4.5,
+            "luck": 5,
+            "form": [
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "Manchester Reds",
+            "attack": 5.1,
+            "defense": 4.6,
+            "strength": 5,
+            "luck": 5,
+            "form": [
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "Wolverhampton",
+            "attack": 5.2,
+            "defense": 4.8,
+            "strength": 5.1,
+            "luck": 5,
+            "form": [
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Burnley",
+            "attack": 4.9,
+            "defense": 5.3,
+            "strength": 5,
+            "luck": 5,
+            "form": [
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "Everton",
+            "attack": 5.4,
+            "defense": 4.8,
+            "strength": 5.1,
+            "luck": 5,
+            "form": [
+              "D",
+              "W"
+            ]
+          }
+        ],
+        "teams": "English League"
+      },
+      {
+        "seasonId": [
+          {
+            "name": "Leicester",
+            "attack": 4.8,
+            "defense": 4.2,
+            "strength": 5.3,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "name": "Bournemouth",
+            "attack": 4.9,
+            "defense": 6.1,
+            "strength": 5.2,
+            "luck": 4.8,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Southampton",
+            "attack": 4.8,
+            "defense": 5.1,
+            "strength": 4.9,
+            "luck": 5,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "D"
+            ]
+          },
+          {
+            "name": "London Guns",
+            "attack": 4.9,
+            "defense": 5.9,
+            "strength": 5.4,
+            "luck": 5,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Watford",
+            "attack": 4.7,
+            "defense": 4.7,
+            "strength": 5.1,
+            "luck": 5,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "Newcastle",
+            "attack": 5.3,
+            "defense": 6.1,
+            "strength": 5.2,
+            "luck": 5,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Chelsea",
+            "attack": 4.9,
+            "defense": 4.9,
+            "strength": 5,
+            "luck": 5,
+            "form": [
+              "D",
+              "D",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "Tottenham",
+            "attack": 3.7,
+            "defense": 6.1,
+            "strength": 4.9,
+            "luck": 5.3,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Liverpool",
+            "attack": 4.4,
+            "defense": 6.1,
+            "strength": 5.1,
+            "luck": 5.3,
+            "form": [
+              "D",
+              "D",
+              "W",
+              "D"
+            ]
+          },
+          {
+            "name": "Manchester Blue",
+            "attack": 5.3,
+            "defense": 4.5,
+            "strength": 4.7,
+            "luck": 5,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "name": "Crystal Palace",
+            "attack": 4.3,
+            "defense": 4.5,
+            "strength": 4.2,
+            "luck": 5,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "West Ham",
+            "attack": 4.4,
+            "defense": 4.7,
+            "strength": 4.4,
+            "luck": 5,
+            "form": [
+              "D",
+              "L",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "name": "Manchester Reds",
+            "attack": 5,
+            "defense": 4.7,
+            "strength": 5,
+            "luck": 4.8,
+            "form": [
+              "L",
+              "W",
+              "D",
+              "D"
+            ]
+          },
+          {
+            "name": "Wolverhampton",
+            "attack": 5.1,
+            "defense": 4.9,
+            "strength": 5.4,
+            "luck": 5.3,
+            "form": [
+              "W",
+              "D",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "name": "Burnley",
+            "attack": 4.4,
+            "defense": 4.7,
+            "strength": 4.4,
+            "luck": 5,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "name": "Everton",
+            "attack": 4.6,
+            "defense": 4.9,
+            "strength": 4.8,
+            "luck": 5,
+            "form": [
+              "D",
+              "W",
+              "L",
+              "D"
+            ]
+          }
+        ],
+        "teams": "English League"
+      }
+    ]
+  }
+]

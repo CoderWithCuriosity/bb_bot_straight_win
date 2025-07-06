@@ -65,4 +65,30 @@ async function fetchMatchDaysDifference(
   }
 }
 
-module.exports = { fetchMatchDays, fetchMatchDaysDifference };
+async function fetchSeasonId(
+  tournamentId,
+  country = "ng",
+  producer = "6"
+) {
+  const payload = { tournamentId, country, producer };
+
+  try {
+    const response = await axios.post(MATCH_DAYS_URL, payload, {
+      headers: HEADERS
+    });
+
+    if (response.data.result !== 1 || !Array.isArray(response.data.data)) {
+      console.error("Unexpected response from matchDayList");
+      return [];
+    }
+
+    // get season id
+    const seasonId = response.data?.data[0]?.seasonId;
+    return seasonId;
+  } catch (err) {
+    console.error("Error fetching match days:", err.message);
+    return [];
+  }
+}
+
+module.exports = { fetchMatchDays, fetchMatchDaysDifference, fetchSeasonId };

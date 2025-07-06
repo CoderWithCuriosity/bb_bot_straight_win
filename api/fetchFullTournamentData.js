@@ -21,6 +21,7 @@ async function fetchFullTournamentData(
   }
 
   const matchesByWeek = [];
+  let seasonId = allDays.length > 0 ? allDays[0].seasonId: undefined;
 
   for (const day of allDays) {
     const payload = {
@@ -55,13 +56,13 @@ async function fetchFullTournamentData(
     }
   }
 
-  // this is how it will return [
+  // this is how it will return[seasonId, [
   // { number: 1, scheduleDate: "2025-06-01", matches: [ ... ] },
   // { number: 2, scheduleDate: "2025-06-03", matches: [ ... ] },
   // ...
-  // ]
+  // ]]
 
-  return matchesByWeek; // Array of weeks, each with number + matches[]
+  return [seasonId, matchesByWeek]; // Array of weeks, each with number + matches[]
 }
 
 module.exports = { fetchFullTournamentData };
