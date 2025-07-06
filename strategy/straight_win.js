@@ -87,11 +87,36 @@ async function straight_win(amount = 100, matchCount = 5) {
 
       let predictedWinner = null;
 
-      const homeQualifiesA = homeStats.attack >= 6 && homeStats.chaos < 4 && homeStats.chaos > 2 && homeStats.defense >= 3 && homeStats.strength >= 4;
-      const awayQualifiesB = awayStats.attack < 5 && awayStats.chaos < 3 && awayStats.chaos > 2 && awayStats.defense >= 1 && awayStats.strength >= 4;
+      const homeQualifiesA =
+        parseFloat(homeStats.attack) >= 6 &&
+        parseFloat(homeStats.attack) < 9 &&
+        parseFloat(homeStats.chaos) < 4 &&
+        parseFloat(homeStats.chaos) > 2 &&
+        parseFloat(homeStats.defense) >= 3 &&
+        parseFloat(homeStats.strength) >= 4;
 
-      const awayQualifiesA = awayStats.attack >= 6 && awayStats.chaos < 4 && awayStats.chaos > 2 && awayStats.defense >= 3 && awayStats.strength >= 4 ;
-      const homeQualifiesB = homeStats.attack < 5 && homeStats.chaos < 5 && awayStats.chaos > 2 && homeStats.defense >= 1 && homeStats.strength >= 4 ;
+      const awayQualifiesB =
+        parseFloat(awayStats.attack) < 5 &&
+        parseFloat(awayStats.chaos) < 3 &&
+        parseFloat(awayStats.chaos) > 2 &&
+        parseFloat(awayStats.defense) >= 1 &&
+        parseFloat(awayStats.strength) >= 4;
+
+      const awayQualifiesA =
+        parseFloat(awayStats.attack) >= 6 &&
+        parseFloat(awayStats.attack) < 9 &&
+        parseFloat(awayStats.chaos) < 4 &&
+        parseFloat(awayStats.chaos) > 2 &&
+        parseFloat(awayStats.defense) >= 3 &&
+        parseFloat(awayStats.strength) >= 4;
+
+      const homeQualifiesB =
+        parseFloat(homeStats.attack) < 5 &&
+        parseFloat(homeStats.chaos) < 5 &&
+        parseFloat(homeStats.chaos) > 2 &&  // Note: this is because i want `homeStats.chaos` to have range of 2 to 5
+        parseFloat(homeStats.defense) >= 1 &&
+        parseFloat(homeStats.strength) >= 4;
+
 
       if (homeQualifiesA && awayQualifiesB) {
         predictedWinner = home;
@@ -112,7 +137,7 @@ async function straight_win(amount = 100, matchCount = 5) {
               if (outcome.odds < 1.3 || outcome.odds > 3.6) continue;
 
               const msg = `📊 *Straight Win Pick*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n\n*Home Stats:*\n- Attack: ${markStat(homeStats.attack)}\n- Defense: ${markStat(homeStats.defense)}\n- Strength: ${markStat(homeStats.strength)}\n- Chaos: ${markStat(homeStats.chaos, "chaos")}\n\n*Away Stats:*\n- Attack: ${markStat(awayStats.attack)}\n- Defense: ${markStat(awayStats.defense)}\n- Strength: ${markStat(awayStats.strength)}\n- Chaos: ${markStat(awayStats.chaos, "chaos")}\n\n✅ *Pick:* ${predictedWinner}\n💸 *Odds:* ${outcome.odds}\n🆔 Match ID: ${oddsData.id}`;
-              
+
               await sendTelegramMessage(msg);
 
               selections.push({
