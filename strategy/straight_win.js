@@ -52,16 +52,27 @@ function getTeamStats(standingsData, tournamentId, seasonId, teamName) {
   };
 }
 
+function markStat(value, type = "normal") {
+  if (type === "chaos") {
+    if (value < 4) return `🟢 ${value}`;
+    if (value < 5) return `🟡 ${value}`;
+    return `🔴 ${value}`;
+  } else {
+    if (value >= 6) return `🟢 ${value}`;
+    if (value >= 5) return `🟡 ${value}`;
+    return `🔴 ${value}`;
+  }
+}
 
 async function straight_win(amount = 100, matchCount = 5) {
   const selections = [];
   const valid_matches = await fetchMatches();
   const standingsData = loadSeasonStandings();
-  
+
   for (const tournament of STRATEGIC_TOURNAMENTS) {
     const [startDayStamp, daysDiff] = await fetchMatchDaysDifference(tournament.id);
     const seasonId = await fetchSeasonId(tournament.id);
-    
+
     for (const match of valid_matches) {
       if (match.tournamentId !== tournament.id) continue;
 
@@ -74,24 +85,20 @@ async function straight_win(amount = 100, matchCount = 5) {
       const awayStats = getTeamStats(standingsData, tournament.id, seasonId, away);
       if (!homeStats || !awayStats) continue;
 
-      console.log(`📊 ${home} [Attack: ${homeStats.attack}, Chaos: ${homeStats.chaos}]`);
-console.log(`📊 ${away} [Attack: ${awayStats.attack}, Chaos: ${awayStats.chaos}]\n`);
-
-      // 🧠 Apply strict condition: One team must satisfy (A), and the other must satisfy (B)
       let predictedWinner = null;
 
-      const homeQualifiesA = homeStats.attack >= 6 && homeStats.chaos < 4 || homeStats.attack >= 6 && homeStats.chaos > 6;
-      const awayQualifiesB = awayStats.attack < 5 && awayStats.chaos < 5 || awayStats.attack < 5 && awayStats.chaos < 3;
+      const homeQualifiesA = homeStats.attack >= 6 && homeStats.chaos < 4;
+      const awayQualifiesB = awayStats.attack < 5 && awayStats.chaos < 5;
 
-      const awayQualifiesA = awayStats.attack >= 6 && awayStats.chaos < 4 || awayStats.attack >= 6 && awayStats.chaos > 6;
-      const homeQualifiesB = homeStats.attack < 5 && homeStats.chaos < 5 || homeStats.attack < 5 && homeStats.chaos < 3 ;
+      const awayQualifiesA = awayStats.attack >= 6 && awayStats.chaos < 4;
+      const homeQualifiesB = homeStats.attack < 5 && homeStats.chaos < 5;
 
       if (homeQualifiesA && awayQualifiesB) {
         predictedWinner = home;
       } else if (awayQualifiesA && homeQualifiesB) {
         predictedWinner = away;
       } else {
-        continue; // ❌ No qualifying team
+        continue;
       }
 
       const oddsData = await getMatchOdds(match.id);
@@ -102,10 +109,10 @@ console.log(`📊 ${away} [Attack: ${awayStats.attack}, Chaos: ${awayStats.chaos
           for (const detail of market.markets) {
             for (const outcome of detail.outcomes) {
               if (outcome.desc !== predictedWinner) continue;
-
               if (outcome.odds < 1.3 || outcome.odds > 3.6) continue;
 
-              const msg = `📊 *Straight Win Pick*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\nMatch Id: ${oddsData.id}\n✅ *Pick:* ${predictedWinner}\n📈 *Odds:* ${outcome.odds}`;
+              const msg = `📊 *Straight Win Pick*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n\n*Home Stats:*\n- Attack: ${markStat(homeStats.attack)}\n- Defense: ${markStat(homeStats.defense)}\n- Strength: ${markStat(homeStats.strength)}\n- Chaos: ${markStat(homeStats.chaos, "chaos")}\n\n*Away Stats:*\n- Attack: ${markStat(awayStats.attack)}\n- Defense: ${markStat(awayStats.defense)}\n- Strength: ${markStat(awayStats.strength)}\n- Chaos: ${markStat(awayStats.chaos, "chaos")}\n\n✅ *Pick:* ${predictedWinner}\n💸 *Odds:* ${outcome.odds}\n🆔 Match ID: ${oddsData.id}`;
+              
               await sendTelegramMessage(msg);
 
               selections.push({
