@@ -87,41 +87,29 @@ async function straight_win(amount = 100, matchCount = 5) {
 
       let predictedWinner = null;
 
-      const homeQualifiesA =
-        parseFloat(homeStats.attack) >= 6 &&
-        parseFloat(homeStats.attack) < 9 &&
-        parseFloat(homeStats.chaos) < 4 &&
-        parseFloat(homeStats.chaos) > 2 &&
-        parseFloat(homeStats.defense) >= 3 &&
-        parseFloat(homeStats.strength) >= 4;
+      // ✅ Anti-RNG Pick — pick stable stronger team vs chaotic weaker team
+      const beatHomeChaos =
+        parseFloat(homeStats.chaos) >= 5.5 &&
+        parseFloat(homeStats.attack) < parseFloat(awayStats.attack) &&
+        parseFloat(homeStats.strength) < parseFloat(awayStats.strength) &&
+        parseFloat(homeStats.attack) >= 4 &&
+        parseFloat(homeStats.strength) >= 4 &&
+        parseFloat(homeStats.defense) >= 2 &&
+        parseFloat(awayStats.chaos) <= 5;
 
-      const awayQualifiesB =
-        parseFloat(awayStats.attack) < 5 &&
-        parseFloat(awayStats.chaos) < 3 &&
-        parseFloat(awayStats.chaos) > 2 &&
-        parseFloat(awayStats.defense) >= 1 &&
-        parseFloat(awayStats.strength) >= 4;
+      const beatAwayChaos =
+        parseFloat(awayStats.chaos) >= 5.5 &&
+        parseFloat(awayStats.attack) < parseFloat(homeStats.attack) &&
+        parseFloat(awayStats.strength) < parseFloat(homeStats.strength) &&
+        parseFloat(awayStats.attack) >= 4 &&
+        parseFloat(awayStats.strength) >= 4 &&
+        parseFloat(awayStats.defense) >= 2 &&
+        parseFloat(homeStats.chaos) <= 5;
 
-      const awayQualifiesA =
-        parseFloat(awayStats.attack) >= 6 &&
-        parseFloat(awayStats.attack) < 9 &&
-        parseFloat(awayStats.chaos) < 4 &&
-        parseFloat(awayStats.chaos) > 2 &&
-        parseFloat(awayStats.defense) >= 3 &&
-        parseFloat(awayStats.strength) >= 4;
-
-      const homeQualifiesB =
-        parseFloat(homeStats.attack) < 5 &&
-        parseFloat(homeStats.chaos) < 5 &&
-        parseFloat(homeStats.chaos) > 2 &&  // Note: this is because i want `homeStats.chaos` to have range of 2 to 5
-        parseFloat(homeStats.defense) >= 1 &&
-        parseFloat(homeStats.strength) >= 4;
-
-
-      if (homeQualifiesA && awayQualifiesB) {
-        predictedWinner = home;
-      } else if (awayQualifiesA && homeQualifiesB) {
+      if (beatHomeChaos) {
         predictedWinner = away;
+      } else if (beatAwayChaos) {
+        predictedWinner = home;
       } else {
         continue;
       }
@@ -131,36 +119,53 @@ async function straight_win(amount = 100, matchCount = 5) {
 
       for (const market of oddsData.marketList) {
         if (market.name === "1x2") {
+          let targetOutcome = null;
+          let drawOutcome = null;
+
           for (const detail of market.markets) {
             for (const outcome of detail.outcomes) {
-              if (outcome.desc !== predictedWinner) continue;
-              if (outcome.odds < 1.3 || outcome.odds > 3.6) continue;
-
-              const msg = `📊 *Straight Win Pick*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n\n*Home Stats:*\n- Attack: ${markStat(homeStats.attack)}\n- Defense: ${markStat(homeStats.defense)}\n- Strength: ${markStat(homeStats.strength)}\n- Chaos: ${markStat(homeStats.chaos, "chaos")}\n\n*Away Stats:*\n- Attack: ${markStat(awayStats.attack)}\n- Defense: ${markStat(awayStats.defense)}\n- Strength: ${markStat(awayStats.strength)}\n- Chaos: ${markStat(awayStats.chaos, "chaos")}\n\n✅ *Pick:* ${predictedWinner}\n💸 *Odds:* ${outcome.odds}\n🆔 Match ID: ${oddsData.id}`;
-
-              await sendTelegramMessage(msg);
-
-              selections.push({
-                sportId: match.sportId,
-                eventId: match.id,
-                producer: match.producer,
-                marketId: market.id,
-                specifiers: "",
-                outcomeId: outcome.id,
-                amount: amount,
-                odds: outcome.odds,
-                specifierKeys: "",
-                eventName: match.name,
-                scheduledTime: match.scheduledTime,
-                marketName: market.name,
-                outcomeName: outcome.desc,
-                categoryId: match.categoryId,
-                tournamentId: match.tournamentId,
-              });
-
-              if (selections.length >= matchCount) return [selections];
+              if (outcome.desc === predictedWinner) {
+                targetOutcome = outcome;
+              }
+              if (outcome.desc.toLowerCase() === "draw") {
+                drawOutcome = outcome;
+              }
             }
           }
+
+          if (!targetOutcome || !drawOutcome) continue;
+
+          const targetOdds = parseFloat(targetOutcome.odds);
+          const drawOdds = parseFloat(drawOutcome.odds);
+
+          // ✅ If odds are too high, pick draw instead
+          const finalOutcome = targetOdds >= 1.7 ? drawOutcome : targetOutcome;
+
+          if (parseFloat(finalOutcome.odds) < 1.3 || parseFloat(finalOutcome.odds) > 3.6) continue;
+
+          const msg = `📊 *Straight Win Pick*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n\n*Home Stats:*\n- Attack: ${markStat(homeStats.attack)}\n- Defense: ${markStat(homeStats.defense)}\n- Strength: ${markStat(homeStats.strength)}\n- Chaos: ${markStat(homeStats.chaos, "chaos")}\n\n*Away Stats:*\n- Attack: ${markStat(awayStats.attack)}\n- Defense: ${markStat(awayStats.defense)}\n- Strength: ${markStat(awayStats.strength)}\n- Chaos: ${markStat(awayStats.chaos, "chaos")}\n\n✅ *Pick:* ${finalOutcome.desc}\n💸 *Odds:* ${finalOutcome.odds}\n🆔 Match ID: ${oddsData.id}`;
+
+          await sendTelegramMessage(msg);
+
+          selections.push({
+            sportId: match.sportId,
+            eventId: match.id,
+            producer: match.producer,
+            marketId: market.id,
+            specifiers: "",
+            outcomeId: finalOutcome.id,
+            amount: amount,
+            odds: parseFloat(finalOutcome.odds),
+            specifierKeys: "",
+            eventName: match.name,
+            scheduledTime: match.scheduledTime,
+            marketName: market.name,
+            outcomeName: finalOutcome.desc,
+            categoryId: match.categoryId,
+            tournamentId: match.tournamentId,
+          });
+
+          if (selections.length >= matchCount) return [selections];
         }
       }
     }
@@ -168,5 +173,6 @@ async function straight_win(amount = 100, matchCount = 5) {
 
   return [selections];
 }
+
 
 module.exports = { straight_win };
