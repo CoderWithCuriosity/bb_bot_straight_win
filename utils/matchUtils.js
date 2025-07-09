@@ -26,7 +26,7 @@ function matchExists(data, teamA, teamB) {
     const b1 = entry.teamB;
     const direct = statsMatch(a1, teamA) && statsMatch(b1, teamB);
     const reverse = statsMatch(a1, teamB) && statsMatch(b1, teamA);
-    return STRICT_ORDER ? direct : (direct || reverse);
+    return STRICT_ORDER ? direct : direct || reverse;
   });
 }
 
@@ -75,7 +75,7 @@ function findMatchingOutcome(teamA, teamB) {
 
     const directMatch = statsMatch(a1, teamA) && statsMatch(b1, teamB);
     const reverseMatch = statsMatch(a1, teamB) && statsMatch(b1, teamA);
-    const isMatch = STRICT_ORDER ? directMatch : (directMatch || reverseMatch);
+    const isMatch = STRICT_ORDER ? directMatch : directMatch || reverseMatch;
 
     if (isMatch && match.outcome && match.correct_score) {
       return {
@@ -88,31 +88,42 @@ function findMatchingOutcome(teamA, teamB) {
   return null;
 }
 
-function addMatchEntry(teamA, teamB, tournament = "", week = 0) {
+/**
+ * Adds a new match entry to data.json using match data + team stats
+ * @param {Object} matchObj - match object from Betradar or API
+ * @param {Object} teamAStats - { name, attack, defense, strength, chaos }
+ * @param {Object} teamBStats - { name, attack, defense, strength, chaos }
+ * @param {Number} week
+ */
+
+function addMatchEntry(
+  matchObj,
+  teamAStats,
+  teamBStats,
+  week = 1,
+) {
   const data = fs.existsSync(DATA_FILE)
     ? JSON.parse(fs.readFileSync(DATA_FILE, "utf-8"))
     : [];
 
-  if (matchExists(data, teamA, teamB)) {
-    console.log("⚠️ Match already exists in data.json");
+  if (matchExists(data, teamAStats, teamBStats)) {
     return;
   }
 
-  const newMatch = {
-    matchId: "",
-    teamA,
-    teamB,
-    tournament,
-    week,
+  const newEntry = {
+    matchId: matchObj.id,
+    teamA: teamAStats,
+    teamB: teamBStats,
+    tournament: matchObj.tournamentName || "",
+    week: week,
     predictedPick: "",
-    odds: 0,
+    odds: "",
     outcome: "",
     correct_score: ""
   };
 
-  data.push(newMatch);
+  data.push(newEntry);
   fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), "utf-8");
-  console.log("✅ Match added to data.json");
 }
 
 module.exports = {

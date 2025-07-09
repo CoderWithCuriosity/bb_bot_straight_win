@@ -1,19 +1,5 @@
 const axios = require('axios');
 
-function getTomorrowTimestamps() {
-    const now = new Date();
-    const tomorrow = new Date(now);
-    tomorrow.setDate(now.getDate() + 1);
-    tomorrow.setHours(0, 0, 0, 0);
-    const beginTime = tomorrow.getTime();
-
-    const endOfTomorrow = new Date(tomorrow);
-    endOfTomorrow.setHours(23, 59, 59, 999);
-    const endTime = endOfTomorrow.getTime();
-
-    return { beginTime, endTime };
-}
-
 async function fetchMatches() {
     // const { beginTime, endTime } = getTomorrowTimestamps();
 

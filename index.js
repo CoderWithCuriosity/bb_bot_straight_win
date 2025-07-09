@@ -1,7 +1,7 @@
 const { placeBet } = require("./api/bet");
 const fs = require("fs");
 const path = require("path");
-const { straight_win } = require("./strategy/straight_win");
+const { win_1x2 } = require("./strategy/win_1x2");
 const { processSeasonsFromWeek1 } = require("./utils/seasonProcessor");
 
 const X = 2; // Minutes between executions
@@ -59,7 +59,7 @@ async function main() {
   const stake = 100; // Fixed stake now
 
   await processSeasonsFromWeek1();
-  const [selections] = await straight_win(stake, betPerX);
+  const [selections] = await win_1x2(stake, betPerX);
 
   if (selections.length) {
     const existingBets = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
