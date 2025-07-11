@@ -89,7 +89,7 @@ async function win_1x2(amount = 100, matchCount = 5) {
                 continue;
             }
             // const maxAllowedDraws = Math.floor(matchDay / 2);
-            const maxAllowedDraws = 6;
+            const maxAllowedDraws = matchDay > 10 ? 6 : Math.floor(matchDay / 2);
 
             const home = match.homeTeamName;
             const away = match.awayTeamName;

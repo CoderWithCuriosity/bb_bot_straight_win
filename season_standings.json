@@ -1642,182 +1642,182 @@
       },
       {
         "seasonId": "vf:season:2975927",
-        "latestWeek": 19,
+        "latestWeek": 21,
         "standings": [
           {
             "team": "Chelsea",
-            "P": 19,
+            "P": 21,
             "W": 14,
-            "D": 3,
-            "L": 2,
+            "D": 4,
+            "L": 3,
             "GF": 43,
-            "GA": 16,
-            "GD": 27,
-            "PTS": 45
+            "GA": 17,
+            "GD": 26,
+            "PTS": 46
           },
           {
             "team": "Manchester Blue",
-            "P": 19,
-            "W": 11,
+            "P": 21,
+            "W": 13,
             "D": 5,
             "L": 3,
-            "GF": 37,
+            "GF": 41,
             "GA": 21,
-            "GD": 16,
-            "PTS": 38
-          },
-          {
-            "team": "Tottenham",
-            "P": 19,
-            "W": 10,
-            "D": 5,
-            "L": 4,
-            "GF": 33,
-            "GA": 22,
-            "GD": 11,
-            "PTS": 35
+            "GD": 20,
+            "PTS": 44
           },
           {
             "team": "London Guns",
-            "P": 19,
-            "W": 10,
-            "D": 3,
+            "P": 21,
+            "W": 11,
+            "D": 4,
             "L": 6,
-            "GF": 29,
-            "GA": 21,
-            "GD": 8,
-            "PTS": 33
+            "GF": 33,
+            "GA": 23,
+            "GD": 10,
+            "PTS": 37
+          },
+          {
+            "team": "Tottenham",
+            "P": 21,
+            "W": 10,
+            "D": 6,
+            "L": 5,
+            "GF": 36,
+            "GA": 26,
+            "GD": 10,
+            "PTS": 36
           },
           {
             "team": "Leicester",
-            "P": 19,
+            "P": 21,
             "W": 9,
-            "D": 5,
-            "L": 5,
-            "GF": 30,
-            "GA": 22,
-            "GD": 8,
-            "PTS": 32
-          },
-          {
-            "team": "Bournemouth",
-            "P": 19,
-            "W": 8,
             "D": 7,
-            "L": 4,
-            "GF": 30,
-            "GA": 27,
-            "GD": 3,
-            "PTS": 31
+            "L": 5,
+            "GF": 31,
+            "GA": 23,
+            "GD": 8,
+            "PTS": 34
           },
           {
             "team": "Wolverhampton",
-            "P": 19,
-            "W": 9,
-            "D": 3,
+            "P": 21,
+            "W": 10,
+            "D": 4,
             "L": 7,
-            "GF": 18,
-            "GA": 15,
+            "GF": 21,
+            "GA": 17,
+            "GD": 4,
+            "PTS": 34
+          },
+          {
+            "team": "Bournemouth",
+            "P": 21,
+            "W": 9,
+            "D": 7,
+            "L": 5,
+            "GF": 34,
+            "GA": 31,
             "GD": 3,
-            "PTS": 30
+            "PTS": 34
           },
           {
             "team": "Liverpool",
-            "P": 19,
-            "W": 7,
+            "P": 21,
+            "W": 9,
             "D": 6,
             "L": 6,
-            "GF": 25,
+            "GF": 32,
             "GA": 21,
-            "GD": 4,
-            "PTS": 27
+            "GD": 11,
+            "PTS": 33
           },
           {
             "team": "Manchester Reds",
-            "P": 19,
-            "W": 7,
+            "P": 21,
+            "W": 8,
             "D": 5,
-            "L": 7,
-            "GF": 17,
-            "GA": 21,
-            "GD": -4,
-            "PTS": 26
-          },
-          {
-            "team": "Crystal Palace",
-            "P": 19,
-            "W": 7,
-            "D": 3,
-            "L": 9,
-            "GF": 24,
+            "L": 8,
+            "GF": 21,
             "GA": 28,
-            "GD": -4,
-            "PTS": 24
+            "GD": -7,
+            "PTS": 29
           },
           {
             "team": "Watford",
-            "P": 19,
-            "W": 6,
-            "D": 3,
+            "P": 21,
+            "W": 7,
+            "D": 4,
             "L": 10,
-            "GF": 22,
-            "GA": 28,
-            "GD": -6,
-            "PTS": 21
+            "GF": 25,
+            "GA": 30,
+            "GD": -5,
+            "PTS": 25
+          },
+          {
+            "team": "Crystal Palace",
+            "P": 21,
+            "W": 7,
+            "D": 3,
+            "L": 11,
+            "GF": 25,
+            "GA": 34,
+            "GD": -9,
+            "PTS": 24
+          },
+          {
+            "team": "Everton",
+            "P": 21,
+            "W": 5,
+            "D": 7,
+            "L": 9,
+            "GF": 26,
+            "GA": 35,
+            "GD": -9,
+            "PTS": 22
           },
           {
             "team": "Southampton",
-            "P": 19,
+            "P": 21,
+            "W": 4,
+            "D": 8,
+            "L": 9,
+            "GF": 16,
+            "GA": 32,
+            "GD": -16,
+            "PTS": 20
+          },
+          {
+            "team": "Burnley",
+            "P": 21,
             "W": 4,
             "D": 7,
-            "L": 8,
-            "GF": 14,
-            "GA": 27,
-            "GD": -13,
+            "L": 10,
+            "GF": 13,
+            "GA": 21,
+            "GD": -8,
             "PTS": 19
           },
           {
             "team": "Newcastle",
-            "P": 19,
+            "P": 21,
             "W": 4,
             "D": 5,
-            "L": 10,
-            "GF": 19,
-            "GA": 33,
-            "GD": -14,
+            "L": 12,
+            "GF": 20,
+            "GA": 38,
+            "GD": -18,
             "PTS": 17
           },
           {
-            "team": "Burnley",
-            "P": 19,
-            "W": 3,
-            "D": 7,
-            "L": 9,
-            "GF": 12,
-            "GA": 20,
-            "GD": -8,
-            "PTS": 16
-          },
-          {
-            "team": "Everton",
-            "P": 19,
-            "W": 3,
-            "D": 7,
-            "L": 9,
-            "GF": 21,
-            "GA": 34,
-            "GD": -13,
-            "PTS": 16
-          },
-          {
             "team": "West Ham",
-            "P": 19,
+            "P": 21,
             "W": 2,
             "D": 2,
-            "L": 15,
-            "GF": 12,
-            "GA": 30,
-            "GD": -18,
+            "L": 17,
+            "GF": 13,
+            "GA": 33,
+            "GD": -20,
             "PTS": 8
           }
         ]
@@ -3464,6 +3464,188 @@
             "PTS": 14
           }
         ]
+      },
+      {
+        "seasonId": "vf:season:2975944",
+        "latestWeek": 1,
+        "standings": [
+          {
+            "team": "VL Madrid",
+            "P": 1,
+            "W": 1,
+            "D": 0,
+            "L": 0,
+            "GF": 4,
+            "GA": 1,
+            "GD": 3,
+            "PTS": 3
+          },
+          {
+            "team": "VL Zagreb",
+            "P": 1,
+            "W": 1,
+            "D": 0,
+            "L": 0,
+            "GF": 2,
+            "GA": 0,
+            "GD": 2,
+            "PTS": 3
+          },
+          {
+            "team": "VL London",
+            "P": 1,
+            "W": 1,
+            "D": 0,
+            "L": 0,
+            "GF": 1,
+            "GA": 0,
+            "GD": 1,
+            "PTS": 3
+          },
+          {
+            "team": "VL Kiev",
+            "P": 1,
+            "W": 1,
+            "D": 0,
+            "L": 0,
+            "GF": 1,
+            "GA": 0,
+            "GD": 1,
+            "PTS": 3
+          },
+          {
+            "team": "VL Moscow",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "VL Paris",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "VL Bern",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 1,
+            "GA": 1,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "VL Prague",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 1,
+            "GA": 1,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "VL Berlin",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 1,
+            "GA": 1,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "VL Lisbon",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 1,
+            "GA": 1,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "VL Rome",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 0,
+            "GA": 0,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "VL Copenhagen",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 0,
+            "GA": 0,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "VL Athens",
+            "P": 1,
+            "W": 0,
+            "D": 0,
+            "L": 1,
+            "GF": 0,
+            "GA": 1,
+            "GD": -1,
+            "PTS": 0
+          },
+          {
+            "team": "VL Amsterdam",
+            "P": 1,
+            "W": 0,
+            "D": 0,
+            "L": 1,
+            "GF": 0,
+            "GA": 1,
+            "GD": -1,
+            "PTS": 0
+          },
+          {
+            "team": "VL Vienna",
+            "P": 1,
+            "W": 0,
+            "D": 0,
+            "L": 1,
+            "GF": 0,
+            "GA": 2,
+            "GD": -2,
+            "PTS": 0
+          },
+          {
+            "team": "VL Ankara",
+            "P": 1,
+            "W": 0,
+            "D": 0,
+            "L": 1,
+            "GF": 1,
+            "GA": 4,
+            "GD": -3,
+            "PTS": 0
+          }
+        ]
       }
     ]
   },
@@ -5105,6 +5287,188 @@
             "GA": 55,
             "GD": -36,
             "PTS": 18
+          }
+        ]
+      },
+      {
+        "seasonId": "vf:season:2975943",
+        "latestWeek": 1,
+        "standings": [
+          {
+            "team": "Borussia Dortmund",
+            "P": 1,
+            "W": 1,
+            "D": 0,
+            "L": 0,
+            "GF": 4,
+            "GA": 1,
+            "GD": 3,
+            "PTS": 3
+          },
+          {
+            "team": "FC Schalke 04",
+            "P": 1,
+            "W": 1,
+            "D": 0,
+            "L": 0,
+            "GF": 4,
+            "GA": 1,
+            "GD": 3,
+            "PTS": 3
+          },
+          {
+            "team": "FC Bayern München",
+            "P": 1,
+            "W": 1,
+            "D": 0,
+            "L": 0,
+            "GF": 3,
+            "GA": 2,
+            "GD": 1,
+            "PTS": 3
+          },
+          {
+            "team": "Eintracht Frankfurt",
+            "P": 1,
+            "W": 1,
+            "D": 0,
+            "L": 0,
+            "GF": 2,
+            "GA": 1,
+            "GD": 1,
+            "PTS": 3
+          },
+          {
+            "team": "SV Werder Bremen",
+            "P": 1,
+            "W": 1,
+            "D": 0,
+            "L": 0,
+            "GF": 1,
+            "GA": 0,
+            "GD": 1,
+            "PTS": 3
+          },
+          {
+            "team": "Hamburger SV",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "Bayer 04 Leverkusen",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "VfL Wolfsburg",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 1,
+            "GA": 1,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "Hertha Berlin",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 1,
+            "GA": 1,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "SC Freiburg",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 0,
+            "GA": 0,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "Borussia M'gladbach",
+            "P": 1,
+            "W": 0,
+            "D": 1,
+            "L": 0,
+            "GF": 0,
+            "GA": 0,
+            "GD": 0,
+            "PTS": 1
+          },
+          {
+            "team": "TSG Hoffenheim",
+            "P": 1,
+            "W": 0,
+            "D": 0,
+            "L": 1,
+            "GF": 2,
+            "GA": 3,
+            "GD": -1,
+            "PTS": 0
+          },
+          {
+            "team": "Hannover 96",
+            "P": 1,
+            "W": 0,
+            "D": 0,
+            "L": 1,
+            "GF": 1,
+            "GA": 2,
+            "GD": -1,
+            "PTS": 0
+          },
+          {
+            "team": "FC Augsburg",
+            "P": 1,
+            "W": 0,
+            "D": 0,
+            "L": 1,
+            "GF": 0,
+            "GA": 1,
+            "GD": -1,
+            "PTS": 0
+          },
+          {
+            "team": "VfB Stuttgart",
+            "P": 1,
+            "W": 0,
+            "D": 0,
+            "L": 1,
+            "GF": 1,
+            "GA": 4,
+            "GD": -3,
+            "PTS": 0
+          },
+          {
+            "team": "1. FSV Mainz 05",
+            "P": 1,
+            "W": 0,
+            "D": 0,
+            "L": 1,
+            "GF": 1,
+            "GA": 4,
+            "GD": -3,
+            "PTS": 0
           }
         ]
       }
