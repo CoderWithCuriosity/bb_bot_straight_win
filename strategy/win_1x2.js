@@ -88,37 +88,38 @@ async function win_1x2(amount = 100, matchCount = 5) {
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
 
+            const teamA = {
+                attack: homeStats.attack,
+                defense: homeStats.defense,
+                strength: homeStats.strength,
+                chaos: homeStats.chaos
+            };
+
+            const teamB = {
+                attack: awayStats.attack,
+                defense: awayStats.defense,
+                strength: awayStats.strength,
+                chaos: awayStats.chaos
+            };
+
+            const result = findMatchingOutcome(teamA, teamB);
+            if (result) {
+                console.log("✅ Match Found:", result.outcome, result.correct_score);
+                const msg = `📊 *Straight Win Pick*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n\n*Home Stats:*\n- Attack: ${markStat(homeStats.attack)}\n- Defense: ${markStat(homeStats.defense)}\n- Strength: ${markStat(homeStats.strength)}\n- Chaos: ${markStat(homeStats.chaos, "chaos")}\n\n*Away Stats:*\n- Attack: ${markStat(awayStats.attack)}\n- Defense: ${markStat(awayStats.defense)}\n- Strength: ${markStat(awayStats.strength)}\n- Chaos: ${markStat(awayStats.chaos, "chaos")}\n\n✅ *Pick:* ${result?.outcome}\n💸 *Correct Score:* ${result?.correct_score}\n🆔 Match ID: ${oddsData.id}`;
+                await sendTelegramMessage(msg);
+            } else {
+                addMatchEntry(oddsData, teamA, teamB, matchDay)
+                continue;
+            }
+            
+
             for (const market of oddsData.marketList) {
                 if (market.name === "1x2") {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
                             const odds = parseFloat(outcome.odds);
                             if (odds < 1.3 || odds > 3.6) continue;
-                            const teamA = {
-                                attack: homeStats.attack,
-                                defense: homeStats.defense,
-                                strength: homeStats.strength,
-                                chaos: homeStats.chaos
-                            };
-
-                            const teamB = {
-                                attack: awayStats.attack,
-                                defense: awayStats.defense,
-                                strength: awayStats.strength,
-                                chaos: awayStats.chaos
-                            };
-
-                            const result = findMatchingOutcome(teamA, teamB);
-                            if (result) {
-                                console.log("✅ Match Found:", result.outcome, result.correct_score);
-                            } else {
-                                addMatchEntry(oddsData, teamA, teamB, matchDay)
-                                continue;
-                            }
-
-                            const msg = `📊 *Straight Win Pick*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n\n*Home Stats:*\n- Attack: ${markStat(homeStats.attack)}\n- Defense: ${markStat(homeStats.defense)}\n- Strength: ${markStat(homeStats.strength)}\n- Chaos: ${markStat(homeStats.chaos, "chaos")}\n\n*Away Stats:*\n- Attack: ${markStat(awayStats.attack)}\n- Defense: ${markStat(awayStats.defense)}\n- Strength: ${markStat(awayStats.strength)}\n- Chaos: ${markStat(awayStats.chaos, "chaos")}\n\n✅ *Pick:* ${outcome.desc}\n💸 *Odds:* ${outcome.odds}\n🆔 Match ID: ${oddsData.id}`;
-
-                            await sendTelegramMessage(msg);
+                            if (parseInt(outcome.id) != 1) continue;
 
                             selections.push({
                                 sportId: match.sportId,

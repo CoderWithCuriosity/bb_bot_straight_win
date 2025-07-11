@@ -1592,8 +1592,8 @@
     "week": 21,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 3,
+    "correct_score": "0:3"
   },
   {
     "matchId": "vf:match:1384301538",
@@ -1613,8 +1613,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 2,
+    "correct_score": "2:2"
   },
   {
     "matchId": "vf:match:1384301539",
@@ -1634,8 +1634,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 3,
+    "correct_score": "0:2"
   },
   {
     "matchId": "vf:match:1384301536",
@@ -1655,8 +1655,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 1,
+    "correct_score": "4:1"
   },
   {
     "matchId": "vf:match:1384301534",
@@ -1676,8 +1676,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 1,
+    "correct_score": "2:0"
   },
   {
     "matchId": "vf:match:1384301535",
@@ -1697,8 +1697,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 2,
+    "correct_score": "1:1"
   },
   {
     "matchId": "vf:match:1384301533",
@@ -1718,8 +1718,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 1,
+    "correct_score": "5:0"
   },
   {
     "matchId": "vf:match:1384301773",
@@ -1739,8 +1739,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 3,
+    "correct_score": "0:3"
   },
   {
     "matchId": "vf:match:1384301780",
@@ -1760,8 +1760,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 3,
+    "correct_score": "0:2"
   },
   {
     "matchId": "vf:match:1384301775",
@@ -1781,8 +1781,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 3,
+    "correct_score": "0:2"
   },
   {
     "matchId": "vf:match:1384301538",
@@ -1802,8 +1802,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 2,
+    "correct_score": "2:2"
   },
   {
     "matchId": "vf:match:1384301539",
@@ -1823,8 +1823,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 3,
+    "correct_score": "0:2"
   },
   {
     "matchId": "vf:match:1384301536",
@@ -1844,8 +1844,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 1,
+    "correct_score": "4:1"
   },
   {
     "matchId": "vf:match:1384301534",
@@ -1865,8 +1865,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 1,
+    "correct_score": "2:0"
   },
   {
     "matchId": "vf:match:1384301535",
@@ -1886,8 +1886,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 2,
+    "correct_score": "1:1"
   },
   {
     "matchId": "vf:match:1384301533",
@@ -1907,8 +1907,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 1,
+    "correct_score": "5:0"
   },
   {
     "matchId": "vf:match:1384301540",
@@ -1928,8 +1928,8 @@
     "week": 31,
     "predictedPick": "",
     "odds": "",
-    "outcome": "",
-    "correct_score": ""
+    "outcome": 1,
+    "correct_score": "1:0"
   },
   {
     "matchId": "vf:match:1384301537",
@@ -1947,6 +1947,4017 @@
     },
     "tournament": "Bundesliga",
     "week": 31,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301880",
+    "teamA": {
+      "attack": 6.3,
+      "defense": 6,
+      "strength": 6.3,
+      "chaos": 6.7
+    },
+    "teamB": {
+      "attack": 6.5,
+      "defense": 5.7,
+      "strength": 5.8,
+      "chaos": 5.3
+    },
+    "tournament": "League Mode",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "2:2"
+  },
+  {
+    "matchId": "vf:match:1384301877",
+    "teamA": {
+      "attack": 4.2,
+      "defense": 2.7,
+      "strength": 4.8,
+      "chaos": 5.1
+    },
+    "teamB": {
+      "attack": 4,
+      "defense": 2,
+      "strength": 4.2,
+      "chaos": 6.7
+    },
+    "tournament": "League Mode",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301884",
+    "teamA": {
+      "attack": 3.4,
+      "defense": 3.2,
+      "strength": 3.6,
+      "chaos": 4.2
+    },
+    "teamB": {
+      "attack": 6.7,
+      "defense": 5.7,
+      "strength": 6.2,
+      "chaos": 6
+    },
+    "tournament": "League Mode",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:4"
+  },
+  {
+    "matchId": "vf:match:1384301881",
+    "teamA": {
+      "attack": 6.3,
+      "defense": 3.1,
+      "strength": 5.2,
+      "chaos": 3.7
+    },
+    "teamB": {
+      "attack": 6.8,
+      "defense": 7.4,
+      "strength": 6.2,
+      "chaos": 5.5
+    },
+    "tournament": "League Mode",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301882",
+    "teamA": {
+      "attack": 4.1,
+      "defense": 2.2,
+      "strength": 3.8,
+      "chaos": 4.2
+    },
+    "teamB": {
+      "attack": 4.9,
+      "defense": 5,
+      "strength": 5,
+      "chaos": 5.6
+    },
+    "tournament": "League Mode",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:2"
+  },
+  {
+    "matchId": "vf:match:1384301638",
+    "teamA": {
+      "attack": 3.4,
+      "defense": 4.3,
+      "strength": 5,
+      "chaos": 7.3
+    },
+    "teamB": {
+      "attack": 2.7,
+      "defense": 4,
+      "strength": 5.1,
+      "chaos": 6.9
+    },
+    "tournament": "Bundesliga",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301639",
+    "teamA": {
+      "attack": 8.5,
+      "defense": 4.3,
+      "strength": 5.3,
+      "chaos": 4.9
+    },
+    "teamB": {
+      "attack": 5.5,
+      "defense": 4.8,
+      "strength": 4.8,
+      "chaos": 5.2
+    },
+    "tournament": "Bundesliga",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:4"
+  },
+  {
+    "matchId": "vf:match:1384301637",
+    "teamA": {
+      "attack": 5.1,
+      "defense": 3.9,
+      "strength": 4.6,
+      "chaos": 3
+    },
+    "teamB": {
+      "attack": 2.3,
+      "defense": 5.2,
+      "strength": 5,
+      "chaos": 7.1
+    },
+    "tournament": "Bundesliga",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301642",
+    "teamA": {
+      "attack": 6.7,
+      "defense": 4.7,
+      "strength": 5.7,
+      "chaos": 4.3
+    },
+    "teamB": {
+      "attack": 4.7,
+      "defense": 6.4,
+      "strength": 6.3,
+      "chaos": 6.8
+    },
+    "tournament": "Bundesliga",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301641",
+    "teamA": {
+      "attack": 4.6,
+      "defense": 6.2,
+      "strength": 5.5,
+      "chaos": 7.2
+    },
+    "teamB": {
+      "attack": 5.2,
+      "defense": 4.8,
+      "strength": 5.5,
+      "chaos": 5.4
+    },
+    "tournament": "Bundesliga",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301644",
+    "teamA": {
+      "attack": 4.7,
+      "defense": 3.8,
+      "strength": 4.7,
+      "chaos": 5.7
+    },
+    "teamB": {
+      "attack": 3.4,
+      "defense": 3.9,
+      "strength": 4.1,
+      "chaos": 5.3
+    },
+    "tournament": "Bundesliga",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301643",
+    "teamA": {
+      "attack": 4.8,
+      "defense": 4.1,
+      "strength": 3.9,
+      "chaos": 3.9
+    },
+    "teamB": {
+      "attack": 6.7,
+      "defense": 4.7,
+      "strength": 6,
+      "chaos": 5.2
+    },
+    "tournament": "Bundesliga",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301640",
+    "teamA": {
+      "attack": 4.7,
+      "defense": 4.3,
+      "strength": 4.5,
+      "chaos": 6.1
+    },
+    "teamB": {
+      "attack": 6,
+      "defense": 5,
+      "strength": 5.7,
+      "chaos": 5.6
+    },
+    "tournament": "Bundesliga",
+    "week": 14,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:2"
+  },
+  {
+    "matchId": "vf:match:1384303803",
+    "teamA": {
+      "attack": 5.4,
+      "defense": 5.3,
+      "strength": 5.6,
+      "chaos": 5.4
+    },
+    "teamB": {
+      "attack": 4.8,
+      "defense": 4.4,
+      "strength": 4.4,
+      "chaos": 4.6
+    },
+    "tournament": "English League",
+    "week": 5,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301890",
+    "teamA": {
+      "attack": 5.7,
+      "defense": 6.1,
+      "strength": 5.5,
+      "chaos": 7.3
+    },
+    "teamB": {
+      "attack": 6.4,
+      "defense": 5.4,
+      "strength": 5.3,
+      "chaos": 5.1
+    },
+    "tournament": "League Mode",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301891",
+    "teamA": {
+      "attack": 6.8,
+      "defense": 3.5,
+      "strength": 5.5,
+      "chaos": 3.9
+    },
+    "teamB": {
+      "attack": 6.6,
+      "defense": 5.9,
+      "strength": 6.6,
+      "chaos": 6.9
+    },
+    "tournament": "League Mode",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301888",
+    "teamA": {
+      "attack": 4.3,
+      "defense": 1.7,
+      "strength": 3.7,
+      "chaos": 6.5
+    },
+    "teamB": {
+      "attack": 3,
+      "defense": 3.1,
+      "strength": 3.3,
+      "chaos": 4
+    },
+    "tournament": "League Mode",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "2:4"
+  },
+  {
+    "matchId": "vf:match:1384301889",
+    "teamA": {
+      "attack": 7.2,
+      "defense": 6.1,
+      "strength": 6.5,
+      "chaos": 6.2
+    },
+    "teamB": {
+      "attack": 7,
+      "defense": 5.9,
+      "strength": 6.2,
+      "chaos": 5.8
+    },
+    "tournament": "League Mode",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301892",
+    "teamA": {
+      "attack": 4.5,
+      "defense": 5.4,
+      "strength": 5.2,
+      "chaos": 5.6
+    },
+    "teamB": {
+      "attack": 3.8,
+      "defense": 2.4,
+      "strength": 4.5,
+      "chaos": 4.9
+    },
+    "tournament": "League Mode",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301887",
+    "teamA": {
+      "attack": 2.4,
+      "defense": 4.3,
+      "strength": 3.6,
+      "chaos": 4.9
+    },
+    "teamB": {
+      "attack": 4.6,
+      "defense": 1.9,
+      "strength": 4.1,
+      "chaos": 4.4
+    },
+    "tournament": "League Mode",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:2"
+  },
+  {
+    "matchId": "vf:match:1384301886",
+    "teamA": {
+      "attack": 2.5,
+      "defense": 7.3,
+      "strength": 5.2,
+      "chaos": 7.7
+    },
+    "teamB": {
+      "attack": 3.7,
+      "defense": 3.6,
+      "strength": 3.9,
+      "chaos": 5.1
+    },
+    "tournament": "League Mode",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:3"
+  },
+  {
+    "matchId": "vf:match:1384301885",
+    "teamA": {
+      "attack": 6.7,
+      "defense": 7.1,
+      "strength": 5.9,
+      "chaos": 5.3
+    },
+    "teamB": {
+      "attack": 4.8,
+      "defense": 5.9,
+      "strength": 5.8,
+      "chaos": 5.6
+    },
+    "tournament": "League Mode",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301650",
+    "teamA": {
+      "attack": 7.2,
+      "defense": 4.4,
+      "strength": 6.3,
+      "chaos": 6.3
+    },
+    "teamB": {
+      "attack": 5.9,
+      "defense": 5.4,
+      "strength": 6,
+      "chaos": 5.8
+    },
+    "tournament": "Bundesliga",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301651",
+    "teamA": {
+      "attack": 4.9,
+      "defense": 6.6,
+      "strength": 5.8,
+      "chaos": 7.4
+    },
+    "teamB": {
+      "attack": 4.6,
+      "defense": 4.7,
+      "strength": 5.1,
+      "chaos": 7.2
+    },
+    "tournament": "Bundesliga",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301649",
+    "teamA": {
+      "attack": 3.3,
+      "defense": 3.8,
+      "strength": 4.3,
+      "chaos": 5.3
+    },
+    "teamB": {
+      "attack": 8.8,
+      "defense": 4,
+      "strength": 5,
+      "chaos": 4.7
+    },
+    "tournament": "Bundesliga",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301652",
+    "teamA": {
+      "attack": 4.6,
+      "defense": 6.3,
+      "strength": 6.1,
+      "chaos": 6.3
+    },
+    "teamB": {
+      "attack": 5,
+      "defense": 3.8,
+      "strength": 4.4,
+      "chaos": 2.5
+    },
+    "tournament": "Bundesliga",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301645",
+    "teamA": {
+      "attack": 4.8,
+      "defense": 4.7,
+      "strength": 5,
+      "chaos": 5.2
+    },
+    "teamB": {
+      "attack": 3.3,
+      "defense": 4.2,
+      "strength": 5.2,
+      "chaos": 7.3
+    },
+    "tournament": "Bundesliga",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301646",
+    "teamA": {
+      "attack": 6,
+      "defense": 4.7,
+      "strength": 5.1,
+      "chaos": 5.4
+    },
+    "teamB": {
+      "attack": 4.4,
+      "defense": 4,
+      "strength": 3.6,
+      "chaos": 3.7
+    },
+    "tournament": "Bundesliga",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:1"
+  },
+  {
+    "matchId": "vf:match:1384301647",
+    "teamA": {
+      "attack": 2.3,
+      "defense": 3.7,
+      "strength": 4.8,
+      "chaos": 6.7
+    },
+    "teamB": {
+      "attack": 6.3,
+      "defense": 4.4,
+      "strength": 5.2,
+      "chaos": 4.1
+    },
+    "tournament": "Bundesliga",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:2"
+  },
+  {
+    "matchId": "vf:match:1384301648",
+    "teamA": {
+      "attack": 2.6,
+      "defense": 5.6,
+      "strength": 5.6,
+      "chaos": 8.2
+    },
+    "teamB": {
+      "attack": 4.6,
+      "defense": 3.5,
+      "strength": 4.4,
+      "chaos": 5.5
+    },
+    "tournament": "Bundesliga",
+    "week": 15,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:3"
+  },
+  {
+    "matchId": "vf:match:1384303799",
+    "teamA": {
+      "attack": 5.1,
+      "defense": 5.3,
+      "strength": 5.4,
+      "chaos": 6.1
+    },
+    "teamB": {
+      "attack": 4.8,
+      "defense": 5.8,
+      "strength": 5.6,
+      "chaos": 5.4
+    },
+    "tournament": "English League",
+    "week": 5,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "2:2"
+  },
+  {
+    "matchId": "vf:match:1384303803",
+    "teamA": {
+      "attack": 6.3,
+      "defense": 5.3,
+      "strength": 6,
+      "chaos": 5.8
+    },
+    "teamB": {
+      "attack": 4.5,
+      "defense": 4.2,
+      "strength": 4.4,
+      "chaos": 4.4
+    },
+    "tournament": "English League",
+    "week": 5,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301654",
+    "teamA": {
+      "attack": 0.2,
+      "defense": 5.9,
+      "strength": 5.2,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 2.7,
+      "strength": 5,
+      "chaos": 4.2
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301655",
+    "teamA": {
+      "attack": 3.8,
+      "defense": 7.3,
+      "strength": 6.5,
+      "chaos": 8.8
+    },
+    "teamB": {
+      "attack": 4.7,
+      "defense": 2.4,
+      "strength": 4.7,
+      "chaos": 5.3
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301658",
+    "teamA": {
+      "attack": 4.1,
+      "defense": 4.1,
+      "strength": 4.9,
+      "chaos": 9.7
+    },
+    "teamB": {
+      "attack": 9.3,
+      "defense": 3.7,
+      "strength": 7.2,
+      "chaos": 5.2
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301659",
+    "teamA": {
+      "attack": 7.5,
+      "defense": 4.3,
+      "strength": 5.7,
+      "chaos": 6
+    },
+    "teamB": {
+      "attack": 7.2,
+      "defense": 5.7,
+      "strength": 6.7,
+      "chaos": 6.3
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301895",
+    "teamA": {
+      "attack": 4.3,
+      "defense": 6,
+      "strength": 7,
+      "chaos": 9
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0.5,
+      "chaos": 3.5
+    },
+    "tournament": "League Mode",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301893",
+    "teamA": {
+      "attack": 9.6,
+      "defense": 9.6,
+      "strength": 7.2,
+      "chaos": 5.7
+    },
+    "teamB": {
+      "attack": 3.9,
+      "defense": 0,
+      "strength": 1.8,
+      "chaos": 3.8
+    },
+    "tournament": "League Mode",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301894",
+    "teamA": {
+      "attack": 2.3,
+      "defense": 0,
+      "strength": 1.3,
+      "chaos": 9.1
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 8.5,
+      "strength": 7.8,
+      "chaos": 7.8
+    },
+    "tournament": "League Mode",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:3"
+  },
+  {
+    "matchId": "vf:match:1384301900",
+    "teamA": {
+      "attack": 0,
+      "defense": 2.6,
+      "strength": 1.6,
+      "chaos": 8.1
+    },
+    "teamB": {
+      "attack": 2.4,
+      "defense": 0.4,
+      "strength": 3.2,
+      "chaos": 5
+    },
+    "tournament": "League Mode",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301897",
+    "teamA": {
+      "attack": 9.7,
+      "defense": 0.9,
+      "strength": 6.9,
+      "chaos": 2.8
+    },
+    "teamB": {
+      "attack": 5,
+      "defense": 8.1,
+      "strength": 7.7,
+      "chaos": 7.8
+    },
+    "tournament": "League Mode",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:1"
+  },
+  {
+    "matchId": "vf:match:1384301898",
+    "teamA": {
+      "attack": 10,
+      "defense": 7.4,
+      "strength": 8.3,
+      "chaos": 9.5
+    },
+    "teamB": {
+      "attack": 7.7,
+      "defense": 8.1,
+      "strength": 7.3,
+      "chaos": 10
+    },
+    "tournament": "League Mode",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "2:2"
+  },
+  {
+    "matchId": "vf:match:1384301899",
+    "teamA": {
+      "attack": 0.1,
+      "defense": 9.7,
+      "strength": 6,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 9.6,
+      "defense": 5.9,
+      "strength": 6.7,
+      "chaos": 5.8
+    },
+    "tournament": "League Mode",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:2"
+  },
+  {
+    "matchId": "vf:match:1384301896",
+    "teamA": {
+      "attack": 10,
+      "defense": 9.1,
+      "strength": 9.1,
+      "chaos": 8
+    },
+    "teamB": {
+      "attack": 1,
+      "defense": 0.2,
+      "strength": 1.9,
+      "chaos": 5.8
+    },
+    "tournament": "League Mode",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "2:3"
+  },
+  {
+    "matchId": "vf:match:1384301654",
+    "teamA": {
+      "attack": 0.2,
+      "defense": 6.2,
+      "strength": 5.2,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 1.4,
+      "strength": 5.5,
+      "chaos": 3.7
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301655",
+    "teamA": {
+      "attack": 3,
+      "defense": 8.3,
+      "strength": 6.9,
+      "chaos": 9.1
+    },
+    "teamB": {
+      "attack": 4.8,
+      "defense": 1.3,
+      "strength": 4.6,
+      "chaos": 4.2
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301658",
+    "teamA": {
+      "attack": 3.6,
+      "defense": 3.5,
+      "strength": 5,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 3,
+      "strength": 8.1,
+      "chaos": 4.1
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301659",
+    "teamA": {
+      "attack": 9,
+      "defense": 3.9,
+      "strength": 6.1,
+      "chaos": 6.6
+    },
+    "teamB": {
+      "attack": 8.5,
+      "defense": 6,
+      "strength": 7.2,
+      "chaos": 6.8
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301653",
+    "teamA": {
+      "attack": 3.7,
+      "defense": 3.5,
+      "strength": 4.6,
+      "chaos": 7
+    },
+    "teamB": {
+      "attack": 9.5,
+      "defense": 4,
+      "strength": 6.7,
+      "chaos": 4
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "2:2"
+  },
+  {
+    "matchId": "vf:match:1384301656",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.8,
+      "strength": 3.1,
+      "chaos": 6.5
+    },
+    "teamB": {
+      "attack": 3,
+      "defense": 1.8,
+      "strength": 3.5,
+      "chaos": 2.9
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:2"
+  },
+  {
+    "matchId": "vf:match:1384301660",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.5,
+      "strength": 3.8,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 5.6,
+      "defense": 1.2,
+      "strength": 5.5,
+      "chaos": 0.4
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "5:1"
+  },
+  {
+    "matchId": "vf:match:1384301657",
+    "teamA": {
+      "attack": 5.3,
+      "defense": 10,
+      "strength": 7.3,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0.7,
+      "defense": 2.4,
+      "strength": 6.2,
+      "chaos": 10
+    },
+    "tournament": "Bundesliga",
+    "week": 16,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "4:1"
+  },
+  {
+    "matchId": "vf:match:1384301666",
+    "teamA": {
+      "attack": 10,
+      "defense": 4.2,
+      "strength": 7.3,
+      "chaos": 3.5
+    },
+    "teamB": {
+      "attack": 5.4,
+      "defense": 9.9,
+      "strength": 7.7,
+      "chaos": 9.5
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301667",
+    "teamA": {
+      "attack": 5.5,
+      "defense": 0.8,
+      "strength": 5,
+      "chaos": 3.3
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 3,
+      "chaos": 9.4
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301664",
+    "teamA": {
+      "attack": 5.5,
+      "defense": 0,
+      "strength": 5.6,
+      "chaos": 0
+    },
+    "teamB": {
+      "attack": 2.8,
+      "defense": 2.8,
+      "strength": 4.1,
+      "chaos": 7.7
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:5"
+  },
+  {
+    "matchId": "vf:match:1384301665",
+    "teamA": {
+      "attack": 9.8,
+      "defense": 2.2,
+      "strength": 8.8,
+      "chaos": 3
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 3.4,
+      "strength": 6.8,
+      "chaos": 5.5
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "2:2"
+  },
+  {
+    "matchId": "vf:match:1384301662",
+    "teamA": {
+      "attack": 0.2,
+      "defense": 1.9,
+      "strength": 6.6,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 3.1,
+      "defense": 2.8,
+      "strength": 5.2,
+      "chaos": 9.8
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301663",
+    "teamA": {
+      "attack": 9.8,
+      "defense": 0,
+      "strength": 5.4,
+      "chaos": 3
+    },
+    "teamB": {
+      "attack": 2.1,
+      "defense": 9.7,
+      "strength": 7.6,
+      "chaos": 10
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "4:0"
+  },
+  {
+    "matchId": "vf:match:1384301661",
+    "teamA": {
+      "attack": 9.7,
+      "defense": 6.2,
+      "strength": 7.9,
+      "chaos": 7.3
+    },
+    "teamB": {
+      "attack": 0.3,
+      "defense": 0,
+      "strength": 3.1,
+      "chaos": 8.2
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301668",
+    "teamA": {
+      "attack": 2.2,
+      "defense": 0.4,
+      "strength": 2.9,
+      "chaos": 2.3
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 6.2,
+      "strength": 4.7,
+      "chaos": 8.6
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301907",
+    "teamA": {
+      "attack": 0.5,
+      "defense": 0,
+      "strength": 0.3,
+      "chaos": 4.3
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 8.6
+    },
+    "tournament": "League Mode",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301905",
+    "teamA": {
+      "attack": 10,
+      "defense": 10,
+      "strength": 9.7,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 9.4,
+      "strength": 5.8,
+      "chaos": 9.6
+    },
+    "tournament": "League Mode",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301908",
+    "teamA": {
+      "attack": 0.8,
+      "defense": 0,
+      "strength": 0.9,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 1.1,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 9.2
+    },
+    "tournament": "League Mode",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301902",
+    "teamA": {
+      "attack": 5,
+      "defense": 9.7,
+      "strength": 9,
+      "chaos": 9.5
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 8.4,
+      "strength": 9.6,
+      "chaos": 8
+    },
+    "tournament": "League Mode",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301903",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 9.7,
+      "strength": 9.4,
+      "chaos": 9.4
+    },
+    "teamB": {
+      "attack": 3.5,
+      "defense": 6.4,
+      "strength": 7.8,
+      "chaos": 9.6
+    },
+    "tournament": "League Mode",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301901",
+    "teamA": {
+      "attack": 9.4,
+      "defense": 5.5,
+      "strength": 8.3,
+      "chaos": 6.1
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 9.9,
+      "strength": 10,
+      "chaos": 10
+    },
+    "tournament": "League Mode",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "2:3"
+  },
+  {
+    "matchId": "vf:match:1384301904",
+    "teamA": {
+      "attack": 0.8,
+      "defense": 0.8,
+      "strength": 2,
+      "chaos": 8.2
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 10,
+      "strength": 9.2,
+      "chaos": 6.3
+    },
+    "tournament": "League Mode",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301666",
+    "teamA": {
+      "attack": 10,
+      "defense": 4.4,
+      "strength": 7.9,
+      "chaos": 3
+    },
+    "teamB": {
+      "attack": 5.5,
+      "defense": 9.9,
+      "strength": 8.3,
+      "chaos": 9.5
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301667",
+    "teamA": {
+      "attack": 6.2,
+      "defense": 0.8,
+      "strength": 5.1,
+      "chaos": 2.4
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 2.2,
+      "chaos": 9.4
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301664",
+    "teamA": {
+      "attack": 5.4,
+      "defense": 0,
+      "strength": 5.4,
+      "chaos": 0
+    },
+    "teamB": {
+      "attack": 1.9,
+      "defense": 2.1,
+      "strength": 4.1,
+      "chaos": 9.2
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:5"
+  },
+  {
+    "matchId": "vf:match:1384301665",
+    "teamA": {
+      "attack": 9.8,
+      "defense": 1.4,
+      "strength": 9.5,
+      "chaos": 1.9
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 2.9,
+      "strength": 7.2,
+      "chaos": 4.4
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "2:2"
+  },
+  {
+    "matchId": "vf:match:1384301662",
+    "teamA": {
+      "attack": 0.2,
+      "defense": 1.4,
+      "strength": 6.7,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 2.6,
+      "defense": 2.1,
+      "strength": 5.4,
+      "chaos": 9.8
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301663",
+    "teamA": {
+      "attack": 9.8,
+      "defense": 0,
+      "strength": 5.3,
+      "chaos": 2.3
+    },
+    "teamB": {
+      "attack": 1.2,
+      "defense": 10,
+      "strength": 8.3,
+      "chaos": 10
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "4:0"
+  },
+  {
+    "matchId": "vf:match:1384301661",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 6.4,
+      "strength": 8.6,
+      "chaos": 7.3
+    },
+    "teamB": {
+      "attack": 0.3,
+      "defense": 0,
+      "strength": 3.1,
+      "chaos": 9.9
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301668",
+    "teamA": {
+      "attack": 1.4,
+      "defense": 0,
+      "strength": 2.6,
+      "chaos": 1.7
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 6.2,
+      "strength": 4.4,
+      "chaos": 9.6
+    },
+    "tournament": "Bundesliga",
+    "week": 17,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301909",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.4,
+      "strength": 0.2,
+      "chaos": 8.6
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 10,
+      "strength": 10,
+      "chaos": 10
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301912",
+    "teamA": {
+      "attack": 4.9,
+      "defense": 9.4,
+      "strength": 9.2,
+      "chaos": 9.3
+    },
+    "teamB": {
+      "attack": 3.7,
+      "defense": 0.1,
+      "strength": 0,
+      "chaos": 3.3
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301670",
+    "teamA": {
+      "attack": 1.7,
+      "defense": 1.3,
+      "strength": 5.1,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 2.3,
+      "strength": 7.8,
+      "chaos": 3.3
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:2"
+  },
+  {
+    "matchId": "vf:match:1384301671",
+    "teamA": {
+      "attack": 0.2,
+      "defense": 0,
+      "strength": 2.6,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 9.7,
+      "defense": 1,
+      "strength": 9.8,
+      "chaos": 1
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:3"
+  },
+  {
+    "matchId": "vf:match:1384301669",
+    "teamA": {
+      "attack": 0.5,
+      "defense": 0,
+      "strength": 2,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 9.4,
+      "defense": 0.4,
+      "strength": 5,
+      "chaos": 1.1
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301675",
+    "teamA": {
+      "attack": 0.6,
+      "defense": 9.9,
+      "strength": 9.2,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0.9,
+      "defense": 0,
+      "strength": 2.9,
+      "chaos": 2.2
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:1"
+  },
+  {
+    "matchId": "vf:match:1384301673",
+    "teamA": {
+      "attack": 0,
+      "defense": 6.6,
+      "strength": 4.3,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 9.8,
+      "defense": 6.5,
+      "strength": 9.1,
+      "chaos": 7.3
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:2"
+  },
+  {
+    "matchId": "vf:match:1384301672",
+    "teamA": {
+      "attack": 0.2,
+      "defense": 0.6,
+      "strength": 6.5,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 4.3,
+      "strength": 8.7,
+      "chaos": 2
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:3"
+  },
+  {
+    "matchId": "vf:match:1384301676",
+    "teamA": {
+      "attack": 1.3,
+      "defense": 1.1,
+      "strength": 4.3,
+      "chaos": 9.2
+    },
+    "teamB": {
+      "attack": 6.9,
+      "defense": 0.5,
+      "strength": 4.9,
+      "chaos": 1.3
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301674",
+    "teamA": {
+      "attack": 6.1,
+      "defense": 9.8,
+      "strength": 9.2,
+      "chaos": 9.7
+    },
+    "teamB": {
+      "attack": 5.2,
+      "defense": 0,
+      "strength": 4.9,
+      "chaos": 0
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301911",
+    "teamA": {
+      "attack": 10,
+      "defense": 9.6,
+      "strength": 9.5,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 9.7,
+      "strength": 9.7,
+      "chaos": 9.3
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:1"
+  },
+  {
+    "matchId": "vf:match:1384301914",
+    "teamA": {
+      "attack": 10,
+      "defense": 0.6,
+      "strength": 10,
+      "chaos": 3.2
+    },
+    "teamB": {
+      "attack": 0.1,
+      "defense": 1.2,
+      "strength": 1.6,
+      "chaos": 9.5
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301915",
+    "teamA": {
+      "attack": 2.5,
+      "defense": 7.6,
+      "strength": 9.3,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 1.3,
+      "defense": 0,
+      "strength": 1.5,
+      "chaos": 10
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301913",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 9
+    },
+    "teamB": {
+      "attack": 9.7,
+      "defense": 5.9,
+      "strength": 9.5,
+      "chaos": 6.8
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301916",
+    "teamA": {
+      "attack": 10,
+      "defense": 10,
+      "strength": 10,
+      "chaos": 7.3
+    },
+    "teamB": {
+      "attack": 0.1,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 2
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301910",
+    "teamA": {
+      "attack": 10,
+      "defense": 8.8,
+      "strength": 9.8,
+      "chaos": 6.5
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 9.1,
+      "strength": 5,
+      "chaos": 9.4
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301909",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.4,
+      "strength": 0.2,
+      "chaos": 8.1
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 10,
+      "strength": 10,
+      "chaos": 10
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301912",
+    "teamA": {
+      "attack": 4.8,
+      "defense": 9.4,
+      "strength": 9.4,
+      "chaos": 9.3
+    },
+    "teamB": {
+      "attack": 3.4,
+      "defense": 0.1,
+      "strength": 0,
+      "chaos": 3
+    },
+    "tournament": "League Mode",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301671",
+    "teamA": {
+      "attack": 0.2,
+      "defense": 0,
+      "strength": 2.1,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 0.3,
+      "strength": 9.8,
+      "chaos": 0.1
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:3"
+  },
+  {
+    "matchId": "vf:match:1384301669",
+    "teamA": {
+      "attack": 0.5,
+      "defense": 0,
+      "strength": 1.8,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 0.8,
+      "strength": 5.3,
+      "chaos": 0.2
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301675",
+    "teamA": {
+      "attack": 0,
+      "defense": 9.6,
+      "strength": 8.7,
+      "chaos": 8.8
+    },
+    "teamB": {
+      "attack": 0.3,
+      "defense": 0,
+      "strength": 2.8,
+      "chaos": 2.7
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:1"
+  },
+  {
+    "matchId": "vf:match:1384301673",
+    "teamA": {
+      "attack": 0,
+      "defense": 6.9,
+      "strength": 4,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 9.8,
+      "defense": 6.6,
+      "strength": 9.8,
+      "chaos": 6.8
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:2"
+  },
+  {
+    "matchId": "vf:match:1384301672",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.2,
+      "strength": 5.8,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 4.2,
+      "strength": 9.1,
+      "chaos": 1
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:3"
+  },
+  {
+    "matchId": "vf:match:1384301676",
+    "teamA": {
+      "attack": 1.2,
+      "defense": 0,
+      "strength": 4.6,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 7.6,
+      "defense": 0.5,
+      "strength": 4.7,
+      "chaos": 0.2
+    },
+    "tournament": "Bundesliga",
+    "week": 18,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301924",
+    "teamA": {
+      "attack": 10,
+      "defense": 5.8,
+      "strength": 9.2,
+      "chaos": 6.2
+    },
+    "teamB": {
+      "attack": 1.6,
+      "defense": 8.6,
+      "strength": 9.5,
+      "chaos": 9.8
+    },
+    "tournament": "League Mode",
+    "week": 19,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301682",
+    "teamA": {
+      "attack": 9.6,
+      "defense": 4,
+      "strength": 9.3,
+      "chaos": 0.1
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0.5,
+      "strength": 5.7,
+      "chaos": 9.8
+    },
+    "tournament": "Bundesliga",
+    "week": 19,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "4:0"
+  },
+  {
+    "matchId": "vf:match:1384301683",
+    "teamA": {
+      "attack": 10,
+      "defense": 0.1,
+      "strength": 9.8,
+      "chaos": 0
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 7.2,
+      "strength": 3.7,
+      "chaos": 9.6
+    },
+    "tournament": "Bundesliga",
+    "week": 19,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301680",
+    "teamA": {
+      "attack": 10,
+      "defense": 0.5,
+      "strength": 9.4,
+      "chaos": 1.1
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 1.5,
+      "chaos": 9.6
+    },
+    "tournament": "Bundesliga",
+    "week": 19,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301681",
+    "teamA": {
+      "attack": 0.2,
+      "defense": 0,
+      "strength": 2.7,
+      "chaos": 3.2
+    },
+    "teamB": {
+      "attack": 0.1,
+      "defense": 0,
+      "strength": 1.3,
+      "chaos": 9.8
+    },
+    "tournament": "Bundesliga",
+    "week": 19,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301678",
+    "teamA": {
+      "attack": 4.6,
+      "defense": 0,
+      "strength": 3.9,
+      "chaos": 0
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0.2,
+      "strength": 5.6,
+      "chaos": 9.6
+    },
+    "tournament": "Bundesliga",
+    "week": 19,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301679",
+    "teamA": {
+      "attack": 8.6,
+      "defense": 0.9,
+      "strength": 4.8,
+      "chaos": 0.4
+    },
+    "teamB": {
+      "attack": 7.2,
+      "defense": 10,
+      "strength": 10,
+      "chaos": 10
+    },
+    "tournament": "Bundesliga",
+    "week": 19,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301677",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 0.8,
+      "strength": 5.3,
+      "chaos": 0.2
+    },
+    "teamB": {
+      "attack": 1.1,
+      "defense": 0,
+      "strength": 4.8,
+      "chaos": 10
+    },
+    "tournament": "Bundesliga",
+    "week": 19,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301684",
+    "teamA": {
+      "attack": 10,
+      "defense": 7.1,
+      "strength": 9.9,
+      "chaos": 7
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 9.6,
+      "strength": 8.9,
+      "chaos": 8.8
+    },
+    "tournament": "Bundesliga",
+    "week": 19,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301929",
+    "teamA": {
+      "attack": 4.6,
+      "defense": 9.8,
+      "strength": 10,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0.1,
+      "strength": 0,
+      "chaos": 0.4
+    },
+    "tournament": "League Mode",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301932",
+    "teamA": {
+      "attack": 10,
+      "defense": 0.9,
+      "strength": 10,
+      "chaos": 4.7
+    },
+    "teamB": {
+      "attack": 9.5,
+      "defense": 9.9,
+      "strength": 9.6,
+      "chaos": 9
+    },
+    "tournament": "League Mode",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301931",
+    "teamA": {
+      "attack": 2.8,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 2
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 1.3,
+      "strength": 2,
+      "chaos": 9.8
+    },
+    "tournament": "League Mode",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301686",
+    "teamA": {
+      "attack": 0.5,
+      "defense": 9.5,
+      "strength": 9.2,
+      "chaos": 9
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 0.5,
+      "strength": 10,
+      "chaos": 0.2
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:2"
+  },
+  {
+    "matchId": "vf:match:1384301687",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.1,
+      "strength": 5.4,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0.6,
+      "chaos": 9.4
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301685",
+    "teamA": {
+      "attack": 0,
+      "defense": 7.2,
+      "strength": 3.1,
+      "chaos": 9.4
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 0.4,
+      "strength": 10,
+      "chaos": 1
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:2"
+  },
+  {
+    "matchId": "vf:match:1384301691",
+    "teamA": {
+      "attack": 10,
+      "defense": 4.2,
+      "strength": 9.7,
+      "chaos": 0.3
+    },
+    "teamB": {
+      "attack": 3.9,
+      "defense": 0.4,
+      "strength": 4.2,
+      "chaos": 0
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301689",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 5.1,
+      "chaos": 9.4
+    },
+    "teamB": {
+      "attack": 9.2,
+      "defense": 0.6,
+      "strength": 4.6,
+      "chaos": 0.2
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:3"
+  },
+  {
+    "matchId": "vf:match:1384301692",
+    "teamA": {
+      "attack": 7.3,
+      "defense": 10,
+      "strength": 9.8,
+      "chaos": 9.5
+    },
+    "teamB": {
+      "attack": 9.5,
+      "defense": 1.2,
+      "strength": 5.1,
+      "chaos": 0
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301690",
+    "teamA": {
+      "attack": 1.3,
+      "defense": 0.4,
+      "strength": 5.2,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0.3,
+      "defense": 0,
+      "strength": 2,
+      "chaos": 3.5
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301688",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.4,
+      "strength": 1,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 8,
+      "strength": 10,
+      "chaos": 7.4
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:2"
+  },
+  {
+    "matchId": "vf:match:1384301926",
+    "teamA": {
+      "attack": 0,
+      "defense": 10,
+      "strength": 9.5,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 9.6,
+      "strength": 10,
+      "chaos": 9.9
+    },
+    "tournament": "League Mode",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301928",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.7,
+      "strength": 0.2,
+      "chaos": 8.4
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 5.6,
+      "strength": 9.2,
+      "chaos": 6
+    },
+    "tournament": "League Mode",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301686",
+    "teamA": {
+      "attack": 0.5,
+      "defense": 9.2,
+      "strength": 8.9,
+      "chaos": 8.8
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 0.4,
+      "strength": 9.8,
+      "chaos": 0
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:2"
+  },
+  {
+    "matchId": "vf:match:1384301687",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 4.8,
+      "chaos": 9.4
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 9.2
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:0"
+  },
+  {
+    "matchId": "vf:match:1384301685",
+    "teamA": {
+      "attack": 0,
+      "defense": 7.1,
+      "strength": 2.7,
+      "chaos": 9.4
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 0.8,
+      "strength": 10,
+      "chaos": 1.2
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:2"
+  },
+  {
+    "matchId": "vf:match:1384301691",
+    "teamA": {
+      "attack": 10,
+      "defense": 4.8,
+      "strength": 9.8,
+      "chaos": 0.5
+    },
+    "teamB": {
+      "attack": 3.1,
+      "defense": 0.3,
+      "strength": 4.5,
+      "chaos": 0
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301689",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 4.4,
+      "chaos": 9.4
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 1,
+      "strength": 5.2,
+      "chaos": 1.3
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:3"
+  },
+  {
+    "matchId": "vf:match:1384301692",
+    "teamA": {
+      "attack": 7,
+      "defense": 9.7,
+      "strength": 9.3,
+      "chaos": 8.3
+    },
+    "teamB": {
+      "attack": 9.4,
+      "defense": 1.1,
+      "strength": 5.2,
+      "chaos": 0
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301690",
+    "teamA": {
+      "attack": 1.5,
+      "defense": 0.3,
+      "strength": 5.2,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0.8,
+      "defense": 0.4,
+      "strength": 1.6,
+      "chaos": 4
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301688",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.1,
+      "strength": 0.5,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 8.8,
+      "strength": 10,
+      "chaos": 8
+    },
+    "tournament": "Bundesliga",
+    "week": 20,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:2"
+  },
+  {
+    "matchId": "vf:match:1384303871",
+    "teamA": {
+      "attack": 9.7,
+      "defense": 8.4,
+      "strength": 7.8,
+      "chaos": 1.6
+    },
+    "teamB": {
+      "attack": 0.5,
+      "defense": 0.8,
+      "strength": 2.9,
+      "chaos": 0.8
+    },
+    "tournament": "English League",
+    "week": 10,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384303874",
+    "teamA": {
+      "attack": 0.5,
+      "defense": 9.7,
+      "strength": 5.7,
+      "chaos": 0.8
+    },
+    "teamB": {
+      "attack": 0.5,
+      "defense": 9.3,
+      "strength": 7.6,
+      "chaos": 8.8
+    },
+    "tournament": "English League",
+    "week": 10,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301938",
+    "teamA": {
+      "attack": 10,
+      "defense": 9.6,
+      "strength": 10,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 8.6
+    },
+    "tournament": "League Mode",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "4:1"
+  },
+  {
+    "matchId": "vf:match:1384301939",
+    "teamA": {
+      "attack": 2.5,
+      "defense": 0.7,
+      "strength": 3.2,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 0.6,
+      "strength": 9.5,
+      "chaos": 6.7
+    },
+    "tournament": "League Mode",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:3"
+  },
+  {
+    "matchId": "vf:match:1384301936",
+    "teamA": {
+      "attack": 9.5,
+      "defense": 9.8,
+      "strength": 9.8,
+      "chaos": 9
+    },
+    "teamB": {
+      "attack": 3.9,
+      "defense": 9.4,
+      "strength": 9,
+      "chaos": 9.6
+    },
+    "tournament": "League Mode",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "2:2"
+  },
+  {
+    "matchId": "vf:match:1384301934",
+    "teamA": {
+      "attack": 0,
+      "defense": 8.4,
+      "strength": 2.5,
+      "chaos": 9
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 9.8,
+      "strength": 9,
+      "chaos": 9.6
+    },
+    "tournament": "League Mode",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "0:0"
+  },
+  {
+    "matchId": "vf:match:1384301937",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 5.8,
+      "strength": 9.6,
+      "chaos": 5.6
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 9.9,
+      "strength": 9.6,
+      "chaos": 9.1
+    },
+    "tournament": "League Mode",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:1"
+  },
+  {
+    "matchId": "vf:match:1384301940",
+    "teamA": {
+      "attack": 10,
+      "defense": 9.2,
+      "strength": 10,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0.4,
+      "strength": 0,
+      "chaos": 8.4
+    },
+    "tournament": "League Mode",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301698",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 9.2
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 7,
+      "strength": 2.3,
+      "chaos": 9.4
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:4"
+  },
+  {
+    "matchId": "vf:match:1384301699",
+    "teamA": {
+      "attack": 0.8,
+      "defense": 0.4,
+      "strength": 1.2,
+      "chaos": 4.5
+    },
+    "teamB": {
+      "attack": 6.7,
+      "defense": 9.7,
+      "strength": 9.3,
+      "chaos": 8.1
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301696",
+    "teamA": {
+      "attack": 9.4,
+      "defense": 1.1,
+      "strength": 5,
+      "chaos": 0
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 4,
+      "chaos": 9.4
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301697",
+    "teamA": {
+      "attack": 10,
+      "defense": 9.6,
+      "strength": 10,
+      "chaos": 8.6
+    },
+    "teamB": {
+      "attack": 1.7,
+      "defense": 0.3,
+      "strength": 4.9,
+      "chaos": 10
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301700",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 0.4,
+      "strength": 9.8,
+      "chaos": 0.3
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0.1,
+      "strength": 0.5,
+      "chaos": 9.6
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "6:1"
+  },
+  {
+    "matchId": "vf:match:1384301693",
+    "teamA": {
+      "attack": 10,
+      "defense": 1,
+      "strength": 5,
+      "chaos": 1.3
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 5.4,
+      "strength": 10,
+      "chaos": 0.4
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:2"
+  },
+  {
+    "matchId": "vf:match:1384301694",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 0.8,
+      "strength": 10,
+      "chaos": 1.2
+    },
+    "teamB": {
+      "attack": 0.5,
+      "defense": 9.2,
+      "strength": 8.9,
+      "chaos": 8.8
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301695",
+    "teamA": {
+      "attack": 2.3,
+      "defense": 0.3,
+      "strength": 4.1,
+      "chaos": 0
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 4.6,
+      "chaos": 9.4
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301693",
+    "teamA": {
+      "attack": 10,
+      "defense": 1.4,
+      "strength": 5.1,
+      "chaos": 1.5
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 6.4,
+      "strength": 10,
+      "chaos": 0.6
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:2"
+  },
+  {
+    "matchId": "vf:match:1384301694",
+    "teamA": {
+      "attack": 10,
+      "defense": 1.2,
+      "strength": 10,
+      "chaos": 1.4
+    },
+    "teamB": {
+      "attack": 0.4,
+      "defense": 8.9,
+      "strength": 8.6,
+      "chaos": 8.6
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:0"
+  },
+  {
+    "matchId": "vf:match:1384301695",
+    "teamA": {
+      "attack": 1.1,
+      "defense": 0,
+      "strength": 3.7,
+      "chaos": 0
+    },
+    "teamB": {
+      "attack": 0.5,
+      "defense": 0.4,
+      "strength": 4.7,
+      "chaos": 9.6
+    },
+    "tournament": "Bundesliga",
+    "week": 21,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384303879",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 10,
+      "strength": 8.7,
+      "chaos": 6.9
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 0.4,
+      "strength": 10,
+      "chaos": 7.5
+    },
+    "tournament": "English League",
+    "week": 11,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384303880",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 2.1,
+      "strength": 9.1,
+      "chaos": 5
+    },
+    "teamB": {
+      "attack": 0.3,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 3.9
+    },
+    "tournament": "English League",
+    "week": 11,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "3:1"
+  },
+  {
+    "matchId": "vf:match:1384301942",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.8,
+      "strength": 0.6,
+      "chaos": 9.5
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 8.1,
+      "strength": 0.3,
+      "chaos": 8.4
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:2"
+  },
+  {
+    "matchId": "vf:match:1384301946",
+    "teamA": {
+      "attack": 0,
+      "defense": 9.8,
+      "strength": 9,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 9.6,
+      "strength": 10,
+      "chaos": 10
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301941",
+    "teamA": {
+      "attack": 10,
+      "defense": 9.4,
+      "strength": 9.6,
+      "chaos": 0.4
+    },
+    "teamB": {
+      "attack": 0.3,
+      "defense": 0,
+      "strength": 0.6,
+      "chaos": 8.8
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301947",
+    "teamA": {
+      "attack": 10,
+      "defense": 0.5,
+      "strength": 10,
+      "chaos": 8.4
+    },
+    "teamB": {
+      "attack": 9.5,
+      "defense": 6,
+      "strength": 9.1,
+      "chaos": 4.4
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301948",
+    "teamA": {
+      "attack": 3.3,
+      "defense": 9.8,
+      "strength": 9.3,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 3.5,
+      "defense": 0.7,
+      "strength": 4.5,
+      "chaos": 10
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "4:0"
+  },
+  {
+    "matchId": "vf:match:1384301944",
+    "teamA": {
+      "attack": 0.4,
+      "defense": 0.9,
+      "strength": 2.4,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0.3,
+      "chaos": 1.2
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:3"
+  },
+  {
+    "matchId": "vf:match:1384301702",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0.2,
+      "chaos": 9.4
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 1.5,
+      "strength": 10,
+      "chaos": 1.4
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301703",
+    "teamA": {
+      "attack": 10,
+      "defense": 7.4,
+      "strength": 10,
+      "chaos": 0.6
+    },
+    "teamB": {
+      "attack": 9.4,
+      "defense": 1,
+      "strength": 5,
+      "chaos": 0
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301706",
+    "teamA": {
+      "attack": 0.4,
+      "defense": 8.9,
+      "strength": 8.6,
+      "chaos": 8.6
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 9
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301708",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 3.6,
+      "chaos": 9.2
+    },
+    "teamB": {
+      "attack": 0.6,
+      "defense": 0.1,
+      "strength": 0.8,
+      "chaos": 5.1
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301705",
+    "teamA": {
+      "attack": 2.7,
+      "defense": 0.2,
+      "strength": 5,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 0.3,
+      "strength": 10,
+      "chaos": 0.5
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301704",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 3.5,
+      "chaos": 0
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 1.4,
+      "strength": 4.9,
+      "chaos": 1.7
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:3"
+  },
+  {
+    "matchId": "vf:match:1384301701",
+    "teamA": {
+      "attack": 0.5,
+      "defense": 0.4,
+      "strength": 4.4,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 6.2,
+      "strength": 1.2,
+      "chaos": 9.2
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:2"
+  },
+  {
+    "matchId": "vf:match:1384301707",
+    "teamA": {
+      "attack": 5.9,
+      "defense": 9.6,
+      "strength": 9.1,
+      "chaos": 7.7
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 9.8,
+      "strength": 10,
+      "chaos": 10
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301946",
+    "teamA": {
+      "attack": 0,
+      "defense": 10,
+      "strength": 9,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 9.2,
+      "strength": 10,
+      "chaos": 10
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301941",
+    "teamA": {
+      "attack": 10,
+      "defense": 9.5,
+      "strength": 9.6,
+      "chaos": 0.2
+    },
+    "teamB": {
+      "attack": 0.3,
+      "defense": 0,
+      "strength": 0.3,
+      "chaos": 8.6
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301947",
+    "teamA": {
+      "attack": 10,
+      "defense": 0.9,
+      "strength": 10,
+      "chaos": 9.2
+    },
+    "teamB": {
+      "attack": 9.5,
+      "defense": 6.1,
+      "strength": 9.1,
+      "chaos": 3.8
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301948",
+    "teamA": {
+      "attack": 3,
+      "defense": 9.8,
+      "strength": 9.3,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 3.9,
+      "defense": 0.8,
+      "strength": 5.3,
+      "chaos": 9.8
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "4:0"
+  },
+  {
+    "matchId": "vf:match:1384301944",
+    "teamA": {
+      "attack": 0,
+      "defense": 0.6,
+      "strength": 2,
+      "chaos": 9.6
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0.3,
+      "chaos": 1.2
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:3"
+  },
+  {
+    "matchId": "vf:match:1384301945",
+    "teamA": {
+      "attack": 9.5,
+      "defense": 9.6,
+      "strength": 9.1,
+      "chaos": 9.5
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 9.1,
+      "strength": 9.8,
+      "chaos": 9.5
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "4:0"
+  },
+  {
+    "matchId": "vf:match:1384301943",
+    "teamA": {
+      "attack": 0.6,
+      "defense": 0,
+      "strength": 0.9,
+      "chaos": 6.4
+    },
+    "teamB": {
+      "attack": 9.4,
+      "defense": 9.5,
+      "strength": 9.5,
+      "chaos": 8.4
+    },
+    "tournament": "League Mode",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301702",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 9.2
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 2.2,
+      "strength": 10,
+      "chaos": 1.6
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "0:1"
+  },
+  {
+    "matchId": "vf:match:1384301703",
+    "teamA": {
+      "attack": 10,
+      "defense": 8.1,
+      "strength": 9.5,
+      "chaos": 0.4
+    },
+    "teamB": {
+      "attack": 9.7,
+      "defense": 1.4,
+      "strength": 5.3,
+      "chaos": 0.2
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301706",
+    "teamA": {
+      "attack": 0,
+      "defense": 8.6,
+      "strength": 8.3,
+      "chaos": 8.4
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 8.8
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301708",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 3,
+      "chaos": 9
+    },
+    "teamB": {
+      "attack": 0.2,
+      "defense": 0,
+      "strength": 0.5,
+      "chaos": 5.2
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "1:0"
+  },
+  {
+    "matchId": "vf:match:1384301705",
+    "teamA": {
+      "attack": 2.8,
+      "defense": 0.1,
+      "strength": 4.7,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 0.2,
+      "strength": 10,
+      "chaos": 0.7
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 2,
+    "correct_score": "1:1"
+  },
+  {
+    "matchId": "vf:match:1384301704",
+    "teamA": {
+      "attack": 0.3,
+      "defense": 0,
+      "strength": 4.1,
+      "chaos": 1.1
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 1.1,
+      "strength": 5.6,
+      "chaos": 3
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:3"
+  },
+  {
+    "matchId": "vf:match:1384301701",
+    "teamA": {
+      "attack": 0.4,
+      "defense": 0.1,
+      "strength": 4,
+      "chaos": 9.4
+    },
+    "teamB": {
+      "attack": 0.5,
+      "defense": 5.7,
+      "strength": 1.4,
+      "chaos": 9.4
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 3,
+    "correct_score": "1:2"
+  },
+  {
+    "matchId": "vf:match:1384301707",
+    "teamA": {
+      "attack": 5.5,
+      "defense": 10,
+      "strength": 9.4,
+      "chaos": 8.5
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 10,
+      "strength": 10,
+      "chaos": 10
+    },
+    "tournament": "Bundesliga",
+    "week": 22,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": 1,
+    "correct_score": "2:1"
+  },
+  {
+    "matchId": "vf:match:1384301712",
+    "teamA": {
+      "attack": 0.5,
+      "defense": 5.2,
+      "strength": 1.4,
+      "chaos": 9.4
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 8.6,
+      "strength": 8.3,
+      "chaos": 8.4
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301713",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 8.8
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 9.2
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301716",
+    "teamA": {
+      "attack": 10,
+      "defense": 2.9,
+      "strength": 10,
+      "chaos": 1.6
+    },
+    "teamB": {
+      "attack": 2.9,
+      "defense": 0.1,
+      "strength": 5.2,
+      "chaos": 9.8
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301710",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 10,
+      "strength": 10,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 3.1,
+      "chaos": 9
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301709",
+    "teamA": {
+      "attack": 10,
+      "defense": 1.1,
+      "strength": 6,
+      "chaos": 3.8
+    },
+    "teamB": {
+      "attack": 0.4,
+      "defense": 0.1,
+      "strength": 3.6,
+      "chaos": 9.4
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301711",
+    "teamA": {
+      "attack": 0.2,
+      "defense": 0,
+      "strength": 0.5,
+      "chaos": 5.3
+    },
+    "teamB": {
+      "attack": 10,
+      "defense": 8.8,
+      "strength": 9.5,
+      "chaos": 0.5
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301712",
+    "teamA": {
+      "attack": 0.8,
+      "defense": 4.6,
+      "strength": 2,
+      "chaos": 10
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 9,
+      "strength": 8.6,
+      "chaos": 8.6
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301713",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 8.6
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0,
+      "chaos": 9
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301716",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 4,
+      "strength": 10,
+      "chaos": 1.8
+    },
+    "teamB": {
+      "attack": 2.9,
+      "defense": 0,
+      "strength": 5.5,
+      "chaos": 9.8
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301710",
+    "teamA": {
+      "attack": 9.9,
+      "defense": 9.7,
+      "strength": 9.7,
+      "chaos": 9.8
+    },
+    "teamB": {
+      "attack": 0,
+      "defense": 0.4,
+      "strength": 3.3,
+      "chaos": 9.2
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301709",
+    "teamA": {
+      "attack": 10,
+      "defense": 1,
+      "strength": 6.7,
+      "chaos": 3.9
+    },
+    "teamB": {
+      "attack": 0.3,
+      "defense": 0,
+      "strength": 3.1,
+      "chaos": 9.2
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
+    "predictedPick": "",
+    "odds": "",
+    "outcome": "",
+    "correct_score": ""
+  },
+  {
+    "matchId": "vf:match:1384301711",
+    "teamA": {
+      "attack": 0,
+      "defense": 0,
+      "strength": 0.2,
+      "chaos": 5.2
+    },
+    "teamB": {
+      "attack": 9.9,
+      "defense": 9.9,
+      "strength": 9.8,
+      "chaos": 0.7
+    },
+    "tournament": "Bundesliga",
+    "week": 23,
     "predictedPick": "",
     "odds": "",
     "outcome": "",
