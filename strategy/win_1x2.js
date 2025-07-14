@@ -104,17 +104,23 @@ async function win_1x2(amount = 100, matchCount = 5) {
 
             if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
 
-            // Check last 3 form for home
-            const homeForm = homeStats.form.slice(-3);
+           const homeForm = homeStats.form.slice(-3);
             const awayForm = awayStats.form.slice(-3);
 
-           
+            const homeFormStr = homeForm.join("");
+            const awayFormStr = awayForm.join("");
 
-            if (!homeForm.join("") === "WWW" || !awayForm.join("") === "WWW"){
-                console.log("Home Form: ", homeForm.join(""), "\nAway Form: ", awayForm.join("")) 
+            const isHomeWWW = homeFormStr === "WWW";
+            const isAwayWWW = awayFormStr === "WWW";
+
+            if (!isHomeWWW && !isAwayWWW) {
+                console.log("Skipping match because no WWW form");
+                console.log("Home Form:", homeFormStr, "\nAway Form:", awayFormStr);
                 continue;
-            } 
-            console.log("Home Form: ", homeForm.join(""), "\nAway Form: ", awayForm.join("")) 
+            }
+
+            console.log("Selected Match:");
+            console.log("Home Form:", homeFormStr, "\nAway Form:", awayFormStr);
 
 
             let predictedWinner = null;

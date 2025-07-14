@@ -8,16 +8,16 @@
         "teams": [
           {
             "name": "Bournemouth",
-            "attack": 6.6,
-            "defense": 3.2,
-            "strength": 5.9,
-            "chaos": 7.2,
+            "attack": 7.3,
+            "defense": 2.2,
+            "strength": 6.6,
+            "chaos": 8.3,
             "form": [
-              "W",
               "L",
               "L",
               "W",
-              "W"
+              "W",
+              "D"
             ],
             "standings": [
               {
@@ -59,19 +59,43 @@
               {
                 "week": 5,
                 "position": 5
+              },
+              {
+                "week": 1,
+                "position": 3
+              },
+              {
+                "week": 2,
+                "position": 9
+              },
+              {
+                "week": 3,
+                "position": 12
+              },
+              {
+                "week": 4,
+                "position": 7
+              },
+              {
+                "week": 5,
+                "position": 5
+              },
+              {
+                "week": 6,
+                "position": 6
               }
             ]
           },
           {
             "name": "Chelsea",
-            "attack": 4.6,
-            "defense": 5.6,
-            "strength": 6.5,
-            "chaos": 9,
+            "attack": 4.3,
+            "defense": 6.3,
+            "strength": 7.1,
+            "chaos": 10,
             "form": [
-              "L",
               "W",
               "L",
+              "W",
               "W",
               "W"
             ],
@@ -115,19 +139,43 @@
               {
                 "week": 5,
                 "position": 4
+              },
+              {
+                "week": 1,
+                "position": 12
+              },
+              {
+                "week": 2,
+                "position": 7
+              },
+              {
+                "week": 3,
+                "position": 10
+              },
+              {
+                "week": 4,
+                "position": 6
+              },
+              {
+                "week": 5,
+                "position": 4
+              },
+              {
+                "week": 6,
+                "position": 3
               }
             ]
           },
           {
             "name": "Wolverhampton",
-            "attack": 1.6,
-            "defense": 7,
-            "strength": 4.3,
-            "chaos": 5.5,
+            "attack": 0,
+            "defense": 8.4,
+            "strength": 4.1,
+            "chaos": 6.2,
             "form": [
-              "W",
               "L",
               "L",
+              "D",
               "D",
               "D"
             ],
@@ -171,20 +219,44 @@
               {
                 "week": 5,
                 "position": 11
+              },
+              {
+                "week": 1,
+                "position": 4
+              },
+              {
+                "week": 2,
+                "position": 8
+              },
+              {
+                "week": 3,
+                "position": 11
+              },
+              {
+                "week": 4,
+                "position": 13
+              },
+              {
+                "week": 5,
+                "position": 11
+              },
+              {
+                "week": 6,
+                "position": 13
               }
             ]
           },
           {
             "name": "West Ham",
-            "attack": 5.6,
-            "defense": 4.6,
-            "strength": 5.2,
-            "chaos": 7.3,
+            "attack": 5.5,
+            "defense": 4.3,
+            "strength": 4.6,
+            "chaos": 8.7,
             "form": [
-              "L",
               "W",
               "L",
               "W",
+              "L",
               "L"
             ],
             "standings": [
@@ -227,18 +299,42 @@
               {
                 "week": 5,
                 "position": 9
+              },
+              {
+                "week": 1,
+                "position": 13
+              },
+              {
+                "week": 2,
+                "position": 6
+              },
+              {
+                "week": 3,
+                "position": 9
+              },
+              {
+                "week": 4,
+                "position": 5
+              },
+              {
+                "week": 5,
+                "position": 9
+              },
+              {
+                "week": 6,
+                "position": 12
               }
             ]
           },
           {
             "name": "Burnley",
-            "attack": 5.4,
-            "defense": 6.6,
-            "strength": 6.9,
-            "chaos": 7.1,
+            "attack": 6.1,
+            "defense": 7.3,
+            "strength": 7.9,
+            "chaos": 7.9,
             "form": [
-              "W",
               "L",
+              "W",
               "W",
               "W",
               "W"
@@ -282,22 +378,46 @@
               },
               {
                 "week": 5,
+                "position": 1
+              },
+              {
+                "week": 1,
+                "position": 5
+              },
+              {
+                "week": 2,
+                "position": 11
+              },
+              {
+                "week": 3,
+                "position": 5
+              },
+              {
+                "week": 4,
+                "position": 2
+              },
+              {
+                "week": 5,
+                "position": 1
+              },
+              {
+                "week": 6,
                 "position": 1
               }
             ]
           },
           {
             "name": "Newcastle",
-            "attack": 5.4,
-            "defense": 4.6,
-            "strength": 5.4,
-            "chaos": 5,
+            "attack": 5.2,
+            "defense": 4.1,
+            "strength": 5.1,
+            "chaos": 4.8,
             "form": [
-              "L",
               "D",
               "L",
               "W",
-              "W"
+              "W",
+              "L"
             ],
             "standings": [
               {
@@ -339,361 +459,529 @@
               {
                 "week": 5,
                 "position": 7
+              },
+              {
+                "week": 1,
+                "position": 14
+              },
+              {
+                "week": 2,
+                "position": 13
+              },
+              {
+                "week": 3,
+                "position": 16
+              },
+              {
+                "week": 4,
+                "position": 12
+              },
+              {
+                "week": 5,
+                "position": 7
+              },
+              {
+                "week": 6,
+                "position": 10
               }
             ]
           },
           {
             "name": "Liverpool",
-            "attack": 7.2,
-            "defense": 5.6,
-            "strength": 5.8,
-            "chaos": 5.8,
-            "form": [
-              "W",
-              "W",
-              "W",
-              "D",
-              "L"
-            ],
-            "standings": [
-              {
-                "week": 1,
-                "position": 2
-              },
-              {
-                "week": 2,
-                "position": 1
-              },
-              {
-                "week": 3,
-                "position": 1
-              },
-              {
-                "week": 4,
-                "position": 1
-              },
-              {
-                "week": 5,
-                "position": 3
-              },
-              {
-                "week": 1,
-                "position": 2
-              },
-              {
-                "week": 2,
-                "position": 1
-              },
-              {
-                "week": 3,
-                "position": 1
-              },
-              {
-                "week": 4,
-                "position": 1
-              },
-              {
-                "week": 5,
-                "position": 3
-              }
-            ]
-          },
-          {
-            "name": "Everton",
-            "attack": 4.4,
-            "defense": 4.8,
-            "strength": 5,
-            "chaos": 6.4,
-            "form": [
-              "L",
-              "W",
-              "W",
-              "L",
-              "L"
-            ],
-            "standings": [
-              {
-                "week": 1,
-                "position": 16
-              },
-              {
-                "week": 2,
-                "position": 10
-              },
-              {
-                "week": 3,
-                "position": 4
-              },
-              {
-                "week": 4,
-                "position": 8
-              },
-              {
-                "week": 5,
-                "position": 10
-              },
-              {
-                "week": 1,
-                "position": 16
-              },
-              {
-                "week": 2,
-                "position": 10
-              },
-              {
-                "week": 3,
-                "position": 4
-              },
-              {
-                "week": 4,
-                "position": 8
-              },
-              {
-                "week": 5,
-                "position": 10
-              }
-            ]
-          },
-          {
-            "name": "Watford",
-            "attack": 4.6,
-            "defense": 3.2,
-            "strength": 4.6,
-            "chaos": 6.4,
-            "form": [
-              "D",
-              "L",
-              "D",
-              "L",
-              "W"
-            ],
-            "standings": [
-              {
-                "week": 1,
-                "position": 8
-              },
-              {
-                "week": 2,
-                "position": 14
-              },
-              {
-                "week": 3,
-                "position": 14
-              },
-              {
-                "week": 4,
-                "position": 16
-              },
-              {
-                "week": 5,
-                "position": 12
-              },
-              {
-                "week": 1,
-                "position": 8
-              },
-              {
-                "week": 2,
-                "position": 14
-              },
-              {
-                "week": 3,
-                "position": 14
-              },
-              {
-                "week": 4,
-                "position": 16
-              },
-              {
-                "week": 5,
-                "position": 12
-              }
-            ]
-          },
-          {
-            "name": "Manchester Reds",
-            "attack": 6.8,
-            "defense": 3.6,
-            "strength": 6.7,
+            "attack": 7.9,
+            "defense": 6.3,
+            "strength": 6.2,
             "chaos": 5.7,
             "form": [
-              "D",
               "W",
               "W",
               "D",
-              "W"
-            ],
-            "standings": [
-              {
-                "week": 1,
-                "position": 9
-              },
-              {
-                "week": 2,
-                "position": 4
-              },
-              {
-                "week": 3,
-                "position": 3
-              },
-              {
-                "week": 4,
-                "position": 3
-              },
-              {
-                "week": 5,
-                "position": 2
-              },
-              {
-                "week": 1,
-                "position": 9
-              },
-              {
-                "week": 2,
-                "position": 4
-              },
-              {
-                "week": 3,
-                "position": 3
-              },
-              {
-                "week": 4,
-                "position": 3
-              },
-              {
-                "week": 5,
-                "position": 2
-              }
-            ]
-          },
-          {
-            "name": "Leicester",
-            "attack": 7.6,
-            "defense": 2,
-            "strength": 4.9,
-            "chaos": 4.5,
-            "form": [
-              "D",
-              "W",
-              "W",
-              "L",
-              "L"
-            ],
-            "standings": [
-              {
-                "week": 1,
-                "position": 6
-              },
-              {
-                "week": 2,
-                "position": 2
-              },
-              {
-                "week": 3,
-                "position": 2
-              },
-              {
-                "week": 4,
-                "position": 4
-              },
-              {
-                "week": 5,
-                "position": 8
-              },
-              {
-                "week": 1,
-                "position": 6
-              },
-              {
-                "week": 2,
-                "position": 2
-              },
-              {
-                "week": 3,
-                "position": 2
-              },
-              {
-                "week": 4,
-                "position": 4
-              },
-              {
-                "week": 5,
-                "position": 8
-              }
-            ]
-          },
-          {
-            "name": "London Guns",
-            "attack": 5.8,
-            "defense": 2.8,
-            "strength": 4.1,
-            "chaos": 4.2,
-            "form": [
-              "D",
-              "W",
-              "L",
-              "L",
-              "L"
-            ],
-            "standings": [
-              {
-                "week": 1,
-                "position": 7
-              },
-              {
-                "week": 2,
-                "position": 3
-              },
-              {
-                "week": 3,
-                "position": 7
-              },
-              {
-                "week": 4,
-                "position": 11
-              },
-              {
-                "week": 5,
-                "position": 15
-              },
-              {
-                "week": 1,
-                "position": 7
-              },
-              {
-                "week": 2,
-                "position": 3
-              },
-              {
-                "week": 3,
-                "position": 7
-              },
-              {
-                "week": 4,
-                "position": 11
-              },
-              {
-                "week": 5,
-                "position": 15
-              }
-            ]
-          },
-          {
-            "name": "Manchester Blue",
-            "attack": 4.8,
-            "defense": 3.8,
-            "strength": 4.3,
-            "chaos": 4.2,
-            "form": [
-              "W",
-              "L",
-              "L",
               "L",
               "D"
             ],
             "standings": [
               {
                 "week": 1,
+                "position": 2
+              },
+              {
+                "week": 2,
+                "position": 1
+              },
+              {
+                "week": 3,
+                "position": 1
+              },
+              {
+                "week": 4,
+                "position": 1
+              },
+              {
+                "week": 5,
+                "position": 3
+              },
+              {
+                "week": 1,
+                "position": 2
+              },
+              {
+                "week": 2,
+                "position": 1
+              },
+              {
+                "week": 3,
+                "position": 1
+              },
+              {
+                "week": 4,
+                "position": 1
+              },
+              {
+                "week": 5,
+                "position": 3
+              },
+              {
+                "week": 1,
+                "position": 2
+              },
+              {
+                "week": 2,
+                "position": 1
+              },
+              {
+                "week": 3,
+                "position": 1
+              },
+              {
+                "week": 4,
+                "position": 1
+              },
+              {
+                "week": 5,
+                "position": 3
+              },
+              {
+                "week": 6,
+                "position": 4
+              }
+            ]
+          },
+          {
+            "name": "Everton",
+            "attack": 4.6,
+            "defense": 5.1,
+            "strength": 5.3,
+            "chaos": 8.2,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "L",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 16
+              },
+              {
+                "week": 2,
+                "position": 10
+              },
+              {
+                "week": 3,
+                "position": 4
+              },
+              {
+                "week": 4,
+                "position": 8
+              },
+              {
+                "week": 5,
+                "position": 10
+              },
+              {
+                "week": 1,
+                "position": 16
+              },
+              {
+                "week": 2,
+                "position": 10
+              },
+              {
+                "week": 3,
+                "position": 4
+              },
+              {
+                "week": 4,
+                "position": 8
+              },
+              {
+                "week": 5,
+                "position": 10
+              },
+              {
+                "week": 1,
+                "position": 16
+              },
+              {
+                "week": 2,
+                "position": 10
+              },
+              {
+                "week": 3,
+                "position": 4
+              },
+              {
+                "week": 4,
+                "position": 8
+              },
+              {
+                "week": 5,
+                "position": 10
+              },
+              {
+                "week": 6,
+                "position": 7
+              }
+            ]
+          },
+          {
+            "name": "Watford",
+            "attack": 4,
+            "defense": 2.2,
+            "strength": 4.3,
+            "chaos": 6.9,
+            "form": [
+              "L",
+              "D",
+              "L",
+              "W",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 8
+              },
+              {
+                "week": 2,
+                "position": 14
+              },
+              {
+                "week": 3,
+                "position": 14
+              },
+              {
+                "week": 4,
+                "position": 16
+              },
+              {
+                "week": 5,
+                "position": 12
+              },
+              {
+                "week": 1,
+                "position": 8
+              },
+              {
+                "week": 2,
+                "position": 14
+              },
+              {
+                "week": 3,
+                "position": 14
+              },
+              {
+                "week": 4,
+                "position": 16
+              },
+              {
+                "week": 5,
+                "position": 12
+              },
+              {
+                "week": 1,
+                "position": 8
+              },
+              {
+                "week": 2,
+                "position": 14
+              },
+              {
+                "week": 3,
+                "position": 14
+              },
+              {
+                "week": 4,
+                "position": 16
+              },
+              {
+                "week": 5,
+                "position": 12
+              },
+              {
+                "week": 6,
+                "position": 14
+              }
+            ]
+          },
+          {
+            "name": "Manchester Reds",
+            "attack": 7.6,
+            "defense": 2.8,
+            "strength": 7,
+            "chaos": 5.3,
+            "form": [
+              "W",
+              "W",
+              "D",
+              "W",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 9
+              },
+              {
+                "week": 2,
+                "position": 4
+              },
+              {
+                "week": 3,
+                "position": 3
+              },
+              {
+                "week": 4,
+                "position": 3
+              },
+              {
+                "week": 5,
+                "position": 2
+              },
+              {
+                "week": 1,
+                "position": 9
+              },
+              {
+                "week": 2,
+                "position": 4
+              },
+              {
+                "week": 3,
+                "position": 3
+              },
+              {
+                "week": 4,
+                "position": 3
+              },
+              {
+                "week": 5,
+                "position": 2
+              },
+              {
+                "week": 1,
+                "position": 9
+              },
+              {
+                "week": 2,
+                "position": 4
+              },
+              {
+                "week": 3,
+                "position": 3
+              },
+              {
+                "week": 4,
+                "position": 3
+              },
+              {
+                "week": 5,
+                "position": 2
+              },
+              {
+                "week": 6,
+                "position": 2
+              }
+            ]
+          },
+          {
+            "name": "Leicester",
+            "attack": 8.5,
+            "defense": 0.2,
+            "strength": 4.7,
+            "chaos": 3.8,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 6
+              },
+              {
+                "week": 2,
+                "position": 2
+              },
+              {
+                "week": 3,
+                "position": 2
+              },
+              {
+                "week": 4,
+                "position": 4
+              },
+              {
+                "week": 5,
+                "position": 8
+              },
+              {
+                "week": 1,
+                "position": 6
+              },
+              {
+                "week": 2,
+                "position": 2
+              },
+              {
+                "week": 3,
+                "position": 2
+              },
+              {
+                "week": 4,
+                "position": 4
+              },
+              {
+                "week": 5,
+                "position": 8
+              },
+              {
+                "week": 1,
+                "position": 6
+              },
+              {
+                "week": 2,
+                "position": 2
+              },
+              {
+                "week": 3,
+                "position": 2
+              },
+              {
+                "week": 4,
+                "position": 4
+              },
+              {
+                "week": 5,
+                "position": 8
+              },
+              {
+                "week": 6,
+                "position": 11
+              }
+            ]
+          },
+          {
+            "name": "London Guns",
+            "attack": 6.1,
+            "defense": 2.1,
+            "strength": 4.6,
+            "chaos": 4,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "L",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 7
+              },
+              {
+                "week": 2,
+                "position": 3
+              },
+              {
+                "week": 3,
+                "position": 7
+              },
+              {
+                "week": 4,
+                "position": 11
+              },
+              {
+                "week": 5,
+                "position": 15
+              },
+              {
+                "week": 1,
+                "position": 7
+              },
+              {
+                "week": 2,
+                "position": 3
+              },
+              {
+                "week": 3,
+                "position": 7
+              },
+              {
+                "week": 4,
+                "position": 11
+              },
+              {
+                "week": 5,
+                "position": 15
+              },
+              {
+                "week": 1,
+                "position": 7
+              },
+              {
+                "week": 2,
+                "position": 3
+              },
+              {
+                "week": 3,
+                "position": 7
+              },
+              {
+                "week": 4,
+                "position": 11
+              },
+              {
+                "week": 5,
+                "position": 15
+              },
+              {
+                "week": 6,
+                "position": 9
+              }
+            ]
+          },
+          {
+            "name": "Manchester Blue",
+            "attack": 4.6,
+            "defense": 2.9,
+            "strength": 3.5,
+            "chaos": 3.6,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "D",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
                 "position": 1
               },
               {
@@ -731,20 +1019,44 @@
               {
                 "week": 5,
                 "position": 14
+              },
+              {
+                "week": 1,
+                "position": 1
+              },
+              {
+                "week": 2,
+                "position": 5
+              },
+              {
+                "week": 3,
+                "position": 8
+              },
+              {
+                "week": 4,
+                "position": 15
+              },
+              {
+                "week": 5,
+                "position": 14
+              },
+              {
+                "week": 6,
+                "position": 15
               }
             ]
           },
           {
             "name": "Crystal Palace",
-            "attack": 4.6,
-            "defense": 3.4,
-            "strength": 4.4,
-            "chaos": 4.6,
+            "attack": 4,
+            "defense": 2.5,
+            "strength": 3.6,
+            "chaos": 4.9,
             "form": [
-              "L",
               "L",
               "W",
               "D",
+              "L",
               "L"
             ],
             "standings": [
@@ -787,20 +1099,44 @@
               {
                 "week": 5,
                 "position": 16
+              },
+              {
+                "week": 1,
+                "position": 15
+              },
+              {
+                "week": 2,
+                "position": 16
+              },
+              {
+                "week": 3,
+                "position": 13
+              },
+              {
+                "week": 4,
+                "position": 14
+              },
+              {
+                "week": 5,
+                "position": 16
+              },
+              {
+                "week": 6,
+                "position": 16
               }
             ]
           },
           {
             "name": "Tottenham",
-            "attack": 4,
-            "defense": 5.6,
-            "strength": 5.8,
-            "chaos": 7.2,
+            "attack": 3.4,
+            "defense": 6.3,
+            "strength": 6,
+            "chaos": 8.5,
             "form": [
-              "D",
               "D",
               "W",
               "L",
+              "W",
               "W"
             ],
             "standings": [
@@ -843,21 +1179,45 @@
               {
                 "week": 5,
                 "position": 6
+              },
+              {
+                "week": 1,
+                "position": 10
+              },
+              {
+                "week": 2,
+                "position": 12
+              },
+              {
+                "week": 3,
+                "position": 6
+              },
+              {
+                "week": 4,
+                "position": 9
+              },
+              {
+                "week": 5,
+                "position": 6
+              },
+              {
+                "week": 6,
+                "position": 5
               }
             ]
           },
           {
             "name": "Southampton",
-            "attack": 4.2,
-            "defense": 5.2,
-            "strength": 4.4,
-            "chaos": 6.4,
+            "attack": 4.1,
+            "defense": 5.7,
+            "strength": 5,
+            "chaos": 8.2,
             "form": [
-              "D",
               "L",
               "D",
               "W",
-              "L"
+              "L",
+              "W"
             ],
             "standings": [
               {
@@ -899,6 +1259,30 @@
               {
                 "week": 5,
                 "position": 13
+              },
+              {
+                "week": 1,
+                "position": 11
+              },
+              {
+                "week": 2,
+                "position": 15
+              },
+              {
+                "week": 3,
+                "position": 15
+              },
+              {
+                "week": 4,
+                "position": 10
+              },
+              {
+                "week": 5,
+                "position": 13
+              },
+              {
+                "week": 6,
+                "position": 8
               }
             ]
           }
