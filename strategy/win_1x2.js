@@ -104,6 +104,19 @@ async function win_1x2(amount = 100, matchCount = 5) {
 
             if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
 
+            // Check last 3 form for home
+            const homeForm = homeStats.form.slice(-3);
+            const awayForm = awayStats.form.slice(-3);
+
+           
+
+            if (!homeForm.join("") === "WWW" || !awayForm.join("") === "WWW"){
+                console.log("Home Form: ", homeForm.join(""), "\nAway Form: ", awayForm.join("")) 
+                continue;
+            } 
+            console.log("Home Form: ", homeForm.join(""), "\nAway Form: ", awayForm.join("")) 
+
+
             let predictedWinner = null;
             if (homeStanding.W > awayStanding.W && homeStanding.PTS > awayStanding.PTS) {
                 predictedWinner = home;
