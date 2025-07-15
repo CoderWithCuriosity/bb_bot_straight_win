@@ -1,3 +1,4 @@
+
 const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
@@ -71,6 +72,20 @@ function markStat(value, type = "normal") {
     }
 }
 
+function getMaxDraws(seasonStandings, tournamentId, seasonId) {
+    const tournament = seasonStandings.find(t => t.tournamentId === tournamentId);
+    if (!tournament) return 0;
+
+    const season = tournament.seasons.find(s => s.seasonId === seasonId);
+    if (!season) return 0;
+
+    const drawsArray = season.standings.map(team => team.D);
+    const highestDraw = Math.max(...drawsArray);
+
+    return highestDraw;
+}
+
+
 async function win_1x2(amount = 100, matchCount = 5) {
     const selections = [];
     const valid_matches = await fetchMatches();
@@ -85,11 +100,13 @@ async function win_1x2(amount = 100, matchCount = 5) {
             if (match.tournamentId !== tournament.id) continue;
 
             const matchDay = Math.floor((match.scheduledTime - startDayStamp) / daysDiff) + 1;
-            if(matchDay < 6){
+            if(matchDay < 8 || matchDay > 19){
                 continue;
             }
             // const maxAllowedDraws = Math.floor(matchDay / 2);
-            const maxAllowedDraws = matchDay > 10 ? 6 : Math.floor(matchDay / 2);
+            // const maxAllowedDraws = matchDay > 10 ? 6 : Math.floor(matchDay / 2);
+            const highestDraw = getMaxDraws(seasonStandings, tournament.id, seasonId);
+            const maxAllowedDraws = Math.floor(highestDraw / 2);
 
             const home = match.homeTeamName;
             const away = match.awayTeamName;
@@ -104,33 +121,51 @@ async function win_1x2(amount = 100, matchCount = 5) {
 
             if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
 
-           const homeForm = homeStats.form.slice(-3);
+            const homeForm = homeStats.form.slice(-3);
             const awayForm = awayStats.form.slice(-3);
 
             const homeFormStr = homeForm.join("");
             const awayFormStr = awayForm.join("");
 
-            const isHomeWWW = homeFormStr === "WWW";
-            const isAwayWWW = awayFormStr === "WWW";
+             const isHomeWWW = homeFormStr === "WWL";
+            const isAwayWWW = awayFormStr === "WWL";
 
-            if (!isHomeWWW && !isAwayWWW) {
-                console.log("Skipping match because no WWW form");
-                console.log("Home Form:", homeFormStr, "\nAway Form:", awayFormStr);
-                continue;
+             if (!isHomeWWW && !isAwayWWW) {
+                 continue;
             }
-
-            console.log("Selected Match:");
-            console.log("Home Form:", homeFormStr, "\nAway Form:", awayFormStr);
 
 
             let predictedWinner = null;
+            let loser = null;
             if (homeStanding.W > awayStanding.W && homeStanding.PTS > awayStanding.PTS) {
                 predictedWinner = home;
+                loser = away;
             } else if (awayStanding.W > homeStanding.W && awayStanding.PTS > homeStanding.PTS) {
                 predictedWinner = away;
+                loser = home;
             } else {
                 continue;
             }
+            if(predictedWinner === home){
+            if(!isHomeWWW) continue;
+                if(parseFloat(homeStats.chaos) < parseFloat(awayStats.chaos) || parseFloat(homeStats.defense) < parseFloat(awayStats.defense)){
+                    continue;
+                }
+                if(parseInt(homeStanding.W) < (parseInt(awayStanding.W) + 2) ) continue;
+                const winAvg = Math.floor(parseInt(homeStanding.W) / 2);
+                if(parseInt(homeStanding.L) > winAvg) continue;
+
+            } else {
+                if(!isAwayWWW) continue;
+                if(parseFloat(homeStats.chaos) > parseFloat(awayStats.chaos) || parseFloat(homeStats.defense) > parseFloat(awayStats.defense)){
+                    continue;
+                }
+                if(parseInt(awayStanding.W) < (parseInt(homeStanding.W) + 2)) continue;
+                const winAvg = Math.floor(parseInt(awayStanding.W) / 2);
+                if(parseInt(awayStanding.L) > winAvg) continue;
+            }
+            
+            
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
@@ -140,7 +175,7 @@ async function win_1x2(amount = 100, matchCount = 5) {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
                             if (outcome.desc !== predictedWinner) continue;
-                            if (outcome.odds < 1.3 || outcome.odds > 3.6) continue;
+                            if (outcome.odds < 1.5 || outcome.odds > 3.6) continue;
 
                             const msg = `📊 *Straight Win Pick*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home} vs ${away}\n\n*Home Stats:*\n- Position: ${homeStanding.PTS} pts (${homeStanding.W}W ${homeStanding.D}D ${homeStanding.L}L)\n- Attack: ${markStat(homeStats.attack)}\n- Defense: ${markStat(homeStats.defense)}\n- Strength: ${markStat(homeStats.strength)}\n- Chaos: ${markStat(homeStats.chaos, "chaos")}\n\n*Away Stats:*\n- Position: ${awayStanding.PTS} pts (${awayStanding.W}W ${awayStanding.D}D ${awayStanding.L}L)\n- Attack: ${markStat(awayStats.attack)}\n- Defense: ${markStat(awayStats.defense)}\n- Strength: ${markStat(awayStats.strength)}\n- Chaos: ${markStat(awayStats.chaos, "chaos")}\n\n✅ *Pick:* ${predictedWinner}\n💸 *Odds:* ${outcome.odds}\n🆔 Match ID: ${oddsData.id}`;
 

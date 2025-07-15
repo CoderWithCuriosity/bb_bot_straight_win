@@ -56,7 +56,7 @@ async function main() {
     return;
   }
 
-  const stake = 100; // Fixed stake now
+  const stake = 200; // Fixed stake now
 
   await processSeasonsFromWeek1();
   const [selections] = await win_1x2(stake, betPerX);
@@ -82,7 +82,8 @@ async function main() {
         credentials.token,
         credentials.secretKey,
         [sel],
-        storeLoginData
+        storeLoginData,
+        stake
       );
       logBet(sel); // Save to bets.json
     }
