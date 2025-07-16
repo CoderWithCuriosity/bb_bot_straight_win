@@ -148,21 +148,21 @@ async function win_1x2(amount = 100, matchCount = 5) {
             }
             if(predictedWinner === home){
             if(!isHomeWWW) continue;
-                if(parseFloat(homeStats.chaos) < parseFloat(awayStats.chaos) || parseFloat(homeStats.defense) < parseFloat(awayStats.defense)){
+                if(parseFloat(homeStats.defense) < parseFloat(awayStats.defense)){
                     continue;
                 }
                 if(parseInt(homeStanding.W) < (parseInt(awayStanding.W) + 2) ) continue;
                 const winAvg = Math.floor(parseInt(homeStanding.W) / 2);
-                if(parseInt(homeStanding.L) > winAvg) continue;
+                if(parseInt(homeStanding.L) >= winAvg) continue;
 
             } else {
                 if(!isAwayWWW) continue;
-                if(parseFloat(homeStats.chaos) > parseFloat(awayStats.chaos) || parseFloat(homeStats.defense) > parseFloat(awayStats.defense)){
+                if( parseFloat(homeStats.defense) > parseFloat(awayStats.defense)){
                     continue;
                 }
                 if(parseInt(awayStanding.W) < (parseInt(homeStanding.W) + 2)) continue;
                 const winAvg = Math.floor(parseInt(awayStanding.W) / 2);
-                if(parseInt(awayStanding.L) > winAvg) continue;
+                if(parseInt(awayStanding.L) >= winAvg) continue;
             }
             
             
