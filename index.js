@@ -5,7 +5,7 @@ const { win_1x2 } = require("./strategy/win_1x2");
 const { processSeasonsFromWeek1 } = require("./utils/seasonProcessor");
 
 const X = 2; // Minutes between executions
-const betPerX = 5; // How many matches to bet on
+const betPerX = 3; // How many matches to bet on
 
 const FILE_PATH = path.join(__dirname, "bets.json");
 const TOKEN_PATH = path.join(__dirname, "token.json");
@@ -23,8 +23,7 @@ if (!fs.existsSync(TOKEN_PATH))
 
 function getLoginData() {
   const data = fs.readFileSync(TOKEN_PATH, "utf8");
-  const parseData = JSON.parse(data);
-  return parseData[0];
+  return JSON.parse(data)[0];
 }
 
 function storeLoginData(credentials) {
@@ -32,11 +31,7 @@ function storeLoginData(credentials) {
     const credentialsData = [
       { token: credentials.token, secretKey: credentials.secretKey }
     ];
-    fs.writeFileSync(
-      TOKEN_PATH,
-      JSON.stringify(credentialsData, null, 2),
-      "utf8"
-    );
+    fs.writeFileSync(TOKEN_PATH, JSON.stringify(credentialsData, null, 2), "utf8");
   }
 }
 
@@ -56,37 +51,57 @@ async function main() {
     return;
   }
 
-  const stake = 200; // Fixed stake now
+  const stake = 100; // Fixed stake
 
   await processSeasonsFromWeek1();
   const [selections] = await win_1x2(stake, betPerX);
 
-  if (selections.length) {
-    const existingBets = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
-    console.log(`🎯 Found ${selections.length} strategic matches:`);
+  if (!selections.length) {
+    console.log("⚠️ No new selections found.");
+    return;
+  }
 
-    for (const sel of selections) {
-      const alreadyPlaced = existingBets.some(
-        b => b.eventId === sel.eventId && b.outcomeId === sel.outcomeId
-      );
+  const existingBets = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
 
-      if (alreadyPlaced) {
-        console.log(`⚠️ Already bet on ${sel.eventName} - Skipping...`);
-        continue;
-      }
-
-      console.log(
-        `🟢 Bet: ${sel.eventName} (${sel.outcomeName} @ ${sel.odds})`
-      );
-      await placeBet(
-        credentials.token,
-        credentials.secretKey,
-        [sel],
-        storeLoginData,
-        stake
-      );
-      logBet(sel); // Save to bets.json
+  // Remove already placed bets
+  const newSelections = selections.filter(sel => {
+    const alreadyPlaced = existingBets.some(
+      b => b.eventId === sel.eventId && b.outcomeId === sel.outcomeId
+    );
+    if (alreadyPlaced) {
+      console.log(`⚠️ Already bet on ${sel.eventName} - Skipping...`);
+      return false;
     }
+    return true;
+  });
+
+  if (!newSelections.length) {
+    console.log("⚠️ No new bets to place after removing duplicates.");
+    return;
+  }
+
+  console.log(`🎯 Placing ${newSelections.length} new bets:`);
+
+  // Sort by scheduled time and eventId
+  newSelections.sort((a, b) => {
+    if (a.scheduledTime !== b.scheduledTime) {
+      return a.scheduledTime - b.scheduledTime;
+    }
+    return a.eventId.localeCompare(b.eventId);
+  });
+
+  try {
+    await placeBet(
+      credentials.token,
+      credentials.secretKey,
+      newSelections,
+      storeLoginData,
+      stake
+    );
+
+    newSelections.forEach(sel => logBet(sel));
+  } catch (err) {
+    console.error("❌ Failed to place bet:", err.message || err);
   }
 }
 

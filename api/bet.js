@@ -36,7 +36,7 @@ async function placeBet(token, secretKey, selections, storeCred, amount = 100, r
             }
         });
 
-            console.log("✅ Bet Result:", res.data.info);
+            console.log("✅ Bet Result:", res.data);
 
         if (res.data.info == 'illegal token') {
             if (retryCount < MAX_RETRIES) {
