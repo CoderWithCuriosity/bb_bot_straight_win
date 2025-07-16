@@ -25,44 +25,53 @@ async function sendTelegramMessage(message) {
             parse_mode: "Markdown",
         });
     } catch (err) {
-        console.error("❌ Failed to send Telegram message:", err.message);
+        console.error("❌ Telegram Error:", err.message);
     }
 }
 
-function loadJSON(filePath) {
-    if (!fs.existsSync(filePath)) return [];
-    return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+function loadSeasonStandings() {
+    if (!fs.existsSync(SEASON_STATS_FILE)) return [];
+    return JSON.parse(fs.readFileSync(SEASON_STATS_FILE, "utf-8"));
 }
 
-function getTeamAttributes(tournamentData, tournamentId, seasonId, teamName) {
-    const tournament = tournamentData.find(t => t.tournamentId === tournamentId);
+function loadTournamentData() {
+    if (!fs.existsSync(TOURNAMENT_DATA_FILE)) return [];
+    return JSON.parse(fs.readFileSync(TOURNAMENT_DATA_FILE, "utf-8"));
+}
+
+function getTeamStanding(standings, tournamentId, seasonId, teamName) {
+    const tournament = standings.find(t => t.tournamentId === tournamentId);
     if (!tournament) return null;
     const season = tournament.seasons?.find(s => s.seasonId === seasonId);
     if (!season) return null;
-    return season.teams?.find(t => t.name === teamName) || null;
+    return season.standings?.find(t => t.team === teamName) || null;
 }
 
-function getMaxDraws(seasonStandings, tournamentId, seasonId) {
-    const tournament = seasonStandings.find(t => t.tournamentId === tournamentId);
+function standingsPosition(standings, tournamentId, seasonId, teamName) {
+    const tournament = standings.find(t => t.tournamentId === tournamentId);
+    if (!tournament) return -1;
+    const season = tournament.seasons?.find(s => s.seasonId === seasonId);
+    if (!season) return -1;
+    const sorted = [...season.standings].sort((a, b) => b.PTS - a.PTS);
+    const pos = sorted.findIndex(t => t.team === teamName);
+    return pos === -1 ? -1 : pos + 1;
+}
+
+function getTeamFormDraws(tournamentData, tournamentId, seasonId, teamName) {
+    const tournament = tournamentData.find(t => t.tournamentId === tournamentId);
     if (!tournament) return 0;
-
-    const season = tournament.seasons.find(s => s.seasonId === seasonId);
+    const season = tournament.seasons?.find(s => s.seasonId === seasonId);
     if (!season) return 0;
-
-    const drawsArray = season.standings.map(team => team.D);
-    const highestDraw = Math.max(...drawsArray);
-
-    return highestDraw;
+    const team = season.teams?.find(t => t.name === teamName);
+    if (!team || !team.form) return 0;
+    return team.form.filter(f => f === "D").length;
 }
 
-
-
-
-async function win_1x2(amount = 100, matchCount = 5) {
+async function win_1x2(amount = 100, matchCount = 1) {
     const selections = [];
     const validMatches = await fetchMatches();
-    const seasonStandings = loadJSON(SEASON_STATS_FILE);
-    const tournamentData = loadJSON(TOURNAMENT_DATA_FILE);
+    const standings = loadSeasonStandings();
+    const tournamentData = loadTournamentData();
 
     for (const tournament of STRATEGIC_TOURNAMENTS) {
         const [startDayStamp, daysDiff] = await fetchMatchDaysDifference(tournament.id);
@@ -77,29 +86,37 @@ async function win_1x2(amount = 100, matchCount = 5) {
             const home = match.homeTeamName;
             const away = match.awayTeamName;
 
-            const homeStats = getTeamAttributes(tournamentData, tournament.id, seasonId, home);
-            const awayStats = getTeamAttributes(tournamentData, tournament.id, seasonId, away);
-            if (!homeStats || !awayStats) continue;
+            const homeStanding = getTeamStanding(standings, tournament.id, seasonId, home);
+            const awayStanding = getTeamStanding(standings, tournament.id, seasonId, away);
+            if (!homeStanding || !awayStanding) continue;
 
-            const highestDraw = getMaxDraws(seasonStandings, tournament.id, seasonId);
-            const maxAllowedDraws = Math.floor(highestDraw / 2);
+            const homePos = standingsPosition(standings, tournament.id, seasonId, home);
+            const awayPos = standingsPosition(standings, tournament.id, seasonId, away);
+            if (homePos < 5 || homePos > 12 || awayPos < 5 || awayPos > 12) continue;
 
-            const homeDrawsInForm = homeStats.form.filter(f => f === "D").length;
-            const awayDrawsInForm = awayStats.form.filter(f => f === "D").length;
-
-            if (homeDrawsInForm > maxAllowedDraws || awayDrawsInForm > maxAllowedDraws) continue;
+            const homeDraws = getTeamFormDraws(tournamentData, tournament.id, seasonId, home);
+            const awayDraws = getTeamFormDraws(tournamentData, tournament.id, seasonId, away);
+            // console.log("Home Draws: ", homeDraws);
+            // console.log("Away Draws: ", awayDraws);
+            if (homeDraws < 2 || awayDraws < 2) continue;
+            let selectedId = null;
+            if(homePos + 1 == awayPos || awayPos + 1 == homePos){
+                selectedId = 2;
+            } else {
+                selectedId = homePos > awayPos ? 3 : 1;
+            }
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
 
             for (const market of oddsData.marketList) {
-                if (market.name !== "Double chance") continue;
+                if (market.name !== "1x2") continue;
 
                 for (const detail of market.markets) {
                     for (const outcome of detail.outcomes) {
-                        if (parseInt(outcome.id) !== 10) continue;
+                        if (parseInt(outcome.id) !== selectedId) continue; // Muhahaha
 
-                        const msg = `📊 *Double Chance Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Odds:* ${outcome.odds}\n🆔 *Match ID:* ${oddsData.id}\n\n *Home Draw in Form:* ${homeDrawsInForm}\n\n *Away Draw in Form: * ${awayDrawsInForm}`;
+                        const msg = `🤝 *Draw Fake Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Draw Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeDraws}/${awayDraws}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n *Match Id: *${oddsData.id}`;
                         await sendTelegramMessage(msg);
 
                         selections.push({
@@ -120,25 +137,17 @@ async function win_1x2(amount = 100, matchCount = 5) {
                             tournamentId: match.tournamentId,
                         });
 
-                        if (selections.length >= matchCount) return [selections];
+                        if (selections.length >= matchCount) break;
                     }
+                    if (selections.length >= matchCount) break;
                 }
+                if (selections.length >= matchCount) break;
             }
+            if (selections.length >= matchCount) break;
         }
     }
 
-    // Final check if loop ends but selections are filled
-    if (selections.length) {
-        const totalOdds = selections.reduce((sum, s) => sum + parseFloat(s.odds), 0);
-        if (totalOdds >= 1.7) {
-            return [selections];
-        } else {
-            console.log("❌ Odds condition failed. Skipping bet.");
-            return [[]];
-        }
-    }
-
-    return [[]];
+    return [selections];
 }
 
 module.exports = { win_1x2 };
