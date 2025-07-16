@@ -42,6 +42,22 @@ function getTeamAttributes(tournamentData, tournamentId, seasonId, teamName) {
     return season.teams?.find(t => t.name === teamName) || null;
 }
 
+function getMaxDraws(seasonStandings, tournamentId, seasonId) {
+    const tournament = seasonStandings.find(t => t.tournamentId === tournamentId);
+    if (!tournament) return 0;
+
+    const season = tournament.seasons.find(s => s.seasonId === seasonId);
+    if (!season) return 0;
+
+    const drawsArray = season.standings.map(team => team.D);
+    const highestDraw = Math.max(...drawsArray);
+
+    return highestDraw;
+}
+
+
+
+
 async function win_1x2(amount = 100, matchCount = 5) {
     const selections = [];
     const validMatches = await fetchMatches();
@@ -65,10 +81,13 @@ async function win_1x2(amount = 100, matchCount = 5) {
             const awayStats = getTeamAttributes(tournamentData, tournament.id, seasonId, away);
             if (!homeStats || !awayStats) continue;
 
+            const highestDraw = getMaxDraws(seasonStandings, tournament.id, seasonId);
+            const maxAllowedDraws = Math.floor(highestDraw / 2);
+
             const homeDrawsInForm = homeStats.form.filter(f => f === "D").length;
             const awayDrawsInForm = awayStats.form.filter(f => f === "D").length;
 
-            if (homeDrawsInForm > 0 || awayDrawsInForm > 0) continue;
+            if (homeDrawsInForm > maxAllowedDraws || awayDrawsInForm > maxAllowedDraws) continue;
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
