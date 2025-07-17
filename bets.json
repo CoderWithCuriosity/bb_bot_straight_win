@@ -862,5 +862,23 @@
     "categoryId": "sr:category:1111",
     "tournamentId": "vf:tournament:14149",
     "placedAt": "2025-07-17T05:27:50.753Z"
+  },
+  {
+    "sportId": "sr:sport:1",
+    "eventId": "vf:match:1384734893",
+    "producer": 6,
+    "marketId": "18",
+    "specifiers": "total=1.5&",
+    "outcomeId": "12",
+    "amount": 100,
+    "odds": 1.35,
+    "specifierKeys": "total&",
+    "eventName": "SC Freiburg vs. VfL Wolfsburg",
+    "scheduledTime": 1752730331000,
+    "marketName": null,
+    "outcomeName": "over 1.5",
+    "categoryId": "sr:category:1111",
+    "tournamentId": "vf:tournament:34616",
+    "placedAt": "2025-07-17T05:31:56.745Z"
   }
 ]

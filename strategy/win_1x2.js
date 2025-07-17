@@ -114,7 +114,7 @@ async function win_1x2(amount = 100, matchCount = 3) {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
                             if (outcome.desc === "over 1.5") {
-                                // if (outcome.odds > 1.3) continue; // Skip high odds
+                                if (outcome.odds < 1.2) continue; // Skip high odds
 
                                 const msg = `🤝 *Over 1.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeDraws}/${awayDraws}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
                                 await sendTelegramMessage(msg);
@@ -147,8 +147,14 @@ async function win_1x2(amount = 100, matchCount = 3) {
             }
         }
     }
+if (selections.length === 1) {
+    const firstPick = selections[0];
+    if (firstPick.odds < 1.3) {
+        console.log(`❌ Removed single selection because odds ${firstPick.odds} < 1.3`);
+        selections.pop(); // Remove the pick
+    }
+}
 
-    return [selections];
 }
 
 module.exports = { win_1x2 };
