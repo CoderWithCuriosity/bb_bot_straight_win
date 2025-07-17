@@ -67,7 +67,7 @@ function getTeamFormDraws(tournamentData, tournamentId, seasonId, teamName) {
     return team.form.filter(f => f === "D").length;
 }
 
-async function win_1x2(amount = 100, matchCount = 1) {
+async function win_1x2(amount = 100, matchCount = 3) {
     const selections = [];
     const validMatches = await fetchMatches();
     const standings = loadSeasonStandings();
@@ -96,54 +96,55 @@ async function win_1x2(amount = 100, matchCount = 1) {
 
             const homeDraws = getTeamFormDraws(tournamentData, tournament.id, seasonId, home);
             const awayDraws = getTeamFormDraws(tournamentData, tournament.id, seasonId, away);
-            // console.log("Home Draws: ", homeDraws);
-            // console.log("Away Draws: ", awayDraws);
             if (homeDraws < 2 || awayDraws < 2) continue;
-            let selectedId = null;
-            if(homePos + 1 == awayPos || awayPos + 1 == homePos){
-                selectedId = 2;
-            } else {
-                selectedId = homePos > awayPos ? 3 : 1;
-            }
+
+            // Try this strategy later on
+            // let selectedId = null;
+            // if (homePos + 1 === awayPos || awayPos + 1 === homePos) {
+            //     selectedId = homePos > awayPos ? 3 : 1;
+            // } else {
+            //     selectedId = homeDraws > awayDraws ? 1 : awayDraws > homeDraws ? 3 : homePos > awayPos ? 1 : 3;
+            // }
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
 
             for (const market of oddsData.marketList) {
-                if (market.name !== "1x2") continue;
+                if (market.name === "Over/Under") {
+                    for (const detail of market.markets) {
+                        for (const outcome of detail.outcomes) {
+                            if (outcome.desc === "over 1.5") {
+                                // if (outcome.odds > 1.3) continue; // Skip high odds
 
-                for (const detail of market.markets) {
-                    for (const outcome of detail.outcomes) {
-                        if (parseInt(outcome.id) !== selectedId) continue; // Muhahaha
+                                const msg = `🤝 *Over 1.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeDraws}/${awayDraws}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
+                                await sendTelegramMessage(msg);
 
-                        const msg = `🤝 *Draw Fake Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Draw Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeDraws}/${awayDraws}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n *Match Id: *${oddsData.id}`;
-                        await sendTelegramMessage(msg);
+                                selections.push({
+                                    sportId: match.sportId,
+                                    eventId: match.id,
+                                    producer: match.producer,
+                                    marketId: market.id,
+                                    specifiers: detail.specifiers,
+                                    outcomeId: outcome.id,
+                                    amount: amount,
+                                    odds: outcome.odds,
+                                    specifierKeys: detail.specifiersKeys,
+                                    eventName: match.name,
+                                    scheduledTime: match.scheduledTime,
+                                    marketName: outcome.marketName,
+                                    outcomeName: outcome.desc,
+                                    categoryId: match.categoryId,
+                                    tournamentId: match.tournamentId
+                                });
 
-                        selections.push({
-                            sportId: match.sportId,
-                            eventId: match.id,
-                            producer: match.producer,
-                            marketId: market.id,
-                            specifiers: "",
-                            outcomeId: outcome.id,
-                            amount: amount,
-                            odds: outcome.odds,
-                            specifierKeys: "",
-                            eventName: match.name,
-                            scheduledTime: match.scheduledTime,
-                            marketName: market.name,
-                            outcomeName: outcome.desc,
-                            categoryId: match.categoryId,
-                            tournamentId: match.tournamentId,
-                        });
-
-                        if (selections.length >= matchCount) break;
+                                if (selections.length >= matchCount) {
+                                    return [selections];
+                                }
+                            }
+                        }
                     }
-                    if (selections.length >= matchCount) break;
                 }
-                if (selections.length >= matchCount) break;
             }
-            if (selections.length >= matchCount) break;
         }
     }
 

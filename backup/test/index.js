@@ -41,6 +41,7 @@ async function countFinishedMatches(useCurrentHour = false) {
   let under1 = 0;
   let draws = 0;
   let drawTeams = [];
+  let noGoals = [];
 
   for (const result of results) {
     if (!result) continue;
@@ -60,7 +61,10 @@ async function countFinishedMatches(useCurrentHour = false) {
     if (totalGoals > 1.5) over1_5++;
     if (totalGoals > 2.5) over2_5++;
     if (totalGoals > 3.5) over3_5++;
-    if (totalGoals < 1) under1++;
+    if (totalGoals < 1) {
+      noGoals.push({ name: name, id: id });
+      under1++;
+    }
     if (homeScore === awayScore) {
       drawTeams.push({ name: name, id: id });
       draws++;
@@ -75,6 +79,7 @@ async function countFinishedMatches(useCurrentHour = false) {
   console.log(`Draws: ${draws}`);
   //   console.log(`Draw Matches Teams: ${drawTeams}`);
   fs.writeFileSync("draws.json", JSON.stringify(drawTeams, null, 2));
+  fs.writeFileSync("nogoal.json", JSON.stringify(noGoals, null, 2));
 }
 
 countFinishedMatches(false);
