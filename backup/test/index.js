@@ -27,7 +27,7 @@ async function countFinishedMatches(useCurrentHour = false) {
     return getMatchOdds(bet.eventId)
       .then(matchData => ({ bet, matchData }))
       .catch(err => {
-        console.log(`❌ Error fetching data for ${bet.eventName}`);
+        console.log(`❌ Error fetching data for ${bet.name}`);
         return null;
       });
   });
@@ -39,6 +39,8 @@ async function countFinishedMatches(useCurrentHour = false) {
   let over2_5 = 0;
   let over3_5 = 0;
   let under1 = 0;
+  let draws = 0;
+  let drawTeams = [];
 
   for (const result of results) {
     if (!result) continue;
@@ -47,7 +49,7 @@ async function countFinishedMatches(useCurrentHour = false) {
 
     if (!matchData) continue;
 
-    const { homeScore, awayScore, matchStatus } = matchData;
+    const { homeScore, awayScore, matchStatus, name, id } = matchData;
 
     if (matchStatus !== "ended") continue;
 
@@ -59,6 +61,10 @@ async function countFinishedMatches(useCurrentHour = false) {
     if (totalGoals > 2.5) over2_5++;
     if (totalGoals > 3.5) over3_5++;
     if (totalGoals < 1) under1++;
+    if (homeScore === awayScore) {
+      drawTeams.push({ name: name, id: id });
+      draws++;
+    }
   }
 
   console.log(`\n📊 Finished Matches: ${endedCount}`);
@@ -66,6 +72,9 @@ async function countFinishedMatches(useCurrentHour = false) {
   console.log(`✅ Over 2.5: ${over2_5}`);
   console.log(`✅ Over 3.5: ${over3_5}`);
   console.log(`❌ Under 1 Goal (0-0): ${under1}`);
+  console.log(`Draws: ${draws}`);
+  //   console.log(`Draw Matches Teams: ${drawTeams}`);
+  fs.writeFileSync("draws.json", JSON.stringify(drawTeams, null, 2));
 }
 
 countFinishedMatches(false);
