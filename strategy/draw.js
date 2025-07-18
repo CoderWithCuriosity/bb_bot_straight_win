@@ -173,21 +173,27 @@ async function win_1x2(amount = 100, matchCount = 3) {
                 if(parseInt(awayStanding.L) >= winAvg) continue;
             }
 
+            const homeRank = homeStanding.P;
+            const awayRank = awayStanding.P;
+
+
 
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
 
-            for (const market of oddsData.marketList) {
-                if (market.name === "Over/Under") {
-                    for (const detail of market.markets) {
-                        for (const outcome of detail.outcomes) {
-                            if (outcome.desc === "over 1.5") {
-                                // if () continue; // Skip high odds
-                                if (outcome.odds < 1.2 || outcome.odds >= 1.4) continue; // Skip high odds
-
-                                const msg = `🤝 *Over 1.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homeStanding.pos} vs ${awayStanding.pos}\n\n*Match Id:* ${oddsData.id}`;
-
+            if (!oddsData?.marketList?.length) continue;
+             for (const market of oddsData.marketList) {
+                    if (market.name === "1x2") {
+                        for (const detail of market.markets) {
+                            for (const outcome of detail.outcomes) {
+                                if(parseInt(outcome.id) != 2) continue;
+                                // if (
+                                //     outcome.odds < 1.49 ||
+                                //     outcome.odds > 1.69
+                                // ) continue;
+                                // 🟢 Send Telegram message After checking odds
+                                const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home}` + ` vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n🆔Match ID: ${match.id}\n\n\n🧠 Odds: ${outcome.odds}`;
                                 await sendTelegramMessage(msg);
                                 selections.push({
                                     sportId: match.sportId,
@@ -214,7 +220,6 @@ async function win_1x2(amount = 100, matchCount = 3) {
                         }
                     }
                 }
-            }
         }
     }
     if (selections.length === 1) {
