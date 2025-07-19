@@ -148,10 +148,9 @@ async function win_1x2(amount = 100, matchCount = 3) {
             const awayPass = has2Wins1Loss(awayForm);
 
             if (!homePass || !awayPass) continue;
-
-
             console.log(home, " form: ", homeForm, "\nHome Pos: ", homePos)
             console.log(away, " form: ", awayForm + "\nAway Pos: ", awayPos, "\n")
+
 
 
             const oddsData = await getMatchOdds(match.id);
@@ -164,7 +163,7 @@ async function win_1x2(amount = 100, matchCount = 3) {
                             if (outcome.desc === "over 2.25") {
                                 if (outcome.odds < 1.2) continue;
 
-                                const msg = `🤝 *Over 2.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homeStanding.pos} vs ${awayStanding.pos}\n\n*Match Id:* ${oddsData.id}`;
+                                const msg = `🤝 *Over 2.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
 
                                 await sendTelegramMessage(msg);
                                 selections.push({
