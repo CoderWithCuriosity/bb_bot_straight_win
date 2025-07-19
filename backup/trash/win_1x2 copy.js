@@ -60,16 +60,6 @@ function getTeamStanding(seasonStandings, tournamentId, seasonId, teamName) {
     return season.standings?.find(t => t.team === teamName) || null;
 }
 
-function getTeamPos(seasonStandings, tournamentId, seasonId, teamName) {
-    const tournament = seasonStandings.find(t => t.tournamentId === tournamentId);
-    if (!tournament) return null;
-
-    const season = tournament.seasons?.find(s => s.seasonId === seasonId);
-    if (!season) return null;
-
-    return season.standings?.findIndex(t => t.team === teamName) + 1 || null;
-}
-
 function markStat(value, type = "normal") {
     if (type === "chaos") {
         if (value < 4) return `🟢 ${value}`;
@@ -94,13 +84,6 @@ function getMaxDraws(seasonStandings, tournamentId, seasonId) {
 
     return highestDraw;
 }
-
-function has2Wins1Loss(form) {
-    const wins = form.filter(r => r === "W").length;
-    const losses = form.filter(r => r === "L").length;
-    return wins === 2 && losses === 1;
-}
-
 
 
 async function win_1x2(amount = 100, matchCount = 3) {
@@ -134,24 +117,62 @@ async function win_1x2(amount = 100, matchCount = 3) {
 
             const homeStanding = getTeamStanding(seasonStandings, tournament.id, seasonId, home);
             const awayStanding = getTeamStanding(seasonStandings, tournament.id, seasonId, away);
-
-            const homePos = getTeamPos(seasonStandings, tournament.id, seasonId, home);
-            const awayPos = getTeamPos(seasonStandings, tournament.id, seasonId, away);
             if (!homeStanding || !awayStanding) continue;
 
             // if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
 
-            const homeForm = homeStats.form.slice(-3);
-            const awayForm = awayStats.form.slice(-3);
+            const homeForm = homeStats.form.slice(-2);
+            const awayForm = awayStats.form.slice(-2);
 
-            const homePass = has2Wins1Loss(homeForm);
-            const awayPass = has2Wins1Loss(awayForm);
+            const homeFormStr = homeForm.join("");
+            const awayFormStr = awayForm.join("");
 
-            if (!homePass || !awayPass) continue;
+            const isHome = homeFormStr === "DW";
+            const isAway = awayFormStr === "DW";
+
+            // console.log(home, " form: ", homeFormStr)
+            // console.log(away, " form: ", awayFormStr)
+            if (!isHome && !isAway) {
+                continue;
+            }
+
+            // if (!isHome || awayFormStr !== "DL") {
+            //     continue;
+            // }
+            // else if (!isAway || homeFormStr !== "DL"
+            // ) {
+            //     continue
+            // }
 
 
-            console.log(home, " form: ", homeForm, "\nHome Pos: ", homePos)
-            console.log(away, " form: ", awayForm + "\nAway Pos: ", awayPos, "\n")
+
+            let predictedWinner = null;
+            let loser = null;
+            if (homeStanding.W > awayStanding.W && homeStanding.PTS > awayStanding.PTS) {
+                predictedWinner = home;
+                loser = away;
+            } else if (awayStanding.W > homeStanding.W && awayStanding.PTS > homeStanding.PTS) {
+                predictedWinner = away;
+                loser = home;
+            } else {
+                continue;
+            }
+            if(predictedWinner === home){
+            if(!isHome) continue;
+                if(parseInt(homeStanding.W) < (parseInt(awayStanding.W) + 2) ) continue;
+                const winAvg = Math.floor(parseInt(homeStanding.W) / 2);
+                if(parseInt(homeStanding.L) >= winAvg) continue;
+
+            } else {
+                if(!isAway) continue;
+                if( parseFloat(homeStats.defense) > parseFloat(awayStats.defense)){
+                    continue;
+                }
+                if(parseInt(awayStanding.W) < (parseInt(homeStanding.W) + 2)) continue;
+                const winAvg = Math.floor(parseInt(awayStanding.W) / 2);
+                if(parseInt(awayStanding.L) >= winAvg) continue;
+            }
+
 
 
             const oddsData = await getMatchOdds(match.id);
@@ -161,10 +182,11 @@ async function win_1x2(amount = 100, matchCount = 3) {
                 if (market.name === "Over/Under") {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
-                            if (outcome.desc === "over 2.25") {
-                                if (outcome.odds < 1.2) continue;
+                            if (outcome.desc === "over 1.5") {
+                                // if () continue; // Skip high odds
+                                if (outcome.odds < 1.2 || outcome.odds >= 1.4) continue; // Skip high odds
 
-                                const msg = `🤝 *Over 2.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homeStanding.pos} vs ${awayStanding.pos}\n\n*Match Id:* ${oddsData.id}`;
+                                const msg = `🤝 *Over 1.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homeStanding.pos} vs ${awayStanding.pos}\n\n*Match Id:* ${oddsData.id}`;
 
                                 await sendTelegramMessage(msg);
                                 selections.push({
