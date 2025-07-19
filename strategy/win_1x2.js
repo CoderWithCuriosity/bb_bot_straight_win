@@ -98,9 +98,15 @@ function getMaxDraws(seasonStandings, tournamentId, seasonId) {
 function has2Wins1Loss(form) {
     const wins = form.filter(r => r === "W").length;
     const losses = form.filter(r => r === "L").length;
-    return wins === 2 && losses === 1;
+    return wins >= 2 && losses === 1;
 }
 
+function calculateAvgGoals(teamStanding) {
+    return {
+        avgGF: teamStanding.GF / teamStanding.P,
+        avgGA: teamStanding.GA / teamStanding.P
+    }
+}
 
 
 async function win_1x2(amount = 100, matchCount = 3) {
@@ -117,9 +123,9 @@ async function win_1x2(amount = 100, matchCount = 3) {
             if (match.tournamentId !== tournament.id) continue;
 
             const matchDay = Math.floor((match.scheduledTime - startDayStamp) / daysDiff) + 1;
-            // if(matchDay < 8 || matchDay > 19){
-            //     continue;
-            // }
+            if(matchDay < 6 ){
+                continue;
+            }
             // const maxAllowedDraws = Math.floor(matchDay / 2);
             // const maxAllowedDraws = matchDay > 10 ? 6 : Math.floor(matchDay / 2);
             const highestDraw = getMaxDraws(seasonStandings, tournament.id, seasonId);
@@ -139,31 +145,18 @@ async function win_1x2(amount = 100, matchCount = 3) {
             const awayPos = getTeamPos(seasonStandings, tournament.id, seasonId, away);
             if (!homeStanding || !awayStanding) continue;
 
-            // if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
-
-            const homeForm = homeStats.form.slice(-3);
-            const awayForm = awayStats.form.slice(-3);
-
-            const homePass = has2Wins1Loss(homeForm);
-            const awayPass = has2Wins1Loss(awayForm);
-
-            if (!homePass || !awayPass) continue;
-            console.log(home, " form: ", homeForm, "\nHome Pos: ", homePos)
-            console.log(away, " form: ", awayForm + "\nAway Pos: ", awayPos, "\n")
-
-
+            if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
 
             for (const market of oddsData.marketList) {
-                if (market.name === "Over/Under") {
+                if (market.name === "1x2") {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
-                            if (outcome.desc === "over 2.25") {
-                                if (outcome.odds < 1.2) continue;
+                            if (outcome.odds < 1.5 || outcome.odds > 1.69) continue;
 
-                                const msg = `🤝 *Over 2.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
+                                const msg = `🤝 *Straight Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Straight Pick Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
 
                                 await sendTelegramMessage(msg);
                                 selections.push({
@@ -187,7 +180,6 @@ async function win_1x2(amount = 100, matchCount = 3) {
                                 if (selections.length >= matchCount) {
                                     return [selections];
                                 }
-                            }
                         }
                     }
                 }
@@ -196,7 +188,7 @@ async function win_1x2(amount = 100, matchCount = 3) {
     }
     if (selections.length === 1) {
         const firstPick = selections[0];
-        if (firstPick.odds < 1.3) {
+        if (firstPick.odds < 1.5) {
             selections.pop();
         }
     }

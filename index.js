@@ -5,7 +5,7 @@ const { win_1x2 } = require("./strategy/win_1x2");
 const { processSeasonsFromWeek1 } = require("./utils/seasonProcessor");
 
 const X = 2; // Minutes between executions
-const betPerX = 3; // How many matches to bet on
+const betPerX = 50; // How many matches to bet on
 
 const FILE_PATH = path.join(__dirname, "bets.json");
 const TOKEN_PATH = path.join(__dirname, "token.json");
@@ -91,13 +91,13 @@ async function main() {
   });
 
   try {
-    await placeBet(
-      credentials.token,
-      credentials.secretKey,
-      newSelections,
-      storeLoginData,
-      stake
-    );
+    // await placeBet(
+    //   credentials.token,
+    //   credentials.secretKey,
+    //   newSelections,
+    //   storeLoginData,
+    //   stake
+    // );
 
     newSelections.forEach(sel => logBet(sel));
   } catch (err) {

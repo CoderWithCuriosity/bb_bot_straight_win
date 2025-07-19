@@ -91,4 +91,31 @@ async function fetchSeasonId(
   }
 }
 
+async function getCurrentMatchDay(  tournamentId,
+  country = "ng",
+  producer = "6",
+  matchScheduledDate
+) {
+  
+  try {
+    const response = await axios.post(MATCH_DAYS_URL, payload, {
+      headers: HEADERS
+    });
+
+    if (response.data.result !== 1 || !Array.isArray(response.data.data)) {
+      console.error("Unexpected response from matchDayList");
+      return [];
+    }
+
+    // Filter days to get the current day of the match
+    const currentDay = response.data.data.filter(
+      day => day.scheduleDate = matchScheduledDate
+    );
+    return currentDay.number;
+  } catch (err) {
+    console.error("Error fetching match days:", err.message);
+    return [];
+  }
+}
+
 module.exports = { fetchMatchDays, fetchMatchDaysDifference, fetchSeasonId };

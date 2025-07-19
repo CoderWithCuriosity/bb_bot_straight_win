@@ -1,169 +1,224 @@
-const { computeCurrentWeekStandings } = require("../api/computeCurrentWeekStandings");
-const { fetchFullTournamentData } = require("../api/fetchFullTournamentData");
-const { fetchMatchDaysDifference } = require("../api/fetchMatchDays");
-const { getMatchOdds, fetchMatches } = require("../api/matches");
+
 const fs = require("fs");
 const path = require("path");
-const { DateTime } = require("luxon");
+const axios = require("axios");
 
-const axios = require('axios');
+const { fetchMatches, getMatchOdds } = require("../api/matches");
+const { fetchMatchDaysDifference, fetchSeasonId } = require("../api/fetchMatchDays");
+
 const BOT_TOKEN = '7299748052:AAHJKWCStrsnSg_e5YfWctTNnVQYUlNp8Hs';
 const USER_ID = '6524312327';
-const FILE_PATH = path.join(__dirname, "../bets.json");
+
+const STRATEGIC_TOURNAMENTS = [
+    { id: "vf:tournament:31867", name: "English League" },
+    { id: "vf:tournament:14149", name: "League Mode" },
+    { id: "vf:tournament:34616", name: "Bundesliga" },
+];
+
+const SEASON_STATS_FILE = path.join(__dirname, "../season_standings.json");
+const TOURNAMENT_DATA_FILE = path.join(__dirname, "../tournament_data.json");
 
 async function sendTelegramMessage(message) {
     try {
         await axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
             chat_id: USER_ID,
             text: message,
-            parse_mode: "Markdown"
+            parse_mode: "Markdown",
         });
     } catch (err) {
         console.error("❌ Failed to send Telegram message:", err.message);
     }
 }
 
-function shouldBetNow() {
-    // Get current time in Africa/Lagos (Nigerian time)
-    const hour = DateTime.now().setZone("Africa/Lagos").hour;
+function loadSeasonStandings() {
+    if (!fs.existsSync(SEASON_STATS_FILE)) return [];
+    return JSON.parse(fs.readFileSync(SEASON_STATS_FILE, "utf-8"));
+}
 
-    const restrictedHours = [
-        // 1, 2,    // 1–2 AM
-        // 5, 6,    // 5–6 AM
-        // 9, 10,   // 9–10 AM
-        // 13, 14,  // 1–2 PM
-        // 17, 18,  // 5–6 PM
-        // 21, 22   // 9–10 PM
-    ];
+function loadTournamentData() {
+    if (!fs.existsSync(TOURNAMENT_DATA_FILE)) return [];
+    return JSON.parse(fs.readFileSync(TOURNAMENT_DATA_FILE, "utf-8"));
+}
 
-    return !restrictedHours.includes(hour);
+function getTeamAttributes(tournamentData, tournamentId, seasonId, teamName) {
+    const tournament = tournamentData.find(t => t.tournamentId === tournamentId);
+    if (!tournament) return null;
+
+    const season = tournament.seasons?.find(s => s.seasonId === seasonId);
+    if (!season) return null;
+
+    return season.teams?.find(t => t.name === teamName) || null;
+}
+
+function getTeamStanding(seasonStandings, tournamentId, seasonId, teamName) {
+    const tournament = seasonStandings.find(t => t.tournamentId === tournamentId);
+    if (!tournament) return null;
+
+    const season = tournament.seasons?.find(s => s.seasonId === seasonId);
+    if (!season) return null;
+
+    return season.standings?.find(t => t.team === teamName) || null;
+}
+
+function getTeamPos(seasonStandings, tournamentId, seasonId, teamName) {
+    const tournament = seasonStandings.find(t => t.tournamentId === tournamentId);
+    if (!tournament) return null;
+
+    const season = tournament.seasons?.find(s => s.seasonId === seasonId);
+    if (!season) return null;
+
+    return season.standings?.findIndex(t => t.team === teamName) + 1 || null;
+}
+
+function markStat(value, type = "normal") {
+    if (type === "chaos") {
+        if (value < 4) return `🟢 ${value}`;
+        if (value < 5) return `🟡 ${value}`;
+        return `🔴 ${value}`;
+    } else {
+        if (value >= 6) return `🟢 ${value}`;
+        if (value >= 5) return `🟡 ${value}`;
+        return `🔴 ${value}`;
+    }
+}
+
+function getMaxDraws(seasonStandings, tournamentId, seasonId) {
+    const tournament = seasonStandings.find(t => t.tournamentId === tournamentId);
+    if (!tournament) return 0;
+
+    const season = tournament.seasons.find(s => s.seasonId === seasonId);
+    if (!season) return 0;
+
+    const drawsArray = season.standings.map(team => team.D);
+    const highestDraw = Math.max(...drawsArray);
+
+    return highestDraw;
+}
+
+function has2Wins1Loss(form) {
+    const wins = form.filter(r => r === "W").length;
+    const losses = form.filter(r => r === "L").length;
+    return wins >= 2 && losses === 1;
+}
+
+function calculateAvgGoals(teamStanding) {
+    return {
+        avgGF: teamStanding.GF / teamStanding.P,
+        avgGA: teamStanding.GA / teamStanding.P
+    }
 }
 
 
-
-
-async function win_1_5(amount = 100, matchCount = 5) {
+async function win_1_5(amount = 100, matchCount = 3) {
     const selections = [];
-
-    const STRATEGIC_TOURNAMENTS = [
-        { id: 'vf:tournament:31867', name: 'English League' },
-        { id: 'vf:tournament:14149', name: 'League Mode' },
-        { id: 'vf:tournament:34616', name: 'Bundesliga' }
-    ];
-
-    if (!shouldBetNow()) {
-        console.log("⏳ Betting is restricted during this hour.");
-        return [selections];
-    }
-
-    const fetched_matches = await fetchMatches();
-    const valid_matches = [];
-    for (let match of fetched_matches) {
-        for (let tournament of STRATEGIC_TOURNAMENTS) {
-            if (match.tournamentId == tournament.id) {
-                valid_matches.push(match);
-                break;
-            }
-        }
-    }
-    if (valid_matches.length <= 0) return [selections];
+    const valid_matches = await fetchMatches();
+    const seasonStandings = loadSeasonStandings();
+    const tournamentData = loadTournamentData();
 
     for (const tournament of STRATEGIC_TOURNAMENTS) {
-        console.log(`🎯 Scanning ${tournament.name}...`);
-        const matchesData = await fetchFullTournamentData(tournament.id);
-        if (!matchesData.length) continue;
-        // console.log(matchesData);
-
-        let [finishedMatchDay, standings] = computeCurrentWeekStandings(matchesData);
-        //This is because the fetchfulltourname data only fetches matches that is finished. so 6 is the week that is playing or not started. And for > 21 means that 22 and if 22 is finished the playing or not started is 23
-        if (finishedMatchDay < 5 || finishedMatchDay > 21) {
-            // console.log(`⏭️ Skipping ${tournament.name} — Not in MD6–22 range. Current Week is ${matchDay}`);
-            continue;
-        }
-
         const [startDayStamp, daysDiff] = await fetchMatchDaysDifference(tournament.id);
-
-        if (!startDayStamp || !daysDiff) {
-            console.log(`⛔ Skipping ${tournament.name} — startDayStamp or daysDiff missing.`);
-            continue;
-        }
-
+        const seasonId = await fetchSeasonId(tournament.id);
 
         for (const match of valid_matches) {
-            if (match.tournamentId != tournament.id) continue;
-            //this is because since the last match is finished the next matches has to be playing so the current day has to be 
-            // console.log(`This is Formular the time from the week (match scheduledTime) ${match.scheduledTime} minus the start day stamp ${startDayStamp} divided by daysDiff ${daysDiff} plus 1`);
-            let matchDay = Math.floor((match.scheduledTime - startDayStamp) / daysDiff) + 1;
+            if (match.tournamentId !== tournament.id) continue;
 
-            const rankMap = {};
-            standings.forEach((team, i) => {
-                rankMap[team.team] = i + 1;
-            });
+            const matchDay = Math.floor((match.scheduledTime - startDayStamp) / daysDiff) + 1;
+            if(matchDay < 6 ){
+                continue;
+            }
+            // const maxAllowedDraws = Math.floor(matchDay / 2);
+            // const maxAllowedDraws = matchDay > 10 ? 6 : Math.floor(matchDay / 2);
+            const highestDraw = getMaxDraws(seasonStandings, tournament.id, seasonId);
+            const maxAllowedDraws = Math.floor(highestDraw / 2);
 
             const home = match.homeTeamName;
             const away = match.awayTeamName;
-            const homeRank = rankMap[home];
-            const awayRank = rankMap[away];
-            const totalTeams = standings.length;
-            const bottomStart = totalTeams - 5 + 1; // bottom 5 teams: ranks 14–18 if 18 teams
 
-            if (
-                !(homeRank >= 3 && homeRank <= 5) &&
-                !(awayRank >= bottomStart && awayRank <= totalTeams)
-            ) {
-                const existingBets = JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
-                const alreadyPlaced = existingBets.some(
-                    b => b.eventId === match.id
-                );
-                if(alreadyPlaced) continue;
-                const oddsData = await getMatchOdds(match.id);
-                if (!oddsData?.marketList?.length) continue;
+            const homeStats = getTeamAttributes(tournamentData, tournament.id, seasonId, home);
+            const awayStats = getTeamAttributes(tournamentData, tournament.id, seasonId, away);
+            if (!homeStats || !awayStats) continue;
 
-                for (const market of oddsData.marketList) {
-                    if (market.name === "1x2") {
-                        for (const detail of market.markets) {
-                            for (const outcome of detail.outcomes) {
-                                if (
-                                    outcome.odds < 1.49 ||
-                                    outcome.odds > 1.69
-                                ) continue;
-                                // 🟢 Send Telegram message After checking odds
-                                const msg = `📊 *Strategic Match Found*\n\n🏆 *Tournament:* ${tournament.name}\n🕐 *Week:* ${matchDay}\n⚽ *Match:* ${home}` + ` vs ${away}\n📌 *Home Rank:* ${homeRank}\n📌 *Away Rank:* ${awayRank}\n🆔Match ID: ${match.id}\n\n\n🧠 Odds: ${outcome.odds}`;
+            const homeStanding = getTeamStanding(seasonStandings, tournament.id, seasonId, home);
+            const awayStanding = getTeamStanding(seasonStandings, tournament.id, seasonId, away);
+
+            const homePos = getTeamPos(seasonStandings, tournament.id, seasonId, home);
+            const awayPos = getTeamPos(seasonStandings, tournament.id, seasonId, away);
+            if (!homeStanding || !awayStanding) continue;
+
+
+
+            // if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
+
+            const homeForm = homeStats.form;
+            const awayForm = awayStats.form;
+
+            const homePass = has2Wins1Loss(homeForm);
+            const awayPass = has2Wins1Loss(awayForm);
+            
+            const homeAvg = calculateAvgGoals(homeStanding);
+            const awayAvg = calculateAvgGoals(awayStanding);
+            
+            const combinedAVG = homeAvg.avgGF + homeAvg.avgGA + awayAvg.avgGF + awayAvg.avgGA;
+            
+            if (combinedAVG > 4.0) {
+                pass = true;
+            }
+
+            console.log(home, " form: ", homeForm, "\nHome Pos: ", homePos, "\nHome Average: ", homeAvg);
+            console.log(away, " form: ", awayForm + "\nAway Pos: ", awayPos, "\n, Away Average: ", awayAvg, "\n");
+            console.log("Combine Avg: ", Math.round(combinedAVG), "\n");
+            
+            if (!homePass || !awayPass) continue;
+
+
+
+            const oddsData = await getMatchOdds(match.id);
+            if (!oddsData?.marketList?.length) continue;
+
+            for (const market of oddsData.marketList) {
+                if (market.name === "Over/Under") {
+                    for (const detail of market.markets) {
+                        for (const outcome of detail.outcomes) {
+                            if (outcome.desc === "over 1.5") {
+                                if (outcome.odds < 1.2) continue;
+
+                                const msg = `🤝 *Over 1.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
+
                                 await sendTelegramMessage(msg);
-
                                 selections.push({
                                     sportId: match.sportId,
                                     eventId: match.id,
                                     producer: match.producer,
                                     marketId: market.id,
-                                    specifiers: "",
+                                    specifiers: detail.specifiers,
                                     outcomeId: outcome.id,
                                     amount: amount,
                                     odds: outcome.odds,
-                                    specifierKeys: "",
+                                    specifierKeys: detail.specifiersKeys,
                                     eventName: match.name,
                                     scheduledTime: match.scheduledTime,
-                                    marketName: market.name,
+                                    marketName: outcome.marketName,
                                     outcomeName: outcome.desc,
                                     categoryId: match.categoryId,
                                     tournamentId: match.tournamentId
                                 });
+
+                                if (selections.length >= matchCount) {
+                                    return [selections];
+                                }
                             }
                         }
                     }
                 }
-            } else {
-                console.log(`Current Week: ${matchDay}. Home Team: ${match.homeTeamName} (Rank: ${homeRank}) vs Away Team: ${match.awayTeamName} (Rank: ${awayRank})`);
             }
-
-            if (selections.length >= matchCount) {
-                console.log(`Current Week: ${matchDay}. But No match with home rank between 3 to 5 and away rank from 14 to 18`)
-                break
-            };
         }
-
     }
-
+    if (selections.length === 1) {
+        const firstPick = selections[0];
+        if (firstPick.odds < 1.5) {
+            selections.pop();
+        }
+    }
     return [selections];
 }
 
