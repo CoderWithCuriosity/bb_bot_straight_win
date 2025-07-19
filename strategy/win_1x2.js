@@ -70,18 +70,6 @@ function getTeamPos(seasonStandings, tournamentId, seasonId, teamName) {
     return season.standings?.findIndex(t => t.team === teamName) + 1 || null;
 }
 
-function markStat(value, type = "normal") {
-    if (type === "chaos") {
-        if (value < 4) return `🟢 ${value}`;
-        if (value < 5) return `🟡 ${value}`;
-        return `🔴 ${value}`;
-    } else {
-        if (value >= 6) return `🟢 ${value}`;
-        if (value >= 5) return `🟡 ${value}`;
-        return `🔴 ${value}`;
-    }
-}
-
 function getMaxDraws(seasonStandings, tournamentId, seasonId) {
     const tournament = seasonStandings.find(t => t.tournamentId === tournamentId);
     if (!tournament) return 0;
@@ -123,11 +111,10 @@ async function win_1x2(amount = 100, matchCount = 3) {
             if (match.tournamentId !== tournament.id) continue;
 
             const matchDay = Math.floor((match.scheduledTime - startDayStamp) / daysDiff) + 1;
-            if(matchDay < 6 || matchDay > 23){
+            if(matchDay < 6){
                 continue;
             }
-            // const maxAllowedDraws = Math.floor(matchDay / 2);
-            // const maxAllowedDraws = matchDay > 10 ? 6 : Math.floor(matchDay / 2);
+
             const highestDraw = getMaxDraws(seasonStandings, tournament.id, seasonId);
             const maxAllowedDraws = Math.floor(highestDraw / 2);
 
@@ -149,12 +136,13 @@ async function win_1x2(amount = 100, matchCount = 3) {
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
+            const selectedId = homePos > awayPos ? 1: 3;
 
             for (const market of oddsData.marketList) {
                 if (market.name === "1x2") {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
-                            if (outcome.odds < 1.5 || outcome.odds > 1.69) continue;
+                            if (parseInt(outcome.id) != selectedId) continue;
 
                                 const msg = `🤝 *Straight Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Straight Pick Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
 
