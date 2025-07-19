@@ -123,7 +123,7 @@ async function win_1x2(amount = 100, matchCount = 3) {
             if (match.tournamentId !== tournament.id) continue;
 
             const matchDay = Math.floor((match.scheduledTime - startDayStamp) / daysDiff) + 1;
-            if(matchDay < 6 ){
+            if(matchDay < 6 || matchDay > 23){
                 continue;
             }
             // const maxAllowedDraws = Math.floor(matchDay / 2);
