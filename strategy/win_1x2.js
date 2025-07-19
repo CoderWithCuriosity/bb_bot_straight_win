@@ -89,12 +89,81 @@ function has2Wins1Loss(form) {
     return wins >= 2 && losses === 1;
 }
 
-function calculateAvgGoals(teamStanding) {
-    return {
-        avgGF: teamStanding.GF / teamStanding.P,
-        avgGA: teamStanding.GA / teamStanding.P
+/**
+ * Get highest (best) position the team has reached
+ * Lower number is better in standings (1st place is best)
+ */
+function getHighestPosition(standings) {
+    return Math.min(...standings.map(s => s.position));
+}
+
+/**
+ * Get lowest (worst) position the team has reached
+ * Higher number is worse
+ */
+function getLowestPosition(standings) {
+    return Math.max(...standings.map(s => s.position));
+}
+
+/**
+ * Check if the team is improving
+ * Looks at last N weeks and checks if trend is moving to better positions
+ */
+function isTeamImproving(standings, recentWeeks = 4) {
+    if (standings.length < 2) return false;
+
+    // Sort by week (just in case data isn't ordered)
+    const sorted = [...standings].sort((a, b) => a.week - b.week);
+
+    const recent = sorted.slice(-recentWeeks);
+    let improving = false;
+
+    for (let i = 1; i < recent.length; i++) {
+        if (recent[i].position < recent[i - 1].position) {
+            // Improved compared to previous week
+            improving = true;
+        } else {
+            improving = false; // Broke the improving trend
+            break;
+        }
+    }
+
+    return improving;
+}
+
+/**
+ * Compare two teams' trends
+ * Pick the team that is improving more OR the one with the better highest position if both are equal
+ */
+function compareTeamTrends(homeStanding, awayStanding) {
+    const homeHigh = getHighestPosition(homeStanding.standings);
+    const homeLow = getLowestPosition(homeStanding.standings);
+    const homeTrend = isTeamImproving(homeStanding.standings);
+
+    const awayHigh = getHighestPosition(awayStanding.standings);
+    const awayLow = getLowestPosition(awayStanding.standings);
+    const awayTrend = isTeamImproving(awayStanding.standings);
+
+    console.log(`Home Team: High=${homeHigh}, Low=${homeLow}, Improving=${homeTrend}`);
+    console.log(`Away Team: High=${awayHigh}, Low=${awayLow}, Improving=${awayTrend}`);
+
+    if (homeTrend && !awayTrend) {
+        return "HOME";
+    } else if (!homeTrend && awayTrend) {
+        return "AWAY";
+    }
+     else {
+        // If both or none improving, pick the one with better highest position
+        if (homeHigh < awayHigh) {
+            return "HOME";
+        } else if (awayHigh < homeHigh) {
+            return "AWAY";
+        } else {
+            return "NO PICK"; // Same trends, no clear advantage
+        }
     }
 }
+
 
 
 async function win_1x2(amount = 100, matchCount = 3) {
@@ -136,7 +205,19 @@ async function win_1x2(amount = 100, matchCount = 3) {
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
-            const selectedId = homePos > awayPos ? 1: 3;
+            let selectedId;
+            const pick = compareTeamTrends(homeStats, awayStats);
+            if (pick === "HOME") {
+                // Bet on Home
+                selectedId = 1;
+            } else if (pick === "AWAY") {
+                selectedId = 3;
+                // Bet on Away
+            } else {
+                continue;
+                // Skip or consider Draw
+            }
+
 
             for (const market of oddsData.marketList) {
                 if (market.name === "1x2") {

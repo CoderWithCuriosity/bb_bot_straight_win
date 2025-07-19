@@ -1,0 +1,3155 @@
+[
+  {
+    "tournamentId": "vf:tournament:31867",
+    "tournamentName": "English League",
+    "seasons": [
+      {
+        "seasonId": "vf:season:2978712",
+        "teams": [
+          {
+            "name": "West Ham",
+            "attack": 1.6,
+            "defense": 1.6,
+            "strength": 3.2,
+            "chaos": 5.9,
+            "form": [
+              "D",
+              "D",
+              "W",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 12
+              },
+              {
+                "week": 2,
+                "position": 14
+              },
+              {
+                "week": 3,
+                "position": 16
+              },
+              {
+                "week": 4,
+                "position": 11
+              },
+              {
+                "week": 5,
+                "position": 15
+              },
+              {
+                "week": 6,
+                "position": 13
+              },
+              {
+                "week": 7,
+                "position": 14
+              },
+              {
+                "week": 8,
+                "position": 14
+              },
+              {
+                "week": 9,
+                "position": 14
+              },
+              {
+                "week": 10,
+                "position": 14
+              },
+              {
+                "week": 11,
+                "position": 15
+              },
+              {
+                "week": 12,
+                "position": 15
+              },
+              {
+                "week": 13,
+                "position": 16
+              },
+              {
+                "week": 14,
+                "position": 16
+              },
+              {
+                "week": 15,
+                "position": 16
+              },
+              {
+                "week": 16,
+                "position": 16
+              },
+              {
+                "week": 17,
+                "position": 16
+              },
+              {
+                "week": 18,
+                "position": 16
+              },
+              {
+                "week": 19,
+                "position": 16
+              },
+              {
+                "week": 20,
+                "position": 16
+              },
+              {
+                "week": 21,
+                "position": 15
+              },
+              {
+                "week": 22,
+                "position": 15
+              },
+              {
+                "week": 23,
+                "position": 15
+              },
+              {
+                "week": 24,
+                "position": 15
+              },
+              {
+                "week": 25,
+                "position": 15
+              },
+              {
+                "week": 26,
+                "position": 14
+              },
+              {
+                "week": 27,
+                "position": 15
+              },
+              {
+                "week": 28,
+                "position": 15
+              }
+            ]
+          },
+          {
+            "name": "Liverpool",
+            "attack": 9.2,
+            "defense": 4.7,
+            "strength": 5.9,
+            "chaos": 4.4,
+            "form": [
+              "L",
+              "W",
+              "D",
+              "D",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 6
+              },
+              {
+                "week": 2,
+                "position": 9
+              },
+              {
+                "week": 3,
+                "position": 6
+              },
+              {
+                "week": 4,
+                "position": 4
+              },
+              {
+                "week": 5,
+                "position": 2
+              },
+              {
+                "week": 6,
+                "position": 2
+              },
+              {
+                "week": 7,
+                "position": 4
+              },
+              {
+                "week": 8,
+                "position": 5
+              },
+              {
+                "week": 9,
+                "position": 7
+              },
+              {
+                "week": 10,
+                "position": 5
+              },
+              {
+                "week": 11,
+                "position": 3
+              },
+              {
+                "week": 12,
+                "position": 4
+              },
+              {
+                "week": 13,
+                "position": 4
+              },
+              {
+                "week": 14,
+                "position": 6
+              },
+              {
+                "week": 15,
+                "position": 4
+              },
+              {
+                "week": 16,
+                "position": 3
+              },
+              {
+                "week": 17,
+                "position": 3
+              },
+              {
+                "week": 18,
+                "position": 3
+              },
+              {
+                "week": 19,
+                "position": 4
+              },
+              {
+                "week": 20,
+                "position": 3
+              },
+              {
+                "week": 21,
+                "position": 4
+              },
+              {
+                "week": 22,
+                "position": 5
+              },
+              {
+                "week": 23,
+                "position": 5
+              },
+              {
+                "week": 24,
+                "position": 5
+              },
+              {
+                "week": 25,
+                "position": 4
+              },
+              {
+                "week": 26,
+                "position": 4
+              },
+              {
+                "week": 27,
+                "position": 4
+              },
+              {
+                "week": 28,
+                "position": 5
+              }
+            ]
+          },
+          {
+            "name": "Manchester Blue",
+            "attack": 9.5,
+            "defense": 5.1,
+            "strength": 7,
+            "chaos": 4.7,
+            "form": [
+              "L",
+              "D",
+              "L",
+              "D",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 1
+              },
+              {
+                "week": 2,
+                "position": 3
+              },
+              {
+                "week": 3,
+                "position": 2
+              },
+              {
+                "week": 4,
+                "position": 6
+              },
+              {
+                "week": 5,
+                "position": 8
+              },
+              {
+                "week": 6,
+                "position": 5
+              },
+              {
+                "week": 7,
+                "position": 7
+              },
+              {
+                "week": 8,
+                "position": 6
+              },
+              {
+                "week": 9,
+                "position": 4
+              },
+              {
+                "week": 10,
+                "position": 2
+              },
+              {
+                "week": 11,
+                "position": 2
+              },
+              {
+                "week": 12,
+                "position": 2
+              },
+              {
+                "week": 13,
+                "position": 2
+              },
+              {
+                "week": 14,
+                "position": 2
+              },
+              {
+                "week": 15,
+                "position": 2
+              },
+              {
+                "week": 16,
+                "position": 2
+              },
+              {
+                "week": 17,
+                "position": 2
+              },
+              {
+                "week": 18,
+                "position": 2
+              },
+              {
+                "week": 19,
+                "position": 1
+              },
+              {
+                "week": 20,
+                "position": 2
+              },
+              {
+                "week": 21,
+                "position": 1
+              },
+              {
+                "week": 22,
+                "position": 1
+              },
+              {
+                "week": 23,
+                "position": 1
+              },
+              {
+                "week": 24,
+                "position": 2
+              },
+              {
+                "week": 25,
+                "position": 2
+              },
+              {
+                "week": 26,
+                "position": 3
+              },
+              {
+                "week": 27,
+                "position": 3
+              },
+              {
+                "week": 28,
+                "position": 2
+              }
+            ]
+          },
+          {
+            "name": "Burnley",
+            "attack": 2.3,
+            "defense": 4.2,
+            "strength": 5.4,
+            "chaos": 9.9,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "W",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 16
+              },
+              {
+                "week": 2,
+                "position": 16
+              },
+              {
+                "week": 3,
+                "position": 15
+              },
+              {
+                "week": 4,
+                "position": 10
+              },
+              {
+                "week": 5,
+                "position": 10
+              },
+              {
+                "week": 6,
+                "position": 10
+              },
+              {
+                "week": 7,
+                "position": 10
+              },
+              {
+                "week": 8,
+                "position": 9
+              },
+              {
+                "week": 9,
+                "position": 6
+              },
+              {
+                "week": 10,
+                "position": 7
+              },
+              {
+                "week": 11,
+                "position": 8
+              },
+              {
+                "week": 12,
+                "position": 7
+              },
+              {
+                "week": 13,
+                "position": 9
+              },
+              {
+                "week": 14,
+                "position": 9
+              },
+              {
+                "week": 15,
+                "position": 8
+              },
+              {
+                "week": 16,
+                "position": 8
+              },
+              {
+                "week": 17,
+                "position": 8
+              },
+              {
+                "week": 18,
+                "position": 8
+              },
+              {
+                "week": 19,
+                "position": 8
+              },
+              {
+                "week": 20,
+                "position": 8
+              },
+              {
+                "week": 21,
+                "position": 9
+              },
+              {
+                "week": 22,
+                "position": 8
+              },
+              {
+                "week": 23,
+                "position": 9
+              },
+              {
+                "week": 24,
+                "position": 8
+              },
+              {
+                "week": 25,
+                "position": 9
+              },
+              {
+                "week": 26,
+                "position": 10
+              },
+              {
+                "week": 27,
+                "position": 10
+              },
+              {
+                "week": 28,
+                "position": 10
+              }
+            ]
+          },
+          {
+            "name": "Manchester Reds",
+            "attack": 7.5,
+            "defense": 6.8,
+            "strength": 6.6,
+            "chaos": 7.1,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 7
+              },
+              {
+                "week": 2,
+                "position": 1
+              },
+              {
+                "week": 3,
+                "position": 1
+              },
+              {
+                "week": 4,
+                "position": 5
+              },
+              {
+                "week": 5,
+                "position": 4
+              },
+              {
+                "week": 6,
+                "position": 3
+              },
+              {
+                "week": 7,
+                "position": 1
+              },
+              {
+                "week": 8,
+                "position": 3
+              },
+              {
+                "week": 9,
+                "position": 2
+              },
+              {
+                "week": 10,
+                "position": 1
+              },
+              {
+                "week": 11,
+                "position": 1
+              },
+              {
+                "week": 12,
+                "position": 1
+              },
+              {
+                "week": 13,
+                "position": 1
+              },
+              {
+                "week": 14,
+                "position": 1
+              },
+              {
+                "week": 15,
+                "position": 1
+              },
+              {
+                "week": 16,
+                "position": 1
+              },
+              {
+                "week": 17,
+                "position": 1
+              },
+              {
+                "week": 18,
+                "position": 1
+              },
+              {
+                "week": 19,
+                "position": 2
+              },
+              {
+                "week": 20,
+                "position": 1
+              },
+              {
+                "week": 21,
+                "position": 2
+              },
+              {
+                "week": 22,
+                "position": 2
+              },
+              {
+                "week": 23,
+                "position": 2
+              },
+              {
+                "week": 24,
+                "position": 1
+              },
+              {
+                "week": 25,
+                "position": 1
+              },
+              {
+                "week": 26,
+                "position": 1
+              },
+              {
+                "week": 27,
+                "position": 1
+              },
+              {
+                "week": 28,
+                "position": 1
+              }
+            ]
+          },
+          {
+            "name": "Tottenham",
+            "attack": 6.9,
+            "defense": 7.3,
+            "strength": 5.1,
+            "chaos": 5.4,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 13
+              },
+              {
+                "week": 2,
+                "position": 6
+              },
+              {
+                "week": 3,
+                "position": 5
+              },
+              {
+                "week": 4,
+                "position": 2
+              },
+              {
+                "week": 5,
+                "position": 1
+              },
+              {
+                "week": 6,
+                "position": 1
+              },
+              {
+                "week": 7,
+                "position": 3
+              },
+              {
+                "week": 8,
+                "position": 4
+              },
+              {
+                "week": 9,
+                "position": 5
+              },
+              {
+                "week": 10,
+                "position": 6
+              },
+              {
+                "week": 11,
+                "position": 6
+              },
+              {
+                "week": 12,
+                "position": 9
+              },
+              {
+                "week": 13,
+                "position": 7
+              },
+              {
+                "week": 14,
+                "position": 7
+              },
+              {
+                "week": 15,
+                "position": 6
+              },
+              {
+                "week": 16,
+                "position": 7
+              },
+              {
+                "week": 17,
+                "position": 7
+              },
+              {
+                "week": 18,
+                "position": 6
+              },
+              {
+                "week": 19,
+                "position": 6
+              },
+              {
+                "week": 20,
+                "position": 7
+              },
+              {
+                "week": 21,
+                "position": 5
+              },
+              {
+                "week": 22,
+                "position": 4
+              },
+              {
+                "week": 23,
+                "position": 4
+              },
+              {
+                "week": 24,
+                "position": 4
+              },
+              {
+                "week": 25,
+                "position": 5
+              },
+              {
+                "week": 26,
+                "position": 5
+              },
+              {
+                "week": 27,
+                "position": 6
+              },
+              {
+                "week": 28,
+                "position": 7
+              }
+            ]
+          },
+          {
+            "name": "Watford",
+            "attack": 4.2,
+            "defense": 1.6,
+            "strength": 6.2,
+            "chaos": 10,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "W",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 9
+              },
+              {
+                "week": 2,
+                "position": 15
+              },
+              {
+                "week": 3,
+                "position": 9
+              },
+              {
+                "week": 4,
+                "position": 12
+              },
+              {
+                "week": 5,
+                "position": 16
+              },
+              {
+                "week": 6,
+                "position": 16
+              },
+              {
+                "week": 7,
+                "position": 16
+              },
+              {
+                "week": 8,
+                "position": 16
+              },
+              {
+                "week": 9,
+                "position": 16
+              },
+              {
+                "week": 10,
+                "position": 15
+              },
+              {
+                "week": 11,
+                "position": 14
+              },
+              {
+                "week": 12,
+                "position": 14
+              },
+              {
+                "week": 13,
+                "position": 15
+              },
+              {
+                "week": 14,
+                "position": 15
+              },
+              {
+                "week": 15,
+                "position": 15
+              },
+              {
+                "week": 16,
+                "position": 15
+              },
+              {
+                "week": 17,
+                "position": 15
+              },
+              {
+                "week": 18,
+                "position": 15
+              },
+              {
+                "week": 19,
+                "position": 15
+              },
+              {
+                "week": 20,
+                "position": 13
+              },
+              {
+                "week": 21,
+                "position": 14
+              },
+              {
+                "week": 22,
+                "position": 14
+              },
+              {
+                "week": 23,
+                "position": 12
+              },
+              {
+                "week": 24,
+                "position": 12
+              },
+              {
+                "week": 25,
+                "position": 11
+              },
+              {
+                "week": 26,
+                "position": 12
+              },
+              {
+                "week": 27,
+                "position": 11
+              },
+              {
+                "week": 28,
+                "position": 11
+              }
+            ]
+          },
+          {
+            "name": "Wolverhampton",
+            "attack": 4.5,
+            "defense": 2.8,
+            "strength": 3.6,
+            "chaos": 2.5,
+            "form": [
+              "D",
+              "L",
+              "D",
+              "L",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 3
+              },
+              {
+                "week": 2,
+                "position": 4
+              },
+              {
+                "week": 3,
+                "position": 3
+              },
+              {
+                "week": 4,
+                "position": 1
+              },
+              {
+                "week": 5,
+                "position": 3
+              },
+              {
+                "week": 6,
+                "position": 6
+              },
+              {
+                "week": 7,
+                "position": 8
+              },
+              {
+                "week": 8,
+                "position": 7
+              },
+              {
+                "week": 9,
+                "position": 8
+              },
+              {
+                "week": 10,
+                "position": 8
+              },
+              {
+                "week": 11,
+                "position": 9
+              },
+              {
+                "week": 12,
+                "position": 8
+              },
+              {
+                "week": 13,
+                "position": 8
+              },
+              {
+                "week": 14,
+                "position": 8
+              },
+              {
+                "week": 15,
+                "position": 9
+              },
+              {
+                "week": 16,
+                "position": 9
+              },
+              {
+                "week": 17,
+                "position": 10
+              },
+              {
+                "week": 18,
+                "position": 9
+              },
+              {
+                "week": 19,
+                "position": 9
+              },
+              {
+                "week": 20,
+                "position": 9
+              },
+              {
+                "week": 21,
+                "position": 10
+              },
+              {
+                "week": 22,
+                "position": 9
+              },
+              {
+                "week": 23,
+                "position": 10
+              },
+              {
+                "week": 24,
+                "position": 10
+              },
+              {
+                "week": 25,
+                "position": 12
+              },
+              {
+                "week": 26,
+                "position": 11
+              },
+              {
+                "week": 27,
+                "position": 12
+              },
+              {
+                "week": 28,
+                "position": 12
+              }
+            ]
+          },
+          {
+            "name": "Everton",
+            "attack": 7.1,
+            "defense": 2.5,
+            "strength": 5.6,
+            "chaos": 3.9,
+            "form": [
+              "L",
+              "W",
+              "W",
+              "D",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 4
+              },
+              {
+                "week": 2,
+                "position": 11
+              },
+              {
+                "week": 3,
+                "position": 13
+              },
+              {
+                "week": 4,
+                "position": 13
+              },
+              {
+                "week": 5,
+                "position": 12
+              },
+              {
+                "week": 6,
+                "position": 14
+              },
+              {
+                "week": 7,
+                "position": 13
+              },
+              {
+                "week": 8,
+                "position": 12
+              },
+              {
+                "week": 9,
+                "position": 12
+              },
+              {
+                "week": 10,
+                "position": 11
+              },
+              {
+                "week": 11,
+                "position": 11
+              },
+              {
+                "week": 12,
+                "position": 11
+              },
+              {
+                "week": 13,
+                "position": 10
+              },
+              {
+                "week": 14,
+                "position": 10
+              },
+              {
+                "week": 15,
+                "position": 10
+              },
+              {
+                "week": 16,
+                "position": 10
+              },
+              {
+                "week": 17,
+                "position": 9
+              },
+              {
+                "week": 18,
+                "position": 10
+              },
+              {
+                "week": 19,
+                "position": 10
+              },
+              {
+                "week": 20,
+                "position": 10
+              },
+              {
+                "week": 21,
+                "position": 11
+              },
+              {
+                "week": 22,
+                "position": 10
+              },
+              {
+                "week": 23,
+                "position": 8
+              },
+              {
+                "week": 24,
+                "position": 9
+              },
+              {
+                "week": 25,
+                "position": 8
+              },
+              {
+                "week": 26,
+                "position": 8
+              },
+              {
+                "week": 27,
+                "position": 8
+              },
+              {
+                "week": 28,
+                "position": 9
+              }
+            ]
+          },
+          {
+            "name": "London Guns",
+            "attack": 6.5,
+            "defense": 6,
+            "strength": 6.1,
+            "chaos": 5.4,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "D",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 10
+              },
+              {
+                "week": 2,
+                "position": 5
+              },
+              {
+                "week": 3,
+                "position": 4
+              },
+              {
+                "week": 4,
+                "position": 3
+              },
+              {
+                "week": 5,
+                "position": 5
+              },
+              {
+                "week": 6,
+                "position": 4
+              },
+              {
+                "week": 7,
+                "position": 2
+              },
+              {
+                "week": 8,
+                "position": 1
+              },
+              {
+                "week": 9,
+                "position": 3
+              },
+              {
+                "week": 10,
+                "position": 4
+              },
+              {
+                "week": 11,
+                "position": 4
+              },
+              {
+                "week": 12,
+                "position": 5
+              },
+              {
+                "week": 13,
+                "position": 5
+              },
+              {
+                "week": 14,
+                "position": 3
+              },
+              {
+                "week": 15,
+                "position": 5
+              },
+              {
+                "week": 16,
+                "position": 5
+              },
+              {
+                "week": 17,
+                "position": 4
+              },
+              {
+                "week": 18,
+                "position": 4
+              },
+              {
+                "week": 19,
+                "position": 5
+              },
+              {
+                "week": 20,
+                "position": 5
+              },
+              {
+                "week": 21,
+                "position": 6
+              },
+              {
+                "week": 22,
+                "position": 7
+              },
+              {
+                "week": 23,
+                "position": 7
+              },
+              {
+                "week": 24,
+                "position": 7
+              },
+              {
+                "week": 25,
+                "position": 7
+              },
+              {
+                "week": 26,
+                "position": 7
+              },
+              {
+                "week": 27,
+                "position": 7
+              },
+              {
+                "week": 28,
+                "position": 6
+              }
+            ]
+          },
+          {
+            "name": "Crystal Palace",
+            "attack": 3.2,
+            "defense": 1.4,
+            "strength": 3.6,
+            "chaos": 4,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "W",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 2
+              },
+              {
+                "week": 2,
+                "position": 13
+              },
+              {
+                "week": 3,
+                "position": 14
+              },
+              {
+                "week": 4,
+                "position": 16
+              },
+              {
+                "week": 5,
+                "position": 13
+              },
+              {
+                "week": 6,
+                "position": 11
+              },
+              {
+                "week": 7,
+                "position": 11
+              },
+              {
+                "week": 8,
+                "position": 11
+              },
+              {
+                "week": 9,
+                "position": 11
+              },
+              {
+                "week": 10,
+                "position": 12
+              },
+              {
+                "week": 11,
+                "position": 12
+              },
+              {
+                "week": 12,
+                "position": 12
+              },
+              {
+                "week": 13,
+                "position": 13
+              },
+              {
+                "week": 14,
+                "position": 13
+              },
+              {
+                "week": 15,
+                "position": 13
+              },
+              {
+                "week": 16,
+                "position": 13
+              },
+              {
+                "week": 17,
+                "position": 14
+              },
+              {
+                "week": 18,
+                "position": 14
+              },
+              {
+                "week": 19,
+                "position": 14
+              },
+              {
+                "week": 20,
+                "position": 14
+              },
+              {
+                "week": 21,
+                "position": 12
+              },
+              {
+                "week": 22,
+                "position": 13
+              },
+              {
+                "week": 23,
+                "position": 14
+              },
+              {
+                "week": 24,
+                "position": 14
+              },
+              {
+                "week": 25,
+                "position": 14
+              },
+              {
+                "week": 26,
+                "position": 15
+              },
+              {
+                "week": 27,
+                "position": 14
+              },
+              {
+                "week": 28,
+                "position": 13
+              }
+            ]
+          },
+          {
+            "name": "Leicester",
+            "attack": 6.3,
+            "defense": 2.2,
+            "strength": 6.4,
+            "chaos": 8.8,
+            "form": [
+              "L",
+              "W",
+              "W",
+              "W",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 15
+              },
+              {
+                "week": 2,
+                "position": 12
+              },
+              {
+                "week": 3,
+                "position": 12
+              },
+              {
+                "week": 4,
+                "position": 14
+              },
+              {
+                "week": 5,
+                "position": 11
+              },
+              {
+                "week": 6,
+                "position": 12
+              },
+              {
+                "week": 7,
+                "position": 12
+              },
+              {
+                "week": 8,
+                "position": 13
+              },
+              {
+                "week": 9,
+                "position": 13
+              },
+              {
+                "week": 10,
+                "position": 13
+              },
+              {
+                "week": 11,
+                "position": 13
+              },
+              {
+                "week": 12,
+                "position": 13
+              },
+              {
+                "week": 13,
+                "position": 12
+              },
+              {
+                "week": 14,
+                "position": 12
+              },
+              {
+                "week": 15,
+                "position": 11
+              },
+              {
+                "week": 16,
+                "position": 11
+              },
+              {
+                "week": 17,
+                "position": 12
+              },
+              {
+                "week": 18,
+                "position": 11
+              },
+              {
+                "week": 19,
+                "position": 11
+              },
+              {
+                "week": 20,
+                "position": 11
+              },
+              {
+                "week": 21,
+                "position": 8
+              },
+              {
+                "week": 22,
+                "position": 11
+              },
+              {
+                "week": 23,
+                "position": 11
+              },
+              {
+                "week": 24,
+                "position": 11
+              },
+              {
+                "week": 25,
+                "position": 10
+              },
+              {
+                "week": 26,
+                "position": 9
+              },
+              {
+                "week": 27,
+                "position": 9
+              },
+              {
+                "week": 28,
+                "position": 8
+              }
+            ]
+          },
+          {
+            "name": "Newcastle",
+            "attack": 0,
+            "defense": 2.8,
+            "strength": 2.6,
+            "chaos": 4,
+            "form": [
+              "L",
+              "D",
+              "L",
+              "D",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 5
+              },
+              {
+                "week": 2,
+                "position": 8
+              },
+              {
+                "week": 3,
+                "position": 11
+              },
+              {
+                "week": 4,
+                "position": 15
+              },
+              {
+                "week": 5,
+                "position": 14
+              },
+              {
+                "week": 6,
+                "position": 15
+              },
+              {
+                "week": 7,
+                "position": 15
+              },
+              {
+                "week": 8,
+                "position": 15
+              },
+              {
+                "week": 9,
+                "position": 15
+              },
+              {
+                "week": 10,
+                "position": 16
+              },
+              {
+                "week": 11,
+                "position": 16
+              },
+              {
+                "week": 12,
+                "position": 16
+              },
+              {
+                "week": 13,
+                "position": 14
+              },
+              {
+                "week": 14,
+                "position": 14
+              },
+              {
+                "week": 15,
+                "position": 14
+              },
+              {
+                "week": 16,
+                "position": 14
+              },
+              {
+                "week": 17,
+                "position": 13
+              },
+              {
+                "week": 18,
+                "position": 13
+              },
+              {
+                "week": 19,
+                "position": 13
+              },
+              {
+                "week": 20,
+                "position": 15
+              },
+              {
+                "week": 21,
+                "position": 16
+              },
+              {
+                "week": 22,
+                "position": 16
+              },
+              {
+                "week": 23,
+                "position": 16
+              },
+              {
+                "week": 24,
+                "position": 16
+              },
+              {
+                "week": 25,
+                "position": 16
+              },
+              {
+                "week": 26,
+                "position": 16
+              },
+              {
+                "week": 27,
+                "position": 16
+              },
+              {
+                "week": 28,
+                "position": 16
+              }
+            ]
+          },
+          {
+            "name": "Bournemouth",
+            "attack": 6.6,
+            "defense": 5.4,
+            "strength": 7.1,
+            "chaos": 8.9,
+            "form": [
+              "D",
+              "D",
+              "D",
+              "W",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 11
+              },
+              {
+                "week": 2,
+                "position": 7
+              },
+              {
+                "week": 3,
+                "position": 8
+              },
+              {
+                "week": 4,
+                "position": 7
+              },
+              {
+                "week": 5,
+                "position": 6
+              },
+              {
+                "week": 6,
+                "position": 7
+              },
+              {
+                "week": 7,
+                "position": 6
+              },
+              {
+                "week": 8,
+                "position": 8
+              },
+              {
+                "week": 9,
+                "position": 10
+              },
+              {
+                "week": 10,
+                "position": 10
+              },
+              {
+                "week": 11,
+                "position": 7
+              },
+              {
+                "week": 12,
+                "position": 6
+              },
+              {
+                "week": 13,
+                "position": 6
+              },
+              {
+                "week": 14,
+                "position": 5
+              },
+              {
+                "week": 15,
+                "position": 3
+              },
+              {
+                "week": 16,
+                "position": 4
+              },
+              {
+                "week": 17,
+                "position": 6
+              },
+              {
+                "week": 18,
+                "position": 7
+              },
+              {
+                "week": 19,
+                "position": 7
+              },
+              {
+                "week": 20,
+                "position": 6
+              },
+              {
+                "week": 21,
+                "position": 7
+              },
+              {
+                "week": 22,
+                "position": 6
+              },
+              {
+                "week": 23,
+                "position": 6
+              },
+              {
+                "week": 24,
+                "position": 6
+              },
+              {
+                "week": 25,
+                "position": 6
+              },
+              {
+                "week": 26,
+                "position": 6
+              },
+              {
+                "week": 27,
+                "position": 5
+              },
+              {
+                "week": 28,
+                "position": 4
+              }
+            ]
+          },
+          {
+            "name": "Southampton",
+            "attack": 0.4,
+            "defense": 2.8,
+            "strength": 3,
+            "chaos": 4.7,
+            "form": [
+              "W",
+              "L",
+              "D",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 8
+              },
+              {
+                "week": 2,
+                "position": 2
+              },
+              {
+                "week": 3,
+                "position": 7
+              },
+              {
+                "week": 4,
+                "position": 9
+              },
+              {
+                "week": 5,
+                "position": 7
+              },
+              {
+                "week": 6,
+                "position": 9
+              },
+              {
+                "week": 7,
+                "position": 9
+              },
+              {
+                "week": 8,
+                "position": 10
+              },
+              {
+                "week": 9,
+                "position": 9
+              },
+              {
+                "week": 10,
+                "position": 9
+              },
+              {
+                "week": 11,
+                "position": 10
+              },
+              {
+                "week": 12,
+                "position": 10
+              },
+              {
+                "week": 13,
+                "position": 11
+              },
+              {
+                "week": 14,
+                "position": 11
+              },
+              {
+                "week": 15,
+                "position": 12
+              },
+              {
+                "week": 16,
+                "position": 12
+              },
+              {
+                "week": 17,
+                "position": 11
+              },
+              {
+                "week": 18,
+                "position": 12
+              },
+              {
+                "week": 19,
+                "position": 12
+              },
+              {
+                "week": 20,
+                "position": 12
+              },
+              {
+                "week": 21,
+                "position": 13
+              },
+              {
+                "week": 22,
+                "position": 12
+              },
+              {
+                "week": 23,
+                "position": 13
+              },
+              {
+                "week": 24,
+                "position": 13
+              },
+              {
+                "week": 25,
+                "position": 13
+              },
+              {
+                "week": 26,
+                "position": 13
+              },
+              {
+                "week": 27,
+                "position": 13
+              },
+              {
+                "week": 28,
+                "position": 14
+              }
+            ]
+          },
+          {
+            "name": "Chelsea",
+            "attack": 8,
+            "defense": 7.2,
+            "strength": 7.2,
+            "chaos": 6.5,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 14
+              },
+              {
+                "week": 2,
+                "position": 10
+              },
+              {
+                "week": 3,
+                "position": 10
+              },
+              {
+                "week": 4,
+                "position": 8
+              },
+              {
+                "week": 5,
+                "position": 9
+              },
+              {
+                "week": 6,
+                "position": 8
+              },
+              {
+                "week": 7,
+                "position": 5
+              },
+              {
+                "week": 8,
+                "position": 2
+              },
+              {
+                "week": 9,
+                "position": 1
+              },
+              {
+                "week": 10,
+                "position": 3
+              },
+              {
+                "week": 11,
+                "position": 5
+              },
+              {
+                "week": 12,
+                "position": 3
+              },
+              {
+                "week": 13,
+                "position": 3
+              },
+              {
+                "week": 14,
+                "position": 4
+              },
+              {
+                "week": 15,
+                "position": 7
+              },
+              {
+                "week": 16,
+                "position": 6
+              },
+              {
+                "week": 17,
+                "position": 5
+              },
+              {
+                "week": 18,
+                "position": 5
+              },
+              {
+                "week": 19,
+                "position": 3
+              },
+              {
+                "week": 20,
+                "position": 4
+              },
+              {
+                "week": 21,
+                "position": 3
+              },
+              {
+                "week": 22,
+                "position": 3
+              },
+              {
+                "week": 23,
+                "position": 3
+              },
+              {
+                "week": 24,
+                "position": 3
+              },
+              {
+                "week": 25,
+                "position": 3
+              },
+              {
+                "week": 26,
+                "position": 2
+              },
+              {
+                "week": 27,
+                "position": 2
+              },
+              {
+                "week": 28,
+                "position": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tournamentId": "vf:tournament:14149",
+    "tournamentName": "League Mode",
+    "seasons": [
+      {
+        "seasonId": "vf:season:2978737",
+        "teams": [
+          {
+            "name": "VL Rome",
+            "attack": 5,
+            "defense": 5.2,
+            "strength": 5,
+            "chaos": 5,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 5
+              },
+              {
+                "week": 2,
+                "position": 9
+              },
+              {
+                "week": 3,
+                "position": 5
+              },
+              {
+                "week": 4,
+                "position": 8
+              }
+            ]
+          },
+          {
+            "name": "VL Copenhagen",
+            "attack": 4.4,
+            "defense": 4.9,
+            "strength": 5.3,
+            "chaos": 4.8,
+            "form": [
+              "L",
+              "D",
+              "D",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 11
+              },
+              {
+                "week": 2,
+                "position": 14
+              },
+              {
+                "week": 3,
+                "position": 13
+              },
+              {
+                "week": 4,
+                "position": 14
+              }
+            ]
+          },
+          {
+            "name": "VL Madrid",
+            "attack": 6.1,
+            "defense": 5.4,
+            "strength": 5.4,
+            "chaos": 5.4,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 1
+              },
+              {
+                "week": 2,
+                "position": 1
+              },
+              {
+                "week": 3,
+                "position": 1
+              },
+              {
+                "week": 4,
+                "position": 2
+              }
+            ]
+          },
+          {
+            "name": "VL Moscow",
+            "attack": 6.2,
+            "defense": 4.2,
+            "strength": 5.4,
+            "chaos": 4.7,
+            "form": [
+              "L",
+              "W",
+              "D",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 15
+              },
+              {
+                "week": 2,
+                "position": 8
+              },
+              {
+                "week": 3,
+                "position": 9
+              },
+              {
+                "week": 4,
+                "position": 5
+              }
+            ]
+          },
+          {
+            "name": "VL Paris",
+            "attack": 6,
+            "defense": 4.9,
+            "strength": 5.2,
+            "chaos": 4.9,
+            "form": [
+              "W",
+              "W",
+              "D",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 2
+              },
+              {
+                "week": 2,
+                "position": 2
+              },
+              {
+                "week": 3,
+                "position": 2
+              },
+              {
+                "week": 4,
+                "position": 3
+              }
+            ]
+          },
+          {
+            "name": "VL Kiev",
+            "attack": 4,
+            "defense": 5.2,
+            "strength": 4.8,
+            "chaos": 5.7,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 16
+              },
+              {
+                "week": 2,
+                "position": 10
+              },
+              {
+                "week": 3,
+                "position": 12
+              },
+              {
+                "week": 4,
+                "position": 13
+              }
+            ]
+          },
+          {
+            "name": "VL Athens",
+            "attack": 5.7,
+            "defense": 4.2,
+            "strength": 5.2,
+            "chaos": 4.2,
+            "form": [
+              "D",
+              "W",
+              "W",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 7
+              },
+              {
+                "week": 2,
+                "position": 5
+              },
+              {
+                "week": 3,
+                "position": 3
+              },
+              {
+                "week": 4,
+                "position": 6
+              }
+            ]
+          },
+          {
+            "name": "VL Vienna",
+            "attack": 5.5,
+            "defense": 4.7,
+            "strength": 4.6,
+            "chaos": 5.7,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 8
+              },
+              {
+                "week": 2,
+                "position": 11
+              },
+              {
+                "week": 3,
+                "position": 14
+              },
+              {
+                "week": 4,
+                "position": 10
+              }
+            ]
+          },
+          {
+            "name": "VL Bern",
+            "attack": 4.3,
+            "defense": 4.7,
+            "strength": 4.7,
+            "chaos": 4.8,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 12
+              },
+              {
+                "week": 2,
+                "position": 7
+              },
+              {
+                "week": 3,
+                "position": 11
+              },
+              {
+                "week": 4,
+                "position": 12
+              }
+            ]
+          },
+          {
+            "name": "VL Zagreb",
+            "attack": 4.6,
+            "defense": 5.4,
+            "strength": 5.4,
+            "chaos": 6.1,
+            "form": [
+              "W",
+              "D",
+              "L",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 6
+              },
+              {
+                "week": 2,
+                "position": 6
+              },
+              {
+                "week": 3,
+                "position": 10
+              },
+              {
+                "week": 4,
+                "position": 7
+              }
+            ]
+          },
+          {
+            "name": "VL Lisbon",
+            "attack": 5.1,
+            "defense": 5.2,
+            "strength": 4.8,
+            "chaos": 4.5,
+            "form": [
+              "W",
+              "D",
+              "D",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 4
+              },
+              {
+                "week": 2,
+                "position": 4
+              },
+              {
+                "week": 3,
+                "position": 6
+              },
+              {
+                "week": 4,
+                "position": 9
+              }
+            ]
+          },
+          {
+            "name": "VL Prague",
+            "attack": 4.6,
+            "defense": 4.5,
+            "strength": 4.7,
+            "chaos": 5.5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 14
+              },
+              {
+                "week": 2,
+                "position": 15
+              },
+              {
+                "week": 3,
+                "position": 16
+              },
+              {
+                "week": 4,
+                "position": 15
+              }
+            ]
+          },
+          {
+            "name": "VL Berlin",
+            "attack": 5.3,
+            "defense": 6.1,
+            "strength": 5.7,
+            "chaos": 5.6,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 3
+              },
+              {
+                "week": 2,
+                "position": 3
+              },
+              {
+                "week": 3,
+                "position": 4
+              },
+              {
+                "week": 4,
+                "position": 1
+              }
+            ]
+          },
+          {
+            "name": "VL Ankara",
+            "attack": 4,
+            "defense": 3.8,
+            "strength": 3.8,
+            "chaos": 4.2,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 13
+              },
+              {
+                "week": 2,
+                "position": 16
+              },
+              {
+                "week": 3,
+                "position": 15
+              },
+              {
+                "week": 4,
+                "position": 16
+              }
+            ]
+          },
+          {
+            "name": "VL Amsterdam",
+            "attack": 5.7,
+            "defense": 4.9,
+            "strength": 5.1,
+            "chaos": 5.2,
+            "form": [
+              "D",
+              "L",
+              "W",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 9
+              },
+              {
+                "week": 2,
+                "position": 13
+              },
+              {
+                "week": 3,
+                "position": 7
+              },
+              {
+                "week": 4,
+                "position": 4
+              }
+            ]
+          },
+          {
+            "name": "VL London",
+            "attack": 5.1,
+            "defense": 4.5,
+            "strength": 4.5,
+            "chaos": 4.8,
+            "form": [
+              "D",
+              "L",
+              "W",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 10
+              },
+              {
+                "week": 2,
+                "position": 12
+              },
+              {
+                "week": 3,
+                "position": 8
+              },
+              {
+                "week": 4,
+                "position": 11
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tournamentId": "vf:tournament:34616",
+    "tournamentName": "Bundesliga",
+    "seasons": [
+      {
+        "seasonId": "vf:season:2978735",
+        "teams": [
+          {
+            "name": "FC Augsburg",
+            "attack": 3.6,
+            "defense": 4.4,
+            "strength": 3.6,
+            "chaos": 4.2,
+            "form": [
+              "L",
+              "D",
+              "L",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 14
+              },
+              {
+                "week": 2,
+                "position": 14
+              },
+              {
+                "week": 3,
+                "position": 13
+              },
+              {
+                "week": 4,
+                "position": 14
+              },
+              {
+                "week": 5,
+                "position": 16
+              }
+            ]
+          },
+          {
+            "name": "Borussia M'gladbach",
+            "attack": 5.6,
+            "defense": 5.3,
+            "strength": 5.6,
+            "chaos": 6.1,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "W",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 5
+              },
+              {
+                "week": 2,
+                "position": 9
+              },
+              {
+                "week": 3,
+                "position": 12
+              },
+              {
+                "week": 4,
+                "position": 7
+              },
+              {
+                "week": 5,
+                "position": 5
+              }
+            ]
+          },
+          {
+            "name": "Hertha Berlin",
+            "attack": 5,
+            "defense": 4.8,
+            "strength": 4.8,
+            "chaos": 5,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 3
+              },
+              {
+                "week": 2,
+                "position": 4
+              },
+              {
+                "week": 3,
+                "position": 2
+              },
+              {
+                "week": 4,
+                "position": 6
+              },
+              {
+                "week": 5,
+                "position": 9
+              }
+            ]
+          },
+          {
+            "name": "Hamburger SV",
+            "attack": 4.3,
+            "defense": 4.9,
+            "strength": 4.3,
+            "chaos": 4.6,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 12
+              },
+              {
+                "week": 2,
+                "position": 12
+              },
+              {
+                "week": 3,
+                "position": 8
+              },
+              {
+                "week": 4,
+                "position": 11
+              },
+              {
+                "week": 5,
+                "position": 11
+              }
+            ]
+          },
+          {
+            "name": "VfL Wolfsburg",
+            "attack": 5,
+            "defense": 3.9,
+            "strength": 4.4,
+            "chaos": 4.4,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "L",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 11
+              },
+              {
+                "week": 2,
+                "position": 16
+              },
+              {
+                "week": 3,
+                "position": 16
+              },
+              {
+                "week": 4,
+                "position": 16
+              },
+              {
+                "week": 5,
+                "position": 14
+              }
+            ]
+          },
+          {
+            "name": "TSG Hoffenheim",
+            "attack": 6.7,
+            "defense": 4.1,
+            "strength": 6,
+            "chaos": 5.3,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "W",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 2
+              },
+              {
+                "week": 2,
+                "position": 3
+              },
+              {
+                "week": 3,
+                "position": 4
+              },
+              {
+                "week": 4,
+                "position": 1
+              },
+              {
+                "week": 5,
+                "position": 1
+              }
+            ]
+          },
+          {
+            "name": "Hannover 96",
+            "attack": 4.9,
+            "defense": 4.6,
+            "strength": 5.1,
+            "chaos": 4.8,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "D",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 13
+              },
+              {
+                "week": 2,
+                "position": 8
+              },
+              {
+                "week": 3,
+                "position": 11
+              },
+              {
+                "week": 4,
+                "position": 10
+              },
+              {
+                "week": 5,
+                "position": 10
+              }
+            ]
+          },
+          {
+            "name": "Bayer 04 Leverkusen",
+            "attack": 6.3,
+            "defense": 4.8,
+            "strength": 5.5,
+            "chaos": 5.6,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "W",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 4
+              },
+              {
+                "week": 2,
+                "position": 5
+              },
+              {
+                "week": 3,
+                "position": 1
+              },
+              {
+                "week": 4,
+                "position": 2
+              },
+              {
+                "week": 5,
+                "position": 2
+              }
+            ]
+          },
+          {
+            "name": "Eintracht Frankfurt",
+            "attack": 5.4,
+            "defense": 5.5,
+            "strength": 5.5,
+            "chaos": 5.1,
+            "form": [
+              "D",
+              "W",
+              "W",
+              "W",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 9
+              },
+              {
+                "week": 2,
+                "position": 2
+              },
+              {
+                "week": 3,
+                "position": 3
+              },
+              {
+                "week": 4,
+                "position": 3
+              },
+              {
+                "week": 5,
+                "position": 3
+              }
+            ]
+          },
+          {
+            "name": "FC Bayern München",
+            "attack": 4.6,
+            "defense": 5.5,
+            "strength": 5.4,
+            "chaos": 4.9,
+            "form": [
+              "D",
+              "W",
+              "D",
+              "D",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 10
+              },
+              {
+                "week": 2,
+                "position": 6
+              },
+              {
+                "week": 3,
+                "position": 7
+              },
+              {
+                "week": 4,
+                "position": 8
+              },
+              {
+                "week": 5,
+                "position": 6
+              }
+            ]
+          },
+          {
+            "name": "Borussia Dortmund",
+            "attack": 6,
+            "defense": 4.2,
+            "strength": 5.6,
+            "chaos": 5.2,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "W",
+              "D"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 16
+              },
+              {
+                "week": 2,
+                "position": 15
+              },
+              {
+                "week": 3,
+                "position": 9
+              },
+              {
+                "week": 4,
+                "position": 5
+              },
+              {
+                "week": 5,
+                "position": 8
+              }
+            ]
+          },
+          {
+            "name": "1. FSV Mainz 05",
+            "attack": 6.1,
+            "defense": 4.6,
+            "strength": 5.1,
+            "chaos": 5.2,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "W",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 1
+              },
+              {
+                "week": 2,
+                "position": 7
+              },
+              {
+                "week": 3,
+                "position": 5
+              },
+              {
+                "week": 4,
+                "position": 4
+              },
+              {
+                "week": 5,
+                "position": 4
+              }
+            ]
+          },
+          {
+            "name": "FC Schalke 04",
+            "attack": 4.5,
+            "defense": 4.1,
+            "strength": 4.4,
+            "chaos": 4.6,
+            "form": [
+              "D",
+              "D",
+              "D",
+              "L",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 7
+              },
+              {
+                "week": 2,
+                "position": 10
+              },
+              {
+                "week": 3,
+                "position": 10
+              },
+              {
+                "week": 4,
+                "position": 13
+              },
+              {
+                "week": 5,
+                "position": 15
+              }
+            ]
+          },
+          {
+            "name": "VfB Stuttgart",
+            "attack": 4,
+            "defense": 4.6,
+            "strength": 4.3,
+            "chaos": 4.6,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "W",
+              "L"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 8
+              },
+              {
+                "week": 2,
+                "position": 13
+              },
+              {
+                "week": 3,
+                "position": 14
+              },
+              {
+                "week": 4,
+                "position": 12
+              },
+              {
+                "week": 5,
+                "position": 12
+              }
+            ]
+          },
+          {
+            "name": "SC Freiburg",
+            "attack": 4.5,
+            "defense": 5.6,
+            "strength": 5.1,
+            "chaos": 5.2,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "L",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 6
+              },
+              {
+                "week": 2,
+                "position": 1
+              },
+              {
+                "week": 3,
+                "position": 6
+              },
+              {
+                "week": 4,
+                "position": 9
+              },
+              {
+                "week": 5,
+                "position": 7
+              }
+            ]
+          },
+          {
+            "name": "SV Werder Bremen",
+            "attack": 4.7,
+            "defense": 3.9,
+            "strength": 4.5,
+            "chaos": 4.6,
+            "form": [
+              "L",
+              "D",
+              "L",
+              "L",
+              "W"
+            ],
+            "standings": [
+              {
+                "week": 1,
+                "position": 15
+              },
+              {
+                "week": 2,
+                "position": 11
+              },
+              {
+                "week": 3,
+                "position": 15
+              },
+              {
+                "week": 4,
+                "position": 15
+              },
+              {
+                "week": 5,
+                "position": 13
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
