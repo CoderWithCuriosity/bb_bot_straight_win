@@ -110,25 +110,37 @@ function getLowestPosition(standings) {
  * Looks at last N weeks and checks if trend is moving to better positions
  */
 function isTeamImproving(standings, recentWeeks = 4) {
-    if (standings.length < 2) return false;
+    if (standings.length < 2) {
+        console.log('Not enough data to determine trend (less than 2 weeks)');
+        return false;
+    }
 
     // Sort by week (just in case data isn't ordered)
     const sorted = [...standings].sort((a, b) => a.week - b.week);
-
     const recent = sorted.slice(-recentWeeks);
-    let improving = false;
+
+    console.log(`Analyzing last ${recentWeeks} weeks: ${recent.map(s => s.position).join(' → ')}`);
+
+    let improvingCount = 0;
+    let totalComparison = 0;
 
     for (let i = 1; i < recent.length; i++) {
         if (recent[i].position < recent[i - 1].position) {
-            // Improved compared to previous week
-            improving = true;
+            console.log(`Week ${recent[i].week}: Improved from ${recent[i-1].position} to ${recent[i].position}`);
+            improvingCount++;
+        } else if (recent[i].position > recent[i - 1].position) {
+            console.log(`Week ${recent[i].week}: Declined from ${recent[i-1].position} to ${recent[i].position}`);
         } else {
-            improving = false; // Broke the improving trend
-            break;
+            console.log(`Week ${recent[i].week}: No change (${recent[i].position})`);
         }
+        totalComparison++;
     }
 
-    return improving;
+    // Consider it improving if majority of recent comparisons show improvement
+    const improvementRatio = improvingCount / totalComparison;
+    console.log(`Improvement ratio: ${improvingCount}/${totalComparison} = ${improvementRatio.toFixed(2)}`);
+
+    return improvementRatio >= 0.6; // At least 60% of recent weeks show improvement
 }
 
 /**
@@ -136,32 +148,87 @@ function isTeamImproving(standings, recentWeeks = 4) {
  * Pick the team that is improving more OR the one with the better highest position if both are equal
  */
 function compareTeamTrends(homeStanding, awayStanding) {
-    const homeHigh = getHighestPosition(homeStanding.standings);
-    const homeLow = getLowestPosition(homeStanding.standings);
-    const homeTrend = isTeamImproving(homeStanding.standings);
+    // Extract and analyze home team trends
+    const homeStandings = homeStanding.standings || [];
+    const homeCurrentPos = homeStandings[homeStandings.length - 1]?.position;
+    const homeHigh = getHighestPosition(homeStandings);
+    const homeLow = getLowestPosition(homeStandings);
+    const homeTrend = isTeamImproving(homeStandings);
+    const homeRecentForm = homeStanding.form || [];
 
-    const awayHigh = getHighestPosition(awayStanding.standings);
-    const awayLow = getLowestPosition(awayStanding.standings);
-    const awayTrend = isTeamImproving(awayStanding.standings);
+    // Extract and analyze away team trends
+    const awayStandings = awayStanding.standings || [];
+    const awayCurrentPos = awayStandings[awayStandings.length - 1]?.position;
+    const awayHigh = getHighestPosition(awayStandings);
+    const awayLow = getLowestPosition(awayStandings);
+    const awayTrend = isTeamImproving(awayStandings);
+    const awayRecentForm = awayStanding.form || [];
 
-    console.log(`Home Team: High=${homeHigh}, Low=${homeLow}, Improving=${homeTrend}`);
-    console.log(`Away Team: High=${awayHigh}, Low=${awayLow}, Improving=${awayTrend}`);
+    console.log('\n=== Team Trend Analysis ===');
+    console.log('Home Team Analysis:');
+    console.log(`- Current Position: ${homeCurrentPos}`);
+    console.log(`- Best Position: ${homeHigh}`);
+    console.log(`- Worst Position: ${homeLow}`);
+    console.log(`- Improving Trend: ${homeTrend}`);
+    console.log(`- Recent Form: ${homeRecentForm.join(', ')}`);
+    console.log(`- Position History: ${homeStandings.map(s => s.position).join(' → ')}`);
 
+    console.log('\nAway Team Analysis:');
+    console.log(`- Current Position: ${awayCurrentPos}`);
+    console.log(`- Best Position: ${awayHigh}`);
+    console.log(`- Worst Position: ${awayLow}`);
+    console.log(`- Improving Trend: ${awayTrend}`);
+    console.log(`- Recent Form: ${awayRecentForm.join(', ')}`);
+    console.log(`- Position History: ${awayStandings.map(s => s.position).join(' → ')}`);
+
+    // Decision making with clear criteria
     if (homeTrend && !awayTrend) {
+        console.log('\nDecision: HOME team has improving trend while AWAY does not');
         return "HOME";
     } else if (!homeTrend && awayTrend) {
+        console.log('\nDecision: AWAY team has improving trend while HOME does not');
         return "AWAY";
-    }
-     else {
-        // If both or none improving, pick the one with better highest position
-        if (homeHigh < awayHigh) {
+    } else if (homeTrend && awayTrend) {
+        // Both improving - compare the rate of improvement
+        const homeImprovement = homeHigh - homeCurrentPos;
+        const awayImprovement = awayHigh - awayCurrentPos;
+        
+        console.log(`\nBoth teams improving - HOME improvement: ${homeImprovement}, AWAY improvement: ${awayImprovement}`);
+        
+        if (homeImprovement > awayImprovement) {
+            console.log('Decision: HOME team improving faster');
             return "HOME";
-        } else if (awayHigh < homeHigh) {
+        } else if (awayImprovement > homeImprovement) {
+            console.log('Decision: AWAY team improving faster');
             return "AWAY";
-        } else {
-            return "NO PICK"; // Same trends, no clear advantage
         }
     }
+
+    // If no clear trend advantage, compare positions
+    // console.log('\nNo clear trend advantage - comparing positions');
+    // if (homeCurrentPos < awayCurrentPos) {
+    //     console.log(`Decision: HOME team higher in standings (${homeCurrentPos} vs ${awayCurrentPos})`);
+    //     return "HOME";
+    // } else if (awayCurrentPos < homeCurrentPos) {
+    //     console.log(`Decision: AWAY team higher in standings (${awayCurrentPos} vs ${homeCurrentPos})`);
+    //     return "AWAY";
+    // }
+
+    // If still equal, compare form
+    console.log('\nEqual positions - comparing recent form');
+    const homeWins = homeRecentForm.filter(r => r === "W").length;
+    const awayWins = awayRecentForm.filter(r => r === "W").length;
+    
+    if (homeWins > awayWins) {
+        console.log(`Decision: HOME team has better form (${homeWins} wins vs ${awayWins})`);
+        return "HOME";
+    } else if (awayWins > homeWins) {
+        console.log(`Decision: AWAY team has better form (${awayWins} wins vs ${homeWins})`);
+        return "AWAY";
+    }
+
+    console.log('\nDecision: No clear advantage - no pick');
+    return "NO PICK";
 }
 
 
@@ -224,6 +291,7 @@ async function win_1x2(amount = 100, matchCount = 3) {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
                             if (parseInt(outcome.id) != selectedId) continue;
+                            if(parseFloat(outcome.odds) > 2.0) continue;
 
                                 const msg = `🤝 *Straight Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Straight Pick Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
 
