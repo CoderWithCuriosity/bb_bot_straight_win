@@ -1,0 +1,170 @@
+[
+  {
+    "id": "vf:match:1384889532",
+    "match": "FC Bayern München vs. VfB Stuttgart",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "🏆 FC Bayern München WON (3-0)"
+  },
+  {
+    "id": "vf:match:1384889549",
+    "match": "Bayer 04 Leverkusen vs. FC Schalke 04",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "🏆 Bayer 04 Leverkusen WON (3-0)"
+  },
+  {
+    "id": "vf:match:1384889838",
+    "match": "VL Zagreb vs. VL Prague",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "🏆 VL Zagreb WON (1-0)"
+  },
+  {
+    "id": "vf:match:1384890733",
+    "match": "Bournemouth vs. Newcastle",
+    "homeScore": 1,
+    "awayScore": 1,
+    "result": "🤝 DRAW (1-1)"
+  },
+  {
+    "id": "vf:match:1384889842",
+    "match": "VL Berlin vs. VL Zagreb",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 VL Berlin WON (2-0)"
+  },
+  {
+    "id": "vf:match:1384889849",
+    "match": "VL Prague vs. VL London",
+    "homeScore": 0,
+    "awayScore": 4,
+    "result": "🏆 VL London WON (0-4)"
+  },
+  {
+    "id": "vf:match:1384890745",
+    "match": "Newcastle vs. Liverpool",
+    "homeScore": 1,
+    "awayScore": 2,
+    "result": "🏆 Liverpool WON (1-2)"
+  },
+  {
+    "id": "vf:match:1384890746",
+    "match": "West Ham vs. Manchester Blue",
+    "homeScore": 1,
+    "awayScore": 3,
+    "result": "🏆 Manchester Blue WON (1-3)"
+  },
+  {
+    "id": "vf:match:1384889562",
+    "match": "FC Bayern München vs. Hannover 96",
+    "homeScore": 4,
+    "awayScore": 0,
+    "result": "🏆 FC Bayern München WON (4-0)"
+  },
+  {
+    "id": "vf:match:1384889572",
+    "match": "Hannover 96 vs. Bayer 04 Leverkusen",
+    "homeScore": 1,
+    "awayScore": 3,
+    "result": "🏆 Bayer 04 Leverkusen WON (1-3)"
+  },
+  {
+    "id": "vf:match:1384890765",
+    "match": "Manchester Blue vs. Watford",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "🏆 Manchester Blue WON (1-0)"
+  },
+  {
+    "id": "vf:match:1384890767",
+    "match": "Liverpool vs. West Ham",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 Liverpool WON (2-0)"
+  },
+  {
+    "id": "vf:match:1384890777",
+    "match": "Everton vs. Newcastle",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "🏆 Everton WON (3-0)"
+  },
+  {
+    "id": "vf:match:1384890789",
+    "match": "Manchester Reds vs. Newcastle",
+    "homeScore": 3,
+    "awayScore": 1,
+    "result": "🏆 Manchester Reds WON (3-1)"
+  },
+  {
+    "id": "vf:match:1384890800",
+    "match": "Everton vs. West Ham",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 Everton WON (2-1)"
+  },
+  {
+    "id": "vf:match:1384893706",
+    "match": "Hertha Berlin vs. 1. FSV Mainz 05",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 Hertha Berlin WON (2-1)"
+  },
+  {
+    "id": "vf:match:1384894002",
+    "match": "VL Berlin vs. VL Prague",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "🏆 VL Berlin WON (3-0)"
+  },
+  {
+    "id": "vf:match:1384893713",
+    "match": "FC Bayern München vs. Hamburger SV",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 FC Bayern München WON (2-0)"
+  },
+  {
+    "id": "vf:match:1384893725",
+    "match": "Hertha Berlin vs. VfB Stuttgart",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 Hertha Berlin WON (2-0)"
+  },
+  {
+    "id": "vf:match:1384893730",
+    "match": "Hannover 96 vs. FC Bayern München",
+    "homeScore": 1,
+    "awayScore": 2,
+    "result": "🏆 FC Bayern München WON (1-2)"
+  },
+  {
+    "id": "vf:match:1384894020",
+    "match": "VL Lisbon vs. VL Bern",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "🏆 VL Lisbon WON (3-0)"
+  },
+  {
+    "id": "vf:match:1384893739",
+    "match": "Borussia Dortmund vs. Hannover 96",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "🏆 Borussia Dortmund WON (1-0)"
+  },
+  {
+    "id": "vf:match:1384894023",
+    "match": "VL Bern vs. VL Madrid",
+    "homeScore": 1,
+    "awayScore": 2,
+    "result": "🏆 VL Madrid WON (1-2)"
+  },
+  {
+    "id": "vf:match:1384894779",
+    "match": "Newcastle vs. Liverpool",
+    "homeScore": 0,
+    "awayScore": 1,
+    "result": "🏆 Liverpool WON (0-1)"
+  }
+]

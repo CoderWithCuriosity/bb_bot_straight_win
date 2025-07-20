@@ -31,7 +31,11 @@ function storeLoginData(credentials) {
     const credentialsData = [
       { token: credentials.token, secretKey: credentials.secretKey }
     ];
-    fs.writeFileSync(TOKEN_PATH, JSON.stringify(credentialsData, null, 2), "utf8");
+    fs.writeFileSync(
+      TOKEN_PATH,
+      JSON.stringify(credentialsData, null, 2),
+      "utf8"
+    );
   }
 }
 
@@ -99,7 +103,28 @@ async function main() {
     //   stake
     // );
 
+
     newSelections.forEach(sel => logBet(sel));
+
+    //For single staing 
+    // for (const sel of newSelections) {
+    //   try {
+    //     await placeBet(
+    //       credentials.token,
+    //       credentials.secretKey,
+    //       [sel], // Pass as array
+    //       storeLoginData,
+    //       stake
+    //     );
+    //     logBet(sel);
+    //     console.log(`✅ Successfully placed bet on ${sel.eventName}`);
+    //   } catch (err) {
+    //     console.error(
+    //       `❌ Failed to place bet on ${sel.eventName}:`,
+    //       err.message || err
+    //     );
+    //   }
+    // }
   } catch (err) {
     console.error("❌ Failed to place bet:", err.message || err);
   }
@@ -111,4 +136,3 @@ main();
 
 // Repeat every X minutes
 setInterval(main, X * 60 * 1000);
-
