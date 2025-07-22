@@ -1,218 +1,632 @@
 [
   {
-    "id": "vf:match:1384889532",
-    "match": "FC Bayern München vs. VfB Stuttgart",
-    "homeTeam": "FC Bayern München",
-    "awayTeam": "VfB Stuttgart",
-    "homeScore": 3,
-    "awayScore": 0,
-    "result": "🏆 FC Bayern München WON (3-0)"
+    "id": "vf:match:1385046239",
+    "match": "London Guns vs. Southampton",
+    "homeTeam": "London Guns",
+    "awayTeam": "Southampton",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 London Guns WON (2-1)"
   },
   {
-    "id": "vf:match:1384889549",
+    "id": "vf:match:1385046250",
+    "match": "Leicester vs. Wolverhampton",
+    "homeTeam": "Leicester",
+    "awayTeam": "Wolverhampton",
+    "homeScore": 1,
+    "awayScore": 2,
+    "result": "🏆 Wolverhampton WON (1-2)"
+  },
+  {
+    "id": "vf:match:1385046273",
+    "match": "London Guns vs. Everton",
+    "homeTeam": "London Guns",
+    "awayTeam": "Everton",
+    "homeScore": 2,
+    "awayScore": 2,
+    "result": "🤝 DRAW (2-2)"
+  },
+  {
+    "id": "vf:match:1385046284",
+    "match": "Wolverhampton vs. London Guns",
+    "homeTeam": "Wolverhampton",
+    "awayTeam": "London Guns",
+    "homeScore": 1,
+    "awayScore": 3,
+    "result": "🏆 London Guns WON (1-3)"
+  },
+  {
+    "id": "vf:match:1385046301",
+    "match": "West Ham vs. Southampton",
+    "homeTeam": "West Ham",
+    "awayTeam": "Southampton",
+    "homeScore": 0,
+    "awayScore": 3,
+    "result": "🏆 Southampton WON (0-3)"
+  },
+  {
+    "id": "vf:match:1385046302",
+    "match": "Bournemouth vs. London Guns",
+    "homeTeam": "Bournemouth",
+    "awayTeam": "London Guns",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 Bournemouth WON (2-1)"
+  },
+  {
+    "id": "vf:match:1385046310",
+    "match": "Manchester Blue vs. West Ham",
+    "homeTeam": "Manchester Blue",
+    "awayTeam": "West Ham",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 Manchester Blue WON (2-0)"
+  },
+  {
+    "id": "vf:match:1385049887",
+    "match": "VL Copenhagen vs. VL Prague",
+    "homeTeam": "VL Copenhagen",
+    "awayTeam": "VL Prague",
+    "homeScore": 4,
+    "awayScore": 2,
+    "result": "🏆 VL Copenhagen WON (4-2)"
+  },
+  {
+    "id": "vf:match:1385049653",
+    "match": "1. FSV Mainz 05 vs. SV Werder Bremen",
+    "homeTeam": "1. FSV Mainz 05",
+    "awayTeam": "SV Werder Bremen",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 1. FSV Mainz 05 WON (2-0)"
+  },
+  {
+    "id": "vf:match:1385049894",
+    "match": "VL Berlin vs. VL Ankara",
+    "homeTeam": "VL Berlin",
+    "awayTeam": "VL Ankara",
+    "homeScore": 3,
+    "awayScore": 1,
+    "result": "🏆 VL Berlin WON (3-1)"
+  },
+  {
+    "id": "vf:match:1385049667",
+    "match": "Eintracht Frankfurt vs. FC Augsburg",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "FC Augsburg",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 Eintracht Frankfurt WON (2-1)"
+  },
+  {
+    "id": "vf:match:1385049901",
+    "match": "VL Lisbon vs. VL Zagreb",
+    "homeTeam": "VL Lisbon",
+    "awayTeam": "VL Zagreb",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "🏆 VL Lisbon WON (1-0)"
+  },
+  {
+    "id": "vf:match:1385049902",
+    "match": "VL Copenhagen vs. VL Athens",
+    "homeTeam": "VL Copenhagen",
+    "awayTeam": "VL Athens",
+    "homeScore": 0,
+    "awayScore": 1,
+    "result": "🏆 VL Athens WON (0-1)"
+  },
+  {
+    "id": "vf:match:1385049905",
+    "match": "VL Rome vs. VL Prague",
+    "homeTeam": "VL Rome",
+    "awayTeam": "VL Prague",
+    "homeScore": 4,
+    "awayScore": 2,
+    "result": "🏆 VL Rome WON (4-2)"
+  },
+  {
+    "id": "vf:match:1385051303",
+    "match": "Chelsea vs. Tottenham",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Tottenham",
+    "homeScore": 3,
+    "awayScore": 1,
+    "result": "🏆 Chelsea WON (3-1)"
+  },
+  {
+    "id": "vf:match:1385051304",
+    "match": "London Guns vs. Everton",
+    "homeTeam": "London Guns",
+    "awayTeam": "Everton",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 London Guns WON (2-1)"
+  },
+  {
+    "id": "vf:match:1385051305",
+    "match": "Liverpool vs. West Ham",
+    "homeTeam": "Liverpool",
+    "awayTeam": "West Ham",
+    "homeScore": 3,
+    "awayScore": 1,
+    "result": "🏆 Liverpool WON (3-1)"
+  },
+  {
+    "id": "vf:match:1385049668",
+    "match": "Borussia Dortmund vs. VfL Wolfsburg",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "VfL Wolfsburg",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "🏆 Borussia Dortmund WON (3-0)"
+  },
+  {
+    "id": "vf:match:1385049671",
+    "match": "FC Bayern München vs. Hannover 96",
+    "homeTeam": "FC Bayern München",
+    "awayTeam": "Hannover 96",
+    "homeScore": 5,
+    "awayScore": 1,
+    "result": "🏆 FC Bayern München WON (5-1)"
+  },
+  {
+    "id": "vf:match:1385049675",
+    "match": "1. FSV Mainz 05 vs. Hamburger SV",
+    "homeTeam": "1. FSV Mainz 05",
+    "awayTeam": "Hamburger SV",
+    "homeScore": 1,
+    "awayScore": 2,
+    "result": "🏆 Hamburger SV WON (1-2)"
+  },
+  {
+    "id": "vf:match:1385049911",
+    "match": "VL Lisbon vs. VL Kiev",
+    "homeTeam": "VL Lisbon",
+    "awayTeam": "VL Kiev",
+    "homeScore": 3,
+    "awayScore": 1,
+    "result": "🏆 VL Lisbon WON (3-1)"
+  },
+  {
+    "id": "vf:match:1385049912",
+    "match": "VL Berlin vs. VL Moscow",
+    "homeTeam": "VL Berlin",
+    "awayTeam": "VL Moscow",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 VL Berlin WON (2-1)"
+  },
+  {
+    "id": "vf:match:1385051308",
+    "match": "Liverpool vs. Newcastle",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Newcastle",
+    "homeScore": 1,
+    "awayScore": 2,
+    "result": "🏆 Newcastle WON (1-2)"
+  },
+  {
+    "id": "vf:match:1385051309",
+    "match": "Watford vs. Crystal Palace",
+    "homeTeam": "Watford",
+    "awayTeam": "Crystal Palace",
+    "homeScore": 4,
+    "awayScore": 1,
+    "result": "🏆 Watford WON (4-1)"
+  },
+  {
+    "id": "vf:match:1385051310",
+    "match": "Tottenham vs. Southampton",
+    "homeTeam": "Tottenham",
+    "awayTeam": "Southampton",
+    "homeScore": 2,
+    "awayScore": 2,
+    "result": "🤝 DRAW (2-2)"
+  },
+  {
+    "id": "vf:match:1385049677",
+    "match": "Eintracht Frankfurt vs. VfB Stuttgart",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "VfB Stuttgart",
+    "homeScore": 0,
+    "awayScore": 2,
+    "result": "🏆 VfB Stuttgart WON (0-2)"
+  },
+  {
+    "id": "vf:match:1385049927",
+    "match": "VL Amsterdam vs. VL Ankara",
+    "homeTeam": "VL Amsterdam",
+    "awayTeam": "VL Ankara",
+    "homeScore": 6,
+    "awayScore": 1,
+    "result": "🏆 VL Amsterdam WON (6-1)"
+  },
+  {
+    "id": "vf:match:1385049930",
+    "match": "VL Copenhagen vs. VL Kiev",
+    "homeTeam": "VL Copenhagen",
+    "awayTeam": "VL Kiev",
+    "homeScore": 0,
+    "awayScore": 0,
+    "result": "🤝 DRAW (0-0)"
+  },
+  {
+    "id": "vf:match:1385051326",
+    "match": "Liverpool vs. Crystal Palace",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Crystal Palace",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "🏆 Liverpool WON (1-0)"
+  },
+  {
+    "id": "vf:match:1385051329",
+    "match": "Watford vs. Burnley",
+    "homeTeam": "Watford",
+    "awayTeam": "Burnley",
+    "homeScore": 0,
+    "awayScore": 1,
+    "result": "🏆 Burnley WON (0-1)"
+  },
+  {
+    "id": "vf:match:1385049692",
+    "match": "FC Bayern München vs. SV Werder Bremen",
+    "homeTeam": "FC Bayern München",
+    "awayTeam": "SV Werder Bremen",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 FC Bayern München WON (2-0)"
+  },
+  {
+    "id": "vf:match:1385049695",
+    "match": "TSG Hoffenheim vs. FC Schalke 04",
+    "homeTeam": "TSG Hoffenheim",
+    "awayTeam": "FC Schalke 04",
+    "homeScore": 3,
+    "awayScore": 2,
+    "result": "🏆 TSG Hoffenheim WON (3-2)"
+  },
+  {
+    "id": "vf:match:1385051333",
+    "match": "Leicester vs. Everton",
+    "homeTeam": "Leicester",
+    "awayTeam": "Everton",
+    "homeScore": 0,
+    "awayScore": 3,
+    "result": "🏆 Everton WON (0-3)"
+  },
+  {
+    "id": "vf:match:1385049701",
+    "match": "Eintracht Frankfurt vs. Hannover 96",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "Hannover 96",
+    "homeScore": 6,
+    "awayScore": 0,
+    "result": "🏆 Eintracht Frankfurt WON (6-0)"
+  },
+  {
+    "id": "vf:match:1385049704",
+    "match": "Borussia Dortmund vs. 1. FSV Mainz 05",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "1. FSV Mainz 05",
+    "homeScore": 6,
+    "awayScore": 0,
+    "result": "🏆 Borussia Dortmund WON (6-0)"
+  },
+  {
+    "id": "vf:match:1385049940",
+    "match": "VL Berlin vs. VL Prague",
+    "homeTeam": "VL Berlin",
+    "awayTeam": "VL Prague",
+    "homeScore": 6,
+    "awayScore": 0,
+    "result": "🏆 VL Berlin WON (6-0)"
+  },
+  {
+    "id": "vf:match:1385049945",
+    "match": "VL Rome vs. VL Copenhagen",
+    "homeTeam": "VL Rome",
+    "awayTeam": "VL Copenhagen",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "🏆 VL Rome WON (3-0)"
+  },
+  {
+    "id": "vf:match:1385049941",
+    "match": "VL Paris vs. VL Kiev",
+    "homeTeam": "VL Paris",
+    "awayTeam": "VL Kiev",
+    "homeScore": 0,
+    "awayScore": 0,
+    "result": "🤝 DRAW (0-0)"
+  },
+  {
+    "id": "vf:match:1385051341",
+    "match": "Watford vs. Southampton",
+    "homeTeam": "Watford",
+    "awayTeam": "Southampton",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "🏆 Watford WON (3-0)"
+  },
+  {
+    "id": "vf:match:1385051344",
+    "match": "Liverpool vs. Burnley",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Burnley",
+    "homeScore": 4,
+    "awayScore": 0,
+    "result": "🏆 Liverpool WON (4-0)"
+  },
+  {
+    "id": "vf:match:1385051346",
+    "match": "Manchester Blue vs. Tottenham",
+    "homeTeam": "Manchester Blue",
+    "awayTeam": "Tottenham",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 Manchester Blue WON (2-1)"
+  },
+  {
+    "id": "vf:match:1385049711",
+    "match": "Eintracht Frankfurt vs. SV Werder Bremen",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "SV Werder Bremen",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 Eintracht Frankfurt WON (2-0)"
+  },
+  {
+    "id": "vf:match:1385049713",
+    "match": "Borussia M'gladbach vs. SC Freiburg",
+    "homeTeam": "Borussia M'gladbach",
+    "awayTeam": "SC Freiburg",
+    "homeScore": 1,
+    "awayScore": 2,
+    "result": "🏆 SC Freiburg WON (1-2)"
+  },
+  {
+    "id": "vf:match:1385049714",
     "match": "Bayer 04 Leverkusen vs. FC Schalke 04",
     "homeTeam": "Bayer 04 Leverkusen",
     "awayTeam": "FC Schalke 04",
     "homeScore": 3,
-    "awayScore": 0,
-    "result": "🏆 Bayer 04 Leverkusen WON (3-0)"
+    "awayScore": 1,
+    "result": "🏆 Bayer 04 Leverkusen WON (3-1)"
   },
   {
-    "id": "vf:match:1384889838",
-    "match": "VL Zagreb vs. VL Prague",
-    "homeTeam": "VL Zagreb",
-    "awayTeam": "VL Prague",
+    "id": "vf:match:1385049715",
+    "match": "FC Bayern München vs. Hamburger SV",
+    "homeTeam": "FC Bayern München",
+    "awayTeam": "Hamburger SV",
+    "homeScore": 3,
+    "awayScore": 3,
+    "result": "🤝 DRAW (3-3)"
+  },
+  {
+    "id": "vf:match:1385049955",
+    "match": "VL Lisbon vs. VL Ankara",
+    "homeTeam": "VL Lisbon",
+    "awayTeam": "VL Ankara",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 VL Lisbon WON (2-0)"
+  },
+  {
+    "id": "vf:match:1385051349",
+    "match": "London Guns vs. Crystal Palace",
+    "homeTeam": "London Guns",
+    "awayTeam": "Crystal Palace",
+    "homeScore": 3,
+    "awayScore": 1,
+    "result": "🏆 London Guns WON (3-1)"
+  },
+  {
+    "id": "vf:match:1385051351",
+    "match": "Leicester vs. Watford",
+    "homeTeam": "Leicester",
+    "awayTeam": "Watford",
+    "homeScore": 1,
+    "awayScore": 1,
+    "result": "🤝 DRAW (1-1)"
+  },
+  {
+    "id": "vf:match:1385049722",
+    "match": "Borussia Dortmund vs. FC Augsburg",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "FC Augsburg",
     "homeScore": 1,
     "awayScore": 0,
-    "result": "🏆 VL Zagreb WON (1-0)"
+    "result": "🏆 Borussia Dortmund WON (1-0)"
   },
   {
-    "id": "vf:match:1384890733",
-    "match": "Bournemouth vs. Newcastle",
-    "homeTeam": "Bournemouth",
+    "id": "vf:match:1385049963",
+    "match": "VL Berlin vs. VL Athens",
+    "homeTeam": "VL Berlin",
+    "awayTeam": "VL Athens",
+    "homeScore": 0,
+    "awayScore": 0,
+    "result": "🤝 DRAW (0-0)"
+  },
+  {
+    "id": "vf:match:1385051359",
+    "match": "London Guns vs. Newcastle",
+    "homeTeam": "London Guns",
     "awayTeam": "Newcastle",
     "homeScore": 1,
     "awayScore": 1,
     "result": "🤝 DRAW (1-1)"
   },
   {
-    "id": "vf:match:1384889842",
-    "match": "VL Berlin vs. VL Zagreb",
-    "homeTeam": "VL Berlin",
-    "awayTeam": "VL Zagreb",
-    "homeScore": 2,
-    "awayScore": 0,
-    "result": "🏆 VL Berlin WON (2-0)"
-  },
-  {
-    "id": "vf:match:1384889849",
-    "match": "VL Prague vs. VL London",
-    "homeTeam": "VL Prague",
-    "awayTeam": "VL London",
-    "homeScore": 0,
-    "awayScore": 4,
-    "result": "🏆 VL London WON (0-4)"
-  },
-  {
-    "id": "vf:match:1384890745",
-    "match": "Newcastle vs. Liverpool",
-    "homeTeam": "Newcastle",
-    "awayTeam": "Liverpool",
-    "homeScore": 1,
-    "awayScore": 2,
-    "result": "🏆 Liverpool WON (1-2)"
-  },
-  {
-    "id": "vf:match:1384890746",
-    "match": "West Ham vs. Manchester Blue",
-    "homeTeam": "West Ham",
-    "awayTeam": "Manchester Blue",
-    "homeScore": 1,
-    "awayScore": 3,
-    "result": "🏆 Manchester Blue WON (1-3)"
-  },
-  {
-    "id": "vf:match:1384889562",
-    "match": "FC Bayern München vs. Hannover 96",
-    "homeTeam": "FC Bayern München",
-    "awayTeam": "Hannover 96",
-    "homeScore": 4,
-    "awayScore": 0,
-    "result": "🏆 FC Bayern München WON (4-0)"
-  },
-  {
-    "id": "vf:match:1384889572",
-    "match": "Hannover 96 vs. Bayer 04 Leverkusen",
-    "homeTeam": "Hannover 96",
-    "awayTeam": "Bayer 04 Leverkusen",
-    "homeScore": 1,
-    "awayScore": 3,
-    "result": "🏆 Bayer 04 Leverkusen WON (1-3)"
-  },
-  {
-    "id": "vf:match:1384890765",
-    "match": "Manchester Blue vs. Watford",
-    "homeTeam": "Manchester Blue",
-    "awayTeam": "Watford",
-    "homeScore": 1,
-    "awayScore": 0,
-    "result": "🏆 Manchester Blue WON (1-0)"
-  },
-  {
-    "id": "vf:match:1384890767",
-    "match": "Liverpool vs. West Ham",
+    "id": "vf:match:1385051361",
+    "match": "Liverpool vs. Southampton",
     "homeTeam": "Liverpool",
-    "awayTeam": "West Ham",
-    "homeScore": 2,
-    "awayScore": 0,
-    "result": "🏆 Liverpool WON (2-0)"
-  },
-  {
-    "id": "vf:match:1384890777",
-    "match": "Everton vs. Newcastle",
-    "homeTeam": "Everton",
-    "awayTeam": "Newcastle",
-    "homeScore": 3,
-    "awayScore": 0,
-    "result": "🏆 Everton WON (3-0)"
-  },
-  {
-    "id": "vf:match:1384890789",
-    "match": "Manchester Reds vs. Newcastle",
-    "homeTeam": "Manchester Reds",
-    "awayTeam": "Newcastle",
-    "homeScore": 3,
-    "awayScore": 1,
-    "result": "🏆 Manchester Reds WON (3-1)"
-  },
-  {
-    "id": "vf:match:1384890800",
-    "match": "Everton vs. West Ham",
-    "homeTeam": "Everton",
-    "awayTeam": "West Ham",
-    "homeScore": 2,
-    "awayScore": 1,
-    "result": "🏆 Everton WON (2-1)"
-  },
-  {
-    "id": "vf:match:1384893706",
-    "match": "Hertha Berlin vs. 1. FSV Mainz 05",
-    "homeTeam": "Hertha Berlin",
-    "awayTeam": "1. FSV Mainz 05",
-    "homeScore": 2,
-    "awayScore": 1,
-    "result": "🏆 Hertha Berlin WON (2-1)"
-  },
-  {
-    "id": "vf:match:1384894002",
-    "match": "VL Berlin vs. VL Prague",
-    "homeTeam": "VL Berlin",
-    "awayTeam": "VL Prague",
-    "homeScore": 3,
-    "awayScore": 0,
-    "result": "🏆 VL Berlin WON (3-0)"
-  },
-  {
-    "id": "vf:match:1384893713",
-    "match": "FC Bayern München vs. Hamburger SV",
-    "homeTeam": "FC Bayern München",
-    "awayTeam": "Hamburger SV",
-    "homeScore": 2,
-    "awayScore": 0,
-    "result": "🏆 FC Bayern München WON (2-0)"
-  },
-  {
-    "id": "vf:match:1384893725",
-    "match": "Hertha Berlin vs. VfB Stuttgart",
-    "homeTeam": "Hertha Berlin",
-    "awayTeam": "VfB Stuttgart",
-    "homeScore": 2,
-    "awayScore": 0,
-    "result": "🏆 Hertha Berlin WON (2-0)"
-  },
-  {
-    "id": "vf:match:1384893730",
-    "match": "Hannover 96 vs. FC Bayern München",
-    "homeTeam": "Hannover 96",
-    "awayTeam": "FC Bayern München",
+    "awayTeam": "Southampton",
     "homeScore": 1,
-    "awayScore": 2,
-    "result": "🏆 FC Bayern München WON (1-2)"
+    "awayScore": 1,
+    "result": "🤝 DRAW (1-1)"
   },
   {
-    "id": "vf:match:1384894020",
+    "id": "vf:match:1385049728",
+    "match": "Eintracht Frankfurt vs. Hamburger SV",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "Hamburger SV",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "🏆 Eintracht Frankfurt WON (1-0)"
+  },
+  {
+    "id": "vf:match:1385049729",
+    "match": "FC Bayern München vs. FC Schalke 04",
+    "homeTeam": "FC Bayern München",
+    "awayTeam": "FC Schalke 04",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "🏆 FC Bayern München WON (3-0)"
+  },
+  {
+    "id": "vf:match:1385049737",
+    "match": "TSG Hoffenheim vs. FC Augsburg",
+    "homeTeam": "TSG Hoffenheim",
+    "awayTeam": "FC Augsburg",
+    "homeScore": 3,
+    "awayScore": 2,
+    "result": "🏆 TSG Hoffenheim WON (3-2)"
+  },
+  {
+    "id": "vf:match:1385049739",
+    "match": "Borussia Dortmund vs. VfB Stuttgart",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "VfB Stuttgart",
+    "homeScore": 0,
+    "awayScore": 0,
+    "result": "🤝 DRAW (0-0)"
+  },
+  {
+    "id": "vf:match:1385049747",
+    "match": "Eintracht Frankfurt vs. FC Schalke 04",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "FC Schalke 04",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "🏆 Eintracht Frankfurt WON (1-0)"
+  },
+  {
+    "id": "vf:match:1385049983",
+    "match": "VL Madrid vs. VL Ankara",
+    "homeTeam": "VL Madrid",
+    "awayTeam": "VL Ankara",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "🏆 VL Madrid WON (1-0)"
+  },
+  {
+    "id": "vf:match:1385049984",
     "match": "VL Lisbon vs. VL Bern",
     "homeTeam": "VL Lisbon",
     "awayTeam": "VL Bern",
-    "homeScore": 3,
-    "awayScore": 0,
-    "result": "🏆 VL Lisbon WON (3-0)"
-  },
-  {
-    "id": "vf:match:1384893739",
-    "match": "Borussia Dortmund vs. Hannover 96",
-    "homeTeam": "Borussia Dortmund",
-    "awayTeam": "Hannover 96",
-    "homeScore": 1,
-    "awayScore": 0,
-    "result": "🏆 Borussia Dortmund WON (1-0)"
-  },
-  {
-    "id": "vf:match:1384894023",
-    "match": "VL Bern vs. VL Madrid",
-    "homeTeam": "VL Bern",
-    "awayTeam": "VL Madrid",
-    "homeScore": 1,
-    "awayScore": 2,
-    "result": "🏆 VL Madrid WON (1-2)"
-  },
-  {
-    "id": "vf:match:1384894779",
-    "match": "Newcastle vs. Liverpool",
-    "homeTeam": "Newcastle",
-    "awayTeam": "Liverpool",
-    "homeScore": 0,
+    "homeScore": 2,
     "awayScore": 1,
-    "result": "🏆 Liverpool WON (0-1)"
+    "result": "🏆 VL Lisbon WON (2-1)"
+  },
+  {
+    "id": "vf:match:1385049982",
+    "match": "VL Rome vs. VL London",
+    "homeTeam": "VL Rome",
+    "awayTeam": "VL London",
+    "homeScore": 1,
+    "awayScore": 4,
+    "result": "🏆 VL London WON (1-4)"
+  },
+  {
+    "id": "vf:match:1385051380",
+    "match": "London Guns vs. Southampton",
+    "homeTeam": "London Guns",
+    "awayTeam": "Southampton",
+    "homeScore": 3,
+    "awayScore": 1,
+    "result": "🏆 London Guns WON (3-1)"
+  },
+  {
+    "id": "vf:match:1385049754",
+    "match": "VfL Wolfsburg vs. SC Freiburg",
+    "homeTeam": "VfL Wolfsburg",
+    "awayTeam": "SC Freiburg",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 VfL Wolfsburg WON (2-1)"
+  },
+  {
+    "id": "vf:match:1385049752",
+    "match": "TSG Hoffenheim vs. VfB Stuttgart",
+    "homeTeam": "TSG Hoffenheim",
+    "awayTeam": "VfB Stuttgart",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "🏆 TSG Hoffenheim WON (2-1)"
+  },
+  {
+    "id": "vf:match:1385049991",
+    "match": "VL Amsterdam vs. VL Athens",
+    "homeTeam": "VL Amsterdam",
+    "awayTeam": "VL Athens",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 VL Amsterdam WON (2-0)"
+  },
+  {
+    "id": "vf:match:1385051389",
+    "match": "Chelsea vs. Newcastle",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Newcastle",
+    "homeScore": 5,
+    "awayScore": 0,
+    "result": "🏆 Chelsea WON (5-0)"
+  },
+  {
+    "id": "vf:match:1385051394",
+    "match": "Wolverhampton vs. Crystal Palace",
+    "homeTeam": "Wolverhampton",
+    "awayTeam": "Crystal Palace",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 Wolverhampton WON (2-0)"
+  },
+  {
+    "id": "vf:match:1385051395",
+    "match": "Manchester Blue vs. Liverpool",
+    "homeTeam": "Manchester Blue",
+    "awayTeam": "Liverpool",
+    "homeScore": 3,
+    "awayScore": 1,
+    "result": "🏆 Manchester Blue WON (3-1)"
+  },
+  {
+    "id": "vf:match:1385049996",
+    "match": "VL Lisbon vs. VL Prague",
+    "homeTeam": "VL Lisbon",
+    "awayTeam": "VL Prague",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "🏆 VL Lisbon WON (2-0)"
+  },
+  {
+    "id": "vf:match:1385049999",
+    "match": "VL Kiev vs. VL Athens",
+    "homeTeam": "VL Kiev",
+    "awayTeam": "VL Athens",
+    "homeScore": 1,
+    "awayScore": 1,
+    "result": "🤝 DRAW (1-1)"
+  },
+  {
+    "id": "vf:match:1385051399",
+    "match": "Chelsea vs. Southampton",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Southampton",
+    "homeScore": 0,
+    "awayScore": 0,
+    "result": "🤝 DRAW (0-0)"
   }
 ]
