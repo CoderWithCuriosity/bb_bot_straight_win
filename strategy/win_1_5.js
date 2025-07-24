@@ -1,4 +1,3 @@
-
 const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
@@ -25,9 +24,7 @@ async function sendTelegramMessage(message) {
             text: message,
             parse_mode: "Markdown",
         });
-    } catch (err) {
-        console.error("❌ Failed to send Telegram message:", err.message);
-    }
+    } catch (err) { }
 }
 
 function loadSeasonStandings() {
@@ -70,18 +67,6 @@ function getTeamPos(seasonStandings, tournamentId, seasonId, teamName) {
     return season.standings?.findIndex(t => t.team === teamName) + 1 || null;
 }
 
-function markStat(value, type = "normal") {
-    if (type === "chaos") {
-        if (value < 4) return `🟢 ${value}`;
-        if (value < 5) return `🟡 ${value}`;
-        return `🔴 ${value}`;
-    } else {
-        if (value >= 6) return `🟢 ${value}`;
-        if (value >= 5) return `🟡 ${value}`;
-        return `🔴 ${value}`;
-    }
-}
-
 function getMaxDraws(seasonStandings, tournamentId, seasonId) {
     const tournament = seasonStandings.find(t => t.tournamentId === tournamentId);
     if (!tournament) return 0;
@@ -95,17 +80,82 @@ function getMaxDraws(seasonStandings, tournamentId, seasonId) {
     return highestDraw;
 }
 
-function has2Wins1Loss(form) {
-    const wins = form.filter(r => r === "W").length;
-    const losses = form.filter(r => r === "L").length;
-    return wins >= 2 && losses === 1;
+function getHighestPosition(standings) {
+    return Math.min(...standings.map(s => s.position));
 }
 
-function calculateAvgGoals(teamStanding) {
-    return {
-        avgGF: teamStanding.GF / teamStanding.P,
-        avgGA: teamStanding.GA / teamStanding.P
+function getLowestPosition(standings) {
+    return Math.max(...standings.map(s => s.position));
+}
+
+function isTeamImproving(standings, recentWeeks = 4) {
+    if (standings.length < 2) return false;
+
+    const sorted = [...standings].sort((a, b) => a.week - b.week);
+    const recent = sorted.slice(-recentWeeks);
+
+    let improvingCount = 0;
+    let totalComparison = 0;
+
+    for (let i = 1; i < recent.length; i++) {
+        if (recent[i].position < recent[i - 1].position) {
+            improvingCount++;
+        }
+        totalComparison++;
     }
+
+    const improvementRatio = improvingCount / totalComparison;
+    return improvementRatio >= 0.6;
+}
+
+function analyzeForm(formArray, minMatches = 5) {
+    if (!formArray || formArray.length < minMatches) return null;
+
+    const recentForm = formArray.slice(-minMatches);
+    const stats = { W: 0, D: 0, L: 0 };
+
+    recentForm.forEach(result => stats[result]++);
+
+    return {
+        wins: stats.W,
+        draws: stats.D,
+        losses: stats.L,
+        total: recentForm.length,
+        winRate: (stats.W / recentForm.length) * 100,
+        drawRate: (stats.D / recentForm.length) * 100,
+        isImproving: stats.W > stats.L, // True if more wins than losses
+    };
+}
+
+function compareTeamTrends(homeStanding, awayStanding) {
+    const homeStandings = homeStanding.standings || [];
+    const homeCurrentPos = homeStandings[homeStandings.length - 1]?.position;
+    const homeHigh = getHighestPosition(homeStandings);
+    const homeLow = getLowestPosition(homeStandings);
+
+    const awayStandings = awayStanding.standings || [];
+    const awayCurrentPos = awayStandings[awayStandings.length - 1]?.position;
+    const awayHigh = getHighestPosition(awayStandings);
+    const awayLow = getLowestPosition(awayStandings);
+
+    if (homeLow < awayLow && homeHigh < awayHigh && homeCurrentPos < awayCurrentPos) {
+        return "HOME";
+    } else if (awayLow < homeLow && awayHigh < homeHigh && awayCurrentPos < homeCurrentPos) {
+        return "AWAY";
+    }
+
+    return "NO PICK";
+}
+
+const FORM_ANALYSIS_LOG_FILE = path.join(__dirname, "../form_analysis_log.json");
+
+function saveFormAnalysisLog(data) {
+    let existing = [];
+    if (fs.existsSync(FORM_ANALYSIS_LOG_FILE)) {
+        existing = JSON.parse(fs.readFileSync(FORM_ANALYSIS_LOG_FILE, "utf-8"));
+    }
+    existing.push(data);
+    fs.writeFileSync(FORM_ANALYSIS_LOG_FILE, JSON.stringify(existing, null, 2));
 }
 
 
@@ -123,11 +173,8 @@ async function win_1_5(amount = 100, matchCount = 3) {
             if (match.tournamentId !== tournament.id) continue;
 
             const matchDay = Math.floor((match.scheduledTime - startDayStamp) / daysDiff) + 1;
-            if(matchDay < 6 ){
-                continue;
-            }
-            // const maxAllowedDraws = Math.floor(matchDay / 2);
-            // const maxAllowedDraws = matchDay > 10 ? 6 : Math.floor(matchDay / 2);
+            if (matchDay < 6 || matchDay > 23) continue;
+
             const highestDraw = getMaxDraws(seasonStandings, tournament.id, seasonId);
             const maxAllowedDraws = Math.floor(highestDraw / 2);
 
@@ -145,67 +192,90 @@ async function win_1_5(amount = 100, matchCount = 3) {
             const awayPos = getTeamPos(seasonStandings, tournament.id, seasonId, away);
             if (!homeStanding || !awayStanding) continue;
 
-
-
-            // if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
-
-            const homeForm = homeStats.form;
-            const awayForm = awayStats.form;
-
-            const homePass = has2Wins1Loss(homeForm);
-            const awayPass = has2Wins1Loss(awayForm);
-            
-            const homeAvg = calculateAvgGoals(homeStanding);
-            const awayAvg = calculateAvgGoals(awayStanding);
-            
-            const combinedAVG = homeAvg.avgGF + homeAvg.avgGA + awayAvg.avgGF + awayAvg.avgGA;
-            
-            if (combinedAVG > 4.0) {
-                pass = true;
-            }
-
-            console.log(home, " form: ", homeForm, "\nHome Pos: ", homePos, "\nHome Average: ", homeAvg);
-            console.log(away, " form: ", awayForm + "\nAway Pos: ", awayPos, "\n, Away Average: ", awayAvg, "\n");
-            console.log("Combine Avg: ", Math.round(combinedAVG), "\n");
-            
-            if (!homePass || !awayPass) continue;
-
-
+            if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
+
+            let selectedId;
+
+
+            // Analyze last 5 matches (min), up to 10 if available (if the match is less than 10 then the 5 - 2 else use 10)
+            const homeForm = analyzeForm(homeStats.form, parseInt(matchDay) < 10 ? 5 : 10);
+            const awayForm = analyzeForm(awayStats.form, parseInt(matchDay) < 10 ? 5 : 10);
+            if (!homeForm || !awayForm) continue;
+            if(homeForm.isImproving && awayForm.isImproving) continue;
+
+            if (matchDay < 12) {
+                if (homeForm.isImproving && awayForm.isImproving == false && homeForm.winRate >= 50 && awayForm.winRate < 50) {
+                    selectedId = 1;
+                }
+                else if (awayForm.isImproving && awayForm.isImproving == false && awayForm.winRate >= 50 && homeForm.winRate < 50) {
+                    selectedId = 3;
+                }
+
+                if (selectedId === 1 && homePos > awayPos) continue;
+                if (selectedId === 3 && awayPos > homePos) continue;
+            }
+
+
+            console.log("Home Team: ", home, "\nPos: ", homePos);
+            console.log(homeForm);
+            console.log("Away Team: ", away, "\nPos: ", awayPos);
+            console.log(awayForm)
+            console.log("Pick: ", selectedId);
+
+            const formData = {
+                tournament: tournament.name,
+                matchDay: matchDay,
+                homeTeam: home,
+                homePos: homePos,
+                homeForm: homeForm,
+                awayTeam: away,
+                awayPos: awayPos,
+                awayForm: awayForm,
+                selectedPick: selectedId === 1 ? "HOME WIN" : selectedId === 3 ? "AWAY WIN" : "NO PICK"
+            };
+
+            // Save form analysis to file
+            saveFormAnalysisLog(formData);
+
+            // Format message for Telegram
+            const formMessage = `📊 *Form Analysis*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n\n⚽ *${home}* (Pos ${homePos})\nWins: ${homeForm.wins}, Draws: ${homeForm.draws}, Losses: ${homeForm.losses}\nWin Rate: ${homeForm.winRate.toFixed(2)}%\nDraw Rate: ${homeForm.drawRate.toFixed(2)}%\nImproving: ${homeForm.isImproving ? "✅ Yes" : "❌ No"}\n\n⚽ *${away}* (Pos ${awayPos})\nWins: ${awayForm.wins}, Draws: ${awayForm.draws}, Losses: ${awayForm.losses}\nWin Rate: ${awayForm.winRate.toFixed(2)}%\nDraw Rate: ${awayForm.drawRate.toFixed(2)}%\nImproving: ${awayForm.isImproving ? "✅ Yes" : "❌ No"}\n\n🔍 *Trend Pick:* ${formData.selectedPick}`;
+
 
             for (const market of oddsData.marketList) {
                 if (market.name === "Over/Under") {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
-                            if (outcome.desc === "over 1.5") {
-                                if (outcome.odds < 1.2) continue;
+                            if (outcome.desc !== "over 1.5") continue;
+                            if (outcome.odds > 1.69) continue;
 
-                                const msg = `🤝 *Over 1.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
 
-                                await sendTelegramMessage(msg);
-                                selections.push({
-                                    sportId: match.sportId,
-                                    eventId: match.id,
-                                    producer: match.producer,
-                                    marketId: market.id,
-                                    specifiers: detail.specifiers,
-                                    outcomeId: outcome.id,
-                                    amount: amount,
-                                    odds: outcome.odds,
-                                    specifierKeys: detail.specifiersKeys,
-                                    eventName: match.name,
-                                    scheduledTime: match.scheduledTime,
-                                    marketName: outcome.marketName,
-                                    outcomeName: outcome.desc,
-                                    categoryId: match.categoryId,
-                                    tournamentId: match.tournamentId
-                                });
+                            // Send form details via Telegram
+                            const msg = `🤝 *Over 1.5 Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Straight Over 1.5 Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}\n${formMessage}`;
 
-                                if (selections.length >= matchCount) {
-                                    return [selections];
-                                }
+                            // await sendTelegramMessage(msg);
+                            selections.push({
+                                sportId: match.sportId,
+                                eventId: match.id,
+                                producer: match.producer,
+                                marketId: market.id,
+                                specifiers: detail.specifiers,
+                                outcomeId: outcome.id,
+                                amount: amount,
+                                odds: outcome.odds,
+                                specifierKeys: detail.specifiersKeys,
+                                eventName: match.name,
+                                scheduledTime: match.scheduledTime,
+                                marketName: outcome.marketName,
+                                outcomeName: outcome.desc,
+                                categoryId: match.categoryId,
+                                tournamentId: match.tournamentId
+                            });
+
+                            if (selections.length >= matchCount) {
+                                return [selections];
                             }
                         }
                     }
@@ -213,12 +283,7 @@ async function win_1_5(amount = 100, matchCount = 3) {
             }
         }
     }
-    if (selections.length === 1) {
-        const firstPick = selections[0];
-        if (firstPick.odds < 1.5) {
-            selections.pop();
-        }
-    }
+
     return [selections];
 }
 

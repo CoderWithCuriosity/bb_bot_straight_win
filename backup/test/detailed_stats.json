@@ -1,444 +1,265 @@
 {
   "summary": {
     "goals": {
-      "over0_5": 65,
-      "over1_5": 57,
-      "over2_5": 44,
-      "over3_5": 25,
-      "under1_5": 13,
-      "under2_5": 26,
-      "under3_5": 45,
-      "exact0": 5,
-      "exact1": 8,
-      "exact2": 13,
-      "exact3": 19,
-      "exact4": 12
+      "over0_5": 39,
+      "over1_5": 25,
+      "over2_5": 14,
+      "over3_5": 10,
+      "under1_5": 18,
+      "under2_5": 29,
+      "under3_5": 33,
+      "exact0": 4,
+      "exact1": 14,
+      "exact2": 11,
+      "exact3": 4,
+      "exact4": 7
     },
     "outcomes": {
-      "homeWins": 47,
+      "homeWins": 25,
       "awayWins": 11,
-      "draws": 12,
-      "homeOrDraw": 59,
-      "awayOrDraw": 23,
-      "homeOrAway": 58
+      "draws": 7,
+      "homeOrDraw": 32,
+      "awayOrDraw": 18,
+      "homeOrAway": 36
     },
     "halves": {
-      "homeWinsBothHalves": 17,
-      "awayWinsBothHalves": 3,
-      "homeWinsEitherHalf": 51,
-      "awayWinsEitherHalf": 22,
-      "cleanSheetHome": 28,
-      "cleanSheetAway": 10
+      "homeWinsBothHalves": 6,
+      "awayWinsBothHalves": 2,
+      "homeWinsEitherHalf": 27,
+      "awayWinsEitherHalf": 14,
+      "cleanSheetHome": 23,
+      "cleanSheetAway": 12
     },
     "specials": {
-      "winToNilHome": 23,
-      "winToNilAway": 5
+      "winToNilHome": 19,
+      "winToNilAway": 8
     },
     "fullTime": {
-      "bothTeamsScore": 37
+      "bothTeamsScore": 12
     }
   },
   "detailedResults": {
     "highScoring": [
       {
-        "name": "London Guns vs. Everton",
-        "id": "vf:match:1385046273",
-        "score": "2-2"
-      },
-      {
-        "name": "Wolverhampton vs. London Guns",
-        "id": "vf:match:1385046284",
-        "score": "1-3"
-      },
-      {
-        "name": "VL Copenhagen vs. VL Prague",
-        "id": "vf:match:1385049887",
-        "score": "4-2"
-      },
-      {
-        "name": "VL Berlin vs. VL Ankara",
-        "id": "vf:match:1385049894",
-        "score": "3-1"
-      },
-      {
-        "name": "VL Rome vs. VL Prague",
-        "id": "vf:match:1385049905",
-        "score": "4-2"
-      },
-      {
-        "name": "Chelsea vs. Tottenham",
-        "id": "vf:match:1385051303",
-        "score": "3-1"
-      },
-      {
-        "name": "Liverpool vs. West Ham",
-        "id": "vf:match:1385051305",
-        "score": "3-1"
-      },
-      {
-        "name": "FC Bayern München vs. Hannover 96",
-        "id": "vf:match:1385049671",
-        "score": "5-1"
-      },
-      {
-        "name": "VL Lisbon vs. VL Kiev",
-        "id": "vf:match:1385049911",
-        "score": "3-1"
-      },
-      {
-        "name": "Watford vs. Crystal Palace",
-        "id": "vf:match:1385051309",
-        "score": "4-1"
-      },
-      {
-        "name": "Tottenham vs. Southampton",
-        "id": "vf:match:1385051310",
-        "score": "2-2"
-      },
-      {
-        "name": "VL Amsterdam vs. VL Ankara",
-        "id": "vf:match:1385049927",
-        "score": "6-1"
-      },
-      {
-        "name": "TSG Hoffenheim vs. FC Schalke 04",
-        "id": "vf:match:1385049695",
-        "score": "3-2"
-      },
-      {
-        "name": "Eintracht Frankfurt vs. Hannover 96",
-        "id": "vf:match:1385049701",
-        "score": "6-0"
-      },
-      {
-        "name": "Borussia Dortmund vs. 1. FSV Mainz 05",
-        "id": "vf:match:1385049704",
-        "score": "6-0"
-      },
-      {
-        "name": "VL Berlin vs. VL Prague",
-        "id": "vf:match:1385049940",
-        "score": "6-0"
-      },
-      {
-        "name": "Liverpool vs. Burnley",
-        "id": "vf:match:1385051344",
+        "name": "Manchester Reds vs. Burnley",
+        "id": "vf:match:1385060281",
         "score": "4-0"
       },
       {
-        "name": "Bayer 04 Leverkusen vs. FC Schalke 04",
-        "id": "vf:match:1385049714",
+        "name": "Everton vs. Southampton",
+        "id": "vf:match:1385060282",
+        "score": "4-0"
+      },
+      {
+        "name": "West Ham vs. Chelsea",
+        "id": "vf:match:1385060294",
+        "score": "1-3"
+      },
+      {
+        "name": "Leicester vs. Everton",
+        "id": "vf:match:1385060297",
+        "score": "1-3"
+      },
+      {
+        "name": "Manchester Reds vs. Newcastle",
+        "id": "vf:match:1385060291",
         "score": "3-1"
       },
       {
-        "name": "FC Bayern München vs. Hamburger SV",
-        "id": "vf:match:1385049715",
-        "score": "3-3"
-      },
-      {
-        "name": "London Guns vs. Crystal Palace",
-        "id": "vf:match:1385051349",
+        "name": "West Ham vs. Newcastle",
+        "id": "vf:match:1385060301",
         "score": "3-1"
       },
       {
-        "name": "TSG Hoffenheim vs. FC Augsburg",
-        "id": "vf:match:1385049737",
+        "name": "Tottenham vs. Watford",
+        "id": "vf:match:1385060302",
         "score": "3-2"
       },
       {
-        "name": "VL Rome vs. VL London",
-        "id": "vf:match:1385049982",
-        "score": "1-4"
+        "name": "Manchester Reds vs. West Ham",
+        "id": "vf:match:1385060325",
+        "score": "4-0"
       },
       {
-        "name": "London Guns vs. Southampton",
-        "id": "vf:match:1385051380",
-        "score": "3-1"
+        "name": "Chelsea vs. Crystal Palace",
+        "id": "vf:match:1385060322",
+        "score": "4-1"
       },
       {
-        "name": "Chelsea vs. Newcastle",
-        "id": "vf:match:1385051389",
-        "score": "5-0"
-      },
-      {
-        "name": "Manchester Blue vs. Liverpool",
-        "id": "vf:match:1385051395",
-        "score": "3-1"
+        "name": "Liverpool vs. Leicester",
+        "id": "vf:match:1385087507",
+        "score": "6-0"
       }
     ],
     "lowScoring": [
       {
-        "name": "VL Lisbon vs. VL Zagreb",
-        "id": "vf:match:1385049901",
+        "name": "West Ham vs. Everton",
+        "id": "vf:match:1385060276",
         "score": "1-0"
       },
       {
-        "name": "VL Copenhagen vs. VL Athens",
-        "id": "vf:match:1385049902",
-        "score": "0-1"
+        "name": "Leicester vs. Watford",
+        "id": "vf:match:1385060275",
+        "score": "1-0"
       },
       {
-        "name": "VL Copenhagen vs. VL Kiev",
-        "id": "vf:match:1385049930",
+        "name": "Watford vs. Wolverhampton",
+        "id": "vf:match:1385060283",
+        "score": "1-0"
+      },
+      {
+        "name": "Burnley vs. West Ham",
+        "id": "vf:match:1385060289",
         "score": "0-0"
       },
       {
-        "name": "Liverpool vs. Crystal Palace",
-        "id": "vf:match:1385051326",
+        "name": "Chelsea vs. Manchester Reds",
+        "id": "vf:match:1385060284",
+        "score": "1-0"
+      },
+      {
+        "name": "VL Copenhagen vs. VL Bern",
+        "id": "vf:match:1385059165",
+        "score": "1-0"
+      },
+      {
+        "name": "VL Bern vs. VL Prague",
+        "id": "vf:match:1385059177",
+        "score": "0-1"
+      },
+      {
+        "name": "Wolverhampton vs. Everton",
+        "id": "vf:match:1385060305",
+        "score": "1-0"
+      },
+      {
+        "name": "Newcastle vs. Southampton",
+        "id": "vf:match:1385060313",
+        "score": "1-0"
+      },
+      {
+        "name": "Manchester Blue vs. West Ham",
+        "id": "vf:match:1385060306",
+        "score": "1-0"
+      },
+      {
+        "name": "Leicester vs. Newcastle",
+        "id": "vf:match:1385060320",
+        "score": "0-0"
+      },
+      {
+        "name": "Leicester vs. Newcastle",
+        "id": "vf:match:1385060320",
+        "score": "0-0"
+      },
+      {
+        "name": "Newcastle vs. Wolverhampton",
+        "id": "vf:match:1385060326",
+        "score": "0-0"
+      },
+      {
+        "name": "Manchester Blue vs. Leicester",
+        "id": "vf:match:1385060329",
+        "score": "1-0"
+      },
+      {
+        "name": "Everton vs. Watford",
+        "id": "vf:match:1385060323",
         "score": "1-0"
       },
       {
         "name": "Watford vs. Burnley",
-        "id": "vf:match:1385051329",
+        "id": "vf:match:1385060334",
         "score": "0-1"
       },
       {
-        "name": "VL Paris vs. VL Kiev",
-        "id": "vf:match:1385049941",
-        "score": "0-0"
+        "name": "West Ham vs. Liverpool",
+        "id": "vf:match:1385087512",
+        "score": "0-1"
       },
       {
-        "name": "Borussia Dortmund vs. FC Augsburg",
-        "id": "vf:match:1385049722",
-        "score": "1-0"
-      },
-      {
-        "name": "VL Berlin vs. VL Athens",
-        "id": "vf:match:1385049963",
-        "score": "0-0"
-      },
-      {
-        "name": "Eintracht Frankfurt vs. Hamburger SV",
-        "id": "vf:match:1385049728",
-        "score": "1-0"
-      },
-      {
-        "name": "Borussia Dortmund vs. VfB Stuttgart",
-        "id": "vf:match:1385049739",
-        "score": "0-0"
-      },
-      {
-        "name": "Eintracht Frankfurt vs. FC Schalke 04",
-        "id": "vf:match:1385049747",
-        "score": "1-0"
-      },
-      {
-        "name": "VL Madrid vs. VL Ankara",
-        "id": "vf:match:1385049983",
-        "score": "1-0"
-      },
-      {
-        "name": "Chelsea vs. Southampton",
-        "id": "vf:match:1385051399",
-        "score": "0-0"
+        "name": "West Ham vs. Liverpool",
+        "id": "vf:match:1385087512",
+        "score": "0-1"
       }
     ],
     "cleanSheets": [
       {
-        "name": "VL Copenhagen vs. VL Kiev",
-        "id": "vf:match:1385049930"
+        "name": "Burnley vs. West Ham",
+        "id": "vf:match:1385060289"
       },
       {
-        "name": "VL Paris vs. VL Kiev",
-        "id": "vf:match:1385049941"
+        "name": "Leicester vs. Newcastle",
+        "id": "vf:match:1385060320"
       },
       {
-        "name": "VL Berlin vs. VL Athens",
-        "id": "vf:match:1385049963"
+        "name": "Leicester vs. Newcastle",
+        "id": "vf:match:1385060320"
       },
       {
-        "name": "Borussia Dortmund vs. VfB Stuttgart",
-        "id": "vf:match:1385049739"
-      },
-      {
-        "name": "Chelsea vs. Southampton",
-        "id": "vf:match:1385051399"
+        "name": "Newcastle vs. Wolverhampton",
+        "id": "vf:match:1385060326"
       }
     ],
     "bothTeamsScored": [
       {
-        "name": "London Guns vs. Southampton",
-        "id": "vf:match:1385046239",
-        "score": "2-1"
-      },
-      {
-        "name": "Leicester vs. Wolverhampton",
-        "id": "vf:match:1385046250",
-        "score": "1-2"
-      },
-      {
-        "name": "London Guns vs. Everton",
-        "id": "vf:match:1385046273",
-        "score": "2-2"
-      },
-      {
-        "name": "Wolverhampton vs. London Guns",
-        "id": "vf:match:1385046284",
+        "name": "West Ham vs. Chelsea",
+        "id": "vf:match:1385060294",
         "score": "1-3"
       },
       {
-        "name": "Bournemouth vs. London Guns",
-        "id": "vf:match:1385046302",
-        "score": "2-1"
+        "name": "Leicester vs. Everton",
+        "id": "vf:match:1385060297",
+        "score": "1-3"
       },
       {
-        "name": "VL Copenhagen vs. VL Prague",
-        "id": "vf:match:1385049887",
-        "score": "4-2"
-      },
-      {
-        "name": "VL Berlin vs. VL Ankara",
-        "id": "vf:match:1385049894",
+        "name": "Manchester Reds vs. Newcastle",
+        "id": "vf:match:1385060291",
         "score": "3-1"
       },
       {
-        "name": "Eintracht Frankfurt vs. FC Augsburg",
-        "id": "vf:match:1385049667",
-        "score": "2-1"
-      },
-      {
-        "name": "VL Rome vs. VL Prague",
-        "id": "vf:match:1385049905",
-        "score": "4-2"
-      },
-      {
-        "name": "Chelsea vs. Tottenham",
-        "id": "vf:match:1385051303",
+        "name": "West Ham vs. Newcastle",
+        "id": "vf:match:1385060301",
         "score": "3-1"
       },
       {
-        "name": "London Guns vs. Everton",
-        "id": "vf:match:1385051304",
+        "name": "Manchester Reds vs. Manchester Blue",
+        "id": "vf:match:1385060304",
         "score": "2-1"
       },
       {
-        "name": "Liverpool vs. West Ham",
-        "id": "vf:match:1385051305",
-        "score": "3-1"
-      },
-      {
-        "name": "FC Bayern München vs. Hannover 96",
-        "id": "vf:match:1385049671",
-        "score": "5-1"
-      },
-      {
-        "name": "1. FSV Mainz 05 vs. Hamburger SV",
-        "id": "vf:match:1385049675",
-        "score": "1-2"
-      },
-      {
-        "name": "VL Lisbon vs. VL Kiev",
-        "id": "vf:match:1385049911",
-        "score": "3-1"
-      },
-      {
-        "name": "VL Berlin vs. VL Moscow",
-        "id": "vf:match:1385049912",
+        "name": "Leicester vs. Burnley",
+        "id": "vf:match:1385060300",
         "score": "2-1"
       },
       {
-        "name": "Liverpool vs. Newcastle",
-        "id": "vf:match:1385051308",
-        "score": "1-2"
+        "name": "Tottenham vs. Watford",
+        "id": "vf:match:1385060302",
+        "score": "3-2"
       },
       {
-        "name": "Watford vs. Crystal Palace",
-        "id": "vf:match:1385051309",
+        "name": "Chelsea vs. Leicester",
+        "id": "vf:match:1385060308",
+        "score": "1-1"
+      },
+      {
+        "name": "Watford vs. Liverpool",
+        "id": "vf:match:1385060307",
+        "score": "1-1"
+      },
+      {
+        "name": "Chelsea vs. Crystal Palace",
+        "id": "vf:match:1385060322",
         "score": "4-1"
       },
       {
-        "name": "Tottenham vs. Southampton",
-        "id": "vf:match:1385051310",
-        "score": "2-2"
-      },
-      {
-        "name": "VL Amsterdam vs. VL Ankara",
-        "id": "vf:match:1385049927",
-        "score": "6-1"
-      },
-      {
-        "name": "TSG Hoffenheim vs. FC Schalke 04",
-        "id": "vf:match:1385049695",
-        "score": "3-2"
-      },
-      {
-        "name": "Manchester Blue vs. Tottenham",
-        "id": "vf:match:1385051346",
-        "score": "2-1"
-      },
-      {
-        "name": "Borussia M'gladbach vs. SC Freiburg",
-        "id": "vf:match:1385049713",
+        "name": "Crystal Palace vs. Newcastle",
+        "id": "vf:match:1385060335",
         "score": "1-2"
       },
       {
-        "name": "Bayer 04 Leverkusen vs. FC Schalke 04",
-        "id": "vf:match:1385049714",
-        "score": "3-1"
-      },
-      {
-        "name": "FC Bayern München vs. Hamburger SV",
-        "id": "vf:match:1385049715",
-        "score": "3-3"
-      },
-      {
-        "name": "London Guns vs. Crystal Palace",
-        "id": "vf:match:1385051349",
-        "score": "3-1"
-      },
-      {
-        "name": "Leicester vs. Watford",
-        "id": "vf:match:1385051351",
-        "score": "1-1"
-      },
-      {
-        "name": "London Guns vs. Newcastle",
-        "id": "vf:match:1385051359",
-        "score": "1-1"
-      },
-      {
-        "name": "Liverpool vs. Southampton",
-        "id": "vf:match:1385051361",
-        "score": "1-1"
-      },
-      {
-        "name": "TSG Hoffenheim vs. FC Augsburg",
-        "id": "vf:match:1385049737",
-        "score": "3-2"
-      },
-      {
-        "name": "VL Lisbon vs. VL Bern",
-        "id": "vf:match:1385049984",
-        "score": "2-1"
-      },
-      {
-        "name": "VL Rome vs. VL London",
-        "id": "vf:match:1385049982",
-        "score": "1-4"
-      },
-      {
-        "name": "London Guns vs. Southampton",
-        "id": "vf:match:1385051380",
-        "score": "3-1"
-      },
-      {
-        "name": "VfL Wolfsburg vs. SC Freiburg",
-        "id": "vf:match:1385049754",
-        "score": "2-1"
-      },
-      {
-        "name": "TSG Hoffenheim vs. VfB Stuttgart",
-        "id": "vf:match:1385049752",
-        "score": "2-1"
-      },
-      {
-        "name": "Manchester Blue vs. Liverpool",
-        "id": "vf:match:1385051395",
-        "score": "3-1"
-      },
-      {
-        "name": "VL Kiev vs. VL Athens",
-        "id": "vf:match:1385049999",
+        "name": "Liverpool vs. West Ham",
+        "id": "vf:match:1385060332",
         "score": "1-1"
       }
     ]

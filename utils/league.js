@@ -29,7 +29,7 @@ function simulateMatch(teamA, teamB, goalsA, goalsB) {
 
 function updateTeamStats(team, result, goalsFor, goalsAgainst, opponent) {
   team.form.push(result);
-  if (team.form.length > 5) team.form.shift();
+  if (team.form.length > 10) team.form.shift();
 
   // Attack
   if (goalsFor >= 3) {

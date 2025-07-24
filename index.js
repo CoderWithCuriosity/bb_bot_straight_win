@@ -1,7 +1,7 @@
 const { placeBet } = require("./api/bet");
 const fs = require("fs");
 const path = require("path");
-const { win_1x2 } = require("./strategy/win_1x2");
+const { win_1_5 } = require("./strategy/win_1_5");
 const { processSeasonsFromWeek1 } = require("./utils/seasonProcessor");
 
 const X = 2; // Minutes between executions
@@ -58,7 +58,7 @@ async function main() {
   const stake = 100; // Fixed stake
 
   await processSeasonsFromWeek1();
-  const [selections] = await win_1x2(stake, betPerX);
+  const [selections] = await win_1_5(stake, betPerX);
 
   if (!selections.length) {
     console.log("⚠️ No new selections found.");
@@ -103,28 +103,35 @@ async function main() {
     //   stake
     // );
 
+    // newSelections.forEach(sel => logBet(sel));
 
-    newSelections.forEach(sel => logBet(sel));
+    //For batch staking
+    const batchSize = 3;
 
-    //For single staing 
-    // for (const sel of newSelections) {
-    //   try {
-    //     await placeBet(
-    //       credentials.token,
-    //       credentials.secretKey,
-    //       [sel], // Pass as array
-    //       storeLoginData,
-    //       stake
-    //     );
-    //     logBet(sel);
-    //     console.log(`✅ Successfully placed bet on ${sel.eventName}`);
-    //   } catch (err) {
-    //     console.error(
-    //       `❌ Failed to place bet on ${sel.eventName}:`,
-    //       err.message || err
-    //     );
-    //   }
-    // }
+    for (let i = 0; i < selections.length; i += batchSize) {
+      const batch = selections.slice(i, i + batchSize);
+
+      try {
+        // await placeBet(
+        //   credentials.token,
+        //   credentials.secretKey,
+        //   batch, // Pass as array
+        //   storeLoginData,
+        //   stake
+        // );
+
+        // Log each bet in the batch
+        for (const sel of batch) {
+          logBet(sel);
+          console.log(`✅ Successfully placed bet on ${sel.eventName}`);
+        }
+      } catch (err) {
+        console.error(
+          `❌ Failed to place batch starting at index ${i}:`,
+          err.message || err
+        );
+      }
+    }
   } catch (err) {
     console.error("❌ Failed to place bet:", err.message || err);
   }

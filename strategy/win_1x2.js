@@ -24,7 +24,7 @@ async function sendTelegramMessage(message) {
             text: message,
             parse_mode: "Markdown",
         });
-    } catch (err) {}
+    } catch (err) { }
 }
 
 function loadSeasonStandings() {
@@ -108,6 +108,25 @@ function isTeamImproving(standings, recentWeeks = 4) {
     return improvementRatio >= 0.6;
 }
 
+function analyzeForm(formArray, minMatches = 5) {
+    if (!formArray || formArray.length < minMatches) return null;
+
+    const recentForm = formArray.slice(-minMatches);
+    const stats = { W: 0, D: 0, L: 0 };
+
+    recentForm.forEach(result => stats[result]++);
+
+    return {
+        wins: stats.W,
+        draws: stats.D,
+        losses: stats.L,
+        total: recentForm.length,
+        winRate: (stats.W / recentForm.length) * 100,
+        drawRate: (stats.D / recentForm.length) * 100,
+        isImproving: stats.W > stats.L, // True if more wins than losses
+    };
+}
+
 function compareTeamTrends(homeStanding, awayStanding) {
     const homeStandings = homeStanding.standings || [];
     const homeCurrentPos = homeStandings[homeStandings.length - 1]?.position;
@@ -161,27 +180,46 @@ async function win_1x2(amount = 100, matchCount = 3) {
             const awayPos = getTeamPos(seasonStandings, tournament.id, seasonId, away);
             if (!homeStanding || !awayStanding) continue;
 
-            if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
+            // if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
 
             const oddsData = await getMatchOdds(match.id);
             if (!oddsData?.marketList?.length) continue;
 
             let selectedId;
-            const pick = compareTeamTrends(homeStats, awayStats);
-            if (pick === "HOME") {
-                selectedId = 1;
-            } else if (pick === "AWAY") {
-                selectedId = 3;
-            } else {
-                continue;
+
+
+            // Analyze last 5 matches (min), up to 10 if available (if the match is less than 10 then the 5 - 2 else use 10)
+            const homeForm = analyzeForm(homeStats.form, parseInt(matchDay) < 10 ? 5 : 10);
+            const awayForm = analyzeForm(awayStats.form, parseInt(matchDay) < 10 ? 5 : 10);
+            if (!homeForm || !awayForm) continue;
+
+            if(matchDay < 12){
+                if(homeForm.isImproving && awayForm.isImproving == false && homeForm.winRate >= 50 && awayForm.winRate < 50 ){
+                     selectedId = 1;
+                }
+                else if(awayForm.isImproving && awayForm.isImproving == false && awayForm.winRate >= 50 && homeForm.winRate < 50){
+                    selectedId = 3;
+                }
+    
+                if(selectedId === 1 && homePos > awayPos) continue;
+                if(selectedId === 3 && awayPos > homePos) continue;
             }
+            
+
+            console.log("Home Team: ", home, "\nPos: ", homePos);
+            console.log(homeForm);
+            console.log("Away Team: ", away, "\nPos: ", awayPos);
+            console.log(awayForm)
+            console.log("Pick: ", selectedId );
+
+
 
             for (const market of oddsData.marketList) {
                 if (market.name === "1x2") {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
                             if (parseInt(outcome.id) != selectedId) continue;
-                            if (parseFloat(outcome.odds) > 1.69) continue;
+
 
                             // const msg = `🤝 *Straight Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Straight Pick Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
 
