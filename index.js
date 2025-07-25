@@ -1,7 +1,7 @@
 const { placeBet } = require("./api/bet");
 const fs = require("fs");
 const path = require("path");
-const { win_1_5 } = require("./strategy/win_1_5");
+const { win_1x2 } = require("./strategy/win_1x2");
 const { processSeasonsFromWeek1 } = require("./utils/seasonProcessor");
 
 const X = 2; // Minutes between executions
@@ -58,7 +58,7 @@ async function main() {
   const stake = 100; // Fixed stake
 
   await processSeasonsFromWeek1();
-  const [selections] = await win_1_5(stake, betPerX);
+  const [selections] = await win_1x2(stake, betPerX);
 
   if (!selections.length) {
     console.log("⚠️ No new selections found.");

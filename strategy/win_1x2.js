@@ -193,24 +193,24 @@ async function win_1x2(amount = 100, matchCount = 3) {
             const awayForm = analyzeForm(awayStats.form, parseInt(matchDay) < 10 ? 5 : 10);
             if (!homeForm || !awayForm) continue;
 
-            if(matchDay < 12){
-                if(homeForm.isImproving && awayForm.isImproving == false && homeForm.winRate >= 50 && awayForm.winRate < 50 ){
-                     selectedId = 1;
-                }
-                else if(awayForm.isImproving && awayForm.isImproving == false && awayForm.winRate >= 50 && homeForm.winRate < 50){
-                    selectedId = 3;
-                }
-    
-                if(selectedId === 1 && homePos > awayPos) continue;
-                if(selectedId === 3 && awayPos > homePos) continue;
+
+            if (homeForm.isImproving && awayForm.isImproving == false && homePos < awayPos) {
+                selectedId = 1;
             }
-            
+            else if (awayForm.isImproving && awayForm.isImproving == false && awayPos < homePos) {
+                selectedId = 3;
+            }
+            else {
+                continue;
+            }
+
+
 
             console.log("Home Team: ", home, "\nPos: ", homePos);
             console.log(homeForm);
             console.log("Away Team: ", away, "\nPos: ", awayPos);
             console.log(awayForm)
-            console.log("Pick: ", selectedId );
+            console.log("Pick: ", selectedId);
 
 
 
@@ -219,7 +219,7 @@ async function win_1x2(amount = 100, matchCount = 3) {
                     for (const detail of market.markets) {
                         for (const outcome of detail.outcomes) {
                             if (parseInt(outcome.id) != selectedId) continue;
-
+                            if (parseFloat(outcome.odds) < 1.49 ) continue;
 
                             // const msg = `🤝 *Straight Pick*\n\n🏆 *${tournament.name}*\n🕐 *Week:* ${matchDay}\n⚽ *${home} vs ${away}*\n\n💸 *Straight Pick Odds:* ${outcome.odds}\n🔢 *Draws in Form:* ${homeStanding.D}/${awayStanding.D}\n📊 *Pos:* ${homePos} vs ${awayPos}\n\n*Match Id:* ${oddsData.id}`;
 

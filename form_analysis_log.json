@@ -11284,5 +11284,86 @@
       "isImproving": false
     },
     "selectedPick": "NO PICK"
+  },
+  {
+    "tournament": "League Mode",
+    "matchDay": 16,
+    "homeTeam": "VL Copenhagen",
+    "homePos": 16,
+    "homeForm": {
+      "wins": 1,
+      "draws": 3,
+      "losses": 6,
+      "total": 10,
+      "winRate": 10,
+      "drawRate": 30,
+      "isImproving": false
+    },
+    "awayTeam": "VL Amsterdam",
+    "awayPos": 1,
+    "awayForm": {
+      "wins": 9,
+      "draws": 0,
+      "losses": 1,
+      "total": 10,
+      "winRate": 90,
+      "drawRate": 0,
+      "isImproving": true
+    },
+    "selectedPick": "NO PICK"
+  },
+  {
+    "tournament": "League Mode",
+    "matchDay": 16,
+    "homeTeam": "VL Berlin",
+    "homePos": 2,
+    "homeForm": {
+      "wins": 5,
+      "draws": 2,
+      "losses": 3,
+      "total": 10,
+      "winRate": 50,
+      "drawRate": 20,
+      "isImproving": true
+    },
+    "awayTeam": "VL Ankara",
+    "awayPos": 15,
+    "awayForm": {
+      "wins": 0,
+      "draws": 2,
+      "losses": 8,
+      "total": 10,
+      "winRate": 0,
+      "drawRate": 20,
+      "isImproving": false
+    },
+    "selectedPick": "NO PICK"
+  },
+  {
+    "tournament": "League Mode",
+    "matchDay": 16,
+    "homeTeam": "VL Prague",
+    "homePos": 5,
+    "homeForm": {
+      "wins": 5,
+      "draws": 2,
+      "losses": 3,
+      "total": 10,
+      "winRate": 50,
+      "drawRate": 20,
+      "isImproving": true
+    },
+    "awayTeam": "VL Vienna",
+    "awayPos": 13,
+    "awayForm": {
+      "wins": 1,
+      "draws": 2,
+      "losses": 7,
+      "total": 10,
+      "winRate": 10,
+      "drawRate": 20,
+      "isImproving": false
+    },
+    "selectedPick": "NO PICK"
   }
 ]
