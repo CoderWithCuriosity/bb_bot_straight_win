@@ -88,26 +88,6 @@ function getLowestPosition(standings) {
     return Math.max(...standings.map(s => s.position));
 }
 
-function isTeamImproving(standings, recentWeeks = 4) {
-    if (standings.length < 2) return false;
-
-    const sorted = [...standings].sort((a, b) => a.week - b.week);
-    const recent = sorted.slice(-recentWeeks);
-
-    let improvingCount = 0;
-    let totalComparison = 0;
-
-    for (let i = 1; i < recent.length; i++) {
-        if (recent[i].position < recent[i - 1].position) {
-            improvingCount++;
-        }
-        totalComparison++;
-    }
-
-    const improvementRatio = improvingCount / totalComparison;
-    return improvementRatio >= 0.6;
-}
-
 function analyzeForm(formArray, minMatches = 5) {
     if (!formArray || formArray.length < minMatches) return null;
 
@@ -127,27 +107,132 @@ function analyzeForm(formArray, minMatches = 5) {
     };
 }
 
-function compareTeamTrends(homeStanding, awayStanding) {
-    const homeStandings = homeStanding.standings || [];
-    const homeCurrentPos = homeStandings[homeStandings.length - 1]?.position;
-    const homeHigh = getHighestPosition(homeStandings);
-    const homeLow = getLowestPosition(homeStandings);
+const MATCH_ANALYSIS_LOG_FILE = path.join(__dirname, "../match_analysis_log.json");
 
-    const awayStandings = awayStanding.standings || [];
-    const awayCurrentPos = awayStandings[awayStandings.length - 1]?.position;
-    const awayHigh = getHighestPosition(awayStandings);
-    const awayLow = getLowestPosition(awayStandings);
+function logMatchAnalysis({
+    tournament,
+    matchDay,
+    matchId,
+    homeTeam,
+    homePos,
+    homeForm,
+    awayTeam,
+    awayPos,
+    awayForm,
+    selectedPick,
+    correctScore = null
+}) {
+    const matchLog = {
+        tournament,
+        matchDay,
+        matchId,
+        homeTeam,
+        homePos,
+        homeForm,
+        awayTeam,
+        awayPos,
+        awayForm,
+        selectedPick,
+        correctScore,
+        loggedAt: new Date().toISOString()
+    };
 
-    if (homeLow < awayLow && homeHigh < awayHigh && homeCurrentPos < awayCurrentPos) {
-        return "HOME";
-    } else if (awayLow < homeLow && awayHigh < homeHigh && awayCurrentPos < homeCurrentPos) {
-        return "AWAY";
+    let existingLogs = [];
+    if (fs.existsSync(MATCH_ANALYSIS_LOG_FILE)) {
+        try {
+            const fileData = fs.readFileSync(MATCH_ANALYSIS_LOG_FILE, "utf-8");
+            existingLogs = JSON.parse(fileData);
+        } catch (e) {
+            existingLogs = [];
+        }
     }
 
-    return "NO PICK";
+    existingLogs.push(matchLog);
+    fs.writeFileSync(MATCH_ANALYSIS_LOG_FILE, JSON.stringify(existingLogs, null, 2));
+}
+
+function updateCorrectScoreAndResult(matchData) {
+    if (!fs.existsSync(MATCH_ANALYSIS_LOG_FILE)) return;
+
+    const logs = JSON.parse(fs.readFileSync(MATCH_ANALYSIS_LOG_FILE, "utf-8"));
+    const updatedLogs = logs.map(log => {
+        const isSameMatch = log.matchId === matchData.id ||
+            (
+                log.homeTeam?.toLowerCase() === matchData.homeTeamName?.toLowerCase() &&
+                log.awayTeam?.toLowerCase() === matchData.awayTeamName?.toLowerCase()
+            );
+
+        if (!isSameMatch || log.correctScore) return log;
+
+        const homeScore = parseInt(matchData.homeScore);
+        const awayScore = parseInt(matchData.awayScore);
+
+        let selectedPick = "NO PICK";
+        if (homeScore > awayScore) selectedPick = "HOME";
+        else if (awayScore > homeScore) selectedPick = "AWAY";
+        else selectedPick = "DRAW";
+
+        return {
+            ...log,
+            correctScore: `${homeScore}-${awayScore}`,
+            selectedPick
+        };
+    });
+
+    fs.writeFileSync(MATCH_ANALYSIS_LOG_FILE, JSON.stringify(updatedLogs, null, 2));
+}
+
+
+async function autoUpdateAllFinishedMatches() {
+    const logs = JSON.parse(fs.readFileSync(MATCH_ANALYSIS_LOG_FILE, "utf-8"));
+    for (const log of logs) {
+        if (!log.correctScore && log.matchId) {
+            const matchData = await getMatchOdds(log.matchId);
+            if (matchData?.matchStatus === "ended") {
+                updateCorrectScoreAndResult(matchData);
+            }
+        }
+    }
+}
+
+
+async function checkSimilarMatchAndNotify(currentMatch) {
+    if (!fs.existsSync(MATCH_ANALYSIS_LOG_FILE)) return;
+
+    const logs = JSON.parse(fs.readFileSync(MATCH_ANALYSIS_LOG_FILE, "utf-8"));
+
+    for (const log of logs) {
+        const isSameHomeForm = currentMatch.homeForm.wins === log.homeForm?.wins &&
+                               currentMatch.homeForm.draws === log.homeForm?.draws &&
+                               currentMatch.homeForm.losses === log.homeForm?.losses;
+
+        const isSameAwayForm = currentMatch.awayForm.wins === log.awayForm?.wins &&
+                               currentMatch.awayForm.draws === log.awayForm?.draws &&
+                               currentMatch.awayForm.losses === log.awayForm?.losses;
+
+        if (isSameHomeForm && isSameAwayForm) {
+            const message = `🧠 *Similar Match Found!*
+
+🎯 *Current Match:* ${currentMatch.homeTeam} vs ${currentMatch.awayTeam}
+🟩 Home Form: W:${currentMatch.homeForm.wins} D:${currentMatch.homeForm.draws} L:${currentMatch.homeForm.losses}
+🟥 Away Form: W:${currentMatch.awayForm.wins} D:${currentMatch.awayForm.draws} L:${currentMatch.awayForm.losses}
+
+🕰 *Matched With Previous Match:*
+🏆 *${log.tournament}*, Week ${log.matchDay}
+⚽ *${log.homeTeam} vs ${log.awayTeam}*
+✅ *Pick:* ${log.selectedPick}
+📊 *Score:* ${log.correctScore || "N/A"}
+🕓 *Logged:* ${log.loggedAt}
+`;
+
+            await sendTelegramMessage(message);
+            break; // stop after first match found
+        }
+    }
 }
 
 async function win_1x2(amount = 100, matchCount = 3) {
+    autoUpdateAllFinishedMatches();
     const selections = [];
     const valid_matches = await fetchMatches();
     const seasonStandings = loadSeasonStandings();
@@ -180,6 +265,13 @@ async function win_1x2(amount = 100, matchCount = 3) {
             const awayPos = getTeamPos(seasonStandings, tournament.id, seasonId, away);
             if (!homeStanding || !awayStanding) continue;
 
+            await checkSimilarMatchAndNotify({
+                homeTeam: home,
+                awayTeam: away,
+                homeForm,
+                awayForm
+            });
+
             // if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
 
             const oddsData = await getMatchOdds(match.id);
@@ -193,7 +285,6 @@ async function win_1x2(amount = 100, matchCount = 3) {
             const awayForm = analyzeForm(awayStats.form, parseInt(matchDay) < 10 ? 5 : 10);
             if (!homeForm || !awayForm) continue;
 
-
             if (homeForm.isImproving && awayForm.isImproving == false && homePos < awayPos) {
                 selectedId = 1;
             }
@@ -204,13 +295,27 @@ async function win_1x2(amount = 100, matchCount = 3) {
                 continue;
             }
 
+            logMatchAnalysis({
+                tournament: tournament.name,
+                matchDay,
+                matchId: match.id,
+                homeTeam: home,
+                homePos,
+                homeForm,
+                awayTeam: away,
+                awayPos,
+                awayForm,
+                selectedPick: selectedId === 1 ? "HOME" : selectedId === 3 ? "AWAY" : "NO PICK",
+                correctScore: null  // Optional: Predict or infer if needed
+            });
 
 
-            console.log("Home Team: ", home, "\nPos: ", homePos);
-            console.log(homeForm);
-            console.log("Away Team: ", away, "\nPos: ", awayPos);
-            console.log(awayForm)
-            console.log("Pick: ", selectedId);
+
+            // console.log("Home Team: ", home, "\nPos: ", homePos);
+            // console.log(homeForm);
+            // console.log("Away Team: ", away, "\nPos: ", awayPos);
+            // console.log(awayForm)
+            // console.log("Pick: ", selectedId);
 
 
 
