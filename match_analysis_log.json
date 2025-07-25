@@ -25,8 +25,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T07:40:18.874Z"
   },
   {
@@ -55,8 +55,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T07:42:26.986Z"
   },
   {
@@ -86,7 +86,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T07:42:34.217Z"
   },
   {
@@ -116,7 +116,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T07:42:34.987Z"
   },
   {
@@ -146,7 +146,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T07:42:35.704Z"
   },
   {
@@ -176,7 +176,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T07:42:37.543Z"
   },
   {
@@ -206,7 +206,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T07:44:29.464Z"
   },
   {
@@ -236,7 +236,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T07:44:31.597Z"
   },
   {
@@ -265,8 +265,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T07:44:32.135Z"
   },
   {
@@ -296,7 +296,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T07:44:32.852Z"
   },
   {
@@ -326,7 +326,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T07:44:36.872Z"
   },
   {
@@ -356,7 +356,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T07:44:37.451Z"
   },
   {
@@ -386,7 +386,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T07:44:38.184Z"
   },
   {
@@ -415,8 +415,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T07:44:38.946Z"
   },
   {
@@ -445,8 +445,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T07:44:41.644Z"
   },
   {
@@ -475,8 +475,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T07:44:42.348Z"
   },
   {
@@ -506,7 +506,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T07:44:43.622Z"
   },
   {
@@ -536,7 +536,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T07:46:28.485Z"
   },
   {
@@ -566,7 +566,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T07:46:30.685Z"
   },
   {
@@ -595,8 +595,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T07:46:31.446Z"
   },
   {
@@ -626,7 +626,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T07:46:31.986Z"
   },
   {
@@ -656,7 +656,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T07:46:37.165Z"
   },
   {
@@ -685,8 +685,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T07:46:39.156Z"
   },
   {
@@ -716,7 +716,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T07:48:36.911Z"
   },
   {
@@ -746,7 +746,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-2",
     "loggedAt": "2025-07-25T07:48:41.206Z"
   },
   {
@@ -776,7 +776,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T07:50:36.053Z"
   },
   {
@@ -806,7 +806,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-2",
     "loggedAt": "2025-07-25T07:50:41.480Z"
   },
   {
@@ -835,8 +835,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-3",
     "loggedAt": "2025-07-25T07:50:43.299Z"
   },
   {
@@ -865,8 +865,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T07:52:26.934Z"
   },
   {
@@ -896,7 +896,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T07:52:30.380Z"
   },
   {
@@ -926,7 +926,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T07:52:30.945Z"
   },
   {
@@ -956,7 +956,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T07:52:35.129Z"
   },
   {
@@ -986,7 +986,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T07:52:35.856Z"
   },
   {
@@ -1015,8 +1015,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T07:54:31.202Z"
   },
   {
@@ -1046,7 +1046,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T07:54:36.714Z"
   },
   {
@@ -1076,7 +1076,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T07:54:39.725Z"
   },
   {
@@ -1105,8 +1105,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T07:56:14.594Z"
   },
   {
@@ -1135,8 +1135,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T07:57:57.561Z"
   },
   {
@@ -1165,8 +1165,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T07:59:59.520Z"
   },
   {
@@ -1195,8 +1195,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T08:00:02.423Z"
   },
   {
@@ -1226,7 +1226,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-3",
     "loggedAt": "2025-07-25T08:01:59.978Z"
   },
   {
@@ -1256,7 +1256,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-3",
     "loggedAt": "2025-07-25T08:04:00.605Z"
   },
   {
@@ -1286,7 +1286,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T08:04:03.265Z"
   },
   {
@@ -1315,8 +1315,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T08:10:04.364Z"
   },
   {
@@ -1346,7 +1346,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T08:10:04.981Z"
   },
   {
@@ -1375,8 +1375,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T08:10:05.728Z"
   },
   {
@@ -1405,8 +1405,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T08:10:06.471Z"
   },
   {
@@ -1435,8 +1435,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T08:12:05.481Z"
   },
   {
@@ -1466,7 +1466,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T08:12:06.214Z"
   },
   {
@@ -1495,8 +1495,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T08:12:06.933Z"
   },
   {
@@ -1525,8 +1525,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T08:12:07.513Z"
   },
   {
@@ -1556,7 +1556,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T08:14:06.780Z"
   },
   {
@@ -1586,7 +1586,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T08:14:10.392Z"
   },
   {
@@ -1615,8 +1615,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T08:14:12.379Z"
   },
   {
@@ -1646,7 +1646,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T08:16:07.636Z"
   },
   {
@@ -1676,7 +1676,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T08:16:11.843Z"
   },
   {
@@ -1705,8 +1705,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T08:16:13.869Z"
   },
   {
@@ -1735,8 +1735,8 @@
       "drawRate": 60,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T08:16:15.683Z"
   },
   {
@@ -1765,8 +1765,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T08:18:08.307Z"
   },
   {
@@ -1796,7 +1796,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T08:18:15.059Z"
   },
   {
@@ -1826,7 +1826,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T08:21:51.583Z"
   },
   {
@@ -1856,7 +1856,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T08:21:52.874Z"
   },
   {
@@ -1885,8 +1885,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T08:21:55.817Z"
   },
   {
@@ -1915,8 +1915,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T08:27:54.296Z"
   },
   {
@@ -1945,8 +1945,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T08:29:55.733Z"
   },
   {
@@ -1976,7 +1976,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T08:29:57.916Z"
   },
   {
@@ -2006,7 +2006,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T08:31:59.215Z"
   },
   {
@@ -2036,7 +2036,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T08:33:58.399Z"
   },
   {
@@ -2065,8 +2065,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T08:34:00.331Z"
   },
   {
@@ -2095,8 +2095,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T08:38:02.448Z"
   },
   {
@@ -2126,7 +2126,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T08:40:00.970Z"
   },
   {
@@ -2156,7 +2156,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T08:40:05.075Z"
   },
   {
@@ -2185,8 +2185,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T08:41:59.085Z"
   },
   {
@@ -2216,7 +2216,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T08:42:02.490Z"
   },
   {
@@ -2246,7 +2246,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T08:44:01.739Z"
   },
   {
@@ -2275,8 +2275,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T08:44:02.503Z"
   },
   {
@@ -2306,7 +2306,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T08:44:03.597Z"
   },
   {
@@ -2335,8 +2335,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T08:44:04.944Z"
   },
   {
@@ -2366,7 +2366,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T08:44:07.501Z"
   },
   {
@@ -2396,7 +2396,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-0",
     "loggedAt": "2025-07-25T08:46:04.177Z"
   },
   {
@@ -2425,8 +2425,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-3",
     "loggedAt": "2025-07-25T08:46:05.340Z"
   },
   {
@@ -2456,7 +2456,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T08:46:05.958Z"
   },
   {
@@ -2485,8 +2485,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T08:48:06.862Z"
   },
   {
@@ -2516,7 +2516,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-0",
     "loggedAt": "2025-07-25T08:48:09.282Z"
   },
   {
@@ -2545,8 +2545,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-3",
     "loggedAt": "2025-07-25T08:48:10.809Z"
   },
   {
@@ -2576,7 +2576,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T08:48:11.606Z"
   },
   {
@@ -2605,8 +2605,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T08:50:08.595Z"
   },
   {
@@ -2636,7 +2636,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T08:50:10.557Z"
   },
   {
@@ -2666,7 +2666,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T08:50:12.083Z"
   },
   {
@@ -2696,7 +2696,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T08:52:08.007Z"
   },
   {
@@ -2726,7 +2726,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T08:52:11.176Z"
   },
   {
@@ -2755,8 +2755,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T08:56:14.887Z"
   },
   {
@@ -2785,8 +2785,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T08:58:11.869Z"
   },
   {
@@ -2816,7 +2816,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T09:00:11.869Z"
   },
   {
@@ -2845,8 +2845,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T09:00:13.551Z"
   },
   {
@@ -2876,7 +2876,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T09:00:14.313Z"
   },
   {
@@ -2906,7 +2906,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T09:02:17.613Z"
   },
   {
@@ -2936,7 +2936,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T09:04:12.948Z"
   },
   {
@@ -2966,7 +2966,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T09:04:15.541Z"
   },
   {
@@ -2996,7 +2996,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T09:04:16.147Z"
   },
   {
@@ -3026,7 +3026,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T09:06:13.909Z"
   },
   {
@@ -3055,8 +3055,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-4",
     "loggedAt": "2025-07-25T09:06:15.641Z"
   },
   {
@@ -3086,7 +3086,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T09:06:19.723Z"
   },
   {
@@ -3116,7 +3116,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T09:06:20.454Z"
   },
   {
@@ -3146,7 +3146,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T09:08:14.625Z"
   },
   {
@@ -3176,7 +3176,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T09:10:16.644Z"
   },
   {
@@ -3206,7 +3206,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T09:14:18.338Z"
   },
   {
@@ -3236,7 +3236,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T09:14:18.873Z"
   },
   {
@@ -3266,7 +3266,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T09:14:19.414Z"
   },
   {
@@ -3295,8 +3295,8 @@
       "drawRate": 80,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T09:18:18.094Z"
   },
   {
@@ -3325,8 +3325,8 @@
       "drawRate": 80,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T09:20:19.708Z"
   },
   {
@@ -3355,8 +3355,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T09:20:23.276Z"
   },
   {
@@ -3386,7 +3386,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T09:22:23.467Z"
   },
   {
@@ -3415,8 +3415,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T09:24:26.341Z"
   },
   {
@@ -3446,7 +3446,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T09:24:30.146Z"
   },
   {
@@ -3476,7 +3476,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T09:24:30.932Z"
   },
   {
@@ -3505,8 +3505,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T09:26:29.286Z"
   },
   {
@@ -3535,8 +3535,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-2",
     "loggedAt": "2025-07-25T09:28:25.096Z"
   },
   {
@@ -3565,8 +3565,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T09:28:33.999Z"
   },
   {
@@ -3596,7 +3596,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T09:28:34.746Z"
   },
   {
@@ -3626,7 +3626,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T09:30:28.748Z"
   },
   {
@@ -3656,7 +3656,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T09:32:29.286Z"
   },
   {
@@ -3686,7 +3686,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T09:34:31.040Z"
   },
   {
@@ -3716,7 +3716,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T09:36:32.078Z"
   },
   {
@@ -3746,7 +3746,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T09:38:34.419Z"
   },
   {
@@ -3776,7 +3776,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T09:40:32.248Z"
   },
   {
@@ -3806,7 +3806,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T09:42:32.170Z"
   },
   {
@@ -3835,8 +3835,8 @@
       "drawRate": 90,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T09:46:29.788Z"
   },
   {
@@ -3866,7 +3866,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T09:46:31.805Z"
   },
   {
@@ -3895,8 +3895,8 @@
       "drawRate": 90,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T09:48:12.606Z"
   },
   {
@@ -3926,7 +3926,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T10:04:09.301Z"
   },
   {
@@ -3956,7 +3956,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T10:08:09.084Z"
   },
   {
@@ -3985,8 +3985,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T10:08:16.303Z"
   },
   {
@@ -4016,7 +4016,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T10:10:05.544Z"
   },
   {
@@ -4046,7 +4046,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T10:10:09.390Z"
   },
   {
@@ -4075,8 +4075,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T10:10:15.301Z"
   },
   {
@@ -4105,8 +4105,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-2",
     "loggedAt": "2025-07-25T10:10:16.631Z"
   },
   {
@@ -4136,7 +4136,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-2",
     "loggedAt": "2025-07-25T10:12:09.706Z"
   },
   {
@@ -4166,7 +4166,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T10:12:10.956Z"
   },
   {
@@ -4196,7 +4196,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-2",
     "loggedAt": "2025-07-25T10:13:56.476Z"
   },
   {
@@ -4226,7 +4226,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T10:13:57.744Z"
   },
   {
@@ -4256,7 +4256,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T10:15:52.241Z"
   },
   {
@@ -4285,8 +4285,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T10:15:57.837Z"
   },
   {
@@ -4316,7 +4316,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T10:21:56.122Z"
   },
   {
@@ -4345,8 +4345,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T10:21:57.369Z"
   },
   {
@@ -4375,8 +4375,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T10:23:58.238Z"
   },
   {
@@ -4405,8 +4405,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-2",
     "loggedAt": "2025-07-25T10:30:04.914Z"
   },
   {
@@ -4435,8 +4435,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T10:32:02.750Z"
   },
   {
@@ -4466,7 +4466,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T10:34:03.790Z"
   },
   {
@@ -4496,7 +4496,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T10:34:06.750Z"
   },
   {
@@ -4526,7 +4526,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T10:36:09.653Z"
   },
   {
@@ -4555,8 +4555,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T10:36:11.676Z"
   },
   {
@@ -4586,7 +4586,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T10:36:12.818Z"
   },
   {
@@ -4616,7 +4616,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T10:38:01.847Z"
   },
   {
@@ -4645,8 +4645,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T10:38:05.953Z"
   },
   {
@@ -4675,8 +4675,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T10:42:06.480Z"
   },
   {
@@ -4706,7 +4706,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T10:42:08.859Z"
   },
   {
@@ -4735,8 +4735,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T10:42:11.529Z"
   },
   {
@@ -4765,8 +4765,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T10:44:07.348Z"
   },
   {
@@ -4796,7 +4796,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T10:44:08.659Z"
   },
   {
@@ -4826,7 +4826,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T10:44:11.167Z"
   },
   {
@@ -4856,7 +4856,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T10:50:12.312Z"
   },
   {
@@ -4886,7 +4886,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T10:50:19.632Z"
   },
   {
@@ -4915,8 +4915,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "3-3",
     "loggedAt": "2025-07-25T10:50:20.892Z"
   },
   {
@@ -4945,8 +4945,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T10:52:13.563Z"
   },
   {
@@ -4976,7 +4976,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T10:52:14.706Z"
   },
   {
@@ -5006,7 +5006,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T10:52:15.279Z"
   },
   {
@@ -5035,8 +5035,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T10:54:13.563Z"
   },
   {
@@ -5066,7 +5066,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T10:54:19.708Z"
   },
   {
@@ -5095,8 +5095,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T10:56:16.974Z"
   },
   {
@@ -5126,7 +5126,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T10:58:15.143Z"
   },
   {
@@ -5156,7 +5156,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T10:58:16.390Z"
   },
   {
@@ -5186,7 +5186,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T10:58:17.820Z"
   },
   {
@@ -5216,7 +5216,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T11:00:16.277Z"
   },
   {
@@ -5246,7 +5246,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T11:00:17.035Z"
   },
   {
@@ -5275,8 +5275,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T11:04:17.491Z"
   },
   {
@@ -5305,8 +5305,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T11:04:22.442Z"
   },
   {
@@ -5336,7 +5336,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-1",
     "loggedAt": "2025-07-25T11:08:25.340Z"
   },
   {
@@ -5366,7 +5366,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T11:10:21.068Z"
   },
   {
@@ -5395,8 +5395,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T11:10:21.787Z"
   },
   {
@@ -5425,8 +5425,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T11:12:25.103Z"
   },
   {
@@ -5455,8 +5455,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T11:12:28.898Z"
   },
   {
@@ -5485,8 +5485,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T11:12:29.497Z"
   },
   {
@@ -5516,7 +5516,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T11:14:26.043Z"
   },
   {
@@ -5546,7 +5546,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-2",
     "loggedAt": "2025-07-25T11:16:25.592Z"
   },
   {
@@ -5576,7 +5576,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T11:16:26.946Z"
   },
   {
@@ -5606,7 +5606,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T11:18:27.100Z"
   },
   {
@@ -5635,8 +5635,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T11:18:28.400Z"
   },
   {
@@ -5666,7 +5666,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T11:18:29.139Z"
   },
   {
@@ -5696,7 +5696,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T11:18:29.824Z"
   },
   {
@@ -5725,8 +5725,8 @@
       "drawRate": 60,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T11:20:33.394Z"
   },
   {
@@ -5756,7 +5756,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T11:20:33.981Z"
   },
   {
@@ -5786,7 +5786,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T11:20:34.516Z"
   },
   {
@@ -5816,7 +5816,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T11:22:27.199Z"
   },
   {
@@ -5846,7 +5846,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T11:24:28.094Z"
   },
   {
@@ -5875,8 +5875,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T11:24:29.822Z"
   },
   {
@@ -5906,7 +5906,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T11:24:30.614Z"
   },
   {
@@ -5935,8 +5935,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T11:24:31.207Z"
   },
   {
@@ -5965,8 +5965,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T11:26:30.406Z"
   },
   {
@@ -5996,7 +5996,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T11:26:31.453Z"
   },
   {
@@ -6026,7 +6026,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "6-0",
     "loggedAt": "2025-07-25T11:26:35.333Z"
   },
   {
@@ -6056,7 +6056,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T11:28:50.558Z"
   },
   {
@@ -6086,7 +6086,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T11:30:31.171Z"
   },
   {
@@ -6116,7 +6116,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-0",
     "loggedAt": "2025-07-25T11:30:36.625Z"
   },
   {
@@ -6146,7 +6146,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T11:30:37.424Z"
   },
   {
@@ -6176,7 +6176,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T11:32:35.476Z"
   },
   {
@@ -6206,7 +6206,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T11:32:36.383Z"
   },
   {
@@ -6235,8 +6235,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-3",
     "loggedAt": "2025-07-25T11:32:41.991Z"
   },
   {
@@ -6266,7 +6266,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T11:34:39.146Z"
   },
   {
@@ -6296,7 +6296,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T11:36:32.013Z"
   },
   {
@@ -6326,7 +6326,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T11:36:32.564Z"
   },
   {
@@ -6356,7 +6356,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T11:38:34.533Z"
   },
   {
@@ -6386,7 +6386,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T11:38:35.345Z"
   },
   {
@@ -6416,7 +6416,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T11:56:05.925Z"
   },
   {
@@ -6445,8 +6445,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T11:56:08.492Z"
   },
   {
@@ -6476,7 +6476,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T11:58:07.753Z"
   },
   {
@@ -6506,7 +6506,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T11:58:09.080Z"
   },
   {
@@ -6536,7 +6536,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T11:58:11.588Z"
   },
   {
@@ -6566,7 +6566,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:00:07.426Z"
   },
   {
@@ -6595,8 +6595,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T12:02:10.582Z"
   },
   {
@@ -6626,7 +6626,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T12:02:11.304Z"
   },
   {
@@ -6656,7 +6656,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:02:17.749Z"
   },
   {
@@ -6686,7 +6686,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:04:11.213Z"
   },
   {
@@ -6715,8 +6715,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:04:13.503Z"
   },
   {
@@ -6746,7 +6746,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:05:54.530Z"
   },
   {
@@ -6775,8 +6775,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:05:57.273Z"
   },
   {
@@ -6805,8 +6805,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:07:55.131Z"
   },
   {
@@ -6836,7 +6836,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T12:09:54.517Z"
   },
   {
@@ -6866,7 +6866,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:09:55.787Z"
   },
   {
@@ -6895,8 +6895,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "3-3",
     "loggedAt": "2025-07-25T12:09:57.154Z"
   },
   {
@@ -6925,8 +6925,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T12:11:56.431Z"
   },
   {
@@ -6956,7 +6956,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:11:59.529Z"
   },
   {
@@ -6986,7 +6986,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:12:00.830Z"
   },
   {
@@ -7016,7 +7016,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:12:01.568Z"
   },
   {
@@ -7045,8 +7045,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T12:13:56.730Z"
   },
   {
@@ -7076,7 +7076,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:15:56.988Z"
   },
   {
@@ -7106,7 +7106,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T12:15:57.763Z"
   },
   {
@@ -7136,7 +7136,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T12:16:01.766Z"
   },
   {
@@ -7166,7 +7166,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T12:16:02.885Z"
   },
   {
@@ -7195,8 +7195,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T12:16:03.592Z"
   },
   {
@@ -7226,7 +7226,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:17:58.481Z"
   },
   {
@@ -7256,7 +7256,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T12:17:59.071Z"
   },
   {
@@ -7285,8 +7285,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T12:20:03.218Z"
   },
   {
@@ -7316,7 +7316,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-0",
     "loggedAt": "2025-07-25T12:20:04.667Z"
   },
   {
@@ -7346,7 +7346,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T12:22:04.206Z"
   },
   {
@@ -7375,8 +7375,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-2",
     "loggedAt": "2025-07-25T12:22:07.844Z"
   },
   {
@@ -7405,8 +7405,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T12:22:09.111Z"
   },
   {
@@ -7436,7 +7436,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T12:24:03.962Z"
   },
   {
@@ -7465,8 +7465,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-4",
     "loggedAt": "2025-07-25T12:24:06.177Z"
   },
   {
@@ -7495,8 +7495,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T12:24:07.761Z"
   },
   {
@@ -7525,8 +7525,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T12:24:08.420Z"
   },
   {
@@ -7555,8 +7555,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T12:24:09.157Z"
   },
   {
@@ -7586,7 +7586,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:24:09.886Z"
   },
   {
@@ -7616,7 +7616,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:24:11.182Z"
   },
   {
@@ -7646,7 +7646,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T12:26:02.879Z"
   },
   {
@@ -7675,8 +7675,8 @@
       "drawRate": 60,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T12:26:04.892Z"
   },
   {
@@ -7706,7 +7706,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T12:26:10.970Z"
   },
   {
@@ -7736,7 +7736,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:26:12.406Z"
   },
   {
@@ -7766,7 +7766,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T12:28:05.068Z"
   },
   {
@@ -7796,7 +7796,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T12:28:13.712Z"
   },
   {
@@ -7826,7 +7826,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:28:15.023Z"
   },
   {
@@ -7856,7 +7856,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:30:04.312Z"
   },
   {
@@ -7886,7 +7886,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:32:08.269Z"
   },
   {
@@ -7915,8 +7915,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T12:32:09.676Z"
   },
   {
@@ -7946,7 +7946,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T12:32:10.400Z"
   },
   {
@@ -7976,7 +7976,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:34:08.806Z"
   },
   {
@@ -8006,7 +8006,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:34:15.697Z"
   },
   {
@@ -8036,7 +8036,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:34:16.889Z"
   },
   {
@@ -8065,8 +8065,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T12:36:07.981Z"
   },
   {
@@ -8095,8 +8095,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T12:36:08.772Z"
   },
   {
@@ -8126,7 +8126,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:36:10.087Z"
   },
   {
@@ -8156,7 +8156,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:36:10.949Z"
   },
   {
@@ -8186,7 +8186,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:36:13.298Z"
   },
   {
@@ -8215,8 +8215,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T12:36:14.233Z"
   },
   {
@@ -8245,8 +8245,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:36:17.847Z"
   },
   {
@@ -8276,7 +8276,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:36:20.681Z"
   },
   {
@@ -8305,8 +8305,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T12:38:08.713Z"
   },
   {
@@ -8336,7 +8336,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:38:10.069Z"
   },
   {
@@ -8366,7 +8366,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:38:11.394Z"
   },
   {
@@ -8396,7 +8396,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:38:15.358Z"
   },
   {
@@ -8426,7 +8426,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-2",
     "loggedAt": "2025-07-25T12:38:19.066Z"
   },
   {
@@ -8455,8 +8455,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:40:10.245Z"
   },
   {
@@ -8485,8 +8485,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T12:40:18.703Z"
   },
   {
@@ -8516,7 +8516,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T12:40:19.265Z"
   },
   {
@@ -8546,7 +8546,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:40:21.264Z"
   },
   {
@@ -8575,8 +8575,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-3",
     "loggedAt": "2025-07-25T12:40:21.939Z"
   },
   {
@@ -8605,8 +8605,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:42:10.760Z"
   },
   {
@@ -8636,7 +8636,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:42:16.921Z"
   },
   {
@@ -8665,8 +8665,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-3",
     "loggedAt": "2025-07-25T12:42:17.633Z"
   },
   {
@@ -8696,7 +8696,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-1",
     "loggedAt": "2025-07-25T12:42:18.485Z"
   },
   {
@@ -8726,7 +8726,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T12:42:20.957Z"
   },
   {
@@ -8756,7 +8756,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T12:44:10.290Z"
   },
   {
@@ -8786,7 +8786,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T12:44:11.191Z"
   },
   {
@@ -8815,8 +8815,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:44:11.960Z"
   },
   {
@@ -8845,8 +8845,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T12:44:14.061Z"
   },
   {
@@ -8876,7 +8876,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:44:25.380Z"
   },
   {
@@ -8906,7 +8906,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T12:46:11.045Z"
   },
   {
@@ -8936,7 +8936,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T12:46:11.749Z"
   },
   {
@@ -8965,8 +8965,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:46:12.295Z"
   },
   {
@@ -8995,8 +8995,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-2",
     "loggedAt": "2025-07-25T12:46:16.670Z"
   },
   {
@@ -9025,8 +9025,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "3-3",
     "loggedAt": "2025-07-25T12:46:17.864Z"
   },
   {
@@ -9056,7 +9056,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:46:21.381Z"
   },
   {
@@ -9086,7 +9086,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:46:22.664Z"
   },
   {
@@ -9115,8 +9115,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:46:23.963Z"
   },
   {
@@ -9146,7 +9146,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T12:48:13.806Z"
   },
   {
@@ -9175,8 +9175,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-2",
     "loggedAt": "2025-07-25T12:48:14.390Z"
   },
   {
@@ -9206,7 +9206,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:48:21.940Z"
   },
   {
@@ -9235,8 +9235,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T12:48:22.844Z"
   },
   {
@@ -9266,7 +9266,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T12:50:20.741Z"
   },
   {
@@ -9295,8 +9295,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T12:50:21.495Z"
   },
   {
@@ -9325,8 +9325,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T12:52:14.047Z"
   },
   {
@@ -9356,7 +9356,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:52:24.237Z"
   },
   {
@@ -9386,7 +9386,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-2",
     "loggedAt": "2025-07-25T12:54:15.465Z"
   },
   {
@@ -9416,7 +9416,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T12:54:16.676Z"
   },
   {
@@ -9445,8 +9445,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T12:54:21.893Z"
   },
   {
@@ -9476,7 +9476,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-2",
     "loggedAt": "2025-07-25T12:54:23.261Z"
   },
   {
@@ -9506,7 +9506,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-2",
     "loggedAt": "2025-07-25T12:56:17.464Z"
   },
   {
@@ -9536,7 +9536,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T12:56:18.733Z"
   },
   {
@@ -9566,7 +9566,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T12:56:23.832Z"
   },
   {
@@ -9596,7 +9596,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T12:58:22.760Z"
   },
   {
@@ -9626,7 +9626,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T12:58:23.473Z"
   },
   {
@@ -9655,8 +9655,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T12:58:25.881Z"
   },
   {
@@ -9685,8 +9685,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:00:22.162Z"
   },
   {
@@ -9716,7 +9716,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:00:23.905Z"
   },
   {
@@ -9746,7 +9746,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T13:00:24.620Z"
   },
   {
@@ -9776,7 +9776,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:00:28.569Z"
   },
   {
@@ -9806,7 +9806,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T13:02:22.878Z"
   },
   {
@@ -9836,7 +9836,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T13:02:33.978Z"
   },
   {
@@ -9866,7 +9866,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T13:04:21.782Z"
   },
   {
@@ -9896,7 +9896,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T13:04:27.579Z"
   },
   {
@@ -9925,8 +9925,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:04:30.724Z"
   },
   {
@@ -9956,7 +9956,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:04:31.439Z"
   },
   {
@@ -9986,7 +9986,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:06:22.584Z"
   },
   {
@@ -10016,7 +10016,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:06:23.326Z"
   },
   {
@@ -10046,7 +10046,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T13:06:24.858Z"
   },
   {
@@ -10076,7 +10076,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:06:26.618Z"
   },
   {
@@ -10106,7 +10106,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-2",
     "loggedAt": "2025-07-25T13:06:30.880Z"
   },
   {
@@ -10135,8 +10135,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T13:08:23.304Z"
   },
   {
@@ -10166,7 +10166,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:08:27.716Z"
   },
   {
@@ -10196,7 +10196,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-2",
     "loggedAt": "2025-07-25T13:08:29.497Z"
   },
   {
@@ -10225,8 +10225,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:08:31.472Z"
   },
   {
@@ -10255,8 +10255,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:10:32.883Z"
   },
   {
@@ -10285,8 +10285,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T13:10:33.455Z"
   },
   {
@@ -10316,7 +10316,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T13:10:34.179Z"
   },
   {
@@ -10346,7 +10346,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T13:10:34.940Z"
   },
   {
@@ -10376,7 +10376,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:12:26.589Z"
   },
   {
@@ -10405,8 +10405,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:12:32.897Z"
   },
   {
@@ -10435,8 +10435,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T13:12:33.642Z"
   },
   {
@@ -10466,7 +10466,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T13:12:34.352Z"
   },
   {
@@ -10496,7 +10496,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T13:12:35.068Z"
   },
   {
@@ -10525,8 +10525,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T13:14:25.410Z"
   },
   {
@@ -10556,7 +10556,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T13:14:28.956Z"
   },
   {
@@ -10586,7 +10586,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T13:14:29.676Z"
   },
   {
@@ -10616,7 +10616,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:14:38.170Z"
   },
   {
@@ -10646,7 +10646,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:16:28.973Z"
   },
   {
@@ -10675,8 +10675,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T13:16:30.216Z"
   },
   {
@@ -10705,8 +10705,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T13:16:35.952Z"
   },
   {
@@ -10736,7 +10736,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:18:28.483Z"
   },
   {
@@ -10765,8 +10765,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T13:18:29.955Z"
   },
   {
@@ -10796,7 +10796,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:18:32.509Z"
   },
   {
@@ -10825,8 +10825,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T13:18:36.165Z"
   },
   {
@@ -10856,7 +10856,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T13:18:36.816Z"
   },
   {
@@ -10886,7 +10886,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T13:20:29.110Z"
   },
   {
@@ -10916,7 +10916,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:20:31.816Z"
   },
   {
@@ -10945,8 +10945,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T13:20:35.734Z"
   },
   {
@@ -10975,8 +10975,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T13:20:36.459Z"
   },
   {
@@ -11006,7 +11006,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T13:22:29.703Z"
   },
   {
@@ -11036,7 +11036,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:22:32.256Z"
   },
   {
@@ -11066,7 +11066,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T13:22:37.954Z"
   },
   {
@@ -11096,7 +11096,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:24:34.295Z"
   },
   {
@@ -11126,7 +11126,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-0",
     "loggedAt": "2025-07-25T13:24:37.187Z"
   },
   {
@@ -11156,7 +11156,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:26:39.151Z"
   },
   {
@@ -11186,7 +11186,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T13:28:33.741Z"
   },
   {
@@ -11215,8 +11215,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:28:37.166Z"
   },
   {
@@ -11246,7 +11246,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:28:38.248Z"
   },
   {
@@ -11275,8 +11275,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:30:36.780Z"
   },
   {
@@ -11306,7 +11306,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T13:30:40.597Z"
   },
   {
@@ -11335,8 +11335,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:35:58.444Z"
   },
   {
@@ -11366,7 +11366,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-1",
     "loggedAt": "2025-07-25T13:36:00.052Z"
   },
   {
@@ -11396,7 +11396,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:40:04.047Z"
   },
   {
@@ -11425,8 +11425,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T13:46:03.677Z"
   },
   {
@@ -11455,8 +11455,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T13:46:04.813Z"
   },
   {
@@ -11485,8 +11485,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T13:48:08.896Z"
   },
   {
@@ -11516,7 +11516,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T13:48:09.597Z"
   },
   {
@@ -11545,8 +11545,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T13:48:10.130Z"
   },
   {
@@ -11576,7 +11576,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T13:48:11.563Z"
   },
   {
@@ -11605,8 +11605,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:50:07.709Z"
   },
   {
@@ -11635,8 +11635,8 @@
       "drawRate": 100,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T13:50:11.468Z"
   },
   {
@@ -11665,8 +11665,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T13:50:13.587Z"
   },
   {
@@ -11695,8 +11695,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:52:08.968Z"
   },
   {
@@ -11725,8 +11725,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T13:52:14.111Z"
   },
   {
@@ -11756,7 +11756,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T13:52:15.243Z"
   },
   {
@@ -11786,7 +11786,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T13:52:17.834Z"
   },
   {
@@ -11815,8 +11815,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T13:52:18.380Z"
   },
   {
@@ -11845,8 +11845,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-3",
     "loggedAt": "2025-07-25T13:54:07.209Z"
   },
   {
@@ -11876,7 +11876,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:54:08.563Z"
   },
   {
@@ -11906,7 +11906,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T13:54:14.255Z"
   },
   {
@@ -11936,7 +11936,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:56:12.176Z"
   },
   {
@@ -11965,8 +11965,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:56:14.934Z"
   },
   {
@@ -11996,7 +11996,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T13:57:57.160Z"
   },
   {
@@ -12026,7 +12026,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T13:57:58.412Z"
   },
   {
@@ -12056,7 +12056,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T13:59:55.080Z"
   },
   {
@@ -12085,8 +12085,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T13:59:57.682Z"
   },
   {
@@ -12116,7 +12116,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T14:01:58.486Z"
   },
   {
@@ -12146,7 +12146,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T14:02:03.025Z"
   },
   {
@@ -12176,7 +12176,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T14:05:59.226Z"
   },
   {
@@ -12205,8 +12205,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T14:10:00.387Z"
   },
   {
@@ -12236,7 +12236,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:12:01.063Z"
   },
   {
@@ -12266,7 +12266,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:12:05.435Z"
   },
   {
@@ -12295,8 +12295,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T14:12:06.197Z"
   },
   {
@@ -12325,8 +12325,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T14:12:07.505Z"
   },
   {
@@ -12355,8 +12355,8 @@
       "drawRate": 80,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T14:13:58.685Z"
   },
   {
@@ -12386,7 +12386,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T14:14:02.830Z"
   },
   {
@@ -12416,7 +12416,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T14:14:04.681Z"
   },
   {
@@ -12445,8 +12445,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-4",
     "loggedAt": "2025-07-25T14:14:05.268Z"
   },
   {
@@ -12475,8 +12475,8 @@
       "drawRate": 80,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T14:16:03.451Z"
   },
   {
@@ -12505,8 +12505,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T14:16:09.445Z"
   },
   {
@@ -12535,8 +12535,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T14:16:13.048Z"
   },
   {
@@ -12565,8 +12565,8 @@
       "drawRate": 50,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-3",
     "loggedAt": "2025-07-25T14:16:15.756Z"
   },
   {
@@ -12596,7 +12596,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T14:16:16.476Z"
   },
   {
@@ -12626,7 +12626,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:16:17.084Z"
   },
   {
@@ -12655,8 +12655,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T14:18:01.960Z"
   },
   {
@@ -12686,7 +12686,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T14:18:05.472Z"
   },
   {
@@ -12716,7 +12716,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:18:08.013Z"
   },
   {
@@ -12746,7 +12746,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T14:18:09.977Z"
   },
   {
@@ -12776,7 +12776,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-0",
     "loggedAt": "2025-07-25T14:18:13.895Z"
   },
   {
@@ -12806,7 +12806,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:20:05.035Z"
   },
   {
@@ -12836,7 +12836,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:20:05.791Z"
   },
   {
@@ -12865,8 +12865,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T14:20:08.840Z"
   },
   {
@@ -12896,7 +12896,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T14:20:10.983Z"
   },
   {
@@ -12926,7 +12926,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-0",
     "loggedAt": "2025-07-25T14:20:14.999Z"
   },
   {
@@ -12955,8 +12955,8 @@
       "drawRate": 60,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T14:22:04.253Z"
   },
   {
@@ -12986,7 +12986,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T14:22:06.768Z"
   },
   {
@@ -13016,7 +13016,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T14:22:13.407Z"
   },
   {
@@ -13046,7 +13046,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:22:15.960Z"
   },
   {
@@ -13076,7 +13076,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:22:16.552Z"
   },
   {
@@ -13105,8 +13105,8 @@
       "drawRate": 60,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T14:22:27.138Z"
   },
   {
@@ -13136,7 +13136,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T14:22:29.816Z"
   },
   {
@@ -13166,7 +13166,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T14:22:38.538Z"
   },
   {
@@ -13196,7 +13196,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:22:41.085Z"
   },
   {
@@ -13226,7 +13226,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:22:41.801Z"
   },
   {
@@ -13255,8 +13255,8 @@
       "drawRate": 60,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T14:24:01.933Z"
   },
   {
@@ -13286,7 +13286,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T14:24:13.535Z"
   },
   {
@@ -13316,7 +13316,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:24:15.911Z"
   },
   {
@@ -13346,7 +13346,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:24:16.470Z"
   },
   {
@@ -13375,8 +13375,8 @@
       "drawRate": 60,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T14:26:04.553Z"
   },
   {
@@ -13405,8 +13405,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T14:26:18.106Z"
   },
   {
@@ -13435,8 +13435,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T14:28:08.656Z"
   },
   {
@@ -13466,7 +13466,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-2",
     "loggedAt": "2025-07-25T14:28:10.126Z"
   },
   {
@@ -13496,7 +13496,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:28:11.259Z"
   },
   {
@@ -13526,7 +13526,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T14:28:16.320Z"
   },
   {
@@ -13555,8 +13555,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T14:30:09.264Z"
   },
   {
@@ -13586,7 +13586,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-2",
     "loggedAt": "2025-07-25T14:30:10.371Z"
   },
   {
@@ -13616,7 +13616,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:30:11.746Z"
   },
   {
@@ -13645,8 +13645,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T14:32:08.643Z"
   },
   {
@@ -13675,8 +13675,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T14:32:10.691Z"
   },
   {
@@ -13705,8 +13705,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T14:32:11.986Z"
   },
   {
@@ -13736,7 +13736,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:32:19.310Z"
   },
   {
@@ -13765,8 +13765,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T14:34:10.371Z"
   },
   {
@@ -13795,8 +13795,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T14:34:11.980Z"
   },
   {
@@ -13825,8 +13825,8 @@
       "drawRate": 0,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T14:34:13.249Z"
   },
   {
@@ -13856,7 +13856,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T14:34:16.212Z"
   },
   {
@@ -13885,8 +13885,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-3",
     "loggedAt": "2025-07-25T14:34:18.932Z"
   },
   {
@@ -13915,8 +13915,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-3",
     "loggedAt": "2025-07-25T14:34:21.237Z"
   },
   {
@@ -13945,8 +13945,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T14:36:11.922Z"
   },
   {
@@ -13976,7 +13976,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T14:36:17.891Z"
   },
   {
@@ -14006,7 +14006,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T14:36:18.646Z"
   },
   {
@@ -14036,7 +14036,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T14:36:19.786Z"
   },
   {
@@ -14066,7 +14066,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T14:36:21.959Z"
   },
   {
@@ -14095,8 +14095,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-5",
     "loggedAt": "2025-07-25T14:38:19.148Z"
   },
   {
@@ -14125,8 +14125,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T14:38:25.133Z"
   },
   {
@@ -14156,7 +14156,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T14:38:26.958Z"
   },
   {
@@ -14185,8 +14185,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-2",
     "loggedAt": "2025-07-25T14:40:13.779Z"
   },
   {
@@ -14216,7 +14216,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-0",
     "loggedAt": "2025-07-25T14:40:16.066Z"
   },
   {
@@ -14246,7 +14246,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:40:19.018Z"
   },
   {
@@ -14276,7 +14276,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T14:40:22.180Z"
   },
   {
@@ -14306,7 +14306,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T14:42:18.077Z"
   },
   {
@@ -14336,7 +14336,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:42:19.555Z"
   },
   {
@@ -14366,7 +14366,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:42:20.265Z"
   },
   {
@@ -14396,7 +14396,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:42:24.761Z"
   },
   {
@@ -14426,7 +14426,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T14:42:28.194Z"
   },
   {
@@ -14455,8 +14455,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T14:42:28.915Z"
   },
   {
@@ -14485,8 +14485,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "2-4",
     "loggedAt": "2025-07-25T14:44:15.574Z"
   },
   {
@@ -14516,7 +14516,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:44:24.165Z"
   },
   {
@@ -14546,7 +14546,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T14:46:14.559Z"
   },
   {
@@ -14575,8 +14575,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T14:46:16.315Z"
   },
   {
@@ -14605,8 +14605,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T14:46:19.819Z"
   },
   {
@@ -14636,7 +14636,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T14:46:26.706Z"
   },
   {
@@ -14666,7 +14666,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T14:48:17.470Z"
   },
   {
@@ -14695,8 +14695,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T14:48:19.211Z"
   },
   {
@@ -14725,8 +14725,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T14:48:23.059Z"
   },
   {
@@ -14755,8 +14755,8 @@
       "drawRate": 40,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T14:48:30.050Z"
   },
   {
@@ -14786,7 +14786,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:50:19.180Z"
   },
   {
@@ -14816,7 +14816,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:50:21.924Z"
   },
   {
@@ -14845,8 +14845,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-2",
     "loggedAt": "2025-07-25T14:50:26.758Z"
   },
   {
@@ -14876,7 +14876,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:50:27.559Z"
   },
   {
@@ -14905,8 +14905,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "1-3",
     "loggedAt": "2025-07-25T14:50:28.802Z"
   },
   {
@@ -14936,7 +14936,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T14:52:18.908Z"
   },
   {
@@ -14966,7 +14966,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:52:21.455Z"
   },
   {
@@ -14996,7 +14996,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:52:23.295Z"
   },
   {
@@ -15026,7 +15026,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:52:26.785Z"
   },
   {
@@ -15056,7 +15056,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:52:33.249Z"
   },
   {
@@ -15086,7 +15086,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:54:26.490Z"
   },
   {
@@ -15116,7 +15116,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T14:54:28.709Z"
   },
   {
@@ -15146,7 +15146,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-2",
     "loggedAt": "2025-07-25T14:56:28.574Z"
   },
   {
@@ -15175,8 +15175,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T14:56:34.584Z"
   },
   {
@@ -15206,7 +15206,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T14:58:20.523Z"
   },
   {
@@ -15236,7 +15236,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T14:58:29.075Z"
   },
   {
@@ -15265,8 +15265,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T14:58:29.634Z"
   },
   {
@@ -15296,7 +15296,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T14:58:32.382Z"
   },
   {
@@ -15326,7 +15326,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T15:00:24.924Z"
   },
   {
@@ -15356,7 +15356,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-0",
     "loggedAt": "2025-07-25T15:00:26.190Z"
   },
   {
@@ -15386,7 +15386,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T15:00:28.200Z"
   },
   {
@@ -15416,7 +15416,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T15:00:31.988Z"
   },
   {
@@ -15445,8 +15445,8 @@
       "drawRate": 20,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T15:00:32.537Z"
   },
   {
@@ -15476,7 +15476,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T15:00:35.047Z"
   },
   {
@@ -15505,8 +15505,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T15:02:22.681Z"
   },
   {
@@ -15535,8 +15535,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "2-2",
     "loggedAt": "2025-07-25T15:02:25.175Z"
   },
   {
@@ -15566,7 +15566,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T15:02:31.688Z"
   },
   {
@@ -15596,7 +15596,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T15:02:33.892Z"
   },
   {
@@ -15626,7 +15626,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T15:04:27.336Z"
   },
   {
@@ -15656,7 +15656,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T15:04:27.895Z"
   },
   {
@@ -15686,7 +15686,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T15:04:29.302Z"
   },
   {
@@ -15716,7 +15716,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-1",
     "loggedAt": "2025-07-25T15:04:29.878Z"
   },
   {
@@ -15746,7 +15746,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-1",
     "loggedAt": "2025-07-25T15:04:32.026Z"
   },
   {
@@ -15776,7 +15776,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T15:04:34.161Z"
   },
   {
@@ -15806,7 +15806,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T15:04:36.894Z"
   },
   {
@@ -15835,8 +15835,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "0-0",
     "loggedAt": "2025-07-25T15:06:31.123Z"
   },
   {
@@ -15865,8 +15865,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T15:06:34.241Z"
   },
   {
@@ -15896,7 +15896,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T15:06:36.308Z"
   },
   {
@@ -15926,7 +15926,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T15:06:41.988Z"
   },
   {
@@ -15955,8 +15955,8 @@
       "drawRate": 10,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "AWAY",
+    "correctScore": "0-1",
     "loggedAt": "2025-07-25T15:08:34.372Z"
   },
   {
@@ -15986,7 +15986,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T15:08:36.360Z"
   },
   {
@@ -16016,7 +16016,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T15:10:39.002Z"
   },
   {
@@ -16046,7 +16046,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T15:12:28.247Z"
   },
   {
@@ -16076,7 +16076,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T15:12:28.798Z"
   },
   {
@@ -16106,7 +16106,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "4-0",
     "loggedAt": "2025-07-25T15:12:38.606Z"
   },
   {
@@ -16136,7 +16136,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "3-1",
     "loggedAt": "2025-07-25T15:14:30.164Z"
   },
   {
@@ -16166,7 +16166,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T15:14:31.041Z"
   },
   {
@@ -16196,7 +16196,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "1-0",
     "loggedAt": "2025-07-25T15:14:38.042Z"
   },
   {
@@ -16226,7 +16226,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T15:14:38.609Z"
   },
   {
@@ -16255,8 +16255,8 @@
       "drawRate": 30,
       "isImproving": false
     },
-    "selectedPick": "HOME",
-    "correctScore": null,
+    "selectedPick": "DRAW",
+    "correctScore": "1-1",
     "loggedAt": "2025-07-25T15:14:45.166Z"
   },
   {
@@ -16286,7 +16286,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "5-0",
     "loggedAt": "2025-07-25T15:18:44.976Z"
   },
   {
@@ -16316,7 +16316,7 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-1",
     "loggedAt": "2025-07-25T15:18:46.255Z"
   },
   {
@@ -16346,8 +16346,127 @@
       "isImproving": false
     },
     "selectedPick": "HOME",
-    "correctScore": null,
+    "correctScore": "2-0",
     "loggedAt": "2025-07-25T15:18:47.365Z"
+  },
+  {
+    "tournament": "English League",
+    "matchDay": 25,
+    "matchId": "vf:match:1385224408",
+    "homeTeam": "Manchester Blue",
+    "homePos": 1,
+    "homeForm": {
+      "wins": 6,
+      "draws": 2,
+      "losses": 2,
+      "total": 10,
+      "winRate": 60,
+      "drawRate": 20,
+      "isImproving": true
+    },
+    "awayTeam": "Southampton",
+    "awayPos": 13,
+    "awayForm": {
+      "wins": 2,
+      "draws": 3,
+      "losses": 5,
+      "total": 10,
+      "winRate": 20,
+      "drawRate": 30,
+      "isImproving": false
+    },
+    "selectedPick": "HOME",
+    "correctScore": "3-0",
+    "loggedAt": "2025-07-25T15:25:18.436Z"
+  },
+  {
+    "tournament": "English League",
+    "matchDay": 26,
+    "matchId": "vf:match:1385224414",
+    "homeTeam": "Tottenham",
+    "homePos": 8,
+    "homeForm": {
+      "wins": 3,
+      "draws": 6,
+      "losses": 1,
+      "total": 10,
+      "winRate": 30,
+      "drawRate": 60,
+      "isImproving": true
+    },
+    "awayTeam": "West Ham",
+    "awayPos": 14,
+    "awayForm": {
+      "wins": 4,
+      "draws": 0,
+      "losses": 6,
+      "total": 10,
+      "winRate": 40,
+      "drawRate": 0,
+      "isImproving": false
+    },
+    "selectedPick": "HOME",
+    "correctScore": null,
+    "loggedAt": "2025-07-25T15:27:09.172Z"
+  },
+  {
+    "tournament": "English League",
+    "matchDay": 26,
+    "matchId": "vf:match:1385224416",
+    "homeTeam": "Wolverhampton",
+    "homePos": 5,
+    "homeForm": {
+      "wins": 4,
+      "draws": 4,
+      "losses": 2,
+      "total": 10,
+      "winRate": 40,
+      "drawRate": 40,
+      "isImproving": true
+    },
+    "awayTeam": "Manchester Reds",
+    "awayPos": 9,
+    "awayForm": {
+      "wins": 3,
+      "draws": 3,
+      "losses": 4,
+      "total": 10,
+      "winRate": 30,
+      "drawRate": 30,
+      "isImproving": false
+    },
+    "selectedPick": "HOME",
+    "correctScore": null,
+    "loggedAt": "2025-07-25T15:27:10.580Z"
+  },
+  {
+    "tournament": "English League",
+    "matchDay": 27,
+    "matchId": "vf:match:1385224423",
+    "homeTeam": "Manchester Blue",
+    "homePos": 1,
+    "homeForm": {
+      "wins": 6,
+      "draws": 2,
+      "losses": 2,
+      "total": 10,
+      "winRate": 60,
+      "drawRate": 20,
+      "isImproving": true
+    },
+    "awayTeam": "Leicester",
+    "awayPos": 8,
+    "awayForm": {
+      "wins": 2,
+      "draws": 5,
+      "losses": 3,
+      "total": 10,
+      "winRate": 20,
+      "drawRate": 50,
+      "isImproving": false
+    },
+    "selectedPick": "HOME",
+    "correctScore": null,
+    "loggedAt": "2025-07-25T15:30:15.213Z"
   }
 ]
-

@@ -209,13 +209,14 @@ async function checkSimilarMatchAndNotify(currentMatch) {
     const logs = JSON.parse(fs.readFileSync(MATCH_ANALYSIS_LOG_FILE, "utf-8"));
 
     for (const log of logs) {
-        const isSameHomeForm = currentMatch.homeForm.wins === log.homeForm?.wins &&
+        const isSameHomeForm = currentMatch.homeForm.isImproving === log.homeForm.isImproving && currentMatch.homeForm.wins === log.homeForm?.wins &&
                                currentMatch.homeForm.draws === log.homeForm?.draws &&
                                currentMatch.homeForm.losses === log.homeForm?.losses;
 
-        const isSameAwayForm = currentMatch.awayForm.wins === log.awayForm?.wins &&
+        const isSameAwayForm = currentMatch.awayForm.isImproving === log.awayForm.isImproving && currentMatch.awayForm.wins === log.awayForm?.wins &&
                                currentMatch.awayForm.draws === log.awayForm?.draws &&
                                currentMatch.awayForm.losses === log.awayForm?.losses;
+        // if(currentMatch.matchDay !== log.matchDay) continue;
 
         if (isSameHomeForm && isSameAwayForm) {
             const message = `🧠 *Similar Match Found!*
