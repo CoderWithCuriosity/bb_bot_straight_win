@@ -185,15 +185,22 @@ function updateCorrectScoreAndResult(matchData) {
 
 async function autoUpdateAllFinishedMatches() {
     const logs = JSON.parse(fs.readFileSync(MATCH_ANALYSIS_LOG_FILE, "utf-8"));
-    for (const log of logs) {
-        if (!log.correctScore && log.matchId) {
-            const matchData = await getMatchOdds(log.matchId);
-            if (matchData?.matchStatus === "ended") {
-                updateCorrectScoreAndResult(matchData);
+    const pendingLogs = logs.filter(log => !log.correctScore && log.matchId);
+
+    await Promise.allSettled(
+        pendingLogs.map(async (log) => {
+            try {
+                const matchData = await getMatchOdds(log.matchId);
+                if (matchData?.matchStatus === "ended") {
+                    updateCorrectScoreAndResult(matchData);
+                }
+            } catch (err) {
+                console.error(`Error updating match ${log.matchId}:`, err.message);
             }
-        }
-    }
+        })
+    );
 }
+
 
 
 async function checkSimilarMatchAndNotify(currentMatch) {
@@ -265,12 +272,7 @@ async function win_1x2(amount = 100, matchCount = 3) {
             const awayPos = getTeamPos(seasonStandings, tournament.id, seasonId, away);
             if (!homeStanding || !awayStanding) continue;
 
-            await checkSimilarMatchAndNotify({
-                homeTeam: home,
-                awayTeam: away,
-                homeForm,
-                awayForm
-            });
+
 
             // if (homeStanding.D > maxAllowedDraws || awayStanding.D > maxAllowedDraws) continue;
 
@@ -284,6 +286,13 @@ async function win_1x2(amount = 100, matchCount = 3) {
             const homeForm = analyzeForm(homeStats.form, parseInt(matchDay) < 10 ? 5 : 10);
             const awayForm = analyzeForm(awayStats.form, parseInt(matchDay) < 10 ? 5 : 10);
             if (!homeForm || !awayForm) continue;
+
+            await checkSimilarMatchAndNotify({
+                homeTeam: home,
+                awayTeam: away,
+                homeForm,
+                awayForm
+            });
 
             if (homeForm.isImproving && awayForm.isImproving == false && homePos < awayPos) {
                 selectedId = 1;
